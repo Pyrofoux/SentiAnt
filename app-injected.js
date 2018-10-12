@@ -1,4 +1,5 @@
 alert("YOU HAVE HACKED THE MATRICE.");
+var hacked = "HAAACKED";
 webpackJsonp([1],
 {
     "064c0a93": function(e, t, a)
