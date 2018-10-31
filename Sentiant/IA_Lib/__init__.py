@@ -1,0 +1,1 @@
+""" Ce package contiendra les algorithmes d'IA """

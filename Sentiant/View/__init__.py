@@ -1,0 +1,1 @@
+""" Ce package contiendra la partie interface"""
