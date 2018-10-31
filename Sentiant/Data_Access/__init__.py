@@ -1,0 +1,1 @@
+""" Se package contiendra les scripts de gestion des données (import bot, save party, ...)"""
