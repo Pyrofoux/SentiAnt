@@ -1,1 +1,1 @@
-""" Ce package contiendra les bots des joueurs """
+""" Ce package contiendra les bots à tester"""
