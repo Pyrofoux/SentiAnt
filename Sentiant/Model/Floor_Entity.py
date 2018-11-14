@@ -1,1 +1,0 @@
-class Floor_Entity:
