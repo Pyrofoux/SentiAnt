@@ -1,5 +1,6 @@
 from Sentiant.Model import SolidEntity
 
+
 class Ant(SolidEntity):
 
     HP = 2
