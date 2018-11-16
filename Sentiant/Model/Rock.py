@@ -1,3 +1,5 @@
+from Sentiant.Model import SolidEntity
+
 class Rock(SolidEntity):
 
     removable = True

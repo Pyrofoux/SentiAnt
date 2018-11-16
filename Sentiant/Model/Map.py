@@ -7,4 +7,4 @@ class Map:
 
         self.layerSolid = LayerSolid() # ants & blocks
         self.layerPheromone = LayerPheromone()
-        self.layerFloor = LayerFloor() # cookies
+        self.layerFloor = LayerFloor() # cookies & bread

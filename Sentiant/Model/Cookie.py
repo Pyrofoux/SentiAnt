@@ -1,4 +1,6 @@
+from Sentiant.Model import FloorEntity
+
 class Cookie(FloorEntity):
 
     def __init__(self, id):
-        FloorEntity.__init__(id)
+        super().__init__(self, id)
