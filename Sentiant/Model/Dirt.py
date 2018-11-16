@@ -1,6 +1,9 @@
-class Dirt(SolidEntity):
+from Sentiant.Model import FloorEntity
 
-    destructible = true
+class Dirt(FloorEntity):
 
-    def __init__(self, id):
-        SolidEntity.__init__(self, id)
+    removable = True
+
+    def __init__(self):
+        super().__init__(self, id)
+

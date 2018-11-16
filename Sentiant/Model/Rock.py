@@ -1,6 +1,8 @@
+from Sentiant.Model import SolidEntity
+
 class Rock(SolidEntity):
 
-    destructible = false
+    removable = True
 
     def __init__(self, id):
-        SolidEntity.__init__(self, id)
+        super().__init__(self, id)
