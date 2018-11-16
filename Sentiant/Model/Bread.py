@@ -1,4 +1,4 @@
-class Bread:
-    def __init__(self):
-        pass
+class Bread(FloorEntity):
 
+    def __init__(self, id):
+        FloorEntity.id = id
