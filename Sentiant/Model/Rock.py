@@ -1,6 +1,6 @@
-class Rock:
+class Rock(SolidEntity):
 
     removable = True
 
-    def __init__(self):
-        pass
+    def __init__(self, id):
+        super().__init__(self, id)
