@@ -1,1 +1,0 @@
-class Solid_Entity:

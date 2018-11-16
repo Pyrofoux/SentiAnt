@@ -1,5 +1,7 @@
 class Ant:
-    def __init__(self,comportement):
-        self.HP=2
 
+    HP = 2
+
+    def __init__(self):
+        pass
 
