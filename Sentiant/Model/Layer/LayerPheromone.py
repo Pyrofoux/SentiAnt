@@ -1,4 +1,5 @@
 from .Layer import Layer
+from Sentiant.Model.Pheromone import *
 
 class LayerPheromone(Layer):
     def Place(self, ref):
