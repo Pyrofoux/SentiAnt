@@ -20,7 +20,7 @@ class Ant(SolidEntity):
         pass
 
     def pickup(self,entity):
-        """Store the picked up entity in Ant.holding"""
+        """Store the picked up entity in Ant.holdig"""
         if (self.holding is None):
             self.holding = entity
 
