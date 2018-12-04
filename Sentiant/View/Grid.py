@@ -1,9 +1,13 @@
 from tkinter import Frame, Button, Tk
-from Sentiant.Model import Map
+
+from Sentiant.Model import Map, Ant, Rock, Pheromone, Dirt, Cookie, Bread
+from Sentiant import Cfg
+from Sentiant.View.ImageManager import *
 
 class Grid(Frame):
 
     def __init__(self, map, boss):
+        self.buttons = []
 
         # init Frame
         Frame.__init__(self, boss)
@@ -13,16 +17,35 @@ class Grid(Frame):
 
         # create buttons
         for i in range(map.layerFloor.GetWidth()):
+            self.buttons.append([])
+
             for j in range(map.layerFloor.GetHeight()):
-                Button(self, text = "{0}, {1}".format(str(i), str(j)))\
-                    .grid(row = i, column = j)
+                b = Button(self, text="" + i + ", " + j)
+                b.grid(row=i, column=j)
+                self.buttons[-1].append(b)
+
+    def Update(self, x, y):
+        tileSolid = self.map.layerSolid[x, y]
+        tilePheromone = self.map.layerPheromone[x, y]
+        tileFloor = self.map.layerFloor[x, y]
+
+        (img, bgc) = ImageManager.GetImage(tileSolid, tileFloor, tilePheromone)
+
+        self.buttons[x][y].config(image=img, bg=bgc)
+
+    def UpdateAll(self):
+        for i in range(Cfg.WIDTH):
+            for j in range(Cfg.HEIGHT):
+                self.Update(i, j)
+
 
 if __name__ == "__main__":
-    root = Tk.__init__()
+    root = Tk()
 
-    map = Map(width = 10, height = 10)
+    map = Map()
 
     grid = Grid(boss = root, map = map)
+    grid.pack()
 
     root.mainloop()
 
