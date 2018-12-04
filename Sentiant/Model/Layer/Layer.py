@@ -1,48 +1,55 @@
-from numpy import ndarray
+import numpy as np
 from Sentiant.Model import Entity
 
 
-class Layer(ndarray):
+class Layer(np.ndarray):
 
     LastId = 0
 
     view = None
 
-    def __new__(cls, *arg, **kwargs):
-        super().__new__(cls, *arg, **kwargs)
+    def __new__(cls,  w, h, *arg, **kwargs):
+        return np.zeros((w, h)).view(cls)
 
     def __init__(self, w, h, map):
+        super().__init__()
         self.viewGrid = None
-        super().__init__(self, (w, h), type=Entity)
         self.Map = map
 
     def __getitem__(self, item):
         if self.viewGrid is not None:
             self.viewGrid.Update(item[0], item[1])
-        return super().__getitem__(self, item)
+        return super().__getitem__(item)
 
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 
     def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ?
         """Append an entity (entity) on this Layer in position (x, y)"""
-        self[x, y] = entity
+        if self[x, y] is None:
+            self[x, y] = entity
 
     def ToList(self):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it]
+        return [it for it in self if it]  # This code is bad and you should feel bad
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
-        pass
+        coord = self.GetXYByRef(ref)
+        self[coord[0], coord[1]] = None
 
     def Pop(self, ref):
         """Pop an entity out of the layer by ref"""
-        return None
+        coord = self.GetXYByRef(ref)
+        self.Remove(ref)
+        return [coord[0], coord[1]]
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
-        return
+        for i in range(len(self)):
+            for j in range(len(self[0])):
+                if self[i][j]==ref:
+                    return [i, j]
 
     def Count(self):
         """Get the number of entity on layer"""
@@ -60,10 +67,10 @@ class Layer(ndarray):
             f(e)
 
     def GetWidth(self):
-        return len(self[1, :])
+        return self.shape[0]
 
     def GetHeight(self):
-        return len(self[:, 1])
+        return self.shape[1]
 
     @staticmethod
     def GetNewId():

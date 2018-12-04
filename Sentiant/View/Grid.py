@@ -2,7 +2,7 @@ from tkinter import Frame, Button, Tk
 
 from Sentiant.Model import Map, Ant, Rock, Pheromone, Dirt, Cookie, Bread
 from Sentiant import Cfg
-from Sentiant.View import ImageManager
+from Sentiant.View.ImageManager import *
 
 class Grid(Frame):
 
@@ -25,34 +25,13 @@ class Grid(Frame):
                 self.buttons[-1].append(b)
 
     def Update(self, x, y):
-        tileSolid = self.map.layerSolid[i, j]
-        tilePheromone = self.map.layerPheromone[i, j]
-        tileFloor = self.map.layerFloor[i, j]
+        tileSolid = self.map.layerSolid[x, y]
+        tilePheromone = self.map.layerPheromone[x, y]
+        tileFloor = self.map.layerFloor[x, y]
 
-        img = ImageManager.EMPTY
-        bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
-              ImageManager.COLOR_EMPTY
+        (img, bgc) = ImageManager.GetImage(tileSolid, tileFloor, tilePheromone)
 
-        if isinstance(tileSolid, Ant):
-            if isinstance(tilePheromone, Pheromone):
-                img = ImageManager.ANT_N_PHEROMONE
-            elif isinstance(tileFloor Bread):
-                img = ImageManager.ANT_N_BREAD
-            elif isinstance(tileFloor Cookie):
-                img = ImageManager.ANT_N_COOKIE
-            else:
-                img = ImageManager.ANT
-        elif isinstance(tileSolid, Rock):
-            img = ImageManager.ROCK
-        else:
-            if isinstance(tilePheromone, Pheromone):
-                img = ImageManager.PHEROMONE
-            elif isinstance(tileFloor Bread):
-                img = ImageManager.BREAD
-            elif isinstance(tileFloor Cookie):
-                img = ImageManager.COOKIE
-
-        self.buttons[i][j].config(image=img, bg=bgc)
+        self.buttons[x][y].config(image=img, bg=bgc)
 
     def UpdateAll(self):
         for i in range(Cfg.WIDTH):
@@ -61,10 +40,12 @@ class Grid(Frame):
 
 
 if __name__ == "__main__":
-    root = Tk.__init__()
+    root = Tk()
 
-    map = Map(width = 10, height = 10)
+    map = Map()
 
     grid = Grid(boss = root, map = map)
+    grid.pack()
 
     root.mainloop()
+
