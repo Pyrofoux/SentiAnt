@@ -1,4 +1,4 @@
-from Sentiant.Model import SolidEntity
+from Sentiant.Model import *
 
 class Rock(SolidEntity):
 

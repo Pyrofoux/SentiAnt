@@ -1,3 +1,4 @@
+
 from tkinter import Tk
 
 class MainView(Tk):
@@ -13,5 +14,3 @@ class MainView(Tk):
 
     def run(self):
         self.mainloop()
-
-

@@ -1,4 +1,4 @@
-from Sentiant.Model import FloorEntity
+from Sentiant.Model import *
 
 class Cookie(FloorEntity):
 

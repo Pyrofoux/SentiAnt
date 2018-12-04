@@ -1,3 +1,5 @@
+from Sentiant.Model import *
+
 class QueenTile(SolidEntity):
 
     def __init__(self, id, team):
