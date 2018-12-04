@@ -4,27 +4,36 @@ from Sentiant.Model import *
 class ImageManager:
     def __init__(self):
         pass
+        
+    EMPTY           = None
 
-    # tempz
-    dir = "/assets/"
-    rz = .5
+    ANT             = None
+    BREAD           = None
+    COOKIE          = None
+    PHEROMONE       = None
+    ROCK            = None
 
-    EMPTY           = PhotoImage(file=dir + "empty.png").subsample(rz)
-
-    ANT             = PhotoImage(file=dir + "ant.png").subsample(rz)
-    BREAD           = PhotoImage(file=dir + "bread.png").subsample(rz)
-    COOKIE          = PhotoImage(file=dir + "cookie.png").subsample(rz)
-    PHEROMONE       = PhotoImage(file=dir + "pheromone.png").subsample(rz)
-    ROCK            = PhotoImage(file=dir + "rock.png").subsample(rz)
-
-    ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").subsample(rz)
-    ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").subsample(rz)
-    ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").subsample(rz)
+    ANT_N_BREAD     = None
+    ANT_N_COOKIE    = None
+    ANT_N_PHEROMONE = None
 
     COLOR_EMPTY = "White"
-    COLOR_WALL = "Black"
+    COLOR_WALL  = "Black"
 
-    def GetImage(self, tileSolid, tileFloor, tilePheromone):
+    def LoadImages(dir="/assets/", rz=.5):
+        EMPTY           = PhotoImage(file=dir + "empty.png").subsample(rz)
+
+        ANT             = PhotoImage(file=dir + "ant.png").subsample(rz)
+        BREAD           = PhotoImage(file=dir + "bread.png").subsample(rz)
+        COOKIE          = PhotoImage(file=dir + "cookie.png").subsample(rz)
+        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").subsample(rz)
+        ROCK            = PhotoImage(file=dir + "rock.png").subsample(rz)
+
+        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").subsample(rz)
+        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").subsample(rz)
+        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").subsample(rz)
+
+    def GetImage(tileSolid, tileFloor, tilePheromone):
         img = ImageManager.EMPTY
         bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
               ImageManager.COLOR_EMPTY
