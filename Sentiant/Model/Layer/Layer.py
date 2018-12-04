@@ -6,10 +6,18 @@ class Layer(array):
 
     LastId = 0
 
+    view = None
+
     def __init__(self, w, h):
         super().__init__(self, (w, h), type=Entity)
 
+    def __getitem__(self, item):
+        if self.view is not None:
+            self.view.Update(item[0], item[1])
+        return super().__getitem__(self, item)
 
+    def SetView(self, view):
+        self.view = view
 
     def Append(self, entity, x, y):
         """Append an entity (entity) on this Layer in position (x, y)"""
