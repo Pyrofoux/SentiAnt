@@ -1,4 +1,4 @@
-from .Layer import Layer
+import Layer
 
 class LayerSolid(Layer):
     def IsWallNorth(self, ref):

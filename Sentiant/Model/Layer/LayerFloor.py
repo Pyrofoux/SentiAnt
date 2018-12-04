@@ -1,4 +1,4 @@
-from .Layer import Layer
+import Layer
 
 class LayerFloor(Layer):
 
@@ -10,8 +10,6 @@ class LayerFloor(Layer):
             ref.pickup(self[coords])
             self.Remove(self[coords])
 
-        pass
-
     def Drop(self, ref):
         """Ant (ref) drop an entity on his case"""
         #TODO : Log d'erreurs
@@ -21,8 +19,6 @@ class LayerFloor(Layer):
 
             self.Append(ref.holding, coords[0], coords[1])
             ref.drop()
-
-        pass
 
     def IsResourceBelow(self, ref):
         """Is Ressource below Ant(ref)"""

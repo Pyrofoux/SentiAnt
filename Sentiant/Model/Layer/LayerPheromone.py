@@ -1,4 +1,4 @@
-from .Layer import Layer
+import Layer
 from Sentiant.Model.Pheromone import *
 
 class LayerPheromone(Layer):

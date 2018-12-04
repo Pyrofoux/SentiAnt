@@ -16,7 +16,7 @@ class Ant(SolidEntity):
 
 
     def move(self, direction):
-
+        pass
 
     def pickup(self,entity):
         """Store the picked up entity in Ant.holding"""
@@ -27,10 +27,3 @@ class Ant(SolidEntity):
         """Empty the Ant.holding if it isn't None """
         if (self.holding is None)== False:
             self.holding = None
-
-
-
-
-
-
-
