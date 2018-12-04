@@ -1,8 +1,8 @@
 from tkinter import Frame, Button, Tk
 
 from Sentiant.Model import Map, Ant, Rock, Pheromone, Dirt, Cookie, Bread
+from Sentiant.View import ImageManager
 from Sentiant import Cfg
-from Sentiant.View.ImageManager import *
 
 class Grid(Frame):
 
@@ -48,4 +48,3 @@ if __name__ == "__main__":
     grid.pack()
 
     root.mainloop()
-
