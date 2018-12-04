@@ -50,7 +50,6 @@ class Layer(ndarray):
             for j in range(len(self[0])):
                 if self[i][j]==ref:
                     return [i, j]
-        # TODO log
 
     def Count(self):
         """Get the number of entity on layer"""
