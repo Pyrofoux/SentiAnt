@@ -1,4 +1,4 @@
-from tkinter import PhotoImage
+from tkinter import PhotoImage,Tk
 from Sentiant.Model import *
 
 class ImageManager:

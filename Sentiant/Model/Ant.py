@@ -1,4 +1,5 @@
-from Sentiant.Model import *
+from .SolidEntity import SolidEntity
+from .Cfg import Cfg
 
 
 class Ant(SolidEntity):
