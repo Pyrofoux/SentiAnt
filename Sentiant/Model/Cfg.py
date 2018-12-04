@@ -27,4 +27,19 @@ class Cfg:
 
 
 
+    def parseDirection (self, direction):
+
+        direction = direction.lower()
+        if(direction == "up"):
+            return self.UP
+        elif direction == "down":
+            return self.DOWN
+        elif direction == "right":
+            return self.RIGHT
+        elif direction == "left":
+            return self.LEFT
+        return self.NULL
+
+
+
 
