@@ -17,16 +17,34 @@ class Ant(SolidEntity):
 
     def move(self, direction):
 
+        direc = Cfg.parseDirection(direction)
 
-    def pickup(self,entity):
-        """Store the picked up entity in Ant.holding"""
-        if (self.holding is None):
-            self.holding = entity
+        if(direc != Cfg.NULL):
+            self._nextAction = Cfg.MOVE
+            self.nextActionArg = direc
+
+    def attack(self, direction):
+
+        direc = Cfg.parseDirection(direction)
+
+        if (direc != Cfg.NULL):
+            self._nextAction = Cfg.ATTACK
+            self.nextActionArg = direc
+
+    def dig(self, direction):
+
+        direc = Cfg.parseDirection(direction)
+
+        if (direc != Cfg.NULL):
+            self._nextAction = Cfg.DIG
+            self.nextActionArg = direc
+
+    def pickup(self):
+        self.nextAction = Cfg.PICKUP
+
 
     def drop(self):
-        """Empty the Ant.holding if it isn't None """
-        if (self.holding is None)== False:
-            self.holding = None
+        self.nextAction = Cfg.DROP
 
 
 
