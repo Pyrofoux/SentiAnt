@@ -1,9 +1,9 @@
-from Sentiant.Model.Layer import LayerPheromone, LayerFloor, LayerSolid, _
+from Sentiant.Model.Layer import LayerPheromone, LayerFloor, LayerSolid, Cfg
 
 class Map:
     def __init__(self):
-        self.width = _.WIDTH
-        self.height = _.HEIGHT
+        self.width = Cfg.WIDTH
+        self.height = Cfg.HEIGHT
 
         self.layerSolid = LayerSolid() # ants & blocks
         self.layerPheromone = LayerPheromone()
