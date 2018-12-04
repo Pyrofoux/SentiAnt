@@ -11,9 +11,10 @@ class Layer(ndarray):
     def __new__(cls, *arg, **kwargs):
         super().__new__(cls, *arg, **kwargs)
 
-    def __init__(self, w, h):
+    def __init__(self, w, h, map):
         self.viewGrid = None
         super().__init__(self, (w, h), type=Entity)
+        self.Map = map
 
     def __getitem__(self, item):
         if self.viewGrid is not None:
