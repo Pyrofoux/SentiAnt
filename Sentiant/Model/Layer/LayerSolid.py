@@ -4,9 +4,9 @@ from Sentiant import *
 
 class LayerSolid(Layer):
 
-    def IsWall(self, ref, direction):
-        coords = self.Map.LayerSolid.GetXYByRef(ref)
+    def IsWall(self, coords):
 
-        if self[Cfg.addDirection()]
+        if not(self[coords] is None):
+            return True
 
         return False
