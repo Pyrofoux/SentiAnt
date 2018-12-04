@@ -1,4 +1,4 @@
-class _ :
+class Cfg:
     def __init__(self):
         pass
 

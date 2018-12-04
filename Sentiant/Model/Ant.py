@@ -1,5 +1,5 @@
 from Sentiant.Model import SolidEntity
-from Sentiant.Model import _
+from Sentiant.Model import Cfg
 
 
 class Ant(SolidEntity):
@@ -9,8 +9,8 @@ class Ant(SolidEntity):
         self._name = name #id of the ant, string of 5 chars
         self._team = team
         self.holding = None #by default, the ant doesn't carry anything
-        self.HP = _.HPMAX  #number of hits the ant can take before dying
-        self._FoV= _.FOV #Field Of View : number of cells the ant can view, center being itself
+        self.HP = Cfg.HPMAX  #number of hits the ant can take before dying
+        self._FoV= Cfg.FOV #Field Of View : number of cells the ant can view, center being itself
 
     def pickup(self,entity):
         """Store the picked up entity in Ant.holding"""
