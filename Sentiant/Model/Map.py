@@ -2,8 +2,8 @@ from Sentiant.Model.Layer import LayerPheromone, LayerFloor, LayerSolid, _
 
 class Map:
     def __init__(self):
-        self.width = _.width
-        self.height = _.height
+        self.width = _.WIDTH
+        self.height = _.HEIGHT
 
         self.layerSolid = LayerSolid() # ants & blocks
         self.layerPheromone = LayerPheromone()
