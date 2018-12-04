@@ -1,4 +1,5 @@
 from tkinter import PhotoImage
+from Sentiant.Model import *
 
 class ImageManager:
     def __init__(self):
@@ -22,3 +23,28 @@ class ImageManager:
 
     COLOR_EMPTY = "White"
     COLOR_WALL = "Black"
+
+    def GetImage(self, tileSolid, tileFloor, tilePheromone):
+        img = ImageManager.EMPTY
+        bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
+            ImageManager.COLOR_EMPTY
+
+        if isinstance(tileSolid, Ant):
+            if isinstance(tilePheromone, Pheromone):
+                img = ImageManager.ANT_N_PHEROMONE
+            elif isinstance(tileFloor, Bread):
+                img = ImageManager.ANT_N_BREAD
+            elif isinstance(tileFloor, Cookie):
+                img = ImageManager.ANT_N_COOKIE
+            else:
+                img = ImageManager.ANT
+        elif isinstance(tileSolid, Rock):
+            img = ImageManager.ROCK
+        else:
+            if isinstance(tilePheromone, Pheromone):
+                img = ImageManager.PHEROMONE
+            elif isinstance(tileFloor, Bread):
+                img = ImageManager.BREAD
+            elif isinstance(tileFloor, Cookie):
+                img = ImageManager.COOKIE
+        return (img, bgc)
