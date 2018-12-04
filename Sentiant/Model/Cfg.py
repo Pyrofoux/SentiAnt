@@ -38,6 +38,28 @@ class Cfg:
             return self.RIGHT
         elif direction == "left":
             return self.LEFT
+
+        # TODO : Log Error
+
+        return self.NULL
+
+
+
+    def addDirection(self, coords, direction):
+
+        direction = self.parseDirection(direction)
+
+        #TODO : Check coords valides ?
+        if (direction == self.UP):
+            return [coords[0], coords[1] - 1]
+        elif (direction == self.DOWN):
+            return [coords[0], coords[1] + 1]
+        elif (direction == self.RIGHT):
+            return [coords[0] + 1, coords[1]]
+        elif (direction == self.LEFT):
+            return [coords[0] - 1, coords[1]]
+
+        #TODO : Log Error de direction
         return self.NULL
 
 
