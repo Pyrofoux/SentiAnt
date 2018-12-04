@@ -4,10 +4,6 @@ from Sentiant.Model import Entity
 
 class Layer(np.ndarray):
 
-    LastId = 0
-
-    view = None
-
     def __new__(cls,  w, h, *arg, **kwargs):
         return np.zeros((w, h)).view(cls)
 
@@ -24,7 +20,7 @@ class Layer(np.ndarray):
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 
-    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ?
+    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ? / Log Errors
         """Append an entity (entity) on this Layer in position (x, y)"""
         if self[x, y] is None:
             self[x, y] = entity
@@ -38,16 +34,16 @@ class Layer(np.ndarray):
         coord = self.GetXYByRef(ref)
         self[coord[0], coord[1]] = None
 
-    def Pop(self, ref):
+    def Pop(self, coords):
         """Pop an entity out of the layer by ref"""
-        coord = self.GetXYByRef(ref)
-        self.Remove(ref)
-        return [coord[0], coord[1]]
+        ref = self[coords]
+        self.Remove(self[coords])
+        return ref
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
-        for i in range(len(self)):
-            for j in range(len(self[0])):
+        for i in range(self.width):
+            for j in range(self.height):
                 if self[i][j]==ref:
                     return [i, j]
 
