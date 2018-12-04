@@ -1,6 +1,6 @@
-from Sentiant.Model import *
+from .Entity import Entity
 
-class SolidEntity:
+class SolidEntity(Entity):
 
     def __init__(self, id):
         self.id = id
