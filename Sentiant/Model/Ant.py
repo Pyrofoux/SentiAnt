@@ -16,7 +16,7 @@ class Ant(SolidEntity):
 
 
     def move(self, direction):
-
+        pass
 
     def pickup(self,entity):
         """Store the picked up entity in Ant.holding"""
