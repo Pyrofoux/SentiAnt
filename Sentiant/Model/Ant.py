@@ -14,6 +14,10 @@ class Ant(SolidEntity):
         self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
         self._nextActionArg = Cfg.NULL
 
+
+    def move(self, direction):
+
+
     def pickup(self,entity):
         """Store the picked up entity in Ant.holding"""
         if (self.holding is None):

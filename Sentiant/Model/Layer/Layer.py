@@ -1,25 +1,25 @@
-from numpy import ndarray
+import numpy as np
 from Sentiant.Model import Entity
 
 
-class Layer(ndarray):
+class Layer(np.ndarray):
 
     LastId = 0
 
     view = None
 
-    def __new__(cls, *arg, **kwargs):
-        super().__new__(cls, *arg, **kwargs)
+    def __new__(cls,  w, h, *arg, **kwargs):
+        return np.zeros((w, h)).view(cls)
 
     def __init__(self, w, h, map):
+        super().__init__()
         self.viewGrid = None
-        super().__init__(self, (w, h), type=Entity)
         self.Map = map
 
     def __getitem__(self, item):
         if self.viewGrid is not None:
             self.viewGrid.Update(item[0], item[1])
-        return super().__getitem__(self, item)
+        return super().__getitem__(item)
 
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
@@ -60,10 +60,10 @@ class Layer(ndarray):
             f(e)
 
     def GetWidth(self):
-        return len(self[1, :])
+        return self.shape[0]
 
     def GetHeight(self):
-        return len(self[:, 1])
+        return self.shape[1]
 
     @staticmethod
     def GetNewId():
