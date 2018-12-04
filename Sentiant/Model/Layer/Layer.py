@@ -6,9 +6,20 @@ class Layer(ndarray):
 
     LastId = 0
 
-    def __init__(self, w, h):
-        super().__init__(self, (w, h), type=Entity)
+    view = None
 
+    def __new__(cls, *arg, **kwargs):
+        super().__new__(cls, *arg, **kwargs)
+
+    def __init__(self, w, h, map):
+        self.viewGrid = None
+        super().__init__(self, (w, h), type=Entity)
+        self.Map = map
+
+    def __getitem__(self, item):
+        if self.viewGrid is not None:
+            self.viewGrid.Update(item[0], item[1])
+        return super().__getitem__(self, item)
 
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
