@@ -1,4 +1,5 @@
-from Sentiant.Model.Layer import LayerPheromone, LayerFloor, LayerSolid, Cfg
+from Sentiant.Model.Layer import LayerPheromone, LayerFloor, LayerSolid
+from Sentiant.Model import Cfg
 
 class Map:
     def __init__(self):
