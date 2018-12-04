@@ -10,18 +10,19 @@ class Layer(array):
         super().__init__(self, (w, h), type=Entity)
 
 
-
     def Append(self, entity, x, y):
         """Append an entity (entity) on this Layer in position (x, y)"""
-        self[x, y] = entity
+        if self[x,y] == None:
+            self[x,y] = entity
 
     def ToList(self):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it]
+        return [it for it in self if it] #This code is bad and you should feel bad
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
-        pass
+        coord=GetXYByRef(self,ref)
+
 
     def Pop(self, ref):
         """Pop an entity out of the layer by ref"""
@@ -29,7 +30,7 @@ class Layer(array):
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
-        return
+        return [x,y]
 
     def Count(self):
         """Get the number of entity on layer"""
