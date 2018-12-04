@@ -19,8 +19,9 @@ class Cfg:
     PICKUP = "pickup"
     ATTACK = "attack"
     SLEEP = "sleep"
-    PHERO = "phero" // Attention à ne pas faire phero sur un rocher mdr
+    PHERO = "phero" # Attention à ne pas faire phero sur un rocher mdr
 
+    NULL = "null"
 
 
 
