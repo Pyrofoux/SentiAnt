@@ -1,6 +1,6 @@
-from Sentiant.Model import *
+from .Entity import Entity
 
-class Pheromone:
+class Pheromone(Entity):
 
     def __init__(self, id, baseLocation):
         self.hpRadius = Cfg.HPRADIUS
