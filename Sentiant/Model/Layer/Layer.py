@@ -1,12 +1,15 @@
-from numpy import array
+from numpy import ndarray
 from Sentiant.Model import Entity
 
 
-class Layer(array):
+class Layer(ndarray):
 
     LastId = 0
 
     view = None
+
+    def __new__(cls, *arg, **kwargs):
+        super().__new__(cls, *arg, **kwargs)
 
     def __init__(self, w, h):
         super().__init__(self, (w, h), type=Entity)
@@ -53,6 +56,12 @@ class Layer(array):
         """Apply a function (f) to all entities of this layer"""
         for e in self:
             f(e)
+
+    def GetWidth(self):
+        return len(self[1, :])
+
+    def GetHeight(self):
+        return len(self[:, 1])
 
     @staticmethod
     def GetNewId():
