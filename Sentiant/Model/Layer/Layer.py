@@ -1,23 +1,27 @@
-from numpy import array
+from numpy import ndarray
 from Sentiant.Model import Entity
 
 
-class Layer(array):
+class Layer(ndarray):
 
     LastId = 0
 
     view = None
 
+    def __new__(cls, *arg, **kwargs):
+        super().__new__(cls, *arg, **kwargs)
+
     def __init__(self, w, h):
+        self.viewGrid = None
         super().__init__(self, (w, h), type=Entity)
 
     def __getitem__(self, item):
-        if self.view is not None:
-            self.view.Update(item[0], item[1])
+        if self.viewGrid is not None:
+            self.viewGrid.Update(item[0], item[1])
         return super().__getitem__(self, item)
 
-    def SetView(self, view):
-        self.view = view
+    def SetViewGrid(self, viewGrid):
+        self.viewGrid = viewGrid
 
     def Append(self, entity, x, y):
         """Append an entity (entity) on this Layer in position (x, y)"""
@@ -53,6 +57,12 @@ class Layer(array):
         """Apply a function (f) to all entities of this layer"""
         for e in self:
             f(e)
+
+    def GetWidth(self):
+        return len(self[1, :])
+
+    def GetHeight(self):
+        return len(self[:, 1])
 
     @staticmethod
     def GetNewId():
