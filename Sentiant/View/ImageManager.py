@@ -5,7 +5,7 @@ class ImageManager:
     def __init__(self):
         pass
 
-    # temps
+    # tempz
     dir = "/assets/"
     rz = .5
 
@@ -27,7 +27,7 @@ class ImageManager:
     def GetImage(self, tileSolid, tileFloor, tilePheromone):
         img = ImageManager.EMPTY
         bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
-            ImageManager.COLOR_EMPTY
+              ImageManager.COLOR_EMPTY
 
         if isinstance(tileSolid, Ant):
             if isinstance(tilePheromone, Pheromone):
@@ -47,4 +47,5 @@ class ImageManager:
                 img = ImageManager.BREAD
             elif isinstance(tileFloor, Cookie):
                 img = ImageManager.COOKIE
+
         return (img, bgc)
