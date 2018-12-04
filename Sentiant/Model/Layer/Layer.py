@@ -26,25 +26,31 @@ class Layer(ndarray):
 
     def Append(self, entity, x, y):
         """Append an entity (entity) on this Layer in position (x, y)"""
-        if self[x,y] == None:
-            self[x,y] = entity
+        if self[x, y] is None:
+            self[x, y] = entity
 
     def ToList(self):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it] #This code is bad and you should feel bad
+        return [it for it in self if it]  # This code is bad and you should feel bad
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
-        coord=GetXYByRef(self,ref)
-
+        coord = self.GetXYByRef(ref)
+        self[coord[0], coord[1]] = None
 
     def Pop(self, ref):
         """Pop an entity out of the layer by ref"""
-        return None
+        coord = self.GetXYByRef(ref)
+        self.Remove(ref)
+        return [coord[0], coord[1]]
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
-        return [x,y]
+        for i in range(len(self)):
+            for j in range(len(self[0])):
+                if self[i][j]==ref:
+                    return [i, j]
+        # TODO log
 
     def Count(self):
         """Get the number of entity on layer"""
