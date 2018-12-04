@@ -2,10 +2,12 @@ class _ :
     def __init__(self):
         pass
 
-    HPmax = 2
-    FoV=7
-    hpRadius = 5
-    width=42
-    height=42
+    HPMAX = 2
+    FOV=7
+    HPRADIUS = 5
+    WIDTH=42
+    HEIGHT=42
+
+
 
 
