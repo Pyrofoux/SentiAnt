@@ -24,7 +24,7 @@ class Layer(ndarray):
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 
-    def Append(self, entity, x, y):
+    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ?
         """Append an entity (entity) on this Layer in position (x, y)"""
         self[x, y] = entity
 
