@@ -1,4 +1,4 @@
-from .Entity import Entity
+from Sentiant.Model import *
 
 class FloorEntity(Entity) :
     

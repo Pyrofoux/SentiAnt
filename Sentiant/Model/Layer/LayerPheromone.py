@@ -18,7 +18,7 @@ class LayerPheromone(Layer):
         for phéro in self:
             coordsPhéro = self.GetXYByRef(phéro)
             distance = abs(coords[0] - coordsPhéro[0]) + abs(coords[1] - coordsPhéro[1])
-            if distance < phéro.hp:
+            if (distance < phéro.hp):
                 phéros.append(phéro)
 
         return phéros

@@ -1,8 +1,12 @@
 import numpy as np
-from Sentiant.Model.Entity import Entity
+from Sentiant.Model import Entity
 
 
 class Layer(np.ndarray):
+
+    LastId = 0
+
+    view = None
 
     def __new__(cls,  w, h, *arg, **kwargs):
         return np.zeros((w, h)).view(cls)
@@ -20,30 +24,30 @@ class Layer(np.ndarray):
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 
-    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ? / Log Errors
+    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ?
         """Append an entity (entity) on this Layer in position (x, y)"""
         if self[x, y] is None:
             self[x, y] = entity
 
     def ToList(self):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it]  # This code is bad and you should feel bad
+        return [it for it in self if it]  # Hey now! I had other solutions some refused!
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
         coord = self.GetXYByRef(ref)
         self[coord[0], coord[1]] = None
 
-    def Pop(self, coords):
+    def Pop(self, ref):
         """Pop an entity out of the layer by ref"""
-        ref = self[coords]
-        self.Remove(self[coords])
-        return ref
+        coord = self.GetXYByRef(ref)
+        self.Remove(ref)
+        return [coord[0], coord[1]]
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
-        for i in range(self.width):
-            for j in range(self.height):
+        for i in range(len(self)):
+            for j in range(len(self[0])):
                 if self[i][j]==ref:
                     return [i, j]
 

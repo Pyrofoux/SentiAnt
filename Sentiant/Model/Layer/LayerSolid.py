@@ -1,12 +1,14 @@
 from .Layer import Layer
-from Sentiant import *
-
 
 class LayerSolid(Layer):
+    def IsWallNorth(self, ref):
+        return False
 
-    def IsWall(self, coords):
+    def IsWallSouth(self, ref):
+        return False
 
-        if not(self[coords] is None):
-            return True
+    def IsWallEast(self, ref):
+        return False
 
+    def IsWallWeast(self, ref):
         return False
