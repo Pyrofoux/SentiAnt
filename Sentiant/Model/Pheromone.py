@@ -1,4 +1,4 @@
-from Sentiant.Model import Cfg
+from Sentiant.Model import *
 
 class Pheromone:
 
