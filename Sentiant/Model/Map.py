@@ -8,3 +8,8 @@ class Map:
         self.layerSolid = LayerSolid() # ants & blocks
         self.layerPheromone = LayerPheromone()
         self.layerFloor = LayerFloor() # cookies & bread
+
+    def SetView(self, view):
+        self.layerFloor.setView(view)
+        self.LayerPheromone.setView(view)
+        self.LayerSolid.setView(view)
