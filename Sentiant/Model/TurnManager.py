@@ -36,22 +36,33 @@ class TurnManager:
             if ant._nextAction in Cfg.ACTIONS  :
                 sorted[ant._nextAction].append(ant)
 
+        self.execSleep(sorted[Cfg.Cfg.SLEEP])
 
 
 
-    def execSleep(self):
+    def execSleep(self, ants):
         pass
 
-    def execPhero(self):
+    def execPhero(self,ants):
         pass
 
-    def execAttack(self):
+    def execAttack(self,ants):
         pass
 
-    def execMove(self):
+    def execMove(self,ants):
         pass
 
-    def execDig(self):
+    def execDig(self,ants):
+
+        for ant in ants:
+
+            posAnt = self.layerSolid.GetXYByRef(ant)
+            dir = ant._nextActionArg
+            posCible = posAnt + dir
+
+           # if  self.layerSolid[posCible.x, posCible.y] instanceof Dirt
+
+
         pass
 
     def execPickup(self):
@@ -61,3 +72,5 @@ class TurnManager:
         pass
 
 
+if __name__ == '__main__':
+    "sup"
