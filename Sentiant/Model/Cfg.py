@@ -1,4 +1,3 @@
-from Sentiant.Model import *
 
 class Cfg:
     def __init__(self):

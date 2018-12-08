@@ -1,7 +1,7 @@
-from Sentiant.Model.Layer.LayerFloor import LayerFloor
-from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
-from Sentiant.Model.Layer.LayerSolid import LayerSolid
-from Sentiant.Model.Cfg import Cfg
+from .Layer.LayerFloor import LayerFloor
+from .Layer.LayerPheromone import LayerPheromone
+from .Layer.LayerSolid import LayerSolid
+from .Cfg import Cfg
 
 class Map:
     def __init__(self):
