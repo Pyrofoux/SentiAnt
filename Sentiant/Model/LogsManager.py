@@ -13,7 +13,7 @@ class LogsManager :
     finalPath=os.path.join(scriptDirDir,relativePath)
 
 
-    def notADirectionErrror(self,antId,antTeam,direction,action):
+    def notADirectionError(self,antId,antTeam,direction,action):
          with open(self.finalPath,'w+') as logs:
                 logs.write((self.now.strftime("%Y-%m-%d %H:%M") +
                 f" Une erreur a eu lieu car la direction <{direction}> donnée à la fourmi <{antId}> de l'équipe <{antTeam}> pour l'action <{action}> n'est pas une direction valide"))
