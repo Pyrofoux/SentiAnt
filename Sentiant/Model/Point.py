@@ -5,6 +5,9 @@ class Point:
     def __sub__(self, mate):
         return Point(self.x - mate.x, self.y - mate.y)
 
+    def __add__(self, mate):
+        return Point(self.x + mate.x, self.y + mate.y)
+
     def __len__(self):
         """ Usage: len(a - b) = distance from a to b"""
         return (self.x**2 + self.y**2)**.5
