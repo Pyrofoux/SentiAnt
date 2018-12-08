@@ -4,7 +4,7 @@ from Sentiant.Model import *
 class ImageManager:
     def __init__(self):
         pass
-        
+
     EMPTY           = None
 
     ANT             = None
@@ -17,8 +17,8 @@ class ImageManager:
     ANT_N_COOKIE    = None
     ANT_N_PHEROMONE = None
 
-    COLOR_EMPTY = "White"
-    COLOR_WALL  = "Black"
+    COLOR_EMPTY = "NavajoWhite2"
+    COLOR_WALL  = "NavajoWhite4"
 
     @staticmethod
     def LoadImages(imgSize, dir="assets/"):
