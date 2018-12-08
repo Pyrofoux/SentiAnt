@@ -29,9 +29,9 @@ class Layer(np.ndarray):
         if self[x, y] is None:
             self[x, y] = entity
 
-    def ToList(self):
+    def ToList(self, eClass=None):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it]  # Hey now! I had other solutions some refused!
+        return [it for it in self if it and (not eClass or type(it) == eClass)]
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
