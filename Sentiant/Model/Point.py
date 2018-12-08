@@ -11,3 +11,7 @@ class Point:
     def __len__(self):
         """ Usage: len(a - b) = distance from a to b"""
         return (self.x**2 + self.y**2)**.5
+
+    def StepDistance(self, dest):
+        """Returns distance in number of steps to take"""
+        return (self.x - mate.x) + (self.y - mate.y)
