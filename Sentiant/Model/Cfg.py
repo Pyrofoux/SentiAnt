@@ -36,6 +36,7 @@ class Cfg:
 
 
     def parseDirection (self, direction):
+        global UP, DOWN, RIGHT, LEFT, NULL
         direction = direction.lower()
 
         if(direction == "up"):
