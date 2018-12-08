@@ -28,6 +28,7 @@ class Ant(SolidEntity):
         """Empty the Ant.holding if it isn't None """
         if (self.holding is None)== False:
             self.holding = None
+    
 
 
 

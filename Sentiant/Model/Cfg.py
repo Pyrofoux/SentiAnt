@@ -1,3 +1,5 @@
+from Sentiant.Model import Ant, Bread, Cookie, Dirt, QueenTile, Rock
+
 class Cfg:
     def __init__(self):
         pass
@@ -8,10 +10,10 @@ class Cfg:
     WIDTH=42
     HEIGHT=42
 
-#    UP = {x: 0, y: -1}
-#    DOWN = {x: 0, y: 1}
-#    RIGHT = {x: 1, y: 0}
-#   LEFT = {x: -1, y:0}
+    UP = { 'x': 0, 'y': -1 }
+    DOWN = { 'x': 0, 'y': 1 }
+    RIGHT = { 'x': 1, 'y': 0 }
+    LEFT = { 'x': -1, 'y': 0 }
     NULL = "null"
 
     MOVE = "move"
@@ -21,6 +23,13 @@ class Cfg:
     ATTACK = "attack"
     SLEEP = "sleep"
     PHERO = "phero" # Attention à ne pas faire phero sur un rocher mdr
+
+    ANT = "ant"
+    QUEEN = "queen"
+    DIRT = "dirt"
+    ROCK = "rock"
+    BREAD = "bread"
+    COOKIE = "cookie"
 
 
 
@@ -60,6 +69,24 @@ class Cfg:
         #TODO : Log Error de direction
         return self.NULL
 
+    def EntityToType(self, ref):
 
+        if type(ref) is Ant:
+            return self.ANT
+        if type(ref) is QueenTile:
+            return self.QUEEN
+
+        if type(ref) is Dirt:
+            return self.DIRT
+        if type(ref) is Rock:
+            return self.ROCK
+
+
+        if type(ref) is Bread:
+            return self.BREAD
+        if type(ref) is Cookie:
+            return self.COOKIE
+
+        return self.NULL
 
 
