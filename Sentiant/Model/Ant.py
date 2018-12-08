@@ -16,6 +16,7 @@ class Ant(SolidEntity):
 
 
     def move(self, direction):
+        pass
 
 
     def pickup(self,entity):

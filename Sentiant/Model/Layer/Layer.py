@@ -51,6 +51,10 @@ class Layer(np.ndarray):
                 if self[i][j]==ref:
                     return [i, j]
 
+    def MoveEntity(self, ref, direction):
+        coord=self.Pop(ref)
+        self.Append(ref,coord[0]+direction['x'],coord[1]+direction['y'])
+
     def Count(self):
         """Get the number of entity on layer"""
         return len(self.ToList())
