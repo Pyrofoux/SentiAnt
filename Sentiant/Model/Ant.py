@@ -1,5 +1,5 @@
 from .SolidEntity import SolidEntity
-from .Cfg import Cfg
+from Sentiant.Model import Cfg
 from .LogsManager import LogsManager
 
 
@@ -10,11 +10,11 @@ class Ant(SolidEntity):
         self._name = name # id of the ant, string of 5 chars
         self._team = team
         self._holding = None # by default, the ant doesn't carry anything
-        self._HP = Cfg.HPMAX  # number of hits the ant can take before dying
-        self._FoV = Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
+        self._HP = Cfg.Cfg.HPMAX  # number of hits the ant can take before dying
+        self._FoV = Cfg.Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
 
-        self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
-        self._nextActionArg = Cfg.NULL
+        self._nextAction = Cfg.Cfg.SLEEP # next Action, will be read by Turn Manager
+        self._nextActionArg = Cfg.Cfg.NULL
 
 
     def move(self, direction):

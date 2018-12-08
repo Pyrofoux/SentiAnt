@@ -15,37 +15,37 @@ class LogsManager :
     BASE = os.path.join(scriptDirDir, "Logs" + os.pathsep)
     EXT = ".log"
 
-    generals = open(BASE + "generals"" + EXT, "w")
+    generals = open(BASE + "generals" + EXT, "w")
     users = open(BASE + "users" + EXT, "w")
 
     def Stdout(type, msg, isUser=False):
-        out = "[" + type + "] @" + time().strftime("%H:%M") + "> " + msg
-        generals.write(out)
+        out = "[" + type + "] @" + LogsManager.time().strftime("%H:%M") + "> " + msg
+        LogsManager.generals.write(out)
         if isUser:
-            users.write(out)
+            LogsManager.users.write(out)
 
     def Error(details, usersFailure=False):
-        Stdout("Error", details, userFailure)
+        LogsManager.Stdout("Error", details, LogsManager.userFailure)
 
     def Warning(details):
         """Not for user usage"""
-        Stdout("Warning", details)
+        LogsManager.Stdout("Warning", details)
 
     def Infos(infos, isUser=False):
-        Stdout("Infos", infos, isUser)
+        LogsManager.Stdout("Infos", infos, isUser)
 
     def Debug(msg, isUser=True):
         """Recomended for user usage"""
-        Stdout("Debug", msg, isUser)
+        LogsManager.Stdout("Debug", msg, isUser)
 
 
     def NotADirectionError(antId, antTeam, direction, action):
         details = f"Une erreur a eu lieu car la direction <{direction}> " \
                 + f"donnée à la fourmi <{antId}> de l'équipe <{antTeam}> " \
                 + f"pour l'action <{action}> n'est pas une direction valide"
-        Error(details, True)
+        LogsManager.Error(details, True)
 
-    def NotAPheromoneError(jsp, bla, bla, coucou):
+    def NotAPheromoneError(jsp, bla, coucou):
         details = 42
 
-        Error(details, True)
+        LogsManager.Error(details, True)
