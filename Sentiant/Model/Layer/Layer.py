@@ -52,7 +52,7 @@ class Layer():
             for j in range(len(self[0])):
                 if self[i, j]==ref:
                     coord = Point(i, j)
-                    return coordS
+                    return coord
 
     def MoveEntity(self, ref, direction):
         coord=self.Pop(ref)
