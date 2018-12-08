@@ -1,56 +1,92 @@
-from Sentiant.Model import Point
+from Sentiant.Model import Ant, Bread, Cookie, Dirt, QueenTile, Rock
 
 class Cfg:
     def __init__(self):
         pass
 
-    HPMAX    = 2
-    FOV      = 7
+    HPMAX = 2
+    FOV=7
     HPRADIUS = 5
-    WIDTH    = 42
-    HEIGHT   = 42
+    WIDTH=42
+    HEIGHT=42
 
-    UP    = Point(0, -1)
-    DOWN  = Point(0, 1)
-    RIGHT = Point(1, 0)
-    LEFT  = Point(-1, 0)
-    NULL  = "null"
+    UP = { 'x': 0, 'y': -1 }
+    DOWN = { 'x': 0, 'y': 1 }
+    RIGHT = { 'x': 1, 'y': 0 }
+    LEFT = { 'x': -1, 'y': 0 }
+    NULL = "null"
 
-    MOVE   = "move"
-    DIG    = "dig"
-    DROP   = "drop"
+    MOVE = "move"
+    DIG = "dig"
+    DROP = "drop"
     PICKUP = "pickup"
     ATTACK = "attack"
-    SLEEP  = "sleep"
-    PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
-                     # (c pa possib' zi on peu pa marcher sur 1 rocher lolz)
+    SLEEP = "sleep"
+    PHERO = "phero" # Attention à ne pas faire phero sur un rocher mdr
+
+    ANT = "ant"
+    QUEEN = "queen"
+    DIRT = "dirt"
+    ROCK = "rock"
+    BREAD = "bread"
+    COOKIE = "cookie"
+
+
 
 
     def parseDirection (self, direction):
+
         direction = direction.lower()
-
         if(direction == "up"):
-            return UP
+            return self.UP
         elif direction == "down":
-            return DOWN
+            return self.DOWN
         elif direction == "right":
-            return RIGHT
+            return self.RIGHT
         elif direction == "left":
-            return LEFT
+            return self.LEFT
 
-        # TODO : Log Error
-        return NULL
+        #TODO : Log Error
+
+        return self.NULL
+
 
 
     def addDirection(self, coords, direction):
+
         direction = self.parseDirection(direction)
 
-        if direction in [UP, DOWN, RIGTH, LEFT]:
-            nextPos = coords + direction
-
-            #TODO : Check coords valides!
-            #if layerSolid.walkable(nextPos):
-            return nextPos
+        #TODO : Check coords valides ?
+        if (direction == self.UP):
+            return [coords[0], coords[1] - 1]
+        elif (direction == self.DOWN):
+            return [coords[0], coords[1] + 1]
+        elif (direction == self.RIGHT):
+            return [coords[0] + 1, coords[1]]
+        elif (direction == self.LEFT):
+            return [coords[0] - 1, coords[1]]
 
         #TODO : Log Error de direction
         return self.NULL
+
+    def EntityToType(self, ref):
+
+        if type(ref) is Ant:
+            return self.ANT
+        if type(ref) is QueenTile:
+            return self.QUEEN
+
+        if type(ref) is Dirt:
+            return self.DIRT
+        if type(ref) is Rock:
+            return self.ROCK
+
+
+        if type(ref) is Bread:
+            return self.BREAD
+        if type(ref) is Cookie:
+            return self.COOKIE
+
+        return self.NULL
+
+

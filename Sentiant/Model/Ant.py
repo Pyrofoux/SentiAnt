@@ -6,7 +6,7 @@ from .LogsManager import LogsManager
 class Ant(SolidEntity):
 
     def __init__(self, id, name, team):
-        super().__init__(self, id)
+        super().__init__(id)
         self._name = name # id of the ant, string of 5 chars
         self._team = team
         self._holding = None # by default, the ant doesn't carry anything
