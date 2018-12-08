@@ -1,4 +1,9 @@
 class TurnManager:
+
     def __init__(self):
-        pass
+
+        self.currentTurn = 0
+
+
+
 
