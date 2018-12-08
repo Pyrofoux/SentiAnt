@@ -7,8 +7,8 @@ class LayerFloor(Layer):
         # TODO : Log d'erreurs
         if self.IsResourceBelow(ref):
             coords = self.Map.LayerSolid.GetXYByRef(ref)
-            ref.pickup(self[coords])
-            self.Remove(self[coords])
+            ref.pickup(self[coords.x, coords.y])
+            self.Remove(self[coords.x, coords.y])
 
         pass
 
@@ -19,7 +19,7 @@ class LayerFloor(Layer):
         if not(ref.holding is None):
             coords = self.Map.LayerSolid.GetXYByRef(ref)
 
-            self.Append(ref.holding, coords[0], coords[1])
+            self.Append(ref.holding, coords.x, coords.y)
             ref.drop()
 
         pass
@@ -28,6 +28,6 @@ class LayerFloor(Layer):
         """Is Ressource below Ant(ref)"""
 
         coords = self.Map.LayerSolid.GetXYByRef(ref)
-        if not(self[coords] is None):
+        if not(self[coords.x, coords.y] is None):
             return True
         return False
