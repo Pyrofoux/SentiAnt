@@ -5,16 +5,27 @@ from .LogsManager import LogsManager
 
 class Ant(SolidEntity):
 
+
+    #Initialise ici pour pouvoir els utilsier ailleurs, comme dans TurnManager
+    _name = None
+    _team = None
+    _holding = None
+    _HP = None
+    _FOV = None
+    _nextAction = None
+    _nextActionArg = None
+
+
     def __init__(self, id, name, team):
         super().__init__(id)
-        self._name = name # id of the ant, string of 5 chars
-        self._team = team
-        self._holding = None # by default, the ant doesn't carry anything
-        self._HP = Cfg.HPMAX  # number of hits the ant can take before dying
-        self._FoV = Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
+        _name = name # id of the ant, string of 5 chars
+        _team = team
+        _holding = None # by default, the ant doesn't carry anything
+        _HP = Cfg.HPMAX  # number of hits the ant can take before dying
+        _FoV = Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
 
-        self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
-        self._nextActionArg = Cfg.NULL
+        _nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
+        _nextActionArg = Cfg.NULL
 
     def move(self, direction):
 
@@ -65,3 +76,4 @@ class Ant(SolidEntity):
     def phero(self):
         self._nextAction=Cfg.PHERO
         self._nextActionArg=Cfg.NULL
+

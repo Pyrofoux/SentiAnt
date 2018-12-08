@@ -14,4 +14,4 @@ class Point:
 
     def StepDistance(self, dest):
         """Returns distance in number of steps to take"""
-        return (self.x - mate.x) + (self.y - mate.y)
+        return (self.x - dest.x) + (self.y - dest.y)
