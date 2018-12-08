@@ -1,5 +1,6 @@
 from .SolidEntity import SolidEntity
 from .Cfg import Cfg
+from .LogsManager import LogsManager
 
 
 class Ant(SolidEntity):
@@ -17,13 +18,17 @@ class Ant(SolidEntity):
 
 
     def move(self, direction):
-        pass
 
         direc = Cfg.parseDirection(direction)
 
         if(direc != Cfg.NULL):
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"déplacement")
+
 
     def attack(self, direction):
 
@@ -32,6 +37,11 @@ class Ant(SolidEntity):
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"attaque")
+
 
     def dig(self, direction):
 
@@ -40,6 +50,11 @@ class Ant(SolidEntity):
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.DIG
             self._nextActionArg = direc
+            self.nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser)
 
     def pickup(self):
         self._nextAction = Cfg.PICKUP
