@@ -23,7 +23,7 @@ class Ant(SolidEntity):
 
         if(direc != Cfg.NULL):
             self._nextAction = Cfg.MOVE
-            self.nextActionArg = direc
+            self._nextActionArg = direc
 
     def attack(self, direction):
 
@@ -31,7 +31,7 @@ class Ant(SolidEntity):
 
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.ATTACK
-            self.nextActionArg = direc
+            self._nextActionArg = direc
 
     def dig(self, direction):
 
@@ -39,18 +39,11 @@ class Ant(SolidEntity):
 
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.DIG
-            self.nextActionArg = direc
+            self._nextActionArg = direc
 
     def pickup(self):
-        self.nextAction = Cfg.PICKUP
+        self._nextAction = Cfg.PICKUP
 
 
     def drop(self):
-        self.nextAction = Cfg.DROP
-
-
-
-
-
-
-
+        self._nextAction = Cfg.DROP
