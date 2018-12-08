@@ -24,10 +24,10 @@ class Layer(np.ndarray):
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 
-    def Append(self, entity, x, y): #TODO : Mettre un seul objet coords plutôt que x et y ?
+    def Append(self, entity, coord):
         """Append an entity (entity) on this Layer in position (x, y)"""
-        if self[x, y] is None:
-            self[x, y] = entity
+        if self[coord.x, coord.y] is None:
+            self[coord.x, coord.y] = entity
 
     def ToList(self, eClass=None):
         """Get a list of all the entities on the layer"""
@@ -36,24 +36,24 @@ class Layer(np.ndarray):
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
         coord = self.GetXYByRef(ref)
-        self[coord[0], coord[1]] = None
+        self[coord.x, coord.y] = None
 
     def Pop(self, ref):
         """Pop an entity out of the layer by ref"""
         coord = self.GetXYByRef(ref)
         self.Remove(ref)
-        return [coord[0], coord[1]]
+        return coord.x, coord.y
 
     def GetXYByRef(self, ref):
         """ Get position of an entity by reference (ref)"""
         for i in range(len(self)):
             for j in range(len(self[0])):
-                if self[i][j]==ref:
+                if self[i][j] == ref:
                     return [i, j]
 
     def MoveEntity(self, ref, direction):
         coord=self.Pop(ref)
-        self.Append(ref,coord[0]+direction['x'],coord[1]+direction['y'])
+        self.Append(ref, coord.x + direction.x, coord.y + direction.y)
 
     def Count(self):
         """Get the number of entity on layer"""
