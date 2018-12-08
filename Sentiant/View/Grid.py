@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     root = Tk()
 
-    map = Map(w=10, h=10)
+    map = Map(w=100, h=100)
 
     map.layerSolid.Append(Ant(1, "test", "test"), Point(5, 5))
     map.layerFloor.Append(Bread(1), Point(5,5))
