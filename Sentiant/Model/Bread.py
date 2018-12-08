@@ -1,4 +1,4 @@
-from Sentiant.Model import *
+from .FloorEntity import FloorEntity
 
 class Bread(FloorEntity):
 

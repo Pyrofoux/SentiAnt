@@ -1,5 +1,5 @@
 import numpy as np
-from Sentiant.Model import Entity
+from Sentiant.Model.Entity import Entity
 
 
 class Layer(np.ndarray):
