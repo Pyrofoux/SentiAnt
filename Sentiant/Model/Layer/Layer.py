@@ -2,24 +2,20 @@ import numpy as np
 from Sentiant.Model.Entity import Entity
 
 
-class Layer(np.ndarray):
+class Layer():
 
     LastId = 0
 
-    view = None
-
-    def __new__(cls,  w, h, *arg, **kwargs):
-        return np.zeros((w, h)).view(cls)
-
     def __init__(self, w, h, map):
-        super().__init__()
         self.viewGrid = None
         self.Map = map
+
+        self.grid = [[None for j in range(w)] for i in range(h)]
 
     def __getitem__(self, item):
         if self.viewGrid is not None:
             self.viewGrid.Update(item[0], item[1])
-        return super().__getitem__(item)
+        return self.grid[item[0]][item[1]]
 
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
@@ -48,7 +44,7 @@ class Layer(np.ndarray):
         """ Get position of an entity by reference (ref)"""
         for i in range(len(self)):
             for j in range(len(self[0])):
-                if self[i][j] == ref:
+                if self[i, j]==ref:
                     return [i, j]
 
     def MoveEntity(self, ref, direction):
@@ -61,8 +57,8 @@ class Layer(np.ndarray):
 
     def __iter__(self):
         """Get an iterator of this layer"""
-        for i in range(self.width):
-            for j in range(self.height):
+        for i in range(len(self.grid)):
+            for j in range(len(self.grid[i])):
                 yield self[i, j]
 
     def ForEach(self, f):
@@ -71,10 +67,10 @@ class Layer(np.ndarray):
             f(e)
 
     def GetWidth(self):
-        return self.shape[0]
+        return len(self.grid)
 
     def GetHeight(self):
-        return self.shape[1]
+        return len(self.grid[0])
 
     @staticmethod
     def GetNewId():

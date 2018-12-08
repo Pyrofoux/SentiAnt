@@ -4,7 +4,8 @@ from .Layer.LayerSolid import LayerSolid
 from .Cfg import Cfg
 
 class Map:
-    def __init__(self):
+    def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
+
         self.width = Cfg.WIDTH
         self.height = Cfg.HEIGHT
 

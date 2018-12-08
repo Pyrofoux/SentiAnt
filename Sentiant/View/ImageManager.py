@@ -20,41 +20,49 @@ class ImageManager:
     COLOR_EMPTY = "White"
     COLOR_WALL  = "Black"
 
-    def LoadImages(dir="/assets/", rz=.5):
-        EMPTY           = PhotoImage(file=dir + "empty.png").subsample(rz)
+    @staticmethod
+    def LoadImages(imgSize, dir="assets/"):
+        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
 
-        ANT             = PhotoImage(file=dir + "ant.png").subsample(rz)
-        BREAD           = PhotoImage(file=dir + "bread.png").subsample(rz)
-        COOKIE          = PhotoImage(file=dir + "cookie.png").subsample(rz)
-        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").subsample(rz)
-        ROCK            = PhotoImage(file=dir + "rock.png").subsample(rz)
 
-        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").subsample(rz)
-        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").subsample(rz)
-        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").subsample(rz)
+        EMPTY           = PhotoImage(file=dir + "empty.png").zoom(imgSize[0], imgSize[1])
 
+        ANT             = PhotoImage(file=dir + "ant.png").zoom(imgSize[0], imgSize[1])
+        BREAD           = PhotoImage(file=dir + "bread.png").zoom(imgSize[0], imgSize[1])
+        COOKIE          = PhotoImage(file=dir + "cookie.png").zoom(imgSize[0], imgSize[1])
+        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").zoom(imgSize[0], imgSize[1])
+        ROCK            = PhotoImage(file=dir + "rock.png").zoom(imgSize[0], imgSize[1])
+
+        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").zoom(imgSize[0], imgSize[1])
+        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").zoom(imgSize[0], imgSize[1])
+        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").zoom(imgSize[0], imgSize[1])
+
+    @staticmethod
     def GetImage(tileSolid, tileFloor, tilePheromone):
-        img = ImageManager.EMPTY
+        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
+
+        img = EMPTY
+
         bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
               ImageManager.COLOR_EMPTY
 
         if isinstance(tileSolid, Ant):
             if isinstance(tilePheromone, Pheromone):
-                img = ImageManager.ANT_N_PHEROMONE
+                img = ANT_N_PHEROMONE
             elif isinstance(tileFloor, Bread):
-                img = ImageManager.ANT_N_BREAD
+                img = ANT_N_BREAD
             elif isinstance(tileFloor, Cookie):
-                img = ImageManager.ANT_N_COOKIE
+                img = ANT_N_COOKIE
             else:
-                img = ImageManager.ANT
+                img = ANT
         elif isinstance(tileSolid, Rock):
-            img = ImageManager.ROCK
+            img = ROCK
         else:
             if isinstance(tilePheromone, Pheromone):
-                img = ImageManager.PHEROMONE
+                img = PHEROMONE
             elif isinstance(tileFloor, Bread):
-                img = ImageManager.BREAD
+                img = BREAD
             elif isinstance(tileFloor, Cookie):
-                img = ImageManager.COOKIE
+                img = COOKIE
 
-        return (img, bgc)
+        return img, bgc

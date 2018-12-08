@@ -1,16 +1,17 @@
 from tkinter import Frame, Button, Tk
 
 from Sentiant.Model import Map, Ant, Rock, Pheromone, Dirt, Cookie, Bread
-from Sentiant.View import ImageManager
-from Sentiant import Cfg
+from Sentiant.View.ImageManager import ImageManager
+from Sentiant.Model import Cfg
 
 class Grid(Frame):
 
-    def __init__(self, map, boss):
+    def __init__(self, map, boss, size):
         self.buttons = []
 
         # init Frame
         Frame.__init__(self, boss)
+        self.config(width= size[0], height=[1])
 
         # property
         self.map = map
@@ -20,9 +21,11 @@ class Grid(Frame):
             self.buttons.append([])
 
             for j in range(map.layerFloor.GetHeight()):
-                b = Button(self, text="" + i + ", " + j)
+                b = Button(self, text="{0}, {1}".format(i, j))
                 b.grid(row=i, column=j)
                 self.buttons[-1].append(b)
+
+        ImageManager.LoadImages((5, 5))
 
     def Update(self, x, y):
         tileSolid = self.map.layerSolid[x, y]
@@ -40,11 +43,16 @@ class Grid(Frame):
 
 
 if __name__ == "__main__":
+    import os
+
+    print(os.getcwd())
     root = Tk()
 
-    map = Map()
+    map = Map(w=10, h=10)
 
-    grid = Grid(boss = root, map = map)
+    grid = Grid(boss = root, map = map, size = (50, 50))
     grid.pack()
+
+    grid.UpdateAll()
 
     root.mainloop()
