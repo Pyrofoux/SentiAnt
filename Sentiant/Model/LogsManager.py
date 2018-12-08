@@ -15,10 +15,10 @@ class LogsManager :
     BASE = os.path.join(scriptDirDir, "Logs" + os.pathsep)
     EXT = ".log"
 
-    generals = open(BASE + "generals"" + EXT, "w")
+    generals = open(BASE + "generals" + EXT, "w")
     users = open(BASE + "users" + EXT, "w")
 
-    def Stdout(type, msg, isUser=False):
+    def StdOut(type, msg, isUser=False):
         out = "[" + type + "] @" + time().strftime("%H:%M") + "> " + msg
         generals.write(out)
         if isUser:
@@ -44,7 +44,8 @@ class LogsManager :
                 + f"pour l'action <{action}> n'est pas une direction valide"
         Error(details, True)
 
-    def NotAPheromoneError(jsp, bla, bla, coucou):
-        details = 42
-
+    def NotAPheromoneError(jsp, antTeam, pheromone):
+        details = f"Une erreur a eu lieu car la phéromone <{pheromone}> " \
+                + f"qu'a essayé de poser la fourmi <{antId}> de l'équipe <{antTeam}> " \
+                + "n'est pas une valeur de phéromone valide"
         Error(details, True)
