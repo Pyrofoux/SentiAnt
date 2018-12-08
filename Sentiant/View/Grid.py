@@ -46,7 +46,7 @@ class Grid(Frame):
 if __name__ == "__main__":
     import os
     from Sentiant.Model import Point
-    from Sentiant.Model import Ant, Bread,Map
+    from Sentiant.Model import Ant, Bread,Map, Dirt
 
     root = Tk()
 
@@ -54,6 +54,10 @@ if __name__ == "__main__":
 
     map.layerSolid.Append(Ant(1, "test", "test"), Point(5, 5))
     map.layerFloor.Append(Bread(1), Point(5,5))
+
+    map.layerFloor.Append(Bread(1), Point(3,3))
+
+    map.layerSolid.Append(Dirt(1), Point(2,2))
 
     grid = Grid(boss = root, map = map, size = (500, 500))
     grid.pack()
