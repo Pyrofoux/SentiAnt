@@ -1,11 +1,12 @@
 from .SolidEntity import SolidEntity
 from .Cfg import Cfg
+from .LogsManager import LogsManager
 
 
 class Ant(SolidEntity):
 
     def __init__(self, id, name, team):
-        super().__init__(self, id)
+        super().__init__(id)
         self._name = name # id of the ant, string of 5 chars
         self._team = team
         self._holding = None # by default, the ant doesn't carry anything
@@ -17,22 +18,47 @@ class Ant(SolidEntity):
 
 
     def move(self, direction):
-        pass
 
-    def pickup(self,entity):
-        """Store the picked up entity in Ant.holding"""
-        if (self.holding is None):
-            self.holding = entity
+        direc = Cfg.parseDirection(direction)
+
+        if(direc != Cfg.NULL):
+            self._nextAction = Cfg.MOVE
+            self._nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"déplacement")
+
+
+    def attack(self, direction):
+
+        direc = Cfg.parseDirection(direction)
+
+        if (direc != Cfg.NULL):
+            self._nextAction = Cfg.ATTACK
+            self._nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"attaque")
+
+
+    def dig(self, direction):
+
+        direc = Cfg.parseDirection(direction)
+
+        if (direc != Cfg.NULL):
+            self._nextAction = Cfg.DIG
+            self._nextActionArg = direc
+            self.nextActionArg = direc
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser)
+
+    def pickup(self):
+        self._nextAction = Cfg.PICKUP
+
 
     def drop(self):
-        """Empty the Ant.holding if it isn't None """
-        if (self.holding is None)== False:
-            self.holding = None
-    
-
-
-
-
-
-
-
+        self._nextAction = Cfg.DROP

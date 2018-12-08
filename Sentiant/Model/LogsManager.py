@@ -1,13 +1,19 @@
 import os, datetime
 
+
 class LogsManager :
     def __init__(self):
-        self.scriptPath=os.path.abspath(__file__)
-        self.scriptDir=os.path.split(self.scriptPath)[0]
-        self.scriptDirDir=os.path.dirname(self.scriptDir)
-        self.relativePath="Logs\logs.txt"
-        self.finalPath=os.path.join(self.scriptDirDir,self.relativePath)
+        self.now = datetime.datetime.now()
+        pass
 
-     def notADirectionErrror(self,id,direction,action):
+    scriptPath=os.path.abspath(__file__)
+    scriptDir=os.path.split(scriptPath)[0]
+    scriptDirDir=os.path.dirname(scriptDir)
+    relativePath="Logs\logs.txt"
+    finalPath=os.path.join(scriptDirDir,relativePath)
+
+
+    def notADirectionErrror(self,antId,antTeam,direction,action):
          with open(self.finalPath,'w+') as logs:
-                logs.write((datetime.datetime.now().time) + " : erreur") #TO DO : compléter le message pour l'action, l'id etc +appeler la méthode dans Ant
+                logs.write((self.now.strftime("%Y-%m-%d %H:%M") +
+                f" Une erreur a eu lieu car la direction <{direction}> donnée à la fourmi <{antId}> de l'équipe <{antTeam}> pour l'action <{action}> n'est pas une direction valide"))
