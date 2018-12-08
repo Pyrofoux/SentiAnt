@@ -58,13 +58,13 @@ class Cfg:
 
         #TODO : Check coords valides ?
         if (direction == self.UP):
-            return [coords[0], coords[1] - 1]
+            return [coords.x, coords.y - 1]
         elif (direction == self.DOWN):
-            return [coords[0], coords[1] + 1]
+            return [coords.x, coords.y + 1]
         elif (direction == self.RIGHT):
-            return [coords[0] + 1, coords[1]]
+            return [coords.x + 1, coords.y]
         elif (direction == self.LEFT):
-            return [coords[0] - 1, coords[1]]
+            return [coords.x - 1, coords.y]
 
         #TODO : Log Error de direction
         return self.NULL
