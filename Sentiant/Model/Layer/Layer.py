@@ -31,7 +31,7 @@ class Layer(np.ndarray):
 
     def ToList(self):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it]  # This code is bad and you should feel bad
+        return [it for it in self if it]  # Hey now! I had other solutions some refused!
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""
