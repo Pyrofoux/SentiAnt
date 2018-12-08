@@ -16,7 +16,6 @@ class Ant(SolidEntity):
         self._nextAction = Cfg.Cfg.SLEEP # next Action, will be read by Turn Manager
         self._nextActionArg = Cfg.Cfg.NULL
 
-
     def move(self, direction):
 
         direc = Cfg.parseDirection(direction)
@@ -25,10 +24,8 @@ class Ant(SolidEntity):
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"déplacement")
-
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"déplacement")
 
     def attack(self, direction):
 
@@ -38,10 +35,8 @@ class Ant(SolidEntity):
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"attaque")
-
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"attaque")
 
     def dig(self, direction):
 
@@ -52,13 +47,25 @@ class Ant(SolidEntity):
             self._nextActionArg = direc
             self.nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser")
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"creuser")
 
     def pickup(self):
         self._nextAction = Cfg.PICKUP
-
+        self._nextActionArg=Cfg.NULL
 
     def drop(self):
         self._nextAction = Cfg.DROP
+        self._nextActionArg=Cfg.NULL
+
+    def sleep(self):
+        self._nextAction=Cfg.SLEEP
+        self._nextAction=Cfg.NULL
+
+    def phero(self):
+
+        self._nextAction=Cfg.PHERO
+        self._nextActionArg=Cfg.NULL
+        #TO DO : gérer les phéromones invalides et rajouter un argument
+
+
