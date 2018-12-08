@@ -9,10 +9,10 @@ class Cfg:
     WIDTH=42
     HEIGHT=42
 
-    UP = {x: 0, y: -1}
-    DOWN = {x: 0, y: 1}
-    RIGHT = {x: 1, y: 0}
-    LEFT = {x: -1, y:0}
+    UP = { 'x': 0, 'y': -1 }
+    DOWN = { 'x': 0, 'y': 1 }
+    RIGHT = { 'x': 1, 'y': 0 }
+    LEFT = { 'x': -1, 'y': 0 }
     NULL = "null"
 
     MOVE = "move"
@@ -38,7 +38,3 @@ class Cfg:
         elif direction == "left":
             return self.LEFT
         return self.NULL
-
-
-
-
