@@ -63,6 +63,9 @@ class Ant(SolidEntity):
         self._nextAction=Cfg.NULL
 
     def phero(self):
+
         self._nextAction=Cfg.PHERO
         self._nextActionArg=Cfg.NULL
+        #TO DO : gérer les phéromones invalides et rajouter un argument
+
 
