@@ -23,29 +23,40 @@ class Cfg:
     ATTACK = "attack"
     SLEEP  = "sleep"
     PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
-                     # (c pa possib' zi on peu pa marcher sur 1 rocher lolz)
+    ACTIONS = [MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO]
+
+    ANT = "ant"
+    QUEEN = "queen"
+    DIRT = "dirt"
+    ROCK = "rock"
+    BREAD = "bread"
+    COOKIE = "cookie"
+
+
 
 
     def parseDirection (self, direction):
         direction = direction.lower()
 
         if(direction == "up"):
-            return UP
+            return self.UP
         elif direction == "down":
-            return DOWN
+            return self.DOWN
         elif direction == "right":
-            return RIGHT
+            return self.RIGHT
         elif direction == "left":
-            return LEFT
+            return self.LEFT
 
-        # TODO : Log Error
-        return NULL
+        #TODO : Log Error
+
+        return self.NULL
+
 
 
     def addDirection(self, coords, direction):
         direction = self.parseDirection(direction)
 
-        if direction in [UP, DOWN, RIGTH, LEFT]:
+        if direction in [self.UP, self.DOWN, self.RIGTH, self.LEFT]:
             nextPos = coords + direction
 
             #TODO : Check coords valides!
@@ -54,3 +65,25 @@ class Cfg:
 
         #TODO : Log Error de direction
         return self.NULL
+
+    def EntityToType(self, ref):
+
+        if type(ref) is Ant:
+            return self.ANT
+        if type(ref) is QueenTile:
+            return self.QUEEN
+
+        if type(ref) is Dirt:
+            return self.DIRT
+        if type(ref) is Rock:
+            return self.ROCK
+
+
+        if type(ref) is Bread:
+            return self.BREAD
+        if type(ref) is Cookie:
+            return self.COOKIE
+
+        return self.NULL
+
+
