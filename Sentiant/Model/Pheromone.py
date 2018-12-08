@@ -1,4 +1,5 @@
 from .Entity import Entity
+from .Cfg import Cfg
 
 class Pheromone(Entity):
 

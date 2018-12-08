@@ -23,7 +23,7 @@ class Cfg:
     ATTACK = "attack"
     SLEEP  = "sleep"
     PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
-                     # (c pa possib' zi on peu pa marcher sur 1 rocher lolz)
+    ACTIONS = [MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO]
 
 
     def parseDirection (self, direction):
