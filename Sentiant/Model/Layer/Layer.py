@@ -1,5 +1,6 @@
 import numpy as np
 from Sentiant.Model.Entity import Entity
+from Sentiant.Model import Point
 
 
 class Layer():
@@ -50,7 +51,8 @@ class Layer():
         for i in range(len(self)):
             for j in range(len(self[0])):
                 if self[i, j]==ref:
-                    return [i, j]
+                    coord = Point(i, j)
+                    return coordS
 
     def MoveEntity(self, ref, direction):
         coord=self.Pop(ref)

@@ -5,7 +5,7 @@ class LayerPheromone(Layer):
     def Place(self, ref, phéro):
         """Ant(ref) place a pheromone"""
         coords = self.Map.LayerSolid.GetXYByRef(ref)
-        self[coords] = phéro
+        self[coords.x, coords.y] = phéro
 
         pass
 
@@ -17,7 +17,7 @@ class LayerPheromone(Layer):
 
         for phéro in self:
             coordsPhéro = self.GetXYByRef(phéro)
-            distance = abs(coords[0] - coordsPhéro[0]) + abs(coords[1] - coordsPhéro[1])
+            distance = abs(coords.x - coordsPhéro.x) + abs(coords.y - coordsPhéro.y)
             if (distance < phéro.hp):
                 phéros.append(phéro)
 
