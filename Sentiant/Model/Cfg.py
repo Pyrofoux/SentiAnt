@@ -1,3 +1,4 @@
+from Sentiant.Model import Ant, Bread, Cookie, Dirt, QueenTile, Rock
 from .Point import Point
 
 class Cfg:

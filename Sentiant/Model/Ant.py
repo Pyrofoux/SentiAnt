@@ -54,7 +54,7 @@ class Ant(SolidEntity):
         else :
             self._nextAction = Cfg.SLEEP
             self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser)
+            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser")
 
     def pickup(self):
         self._nextAction = Cfg.PICKUP
