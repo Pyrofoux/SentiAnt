@@ -1,7 +1,4 @@
 from .Cfg import Cfg
-from .Layer import LayerSolid
-from .Layer import LayerFloor
-from .Layer import LayerPheromone
 from .Ant import Ant
 
 class TurnManager:

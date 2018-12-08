@@ -1,10 +1,10 @@
 from tkinter import PhotoImage
-from Sentiant.Model import *
+from Sentiant.Model import Ant, Pheromone, Bread, Cookie, Rock, Dirt
 
 class ImageManager:
     def __init__(self):
         pass
-        
+
     EMPTY           = None
 
     ANT             = None
@@ -17,25 +17,25 @@ class ImageManager:
     ANT_N_COOKIE    = None
     ANT_N_PHEROMONE = None
 
-    COLOR_EMPTY = "White"
-    COLOR_WALL  = "Black"
+    COLOR_EMPTY = "NavajoWhite2"
+    COLOR_WALL  = "NavajoWhite4"
 
     @staticmethod
     def LoadImages(imgSize, dir="assets/"):
         global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
 
 
-        EMPTY           = PhotoImage(file=dir + "empty.png").zoom(imgSize[0], imgSize[1])
+        EMPTY           = PhotoImage(file=dir + "empty.png").subsample(300//imgSize[0])
 
-        ANT             = PhotoImage(file=dir + "ant.png").zoom(imgSize[0], imgSize[1])
-        BREAD           = PhotoImage(file=dir + "bread.png").zoom(imgSize[0], imgSize[1])
-        COOKIE          = PhotoImage(file=dir + "cookie.png").zoom(imgSize[0], imgSize[1])
-        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").zoom(imgSize[0], imgSize[1])
-        ROCK            = PhotoImage(file=dir + "rock.png").zoom(imgSize[0], imgSize[1])
+        ANT             = PhotoImage(file=dir + "ant.png").subsample(300//imgSize[0])
+        BREAD           = PhotoImage(file=dir + "bread.png").subsample(300//imgSize[0])
+        COOKIE          = PhotoImage(file=dir + "cookie.png").subsample(300//imgSize[0])
+        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").subsample(300//imgSize[0])
+        ROCK            = PhotoImage(file=dir + "rock.png").subsample(300//imgSize[0])
 
-        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").zoom(imgSize[0], imgSize[1])
-        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").zoom(imgSize[0], imgSize[1])
-        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").zoom(imgSize[0], imgSize[1])
+        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").subsample(300//imgSize[0])
+        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").subsample(300//imgSize[0])
+        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").subsample(300//imgSize[0])
 
     @staticmethod
     def GetImage(tileSolid, tileFloor, tilePheromone):
