@@ -1,5 +1,10 @@
-from Sentiant.Model import Ant, Bread, Cookie, Dirt, QueenTile, Rock
 from .Point import Point
+from .Ant import Ant
+from .QueenTile import QueenTile
+from .Dirt import Dirt
+from .Rock import Rock
+from .Bread import Bread
+from .Cookie import Cookie
 
 class Cfg:
     def __init__(self):
