@@ -11,7 +11,7 @@ class Grid(Frame):
 
         # init Frame
         Frame.__init__(self, boss)
-        self.config(width= size[0], height=[1])
+        self.config(width= size[0], height= size[1])
 
         # property
         self.map = map
@@ -24,10 +24,10 @@ class Grid(Frame):
 
             for j in range(map.layerFloor.GetHeight()):
                 b = Button(self)#, text="{0}, {1}".format(i, j))
+                b.config(width=size[0]//map.layerFloor.GetWidth(), height = size[1]//map.layerFloor.GetHeight())
                 b.grid(row=i, column=j)
-                b.config(width=size[0] // map.layerFloor.GetWidth(), height=size[1] // map.layerFloor.GetHeight())
                 self.buttons[-1].append(b)
-
+        self.UpdateAll()
 
 
     def Update(self, x, y):
@@ -40,8 +40,8 @@ class Grid(Frame):
         self.buttons[x][y].config(image=img, bg=bgc)
 
     def UpdateAll(self):
-        for i in range(Cfg.WIDTH):
-            for j in range(Cfg.HEIGHT):
+        for i in range(self.map.layerFloor.GetWidth()):
+            for j in range(self.map.layerFloor.GetHeight()):
                 self.Update(i, j)
 
 
@@ -53,7 +53,8 @@ if __name__ == "__main__":
 
     map = Map(w=10, h=10)
 
-    map.layerFloor.Append(Ant(1, "test", "test"), Point(5, 5))
+    map.layerSolid.Append(Ant(1, "test", "test"), Point(5, 5))
+    map.layerFloor.Append(Bread(1), Point(5,5))
 
     grid = Grid(boss = root, map = map, size = (500, 500))
     grid.pack()
