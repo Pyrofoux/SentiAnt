@@ -63,7 +63,7 @@ class Cfg:
     def addDirection(self, coords, direction):
         direction = self.parseDirection(direction)
 
-        if direction in [self.UP, self.DOWN, self.RIGTH, self.LEFT]:
+        if direction in [self.UP, self.DOWN, self.RIGHT, self.LEFT]:
             nextPos = coords + direction
 
             #TODO : Check coords valides!
