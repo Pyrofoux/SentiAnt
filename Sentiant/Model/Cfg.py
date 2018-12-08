@@ -37,7 +37,7 @@ class Cfg:
         elif direction == "left":
             return self.LEFT
 
-        # TODO : Log Error
+        #TODO : Log Error
 
         return self.NULL
 

@@ -17,3 +17,6 @@ class Map:
         self.layerFloor.setView(view)
         self.LayerPheromone.setView(view)
         self.LayerSolid.setView(view)
+
+    #TODO : Fonction GetFOV(self, ref)
+     """Ant(ref) FOV"""
