@@ -1,4 +1,4 @@
-from Sentiant.Model import Point
+from .Point import Point
 
 class Cfg:
     def __init__(self):

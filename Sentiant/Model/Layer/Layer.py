@@ -17,6 +17,11 @@ class Layer():
             self.viewGrid.Update(item[0], item[1])
         return self.grid[item[0]][item[1]]
 
+    def __setitem__(self, key, value):
+        if self.viewGrid is not None:
+            self.viewGrid.Update(key[0], key[1])
+        self.grid[key[0]][key[1]] = value
+
     def SetViewGrid(self, viewGrid):
         self.viewGrid = viewGrid
 

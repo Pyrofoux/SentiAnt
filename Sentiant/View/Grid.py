@@ -16,16 +16,19 @@ class Grid(Frame):
         # property
         self.map = map
 
+        ImageManager.LoadImages((size[0]//map.layerFloor.GetWidth(), size[1]//map.layerFloor.GetHeight()))
+
         # create buttons
         for i in range(map.layerFloor.GetWidth()):
             self.buttons.append([])
 
             for j in range(map.layerFloor.GetHeight()):
-                b = Button(self, text="{0}, {1}".format(i, j))
+                b = Button(self)#, text="{0}, {1}".format(i, j))
                 b.grid(row=i, column=j)
+                b.config(width=size[0] // map.layerFloor.GetWidth(), height=size[1] // map.layerFloor.GetHeight())
                 self.buttons[-1].append(b)
 
-        ImageManager.LoadImages((5, 5))
+
 
     def Update(self, x, y):
         tileSolid = self.map.layerSolid[x, y]
@@ -44,15 +47,15 @@ class Grid(Frame):
 
 if __name__ == "__main__":
     import os
+    from Sentiant.Model import Point
 
-    print(os.getcwd())
     root = Tk()
 
     map = Map(w=10, h=10)
 
-    grid = Grid(boss = root, map = map, size = (50, 50))
-    grid.pack()
+    map.layerFloor.Append(Ant(1, "test", "test"), Point(5, 5))
 
-    grid.UpdateAll()
+    grid = Grid(boss = root, map = map, size = (500, 500))
+    grid.pack()
 
     root.mainloop()

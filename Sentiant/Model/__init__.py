@@ -13,3 +13,4 @@ from Sentiant.Model.Bread import Bread
 from Sentiant.Model.SolidEntity import SolidEntity
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Ant import Ant
+from Sentiant.Model.Point import Point
