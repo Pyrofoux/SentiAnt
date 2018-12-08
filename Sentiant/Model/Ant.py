@@ -25,7 +25,7 @@ class Ant(SolidEntity):
             self._nextActionArg = direc
         else :
             self.sleep()
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"déplacement")
+            LogsManager.notADirectionError(self._name,self._team,direc,"déplacement")
 
     def attack(self, direction):
 
@@ -52,11 +52,11 @@ class Ant(SolidEntity):
 
     def pickup(self):
         self._nextAction = Cfg.PICKUP
-        self._nextActionArg=NULL
+        self._nextActionArg=Cfg.NULL
 
     def drop(self):
         self._nextAction = Cfg.DROP
-        self._nextActionArg=NULL
+        self._nextActionArg=Cfg.NULL
 
     def sleep(self):
         self._nextAction=Cfg.SLEEP
@@ -64,4 +64,4 @@ class Ant(SolidEntity):
 
     def phero(self):
         self._nextAction=Cfg.PHERO
-        self._nextActionArg=NULL
+        self._nextActionArg=Cfg.NULL

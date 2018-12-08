@@ -5,5 +5,5 @@ class Dirt(FloorEntity):
     removable = True
 
     def __init__(self):
-        super().__init__(self, id)
+        super().__init__(id)
 
