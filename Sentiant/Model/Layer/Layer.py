@@ -1,4 +1,5 @@
 import numpy as np
+from Sentiant.Model import Point
 from Sentiant.Model.Entity import Entity
 
 
@@ -16,9 +17,9 @@ class Layer(np.ndarray):
         self.viewGrid = None
         self.Map = map
 
-    def __getitem__(self, item):
+    def __getitem__(self, point):
         if self.viewGrid is not None:
-            self.viewGrid.Update(item[0], item[1])
+            self.viewGrid.Update(point.x, point.y)
         return super().__getitem__(item)
 
     def SetViewGrid(self, viewGrid):
@@ -48,12 +49,12 @@ class Layer(np.ndarray):
         """ Get position of an entity by reference (ref)"""
         for i in range(len(self)):
             for j in range(len(self[0])):
-                if self[i][j]==ref:
-                    return [i, j]
+                if self[i][j] == ref:
+                    return Point(i, j)
 
     def MoveEntity(self, ref, direction):
         coord=self.Pop(ref)
-        self.Append(ref,coord[0]+direction['x'],coord[1]+direction['y'])
+        self.Append(ref, coord[0] + direction['x'], coord[1] + direction['y'])
 
     def Count(self):
         """Get the number of entity on layer"""
