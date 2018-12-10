@@ -1,5 +1,8 @@
 from .Cfg import Cfg
 from .Ant import Ant
+from .Dirt import Dirt
+from .Bread import Bread
+from .Cookie import Cookie
 
 class TurnManager:
 
@@ -36,7 +39,14 @@ class TurnManager:
             if ant._nextAction in Cfg.ACTIONS  :
                 sorted[ant._nextAction].append(ant)
 
+        #Checker l'ordre des actions depuis le doc
         self.execSleep(sorted[Cfg.Cfg.SLEEP])
+        self.execPhero(sorted[Cfg.Cfg.PHERO])
+        self.execAttack(sorted[Cfg.Cfg.ATTACK])
+        self.execMove(sorted[Cfg.Cfg.MOVE])
+        self.execDig(sorted[Cfg.Cfg.DIG])
+        self.execPICKUP(sorted[Cfg.Cfg.PICKUP])
+        self.execDROP(sorted[Cfg.Cfg.DROP])
 
 
 
@@ -44,7 +54,10 @@ class TurnManager:
         pass
 
     def execPhero(self,ants):
-        pass
+
+        for ant in ants:
+            self.layerPheromone.Place(ant, ant._nextActionArg)
+
 
     def execAttack(self,ants):
         pass
@@ -59,17 +72,45 @@ class TurnManager:
             posAnt = self.layerSolid.GetXYByRef(ant)
             dir = ant._nextActionArg
             posCible = posAnt + dir
+            cible = self.layerSolid[posCible.x, posCible.y]
 
-           # if  self.layerSolid[posCible.x, posCible.y] instanceof Dirt
+            if  cible is Dirt:
+                self.layerSolid.Remove(cible)
+
+    def execPickup(self, ants):
+
+        for ant in ants:
+
+            posAnt = self.layerSolid.GetXYByRef(ant)
+            cible = self.layerFloor[posAnt.x, posAnt.y]
 
 
-        pass
+            if ant._holding is None :
 
-    def execPickup(self):
-        pass
+                if  cible is  Bread :
+                    self.layerFloor.Remove(cible)
+                    ant._holding = Bread(cible.id)
 
-    def execDrop(self):
-        pass
+                elif cible is  Cookie :
+                    self.layerFloor.Remove(cible)
+                    ant._holding = Cookie(cible.id)
+
+
+    def execDrop(self, ants):
+
+        for ant in ants:
+            posAnt = self.layerSolid.GetXYByRef(ant)
+
+
+            if ant._holding is Bread :
+
+                self.layerFloor.Append(Bread(ant._holding.id))
+                ant._holding = None
+
+            if ant._holding is Cookie :
+
+                self.layerFloor.Append(Cookie(ant._holding.id))
+                ant._holding = None
 
 
 if __name__ == '__main__':
