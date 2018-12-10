@@ -15,7 +15,7 @@ class LogsManager :
     BASE = os.path.join(scriptDirDir, "Logs" + os.pathsep)
     EXT = ".log"
 
-    generals = open(BASE + "generals"" + EXT, "w")
+    generals = open(BASE + "generals" + EXT, "w")
     users = open(BASE + "users" + EXT, "w")
 
     def Stdout(type, msg, isUser=False):
@@ -40,12 +40,13 @@ class LogsManager :
 
 
     def NotADirectionError(antId, antTeam, direction, action):
-        details = f"Une erreur a eu lieu car la direction <{direction}> " \
-                + f"donnée à la fourmi <{antId}> de l'équipe <{antTeam}> " \
-                + f"pour l'action <{action}> n'est pas une direction valide"
+        details = ("Une erreur a eu lieu car la direction {direction} " \
+                + "donnée à la fourmi {antId} de l'équipe {antTeam} " \
+                + "pour l'action {action} n'est pas une direction valide") \
+.format(antId=antId, antTeam=antTeam, direction=direction, action=action)
         Error(details, True)
 
-    def NotAPheromoneError(jsp, bla, bla, coucou):
+    def NotAPheromoneError(jsp, bla, coucou):
         details = 42
 
         Error(details, True)
