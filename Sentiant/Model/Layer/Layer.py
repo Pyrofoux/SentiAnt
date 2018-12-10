@@ -6,6 +6,10 @@ class Layer():
     LastId = 0
 
     def __init__(self, w, h, map = None):
+        """Constructor
+        w : Width
+        h : Height
+        map : ref of map"""
         self.viewGrid = None
         self.Map = map
 
@@ -55,6 +59,7 @@ class Layer():
         return ref
 
     def Contain(self, ref):
+        """return true if this layer contains ref"""
         c = 0
         while (c < len(self.ToList()) and self.ToList()[c] != ref) or c == len(self.ToList()):
             c += 1

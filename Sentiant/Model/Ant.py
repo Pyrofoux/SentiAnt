@@ -1,6 +1,6 @@
-from .SolidEntity import SolidEntity
+from Sentiant.Model.SolidEntity import SolidEntity
 from Sentiant.Model import Cfg
-from .LogsManager import LogsManager
+from Sentiant.Model.LogsManager import LogsManager
 
 
 class Ant(SolidEntity):
@@ -15,6 +15,8 @@ class Ant(SolidEntity):
 
         self._nextAction = Cfg.Cfg.SLEEP # next Action, will be read by Turn Manager
         self._nextActionArg = Cfg.Cfg.NULL
+
+
 
     def move(self, direction):
 
@@ -67,5 +69,8 @@ class Ant(SolidEntity):
         self._nextAction=Cfg.PHERO
         self._nextActionArg=Cfg.NULL
         #TO DO : gérer les phéromones invalides et rajouter un argument
+
+if __name__ == '__main__':
+    ant = Ant(0, "test", "test")
 
 

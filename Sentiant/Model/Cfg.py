@@ -40,30 +40,30 @@ class Cfg:
 
 
 
-
-    def parseDirection (self, direction):
+    @staticmethod
+    def parseDirection (direction):
         global UP, DOWN, RIGHT, LEFT, NULL
         direction = direction.lower()
 
         if(direction == "up"):
-            return self.UP
+            return Cfg.UP
         elif direction == "down":
-            return self.DOWN
+            return Cfg.DOWN
         elif direction == "right":
-            return self.RIGHT
+            return Cfg.RIGHT
         elif direction == "left":
-            return self.LEFT
+            return Cfg.LEFT
 
         #TODO : Log Error
 
-        return self.NULL
+        return Cfg.NULL
 
 
+    @staticmethod
+    def addDirection(coords, direction):
+        direction = Cfg.parseDirection(direction)
 
-    def addDirection(self, coords, direction):
-        direction = self.parseDirection(direction)
-
-        if direction in [self.UP, self.DOWN, self.RIGHT, self.LEFT]:
+        if direction in [Cfg.UP, Cfg.DOWN, Cfg.RIGHT, Cfg.LEFT]:
             nextPos = coords + direction
 
             #TODO : Check coords valides!
@@ -71,19 +71,20 @@ class Cfg:
             return nextPos
 
         #TODO : Log Error de direction
-        return self.NULL
+        return Cfg.NULL
 
-    def EntityToType(self, ref):
+    @staticmethod
+    def EntityToType(ref):
 
         if type(ref) is Ant:
-            return self.ANT
+            return Cfg.ANT
         if type(ref) is QueenTile:
-            return self.QUEEN
+            return Cfg.QUEEN
 
         if type(ref) is Dirt:
-            return self.DIRT
+            return Cfg.DIRT
         if type(ref) is Rock:
-            return self.ROCK
+            return Cfg.ROCK
 
 
         if type(ref) is Bread:

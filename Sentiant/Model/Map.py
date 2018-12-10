@@ -52,5 +52,5 @@ class Map:
 
         elif y != 0 and LayerSolid[x, y -1 ] is None :
 
-        return False
+            return False
 

@@ -1,7 +1,6 @@
 from random import Random
-
-from Sentiant.Model.Layer import *
 from Sentiant.Model.Cfg import Cfg
+from Sentiant.Model import Map, Rock, Dirt,Bread, QueenTile, Cookie, LayerSolid
 
 class MapGenerator:
     def __init__(self, map=None, width=Cfg.WIDTH, height=Cfg.HEIGHT, \
@@ -18,7 +17,7 @@ class MapGenerator:
         """Register a queen to account for in generation"""
         self.queensPos.append(queenPos)
 
-    def ShouldBeRockAt(i, j):
+    def ShouldBeRockAt(self, i, j):
         return self.rng.random() < self.rockRatio
 
     def Generate(self):
@@ -42,7 +41,7 @@ class MapGenerator:
             # Place starter bread pieces.
             around = [ (-1, +0), (-1, +1), (+0, -1), (+0, +2),
                         (+1, -1), (+1, +2), (+2, +0), (+2, +1) ]
-            for i, j around:
+            for i, j in around:
                 self.map.layerFloor[pos.x + i, pos.y + j] = Bread(-1)
 
             # Set-up queen tiles in a 2 by 2.
@@ -51,7 +50,7 @@ class MapGenerator:
                     self.map.layerSolid[pos.x + i, pos.y + j] = QueenTile(-1)
 
         # Drop every left-overs bread pieces (deducts starter ones).
-        for k in range(self.breadAmount - len(queenPos) * 8):
+        for k in range(self.breadAmount - len(self.queenPos) * 8):
             i, j = self.rng.randrange(w), self.rng.randrange(h)
             while self.map.layerFloor[i, j]:
                 i, j = self.rng.randrange(w), self.rng.randrange(h)
@@ -72,11 +71,11 @@ class MapGenerator:
 
         for i in range(w):
             for j in range(h):
-                fileSolid.write('r' if isinstance(layerSolid[i, j], Rock) \
-                           else 'd' if isinstance(layerSolid[i, j], Dirt) \
+                fileSolid.write('r' if isinstance(self.map.layerSolid[i, j], Rock) \
+                           else 'd' if isinstance(self.map.layerSolid[i, j], Dirt) \
                            else ' ')
-                fileFloor.write('b' if isinstance(layerFloor[i, j], Bread) \
-                           else 'c' if isinstance(layerFloor[i, j], Cookie) \
+                fileFloor.write('b' if isinstance(self.map.layerFloor[i, j], Bread) \
+                           else 'c' if isinstance(self.map.layerFloor[i, j], Cookie) \
                            else ' ')
             fileSolid.write('\n')
             fileFloor.write('\n')
