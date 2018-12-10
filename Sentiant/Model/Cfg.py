@@ -1,5 +1,10 @@
-from Sentiant.Model import Ant, Bread, Cookie, Dirt, QueenTile, Rock
 from .Point import Point
+from .Ant import Ant
+from .QueenTile import QueenTile
+from .Dirt import Dirt
+from .Rock import Rock
+from .Bread import Bread
+from .Cookie import Cookie
 
 class Cfg:
     def __init__(self):
@@ -58,7 +63,7 @@ class Cfg:
     def addDirection(self, coords, direction):
         direction = self.parseDirection(direction)
 
-        if direction in [self.UP, self.DOWN, self.RIGTH, self.LEFT]:
+        if direction in [self.UP, self.DOWN, self.RIGHT, self.LEFT]:
             nextPos = coords + direction
 
             #TODO : Check coords valides!

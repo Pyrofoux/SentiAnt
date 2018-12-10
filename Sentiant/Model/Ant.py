@@ -1,5 +1,5 @@
 from .SolidEntity import SolidEntity
-from .Cfg import Cfg
+from Sentiant.Model import Cfg
 from .LogsManager import LogsManager
 
 
@@ -10,12 +10,11 @@ class Ant(SolidEntity):
         self._name = name # id of the ant, string of 5 chars
         self._team = team
         self._holding = None # by default, the ant doesn't carry anything
-        self._HP = Cfg.HPMAX  # number of hits the ant can take before dying
-        self._FoV = Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
+        self._HP = Cfg.Cfg.HPMAX  # number of hits the ant can take before dying
+        self._FoV = Cfg.Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
 
-        self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
-        self._nextActionArg = Cfg.NULL
-
+        self._nextAction = Cfg.Cfg.SLEEP # next Action, will be read by Turn Manager
+        self._nextActionArg = Cfg.Cfg.NULL
 
     def move(self, direction):
 
@@ -25,10 +24,8 @@ class Ant(SolidEntity):
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"déplacement")
-
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"déplacement")
 
     def attack(self, direction):
 
@@ -38,10 +35,8 @@ class Ant(SolidEntity):
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"attaque")
-
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"attaque")
 
     def dig(self, direction):
 
@@ -52,13 +47,25 @@ class Ant(SolidEntity):
             self._nextActionArg = direc
             self.nextActionArg = direc
         else :
-            self._nextAction = Cfg.SLEEP
-            self._nextActionArg = Cfg.NULL
-            LogsManager.notADirectionErrror(self.id,self.team,direc,"creuser")
+            self.sleep()
+            LogsManager.NotADirectionError(self._name,self._team,direc,"creuser")
 
     def pickup(self):
         self._nextAction = Cfg.PICKUP
-
+        self._nextActionArg=Cfg.NULL
 
     def drop(self):
         self._nextAction = Cfg.DROP
+        self._nextActionArg=Cfg.NULL
+
+    def sleep(self):
+        self._nextAction=Cfg.SLEEP
+        self._nextAction=Cfg.NULL
+
+    def phero(self):
+
+        self._nextAction=Cfg.PHERO
+        self._nextActionArg=Cfg.NULL
+        #TO DO : gérer les phéromones invalides et rajouter un argument
+
+

@@ -1,5 +1,5 @@
 from tkinter import PhotoImage
-from Sentiant.Model import *
+from Sentiant.Model import Ant, Pheromone, Bread, Cookie, Rock, Dirt
 
 class ImageManager:
     def __init__(self):
