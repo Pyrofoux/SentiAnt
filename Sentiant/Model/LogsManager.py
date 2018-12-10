@@ -4,9 +4,11 @@ import os, datetime
 class LogsManager :
     def __init__(self):
         pass
-
+    @staticmethod
     def time():
         return datetime.datetime.now()
+
+    userFailure = True
 
     scriptPath = os.path.abspath(__file__)
     scriptDir = os.path.split(scriptPath)[0]
