@@ -2,10 +2,10 @@ from .Layer import Layer
 from Sentiant.Model.Pheromone import *
 
 class LayerPheromone(Layer):
-    def Place(self, ref, phéro):
+    def Place(self, ref, scent):
         """Ant(ref) place a pheromone"""
         coords = self.Map.LayerSolid.GetXYByRef(ref)
-        self[coords.x, coords.y] = phéro
+        self[coords.x, coords.y] = Pheromone(scent, coords)
 
         pass
 
@@ -16,7 +16,7 @@ class LayerPheromone(Layer):
         phéros = []
 
         for phéro in self:
-            coordsPhéro = self.GetXYByRef(phéro)
+            coordsPhéro = phéro.baseLocation
             distance = abs(coords.x - coordsPhéro.x) + abs(coords.y - coordsPhéro.y)
             if (distance < phéro.hp):
                 phéros.append(phéro)

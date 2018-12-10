@@ -4,3 +4,6 @@ class Cookie(FloorEntity):
 
     def __init__(self, id):
         super().__init__(id)
+
+    def __str__(self):
+        return "Cookie #"+id

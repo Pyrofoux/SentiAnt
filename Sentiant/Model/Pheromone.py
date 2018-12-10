@@ -3,9 +3,12 @@ from .Cfg import Cfg
 
 class Pheromone(Entity):
 
-    def __init__(self, id, baseLocation):
+    def __init__(self, scent, baseLocation):
         self.hpRadius = Cfg.HPRADIUS
-        self.id = id
-        (self.baseLocationX, self.baseLocationY) = baseLocation
+        self.scent = scent
+        self.baseLocation = baseLocation
 
         pass
+
+    def __str__(self):
+        return "Phero ["+self.scent+"] ("+self.baseLocation+")"
