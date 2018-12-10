@@ -3,6 +3,7 @@ from .Ant import Ant
 from .Dirt import Dirt
 from .Bread import Bread
 from .Cookie import Cookie
+from .Pheromone import Pheromone
 
 class TurnManager:
 
