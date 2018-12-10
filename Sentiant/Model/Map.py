@@ -47,10 +47,10 @@ class Map:
 
         if x == 0 and y == 0:
             return True
-        else if x != 0 and LayerSolid[x -1, y] is None :
+        elif x != 0 and LayerSolid[x -1, y] is None :
             self.IsDestinationVisible(x-1, y)
-        else if y!= 0 and LayerSolid[x, y -1 ] is None :
+        elif y!= 0 and LayerSolid[x, y -1 ] is None :
             self.IsDestinationVisible(x, y - 1)
 
-    return False
+        return False
 

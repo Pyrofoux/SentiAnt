@@ -44,7 +44,6 @@ class Grid(Frame):
 
 
 if __name__ == "__main__":
-    import os
     from Sentiant.Model import Point
     from Sentiant.Model import Ant, Bread,Map, Dirt
 
