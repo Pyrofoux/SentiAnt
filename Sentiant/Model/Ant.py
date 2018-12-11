@@ -20,7 +20,7 @@ class Ant(SolidEntity):
             .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)
 
     def Move(self, direction):
-        """Set Action of ant to move
+        """ Set Action of ant to move
         direction : 'up', 'left', ..."""
         direc = Cfg.Cfg.ParseDirection(direction)
 
