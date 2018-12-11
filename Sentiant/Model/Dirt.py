@@ -1,4 +1,4 @@
-from .FloorEntity import FloorEntity
+from Sentiant.Model.FloorEntity import FloorEntity
 
 class Dirt(FloorEntity):
 
@@ -8,4 +8,4 @@ class Dirt(FloorEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Dirt #"+id
+        return "Dirt #" + str(id)

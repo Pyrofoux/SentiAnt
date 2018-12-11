@@ -1,10 +1,3 @@
-from .Cfg import Cfg
-from .Ant import Ant
-from .Dirt import Dirt
-from .Bread import Bread
-from .Cookie import Cookie
-from .Pheromone import Pheromone
-
 class TurnManager:
 
     currentTurn = 0
@@ -20,7 +13,7 @@ class TurnManager:
         self.layerPheromone = _layerPheromone
 
 
-    def nextTurn(self, ):
+    def NextTurn(self):
         self.currentTurn += 1
 
         allAnts = self.layerSolid.ToList(Ant)
@@ -41,32 +34,32 @@ class TurnManager:
                 sorted[ant._nextAction].append(ant)
 
         #Checker l'ordre des actions depuis le doc
-        self.execSleep(sorted[Cfg.Cfg.SLEEP])
-        self.execPhero(sorted[Cfg.Cfg.PHERO])
-        self.execAttack(sorted[Cfg.Cfg.ATTACK])
-        self.execMove(sorted[Cfg.Cfg.MOVE])
-        self.execDig(sorted[Cfg.Cfg.DIG])
-        self.execPICKUP(sorted[Cfg.Cfg.PICKUP])
-        self.execDROP(sorted[Cfg.Cfg.DROP])
+        self.ExecSleep(sorted[Cfg.Cfg.SLEEP])
+        self.ExecPhero(sorted[Cfg.Cfg.PHERO])
+        self.ExecAttack(sorted[Cfg.Cfg.ATTACK])
+        self.ExecMove(sorted[Cfg.Cfg.MOVE])
+        self.ExecDig(sorted[Cfg.Cfg.DIG])
+        self.ExecPICKUP(sorted[Cfg.Cfg.PICKUP])
+        self.ExecDROP(sorted[Cfg.Cfg.DROP])
 
 
 
-    def execSleep(self, ants):
+    def ExecSleep(self, ants):
         pass
 
-    def execPhero(self,ants):
+    def ExecPhero(self,ants):
 
         for ant in ants:
             self.layerPheromone.Place(ant, ant._nextActionArg)
 
 
-    def execAttack(self,ants):
+    def ExecAttack(self,ants):
         pass
 
-    def execMove(self,ants):
+    def ExecMove(self,ants):
         pass
 
-    def execDig(self,ants):
+    def ExecDig(self,ants):
 
         for ant in ants:
 
@@ -78,7 +71,7 @@ class TurnManager:
             if  cible is Dirt:
                 self.layerSolid.Remove(cible)
 
-    def execPickup(self, ants):
+    def ExecPickup(self, ants):
 
         for ant in ants:
 
@@ -97,7 +90,7 @@ class TurnManager:
                     ant._holding = Cookie(cible.id)
 
 
-    def execDrop(self, ants):
+    def ExecDrop(self, ants):
 
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
@@ -113,6 +106,12 @@ class TurnManager:
                 self.layerFloor.Append(Cookie(ant._holding.id))
                 ant._holding = None
 
+from Sentiant.Model.Cfg import Cfg
+from Sentiant.Model.Ant import Ant
+from Sentiant.Model.Dirt import Dirt
+from Sentiant.Model.Bread import Bread
+from Sentiant.Model.Cookie import Cookie
+from Sentiant.Model.Pheromone import Pheromone
 
 if __name__ == '__main__':
-    "sup"
+    print("sup")

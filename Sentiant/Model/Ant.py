@@ -1,7 +1,4 @@
 from Sentiant.Model.SolidEntity import SolidEntity
-from Sentiant.Model import Cfg
-from Sentiant.Model.LogsManager import LogsManager
-
 
 class Ant(SolidEntity):
 
@@ -19,19 +16,20 @@ class Ant(SolidEntity):
     def __str__(self):
         return "Name:{0}\nTeam:{1}\nHolding:{2}\nHp:{3}\nFov:{4}\nNextAction:{5}\nNextActionArg:{6}"\
             .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)
-    def move(self, direction):
+
+    def Move(self, direction):
         """Set Action of ant to move
         direction : 'up', 'left', ..."""
-        direc = Cfg.parseDirection(direction)
+        direc = Cfg.ParseDirection(direction)
 
         if(direc != Cfg.NULL):
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"déplacement")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "déplacement")
 
-    def attack(self, direction):
+    def Attack(self, direction):
 
         direc = Cfg.parseDirection(direction)
 
@@ -39,10 +37,10 @@ class Ant(SolidEntity):
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"attaque")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "attaque")
 
-    def dig(self, direction):
+    def Dig(self, direction):
 
         direc = Cfg.parseDirection(direction)
 
@@ -51,37 +49,36 @@ class Ant(SolidEntity):
             self._nextActionArg = direc
             self.nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"creuser")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "creuser")
 
-    def pickup(self):
+    def Pickup(self):
         self._nextAction = Cfg.PICKUP
         self._nextActionArg=Cfg.NULL
 
-    def drop(self):
+    def Drop(self):
         self._nextAction = Cfg.DROP
         self._nextActionArg=Cfg.NULL
 
-    def sleep(self):
+    def Sleep(self):
         self._nextAction=Cfg.SLEEP
         self._nextAction=Cfg.NULL
 
-    def phero(self):
-
+    def Phero(self):
         self._nextAction=Cfg.PHERO
         self._nextActionArg=Cfg.NULL
         #TO DO : gérer les phéromones invalides et rajouter un argument
+
+from Sentiant.Model.Cfg import Cfg
+from Sentiant.Model.LogsManager import LogsManager
 
 if __name__ == '__main__':
     ant = Ant(0, "test", "test")
 
     print(ant)
 
-    ant.move("up")
+    ant.Move("up")
 
     print(ant)
 
-    ant.move("")
-
-
-
+    ant.Move("")

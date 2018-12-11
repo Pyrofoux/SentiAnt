@@ -1,4 +1,4 @@
-from .FloorEntity import FloorEntity
+from Sentiant.Model.FloorEntity import FloorEntity
 
 class Cookie(FloorEntity):
 
@@ -6,4 +6,4 @@ class Cookie(FloorEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Cookie #"+id
+        return "Cookie #" + str(id)

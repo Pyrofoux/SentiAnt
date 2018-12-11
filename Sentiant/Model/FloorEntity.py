@@ -1,7 +1,7 @@
-from .Entity import Entity
+from Sentiant.Model.Entity import Entity
 
 class FloorEntity(Entity) :
-    
+
     def __init__(self, id):
         super().__init__(id)
         self.id = id

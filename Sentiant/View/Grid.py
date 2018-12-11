@@ -1,4 +1,4 @@
-from tkinter import Frame, Button, Tk
+from tkinter import Frame, Label, Tk
 
 from Sentiant.View.ImageManager import ImageManager
 
@@ -9,20 +9,22 @@ class Grid(Frame):
 
         # init Frame
         Frame.__init__(self, boss)
-        self.config(width= size[0], height= size[1])
+        self.config(width=size[0], height=size[1])
 
         # property
         self.map = map
 
-        ImageManager.LoadImages((size[0]//map.layerFloor.GetWidth(), size[1]//map.layerFloor.GetHeight()))
+        w = size[0] // map.layerFloor.GetWidth()
+        h = size[1] // map.layerFloor.GetHeight()
+
+        ImageManager.LoadImages((w, h))
 
         # create buttons
         for i in range(map.layerFloor.GetWidth()):
             self.buttons.append([])
 
             for j in range(map.layerFloor.GetHeight()):
-                b = Button(self)#, text="{0}, {1}".format(i, j))
-                b.config(width=size[0]//map.layerFloor.GetWidth(), height = size[1]//map.layerFloor.GetHeight())
+                b = Label(self, width=w, height=h, image=ImageManager.EMPTY)
                 b.grid(row=i, column=j)
                 self.buttons[-1].append(b)
         self.UpdateAll()
@@ -33,7 +35,7 @@ class Grid(Frame):
         tilePheromone = self.map.layerPheromone[x, y]
         tileFloor = self.map.layerFloor[x, y]
 
-        (img, bgc) = ImageManager.GetImage(tileSolid, tileFloor, tilePheromone)
+        img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone)
 
         self.buttons[x][y].config(image=img, bg=bgc)
 
@@ -44,21 +46,22 @@ class Grid(Frame):
 
 
 if __name__ == "__main__":
-    from Sentiant.Model import Point
-    from Sentiant.Model import Ant, Bread,Map, Dirt
+    from Sentiant.Model.Point import Point
+    from Sentiant.Model.Ant import Ant
+    from Sentiant.Model.QueenTile import QueenTile
+    from Sentiant.Model.MapManager import MapManager
 
     root = Tk()
 
-    map = Map(w=100, h=100)
+    mapGen = MapManager(width=16, height=16)
+    mapGen.RegisterQueen(QueenTile(1, "team"), Point(4, 4))
 
-    map.layerSolid.Append(Ant(1, "test", "test"), Point(5, 5))
-    map.layerFloor.Append(Bread(1), Point(5,5))
+    map = mapGen.Generate()
 
-    map.layerFloor.Append(Bread(1), Point(3,3))
+    map.layerSolid.Append(Ant(1, "name", "team"), Point(6, 7))
+    map.layerSolid.Append(Ant(1, "name", "team"), Point(5, 3))
 
-    map.layerSolid.Append(Dirt(1), Point(2,2))
-
-    grid = Grid(boss = root, map = map, size = (500, 500))
+    grid = Grid(boss=root, map=map, size=(480, 480))
     grid.pack()
 
     root.mainloop()

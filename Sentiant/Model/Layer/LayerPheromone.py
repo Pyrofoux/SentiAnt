@@ -1,5 +1,4 @@
-from .Layer import Layer
-from Sentiant.Model.Pheromone import *
+from Sentiant.Model.Layer.Layer import Layer
 
 class LayerPheromone(Layer):
     def Place(self, ref, scent):
@@ -16,9 +15,12 @@ class LayerPheromone(Layer):
         phéros = []
 
         for phéro in self:
+            # Bien les noms de var avec des accents...
             coordsPhéro = phéro.baseLocation
             distance = abs(coords.x - coordsPhéro.x) + abs(coords.y - coordsPhéro.y)
             if (distance < phéro.hp):
                 phéros.append(phéro)
 
         return phéros
+
+from Sentiant.Model.Pheromone import Pheromone

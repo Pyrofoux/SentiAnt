@@ -1,5 +1,4 @@
 from tkinter import PhotoImage
-from Sentiant.Model import Ant, Pheromone, Bread, Cookie, Rock, Dirt
 
 class ImageManager:
     def __init__(self):
@@ -21,30 +20,28 @@ class ImageManager:
     COLOR_WALL  = "NavajoWhite4"
 
     @staticmethod
-    def LoadImages(imgSize, dir="assets/"):
-        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
+    def LoadImages(imgSize, dr="Sentiant/View/assets/"):
+        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, \
+               ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
+        r = 300 // imgSize[0]
 
+        EMPTY           = PhotoImage(file=dr+"empty.png").subsample(r)
 
-        EMPTY           = PhotoImage(file=dir + "empty.png").subsample(300//imgSize[0])
+        ANT             = PhotoImage(file=dr+"ant.png").subsample(r)
+        BREAD           = PhotoImage(file=dr+"bread.png").subsample(r)
+        COOKIE          = PhotoImage(file=dr+"cookie.png").subsample(r)
+        PHEROMONE       = PhotoImage(file=dr+"pheromone.png").subsample(r)
+        ROCK            = PhotoImage(file=dr+"rock.png").subsample(r)
 
-        ANT             = PhotoImage(file=dir + "ant.png").subsample(300//imgSize[0])
-        BREAD           = PhotoImage(file=dir + "bread.png").subsample(300//imgSize[0])
-        COOKIE          = PhotoImage(file=dir + "cookie.png").subsample(300//imgSize[0])
-        PHEROMONE       = PhotoImage(file=dir + "pheromone.png").subsample(300//imgSize[0])
-        ROCK            = PhotoImage(file=dir + "rock.png").subsample(300//imgSize[0])
-
-        ANT_N_BREAD     = PhotoImage(file=dir + "ant_n_bread.png").subsample(300//imgSize[0])
-        ANT_N_COOKIE    = PhotoImage(file=dir + "ant_n_cookie.png").subsample(300//imgSize[0])
-        ANT_N_PHEROMONE = PhotoImage(file=dir + "ant_n_pheromone.png").subsample(300//imgSize[0])
+        ANT_N_BREAD     = PhotoImage(file=dr+"ant_n_bread.png").subsample(r)
+        ANT_N_COOKIE    = PhotoImage(file=dr+"ant_n_cookie.png").subsample(r)
+        ANT_N_PHEROMONE = PhotoImage(file=dr+"ant_n_pheromone.png").subsample(r)
 
     @staticmethod
-    def GetImage(tileSolid, tileFloor, tilePheromone):
-        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE
-
+    def GetContent(tileSolid, tileFloor, tilePheromone):
         img = EMPTY
-
-        bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, Dirt) else \
-              ImageManager.COLOR_EMPTY
+        bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, (Dirt, Rock)) \
+              else ImageManager.COLOR_EMPTY
 
         if isinstance(tileSolid, Ant):
             if isinstance(tilePheromone, Pheromone):
@@ -55,8 +52,10 @@ class ImageManager:
                 img = ANT_N_COOKIE
             else:
                 img = ANT
+
         elif isinstance(tileSolid, Rock):
             img = ROCK
+
         else:
             if isinstance(tilePheromone, Pheromone):
                 img = PHEROMONE
@@ -66,3 +65,10 @@ class ImageManager:
                 img = COOKIE
 
         return img, bgc
+
+from Sentiant.Model.Ant import Ant
+from Sentiant.Model.Pheromone import Pheromone
+from Sentiant.Model.Bread import Bread
+from Sentiant.Model.Cookie import Cookie
+from Sentiant.Model.Rock import Rock
+from Sentiant.Model.Dirt import Dirt

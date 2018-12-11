@@ -1,10 +1,4 @@
-from .Point import Point
-from .Ant import Ant
-from .QueenTile import QueenTile
-from .Dirt import Dirt
-from .Rock import Rock
-from .Bread import Bread
-from .Cookie import Cookie
+from Sentiant.Model.Point import Point
 
 class Cfg:
     def __init__(self):
@@ -41,7 +35,7 @@ class Cfg:
 
 
     @staticmethod
-    def parseDirection (direction):
+    def ParseDirection (direction):
         global UP, DOWN, RIGHT, LEFT, NULL
         direction = direction.lower()
 
@@ -60,7 +54,7 @@ class Cfg:
 
 
     @staticmethod
-    def addDirection(coords, direction):
+    def AddDirection(coords, direction):
         direction = Cfg.parseDirection(direction)
 
         if direction in [Cfg.UP, Cfg.DOWN, Cfg.RIGHT, Cfg.LEFT]:
@@ -88,10 +82,15 @@ class Cfg:
 
 
         if type(ref) is Bread:
-            return self.BREAD
+            return Cfg.BREAD
         if type(ref) is Cookie:
-            return self.COOKIE
+            return Cfg.COOKIE
 
-        return self.NULL
+        return Cfg.NULL
 
-
+from Sentiant.Model.Ant import Ant
+from Sentiant.Model.QueenTile import QueenTile
+from Sentiant.Model.Dirt import Dirt
+from Sentiant.Model.Rock import Rock
+from Sentiant.Model.Bread import Bread
+from Sentiant.Model.Cookie import Cookie

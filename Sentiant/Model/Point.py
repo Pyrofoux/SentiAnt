@@ -12,13 +12,9 @@ class Point:
         """ Usage: len(a - b) = distance from a to b"""
         return (self.x**2 + self.y**2)**.5
 
-    def __str__(self):
-        return self.x+";"+self.y
-
-
     def StepDistance(self, dest):
         """Returns distance in number of steps to take"""
         return (self.x - dest.x) + (self.y - dest.y)
-    def __str__(self):
-        return "x:{0}, y:{1}".format(self.x, self.y)
 
+    def __str__(self):
+        return str(self.x) + "; " + str(self.y)

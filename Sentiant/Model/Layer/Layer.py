@@ -1,5 +1,4 @@
-from Sentiant.Model import Point
-
+from Sentiant.Model.Point import Point
 
 class Layer():
 
@@ -173,13 +172,3 @@ if __name__ == '__main__':
     print(layer.Contain(entity))
 
     print(layer.IsNone(Point(6,6)))
-
-
-
-
-
-
-
-
-
-

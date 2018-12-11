@@ -1,4 +1,4 @@
-from .FloorEntity import FloorEntity
+from Sentiant.Model.FloorEntity import FloorEntity
 
 class Bread(FloorEntity):
 
@@ -6,4 +6,4 @@ class Bread(FloorEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Bread #"+id
+        return "Bread #" + str(id)
