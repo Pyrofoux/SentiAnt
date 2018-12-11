@@ -7,4 +7,4 @@ class QueenTile(SolidEntity):
         self.team = team
 
     def __str__(self):
-        return "QueenTile #" + str(id)
+        return "QueenTile #" + str(self.id)

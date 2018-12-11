@@ -8,4 +8,4 @@ class Dirt(FloorEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Dirt #" + str(id)
+        return "Dirt #" + str(self.id)

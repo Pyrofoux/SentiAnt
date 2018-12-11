@@ -1,6 +1,9 @@
 import numpy as np
 
 from Sentiant.Model.Cfg import Cfg
+from Sentiant.Model.Layer.LayerFloor import LayerFloor
+from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
+from Sentiant.Model.Layer.LayerSolid import LayerSolid
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
@@ -50,6 +53,4 @@ class Map:
 
             return False
 
-from Sentiant.Model.Layer.LayerFloor import LayerFloor
-from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
-from Sentiant.Model.Layer.LayerSolid import LayerSolid
+

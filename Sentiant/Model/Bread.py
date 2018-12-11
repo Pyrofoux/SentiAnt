@@ -6,4 +6,4 @@ class Bread(FloorEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Bread #" + str(id)
+        return "Bread #" + str(self.id)

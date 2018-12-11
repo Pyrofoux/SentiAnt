@@ -8,4 +8,4 @@ class Rock(SolidEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Rock #" + str(id)
+        return "Rock #" + str(self.id)
