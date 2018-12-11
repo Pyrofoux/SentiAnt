@@ -1,9 +1,9 @@
 import numpy as np
-
-from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Layer.LayerFloor import LayerFloor
 from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
 from Sentiant.Model.Layer.LayerSolid import LayerSolid
+
+from Sentiant.Model.Cfg import Cfg
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
@@ -27,11 +27,11 @@ class Map:
         FOVSolid = np.zeros(Cfg.FOV, Cfg.FOV)
         FOVFloor = np.zeros(Cfg.FOV, Cfg.FOV)
 
-        for i in range(-3,3) :
+        for i in range(-3,3) : #TODO: A changer, ça peut tester en dehors de la map
             for j in range(-3,3):
 
                 distance = abs(i) + abs(j)
-                if (distance <= 3 and self.IsDestinationVisible(coords, [coords.x + i, coords.y + j])): #TODO: Ajouter une fonction pour vérifier si c'est pas caché
+                if (distance <= 3 and self.IsDestinationVisible(coords, [coords.x + i, coords.y + j])):
 
                     if not(self.layerSolid[coords[0] + i, coords[1] + j] is None):
                         FOVSolid[i, j] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
@@ -41,16 +41,15 @@ class Map:
 
         return [FOVSolid, FOVFloor]
 
-    def IsDestinationVisible(self, x, y):
+    def IsDestinationVisible(self, x, y):#TODO: Tester la fonction
 
 
         if x == 0 and y == 0:
             return True
-        elif x != 0 and LayerSolid[x -1, y] is None :
-            self.IsDestinationVisible(x-1, y)
-
-        elif y != 0 and LayerSolid[x, y -1 ] is None :
-
-            return False
+        elif x != 0 and LayerSolid[x -1, y] is None and IsDestinationVisible(x-1, y) :
+            return True
+        elif y != 0 and LayerSolid[x, y -1] is None and IsDestinationVisible(x, y-1) :
+            return True
+        return False
 
 
