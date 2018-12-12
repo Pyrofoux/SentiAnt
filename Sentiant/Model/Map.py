@@ -1,7 +1,4 @@
 import numpy as np
-from Sentiant.Model.Layer.LayerFloor import LayerFloor
-from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
-from Sentiant.Model.Layer.LayerSolid import LayerSolid
 
 from Sentiant.Model.Cfg import Cfg
 
@@ -52,4 +49,7 @@ class Map:
             return True
         return False
 
-
+# Please avoid cyclic imports.
+from Sentiant.Model.Layer.LayerFloor import LayerFloor
+from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
+from Sentiant.Model.Layer.LayerSolid import LayerSolid

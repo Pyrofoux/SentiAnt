@@ -4,7 +4,7 @@ from Sentiant.View.ImageManager import ImageManager
 
 class Grid(Frame):
 
-    def __init__(self, map, boss, size, imgPath):
+    def __init__(self, map, boss, size):
         self.buttons = []
 
         # init Frame
@@ -17,7 +17,7 @@ class Grid(Frame):
         w = size[0] // map.layerFloor.GetWidth()
         h = size[1] // map.layerFloor.GetHeight()
 
-        ImageManager.LoadImages((w, h), imgPath)
+        ImageManager.LoadImages((w, h))
 
         # create buttons
         for i in range(map.layerFloor.GetWidth()):
@@ -61,8 +61,8 @@ if __name__ == "__main__":
     map.layerSolid.Append(Ant(1, "name", "team"), Point(6, 7))
     map.layerSolid.Append(Ant(1, "name", "team"), Point(5, 3))
 
-    grid = Grid(boss=root, map=map, size=(480, 480)
-                , imgPath="assets\\")
+    grid = Grid(boss=root, map=map, size=(480, 480))
+        #imgPath="assets\\")  # Executs your unit tests from the root directory.
     grid.pack()
 
     root.mainloop()

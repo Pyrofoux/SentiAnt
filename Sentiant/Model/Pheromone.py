@@ -1,5 +1,5 @@
 from Sentiant.Model.Entity import Entity
-from Sentiant.Model import Cfg
+from Sentiant.Model.Cfg import Cfg
 
 class Pheromone(Entity):
 
@@ -15,5 +15,3 @@ class Pheromone(Entity):
 
     def __str__(self):
         return "Phero ["+str(self.scent) +"] ("+str(self.baseLocation)+")"
-
-

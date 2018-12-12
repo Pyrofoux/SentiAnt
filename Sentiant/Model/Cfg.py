@@ -1,10 +1,4 @@
 from Sentiant.Model.Point import Point
-from Sentiant.Model.Ant import Ant
-from Sentiant.Model.QueenTile import QueenTile
-from Sentiant.Model.Dirt import Dirt
-from Sentiant.Model.Rock import Rock
-from Sentiant.Model.Bread import Bread
-from Sentiant.Model.Cookie import Cookie
 
 class Cfg:
     def __init__(self):
@@ -94,4 +88,10 @@ class Cfg:
 
         return Cfg.NULL
 
-
+# Please avoid cyclic imports.
+from Sentiant.Model.Ant import Ant
+from Sentiant.Model.QueenTile import QueenTile
+from Sentiant.Model.Dirt import Dirt
+from Sentiant.Model.Rock import Rock
+from Sentiant.Model.Bread import Bread
+from Sentiant.Model.Cookie import Cookie
