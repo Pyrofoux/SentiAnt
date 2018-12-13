@@ -14,6 +14,28 @@ class Ant(SolidEntity):
         self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
         self._nextActionArg = Cfg.NULL
 
+    def __setattr__(self, name, value, secu=None):
+        if not name in dir(self):
+            super().__setattr__(name, value)
+            return
+
+        # Traitement des variables constantes.
+        if name in ('_name', '_team', '_FoV'):
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        # Impossible de se donner plus de vie.
+        if name == '_HP' and value > getattr(self, name):
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        # Empeche le /give de ressources.
+        if name == '_holding' and value and secu != "legit":
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        super().__setattr__(name, value)
+
     def __str__(self):
         return "Name: {0}\nTeam: {1}\nHolding: {2}\nHp: {3}\nFov: {4}\nNextAction: {5}\nNextActionArg: {6}\n"\
             .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)
@@ -105,4 +127,22 @@ if __name__ == '__main__':
     LogsManager.Info(ant)
 
     ant.Phero()
+    LogsManager.Info(ant)
+
+
+    ant._HP-= 1 # pas d'erreur
+    ant._HP+= 1 # erreur
+    LogsManager.Info(ant)
+
+    ant._name = "coucou" # erreur
+    LogsManager.Info(ant)
+
+    from Sentiant.Model.Bread import Bread
+    ant._holding = Bread(-1) # erreur
+    LogsManager.Info(ant)
+
+    ant.__setattr__('_holding', Bread(-1), "legit") # pas d'erreur
+    LogsManager.Info(ant)
+
+    ant._holding = None # pas d'erreur
     LogsManager.Info(ant)

@@ -23,7 +23,7 @@ class Cfg:
     ATTACK = "attack"
     SLEEP  = "sleep"
     PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
-    ACTIONS = [MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO]
+    ACTIONS = (MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO)
 
     ANT = "ant"
     QUEEN = "queen"
@@ -35,8 +35,10 @@ class Cfg:
 
 
     @staticmethod
-    def ParseDirection (direction):
-        global UP, DOWN, RIGHT, LEFT, NULL
+    def ParseDirection(direction):
+        if isinstance(direction, Point) and direction.StepDistance() <= 1:
+            return direction
+
         direction = direction.lower()
 
         if(direction == "up"):

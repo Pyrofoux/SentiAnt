@@ -54,7 +54,7 @@ class LogsManager :
         """
         details = ("Une erreur a eu lieu car la direction '{direction}' " \
                 + "donnée à la fourmi '{antId}' 'de l'équipe '{antTeam}' " \
-                + "pour l'action '{action}' n'est pas une direction valide") \
+                + "pour l'action '{action}' n'est pas une direction valide.") \
                 .format(antId=antId, antTeam=antTeam, direction=direction, action=action)
         LogsManager.Error(details, True)
 
@@ -65,6 +65,18 @@ class LogsManager :
         """
         details = ("Une erreur a eu lieu car la phéromone '{pheromone}' " \
                 + "qu'a essayé de poser la fourmi '{antId}' de l'équipe " \
-                + "'{antTeam}' n'est pas une valeur de phéromone valide") \
+                + "'{antTeam}' n'est pas une valeur de phéromone valide.") \
                 .format(antId=antId, antTeam=antTeam, pheromone=pheromone)
+        LogsManager.Error(details, True)
+
+    @staticmethod
+    def PrivateVariableError(antId, antTeam, varName, tryValue):
+        """Writes in generals and users text files
+           when a non-valid pheromone is given to an Ant
+        """
+        details = ("Une erreur a eu lieu car la variable '{varName}' " \
+                + "qu'a essayé de modifier la fourmi '{antId}' de l'équipe " \
+                + "'{antTeam}' pour la nouvelle valeur de '{tryValue}' " \
+                + "est une variable privée innaccessible.") \
+                .format(antId=antId, antTeam=antTeam, varName=varName, tryValue=tryValue)
         LogsManager.Error(details, True)

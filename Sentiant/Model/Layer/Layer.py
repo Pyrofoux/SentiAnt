@@ -15,15 +15,7 @@ class Layer():
         self.grid = [[None for j in range(w)] for i in range(h)]
 
     def __getitem__(self, item):
-        if isinstance(item, Point):
-            if self.viewGrid is not None:
-                self.viewGrid.Update(item.x, item.y)
-            return self.grid[item.x][item.y]
-        else:
-            if self.viewGrid is not None:
-                self.viewGrid.Update(item[0], item[1])
-            return self.grid[item[0]][item[1]]
-
+        return self.grid[item[0]][item[1]]
 
     def __setitem__(self, key, value):
         if self.viewGrid is not None:
@@ -113,8 +105,8 @@ class Layer():
         return self[coord] is None
 
 if __name__ == '__main__':
-    from Sentiant.Model import Entity
-    from Sentiant.Model import Point
+    from Sentiant.Model.Entity import Entity
+    from Sentiant.Model.Point import Point
 
     layer = Layer(10, 10)
 
