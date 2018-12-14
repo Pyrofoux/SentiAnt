@@ -1,5 +1,12 @@
 from Sentiant.Model.Layer.Layer import Layer
+from Sentiant.Model.Dirt import Dirt
 
 class LayerSolid(Layer):
-    #ToDo : faire méthode Diggy Diggy hole
-    pass
+
+    def DiggyDiggyHole(self, coords):
+
+        if type(self[coords.x, coords.y]) is Dirt:
+            self[coords.x, coords.y] = None
+
+        pass #TODO: log error
+
