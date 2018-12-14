@@ -49,6 +49,3 @@ if __name__ == '__main__':
     map.layerFloor.Drop(ant)
 
     print(ant)
-
-
-

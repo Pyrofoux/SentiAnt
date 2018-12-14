@@ -7,4 +7,5 @@ class FourmiRouge(Ant):
         super().__init__(id, name, team)
 
     def newTurn(self):
-        self.Move(Cfg.DOWN)
+        #self.Move(Cfg.DOWN)
+        self.Phero(2)

@@ -28,6 +28,7 @@ class Grid(Frame):
                 b = Label(self, width=w, height=h, image=ImageManager.EMPTY)
                 b.grid(row=i, column=j, padx=0, pady=0)
                 self.buttons[-1].append(b)
+        
         self.UpdateAll()
 
 
