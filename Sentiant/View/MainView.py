@@ -3,7 +3,6 @@ from .Grid import Grid
 
 class MainView(Tk):
     def __init__(self, map, turnmanager, size= (500, 500)):
-
         # Init Window
         Tk.__init__(self)
 
@@ -16,8 +15,6 @@ class MainView(Tk):
 
         self.bNextTurn = Button(self, text = "Next Turn", command=self.TurnManager.NextTurn)
         self.bNextTurn.pack()
-
-
 
     def Run(self):
         self.mainloop()

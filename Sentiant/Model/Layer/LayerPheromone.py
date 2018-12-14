@@ -5,9 +5,7 @@ class LayerPheromone(Layer):
     def Place(self, ref, scent):
         """Ant(ref) place a pheromone"""
         coords = self.Map.layerSolid.GetXYByRef(ref)
-        self[coords.x, coords.y] = Pheromone(scent, coords)
-
-        pass
+        self[coords] = Pheromone(scent, coords)
 
     def DetectFromPos(self, ref):
         """Ant(ref) detect pheromones"""
@@ -49,9 +47,3 @@ if __name__ == '__main__':
     map.layerSolid.Append(ant2, Point(3, 2))
 
     print(map.layerPheromone.DetectFromPos(ant2))
-
-
-
-
-
-

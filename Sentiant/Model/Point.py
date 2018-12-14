@@ -31,4 +31,6 @@ class Point:
         return self.x in range(xMin, xMax) and self.y in range(yMin, yMax)
 
     def __eq__(self, mate):
+        if not isinstance(mate, Point):
+            return False
         return self.x == mate.x and self.y == mate.y

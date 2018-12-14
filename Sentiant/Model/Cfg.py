@@ -14,7 +14,7 @@ class Cfg:
     DOWN  = Point(0, 1)
     RIGHT = Point(1, 0)
     LEFT  = Point(-1, 0)
-    NULL  = "null"
+    NULL  = None
 
     MOVE   = "move"
     DIG    = "dig"
