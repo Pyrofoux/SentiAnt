@@ -1,5 +1,3 @@
-from .Ant import Ant
-
 class MoveManager:
 
     def __init__(self):

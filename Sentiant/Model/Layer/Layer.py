@@ -1,26 +1,21 @@
-from Sentiant.Model import Point
-
+from Sentiant.Model.Point import Point
 
 class Layer():
 
     LastId = 0
 
     def __init__(self, w, h, map = None):
+        """Constructor
+        w : Width
+        h : Height
+        map : ref of map"""
         self.viewGrid = None
         self.Map = map
 
         self.grid = [[None for j in range(w)] for i in range(h)]
 
     def __getitem__(self, item):
-        if isinstance(item, Point):
-            if self.viewGrid is not None:
-                self.viewGrid.Update(item.x, item.y)
-            return self.grid[item.x][item.y]
-        else:
-            if self.viewGrid is not None:
-                self.viewGrid.Update(item[0], item[1])
-            return self.grid[item[0]][item[1]]
-
+        return self.grid[item[0]][item[1]]
 
     def __setitem__(self, key, value):
         if self.viewGrid is not None:
@@ -55,6 +50,7 @@ class Layer():
         return ref
 
     def Contain(self, ref):
+        """return true if this layer contains ref"""
         c = 0
         while (c < len(self.ToList()) and self.ToList()[c] != ref) or c == len(self.ToList()):
             c += 1
@@ -109,8 +105,8 @@ class Layer():
         return self[coord] is None
 
 if __name__ == '__main__':
-    from Sentiant.Model import Entity
-    from Sentiant.Model import Point
+    from Sentiant.Model.Entity import Entity
+    from Sentiant.Model.Point import Point
 
     layer = Layer(10, 10)
 
@@ -168,13 +164,3 @@ if __name__ == '__main__':
     print(layer.Contain(entity))
 
     print(layer.IsNone(Point(6,6)))
-
-
-
-
-
-
-
-
-
-

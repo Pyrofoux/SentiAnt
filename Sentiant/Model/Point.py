@@ -9,14 +9,18 @@ class Point:
         return Point(self.x + mate.x, self.y + mate.y)
 
     def __len__(self):
-        """ Usage: len(a - b) = distance from a to b"""
+        """Usage: len(a - b) = distance from a to b"""
         return (self.x**2 + self.y**2)**.5
 
-    def __str__(self):
-        return self.x+";"+self.y
-
-
-    def StepDistance(self, dest):
+    def StepDistance(self, dest=None):
         """Returns distance in number of steps to take"""
-        return (self.x - dest.x) + (self.y - dest.y)
+        if dest:
+            return abs(self.x - dest.x) + abs(self.y - dest.y)
+        return abs(self.x) + abs(self.y)
 
+    def __str__(self):
+        return str(self.x) + "; " + str(self.y)
+
+    def __getitem__(self, k):
+        """So that point[0] = point.x and point[1] = point.y"""
+        return self.y if k else self.x

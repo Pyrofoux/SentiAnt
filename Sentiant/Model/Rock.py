@@ -1,4 +1,4 @@
-from .SolidEntity import SolidEntity
+from Sentiant.Model.SolidEntity import SolidEntity
 
 class Rock(SolidEntity):
 
@@ -8,4 +8,4 @@ class Rock(SolidEntity):
         super().__init__(id)
 
     def __str__(self):
-        return "Rock #"+id
+        return "Rock #" + str(self.id)

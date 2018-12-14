@@ -1,7 +1,5 @@
-from .SolidEntity import SolidEntity
-from Sentiant.Model import Cfg
-from .LogsManager import LogsManager
-
+from Sentiant.Model.SolidEntity import SolidEntity
+from Sentiant.Model.Cfg import Cfg
 
 class Ant(SolidEntity):
 
@@ -10,62 +8,141 @@ class Ant(SolidEntity):
         self._name = name # id of the ant, string of 5 chars
         self._team = team
         self._holding = None # by default, the ant doesn't carry anything
-        self._HP = Cfg.Cfg.HPMAX  # number of hits the ant can take before dying
-        self._FoV = Cfg.Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
+        self._HP = Cfg.HPMAX # number of hits the ant can take before dying
+        self._FoV = Cfg.FOV # Field Of View : number of cells the ant can view, center being itself
 
-        self._nextAction = Cfg.Cfg.SLEEP # next Action, will be read by Turn Manager
-        self._nextActionArg = Cfg.Cfg.NULL
+        self._nextAction = Cfg.SLEEP # next Action, will be read by Turn Manager
+        self._nextActionArg = Cfg.NULL
 
-    def move(self, direction):
+    def __setattr__(self, name, value, secu=None):
+        if not name in dir(self):
+            super().__setattr__(name, value)
+            return
 
-        direc = Cfg.parseDirection(direction)
+        # Traitement des variables constantes.
+        if name in ('_name', '_team', '_FoV'):
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        # Impossible de se donner plus de vie.
+        if name == '_HP' and value > getattr(self, name):
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        # Empeche le /give de ressources.
+        if name == '_holding' and value and secu != "legit":
+            LogsManager.PrivateVariableError(self._name, self._team, name, value)
+            return
+
+        super().__setattr__(name, value)
+
+    def __str__(self):
+        return "Name: {0}\nTeam: {1}\nHolding: {2}\nHp: {3}\nFov: {4}\nNextAction: {5}\nNextActionArg: {6}\n"\
+            .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)
+
+    def Move(self, direction):
+        """Set Action of ant to move
+        direction : 'up', 'left', ..."""
+        direc = Cfg.ParseDirection(direction)
 
         if(direc != Cfg.NULL):
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"déplacement")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "déplacement")
 
-    def attack(self, direction):
-
-        direc = Cfg.parseDirection(direction)
+    def Attack(self, direction):
+        """Set Action of to attack
+        direction : 'up', 'left', ..."""
+        direc = Cfg.ParseDirection(direction)
 
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"attaque")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "attaque")
 
-    def dig(self, direction):
-
-        direc = Cfg.parseDirection(direction)
+    def Dig(self, direction):
+        """Set Action of to dig
+        direction : 'up', 'left', ..."""
+        direc = Cfg.ParseDirection(direction)
 
         if (direc != Cfg.NULL):
             self._nextAction = Cfg.DIG
             self._nextActionArg = direc
-            self.nextActionArg = direc
         else :
-            self.sleep()
-            LogsManager.NotADirectionError(self._name,self._team,direc,"creuser")
+            self.Sleep()
+            LogsManager.NotADirectionError(self._name, self._team, direc, "creuser")
 
-    def pickup(self):
+    def Pickup(self):
+        """Set Action of to pick up"""
         self._nextAction = Cfg.PICKUP
-        self._nextActionArg=Cfg.NULL
+        self._nextActionArg = Cfg.NULL
 
-    def drop(self):
+    def Drop(self):
+        """Set Action of to drop"""
         self._nextAction = Cfg.DROP
-        self._nextActionArg=Cfg.NULL
+        self._nextActionArg = Cfg.NULL
 
-    def sleep(self):
-        self._nextAction=Cfg.SLEEP
-        self._nextAction=Cfg.NULL
+    def Sleep(self):
+        """Set Action of to sleep"""
+        self._nextAction = Cfg.SLEEP
+        self._nextActionArg = Cfg.NULL
 
-    def phero(self):
-
-        self._nextAction=Cfg.PHERO
-        self._nextActionArg=Cfg.NULL
+    def Phero(self):
+        """Set Action of to Phero"""
+        self._nextAction = Cfg.PHERO
+        self._nextActionArg = Cfg.NULL
         #TO DO : gérer les phéromones invalides et rajouter un argument
 
+# Please avoid cyclic imports.
+from Sentiant.Model.LogsManager import LogsManager
 
+if __name__ == '__main__':
+
+    ant = Ant(0, "name", "team")
+    LogsManager.Info(ant)
+
+    ant.Move("up")
+    LogsManager.Info(ant)
+
+    ant.Move("")
+    LogsManager.Info(ant)
+
+    ant.Attack("up")
+    LogsManager.Info(ant)
+
+    ant.Dig("up")
+    LogsManager.Info(ant)
+
+    ant.Pickup()
+    LogsManager.Info(ant)
+
+    ant.Drop()
+    LogsManager.Info(ant)
+
+    ant.Sleep()
+    LogsManager.Info(ant)
+
+    ant.Phero()
+    LogsManager.Info(ant)
+
+
+    ant._HP-= 1 # pas d'erreur
+    ant._HP+= 1 # erreur
+    LogsManager.Info(ant)
+
+    ant._name = "coucou" # erreur
+    LogsManager.Info(ant)
+
+    from Sentiant.Model.Bread import Bread
+    ant._holding = Bread(-1) # erreur
+    LogsManager.Info(ant)
+
+    ant.__setattr__('_holding', Bread(-1), "legit") # pas d'erreur
+    LogsManager.Info(ant)
+
+    ant._holding = None # pas d'erreur
+    LogsManager.Info(ant)
