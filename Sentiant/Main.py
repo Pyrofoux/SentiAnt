@@ -1,5 +1,6 @@
 from Sentiant.Model import MapManager, QueenTile, Point
 from Sentiant.View import MainView
+from Sentiant.Model import TurnManager
 import os
 
 
@@ -12,6 +13,11 @@ if __name__ == '__main__':
 
     map = mapGen.Generate()
 
-    view = MainView(map)
+
+
+    turnmanager = TurnManager(map)
+
+    view = MainView(map, turnmanager)
+
 
     view.Run();
