@@ -1,4 +1,4 @@
-from os import path
+from os import path, getcwd
 from datetime import datetime
 
 class LogsManager :
@@ -13,7 +13,7 @@ class LogsManager :
     #scriptDir = os.path.split(scriptPath)[0]
     #scriptDirDir = os.path.dirname(scriptDir)
 
-    BASE = "Sentiant/Logs/"
+    BASE = getcwd()
     EXT = ".log"
 
     generals = open(BASE + "generals" + EXT, "w")

@@ -1,4 +1,3 @@
-import numpy as np
 
 from Sentiant.Model.Cfg import Cfg
 
