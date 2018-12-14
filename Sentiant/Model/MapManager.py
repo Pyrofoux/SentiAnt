@@ -3,7 +3,7 @@ from random import Random
 from Sentiant.Model.Cfg import Cfg
 
 class MapManager:
-    def __init__(self, map=None, width=Cfg.WIDTH, height=Cfg.HEIGHT, \
+    def __init__(self, map=None, width=Cfg.WIDTH, height=Cfg.HEIGHT,
                  rockRatio=.06, breadAmount=42, seed=None):
         self.rng = Random(seed) if seed else Random()
 
