@@ -36,7 +36,7 @@ class Layer():
 
     def ToList(self, eClass=None):
         """Get a list of all the entities on the layer"""
-        return [it for it in self if it and (not eClass or type(it) == eClass)]
+        return [it for it in self if it and (not eClass or isinstance(it,eClass))]
 
     def Remove(self, ref):
         """Remove an entity by reference (ref)"""

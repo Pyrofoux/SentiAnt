@@ -7,6 +7,10 @@ class TurnManager:
         self.layerPheromone = map.layerPheromone
 
     def NextTurn(self):
+
+
+        print("NextTurn()")
+
         self.currentTurn += 1
 
         allAnts = self.layerSolid.ToList(Ant)
@@ -20,7 +24,12 @@ class TurnManager:
         sorted[Cfg.PHERO] = []
         sorted[Cfg.MOVE] = []
 
+        print("All ants =  " + str(allAnts))
         for ant in allAnts :
+
+            print("Examining "+ant._name)
+            ant.newTurn()
+            print(ant._name+" wants to "+ant._nextAction)
             if ant._nextAction in Cfg.ACTIONS  :
                 sorted[ant._nextAction].append(ant)
 
@@ -44,7 +53,9 @@ class TurnManager:
         pass
 
     def ExecMove(self, ants):
-        pass
+
+        for ant in ants:
+            self.layerSolid.MoveEntity(ant, ant._nextActionArg)
 
     def ExecDig(self, ants):
         for ant in ants:
