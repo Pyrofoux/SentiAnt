@@ -38,7 +38,6 @@ class Grid(Frame):
 
         if isinstance(tileSolid, QueenTile):
             queensPos = self.map.layerSolid.GetQueenTiles(tileSolid.team)
-            print(x,y)
             if x == queensPos[0][0] and y == queensPos[0][1]:
                 img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=0)
             elif x == queensPos[1][0] and y == queensPos[1][1]:

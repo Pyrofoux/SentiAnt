@@ -33,10 +33,9 @@ class MapManager:
 
         # Generate ant nests around each queen positions.
         for tile, pos in self.queens:
-            #TODO : Config rayon nest
             # Hollow area out.
-            for i in range(-3, 5):
-                for j in range(-3, 5):
+            for i in range(-Cfg.NEST_RADIUS, Cfg.NEST_RADIUS*2 +1):
+                for j in range(-Cfg.NEST_RADIUS, Cfg.NEST_RADIUS*2 +1):
                     if abs(i - .5) + abs(j - .5) < 5 \
                             and pos.x + i >= 0 and pos.x + i < self.map.layerSolid.GetWidth()\
                             and pos.y + j >= 0 and pos.y ++ j < self.map.layerSolid.GetHeight():

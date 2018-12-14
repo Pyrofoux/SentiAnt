@@ -32,6 +32,8 @@ class Cfg:
     BREAD = "bread"
     COOKIE = "cookie"
 
+    NEST_RADIUS = 3
+
 
 
     @staticmethod
