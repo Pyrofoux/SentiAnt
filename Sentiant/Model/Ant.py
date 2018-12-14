@@ -1,5 +1,4 @@
 from Sentiant.Model.SolidEntity import SolidEntity
-from Sentiant.Model.Cfg import Cfg
 
 class Ant(SolidEntity):
 
@@ -99,6 +98,7 @@ class Ant(SolidEntity):
 
 # Please avoid cyclic imports.
 from Sentiant.Model.LogsManager import LogsManager
+from Sentiant.Model.Cfg import Cfg
 
 if __name__ == '__main__':
 
