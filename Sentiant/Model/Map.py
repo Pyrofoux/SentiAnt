@@ -93,7 +93,7 @@ if __name__ == '__main__':
     print(map.IsDestinationVisible(Point(8, 3), Point(3, 2)))
 
     turnmanager = TurnManager(map)
-
+#Tacos
     view = MainView(map, turnmanager)
 
     view.Run();
