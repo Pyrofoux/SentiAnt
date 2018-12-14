@@ -1,7 +1,10 @@
-from .SolidEntity import SolidEntity
+from Sentiant.Model.SolidEntity import SolidEntity
 
 class QueenTile(SolidEntity):
 
     def __init__(self, id, team):
-        SolidEntity.__init__(id)
+        super().__init__(id)
         self.team = team
+
+    def __str__(self):
+        return "QueenTile #" + str(self.id)

@@ -1,4 +1,3 @@
-
 from tkinter import Tk
 
 class MainView(Tk):

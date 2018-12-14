@@ -1,10 +1,4 @@
-from .Point import Point
-from .Ant import Ant
-from .QueenTile import QueenTile
-from .Dirt import Dirt
-from .Rock import Rock
-from .Bread import Bread
-from .Cookie import Cookie
+from Sentiant.Model.Point import Point
 
 class Cfg:
     def __init__(self):
@@ -29,7 +23,7 @@ class Cfg:
     ATTACK = "attack"
     SLEEP  = "sleep"
     PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
-    ACTIONS = [MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO]
+    ACTIONS = (MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO)
 
     ANT = "ant"
     QUEEN = "queen"
@@ -40,30 +34,32 @@ class Cfg:
 
 
 
+    @staticmethod
+    def ParseDirection(direction):
+        if isinstance(direction, Point) and direction.StepDistance() <= 1:
+            return direction
 
-    def parseDirection (self, direction):
-        global UP, DOWN, RIGHT, LEFT, NULL
         direction = direction.lower()
 
         if(direction == "up"):
-            return self.UP
+            return Cfg.UP
         elif direction == "down":
-            return self.DOWN
+            return Cfg.DOWN
         elif direction == "right":
-            return self.RIGHT
+            return Cfg.RIGHT
         elif direction == "left":
-            return self.LEFT
+            return Cfg.LEFT
 
         #TODO : Log Error
 
-        return self.NULL
+        return Cfg.NULL
 
 
+    @staticmethod
+    def AddDirection(coords, direction):
+        direction = Cfg.parseDirection(direction)
 
-    def addDirection(self, coords, direction):
-        direction = self.parseDirection(direction)
-
-        if direction in [self.UP, self.DOWN, self.RIGHT, self.LEFT]:
+        if direction in [Cfg.UP, Cfg.DOWN, Cfg.RIGHT, Cfg.LEFT]:
             nextPos = coords + direction
 
             #TODO : Check coords valides!
@@ -71,26 +67,33 @@ class Cfg:
             return nextPos
 
         #TODO : Log Error de direction
-        return self.NULL
+        return Cfg.NULL
 
-    def EntityToType(self, ref):
+    @staticmethod
+    def EntityToType(ref):
 
         if type(ref) is Ant:
-            return self.ANT
+            return Cfg.ANT
         if type(ref) is QueenTile:
-            return self.QUEEN
+            return Cfg.QUEEN
 
         if type(ref) is Dirt:
-            return self.DIRT
+            return Cfg.DIRT
         if type(ref) is Rock:
-            return self.ROCK
+            return Cfg.ROCK
 
 
         if type(ref) is Bread:
-            return self.BREAD
+            return Cfg.BREAD
         if type(ref) is Cookie:
-            return self.COOKIE
+            return Cfg.COOKIE
 
-        return self.NULL
+        return Cfg.NULL
 
-
+# Please avoid cyclic imports.
+from Sentiant.Model.Ant import Ant
+from Sentiant.Model.QueenTile import QueenTile
+from Sentiant.Model.Dirt import Dirt
+from Sentiant.Model.Rock import Rock
+from Sentiant.Model.Bread import Bread
+from Sentiant.Model.Cookie import Cookie
