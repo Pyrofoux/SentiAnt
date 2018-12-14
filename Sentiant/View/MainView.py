@@ -1,4 +1,5 @@
 from tkinter import Tk
+from .Grid import Grid
 
 class MainView(Tk):
     def __init__(self, map):
@@ -9,7 +10,10 @@ class MainView(Tk):
         # property
         self.Map = map
 
+        self.grid = Grid(self.Map, self, (500, 500))
+        self.grid.pack()
 
 
-    def run(self):
+
+    def Run(self):
         self.mainloop()
