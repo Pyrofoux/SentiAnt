@@ -2,7 +2,7 @@ from Sentiant.Model.SolidEntity import SolidEntity
 
 class Rock(SolidEntity):
 
-    removable = True
+    removable = False
 
     def __init__(self, id):
         super().__init__(id)
