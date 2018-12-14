@@ -1,6 +1,5 @@
 
 from Sentiant.Model.Cfg import Cfg
-import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):

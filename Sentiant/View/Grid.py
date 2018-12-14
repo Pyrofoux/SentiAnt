@@ -1,4 +1,5 @@
 from tkinter import Frame, Label, Tk
+from Sentiant.Model import QueenTile
 
 from Sentiant.View.ImageManager import ImageManager
 
@@ -25,7 +26,7 @@ class Grid(Frame):
 
             for j in range(map.layerFloor.GetHeight()):
                 b = Label(self, width=w, height=h, image=ImageManager.EMPTY)
-                b.grid(row=i, column=j)
+                b.grid(row=i, column=j, padx=0, pady=0)
                 self.buttons[-1].append(b)
         self.UpdateAll()
 
@@ -35,9 +36,22 @@ class Grid(Frame):
         tilePheromone = self.map.layerPheromone[x, y]
         tileFloor = self.map.layerFloor[x, y]
 
-        img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone)
+        if isinstance(tileSolid, QueenTile):
+            queensPos = self.map.layerSolid.GetQueenTiles(tileSolid.team)
+            print(x,y)
+            if x == queensPos[0][0] and y == queensPos[0][1]:
+                img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=0)
+            elif x == queensPos[1][0] and y == queensPos[1][1]:
+                img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=1)
+            elif x == queensPos[2][0] and y == queensPos[2][1]:
+                img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=2)
+            elif x == queensPos[3][0] and y == queensPos[3][1]:
+                img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=3)
+        else:
+            img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone)
 
-        self.buttons[x][y].config(image=img, bg=bgc)
+        self.buttons[x][y].config(image=img, bg=bgc, padx = 0, pady = 0)
+        self.update_idletasks()
 
     def UpdateAll(self):
         for i in range(self.map.layerFloor.GetWidth()):
