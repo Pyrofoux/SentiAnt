@@ -15,6 +15,8 @@ class Grid(Frame):
         # property
         self.map = map
 
+        self.map.SetView(self)
+
         w = size[0] // map.layerFloor.GetWidth()
         h = size[1] // map.layerFloor.GetHeight()
 
