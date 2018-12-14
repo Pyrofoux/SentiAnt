@@ -1,10 +1,10 @@
 class TurnManager:
-    def __init__(self, _layerSolid, _layerFloor, _layerPheromone):
+    def __init__(self, map):
         self.currentTurn = 0
 
-        self.layerSolid = _layerSolid
-        self.layerFloor = _layerFloor
-        self.layerPheromone = _layerPheromone
+        self.layerSolid = map.layerSolid
+        self.layerFloor = map.layerFloor
+        self.layerPheromone = map.layerPheromone
 
     def NextTurn(self):
         self.currentTurn += 1

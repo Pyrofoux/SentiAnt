@@ -51,6 +51,11 @@ if __name__ == "__main__":
     from Sentiant.Model.QueenTile import QueenTile
     from Sentiant.Model.MapManager import MapManager
 
+    import os
+
+    os.chdir("..\\..\\")
+    print(os.getcwd())
+
     root = Tk()
 
     mapGen = MapManager(width=16, height=16)
