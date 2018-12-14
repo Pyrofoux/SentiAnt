@@ -42,6 +42,8 @@ class Layer():
         """Remove an entity by reference (ref)"""
         coord = self.GetXYByRef(ref)
         self[coord.x, coord.y] = None
+        if self.viewGrid is not None:
+            self.viewGrid.Update(coord[0], coord[1])
 
     def Pop(self, ref):
         """Pop an entity out of the layer by ref"""

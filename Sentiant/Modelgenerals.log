@@ -1,4 +1,4 @@
-[Info] (15:15:10.973)> Name: name
+[Info] (15:50:43.716)> Name: name
                        Team: team
                        Holding: None
                        Hp: 2
@@ -6,111 +6,11 @@
                        NextAction: sleep
                        NextActionArg: null
                        
-[Info] (15:15:10.973)> Name: name
+[Info] (15:50:43.716)> Name: name
                        Team: team
                        Holding: None
                        Hp: 2
                        Fov: 7
                        NextAction: move
                        NextActionArg: 0; -1
-                       
-[Error] (15:15:10.973)> Une erreur a eu lieu car la direction 'null' donnée à la fourmi 'name' 'de l'équipe 'team' pour l'action 'déplacement' n'est pas une direction valide.
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: sleep
-                       NextActionArg: null
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: attack
-                       NextActionArg: 0; -1
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: dig
-                       NextActionArg: 0; -1
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: pickup
-                       NextActionArg: null
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: drop
-                       NextActionArg: null
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: sleep
-                       NextActionArg: null
-                       
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 2
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
-                       
-[Error] (15:15:10.973)> Une erreur a eu lieu car la variable '_HP' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de '2' est une variable privée innaccessible.
-[Info] (15:15:10.973)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 1
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
-                       
-[Error] (15:15:10.974)> Une erreur a eu lieu car la variable '_name' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de 'coucou' est une variable privée innaccessible.
-[Info] (15:15:10.974)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 1
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
-                       
-[Error] (15:15:10.974)> Une erreur a eu lieu car la variable '_holding' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de 'Bread #-1' est une variable privée innaccessible.
-[Info] (15:15:10.974)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 1
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
-                       
-[Info] (15:15:10.975)> Name: name
-                       Team: team
-                       Holding: Bread #-1
-                       Hp: 1
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
-                       
-[Info] (15:15:10.975)> Name: name
-                       Team: team
-                       Holding: None
-                       Hp: 1
-                       Fov: 7
-                       NextAction: phero
-                       NextActionArg: null
                        

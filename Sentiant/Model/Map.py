@@ -52,3 +52,8 @@ class Map:
 from Sentiant.Model.Layer.LayerFloor import LayerFloor
 from Sentiant.Model.Layer.LayerPheromone import LayerPheromone
 from Sentiant.Model.Layer.LayerSolid import LayerSolid
+
+if __name__ == '__main__':
+    from Sentiant.Model.Ant import Ant
+
+

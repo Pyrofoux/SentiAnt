@@ -1,4 +1,0 @@
-[Error] (15:15:10.973)> Une erreur a eu lieu car la direction 'null' donnée à la fourmi 'name' 'de l'équipe 'team' pour l'action 'déplacement' n'est pas une direction valide.
-[Error] (15:15:10.973)> Une erreur a eu lieu car la variable '_HP' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de '2' est une variable privée innaccessible.
-[Error] (15:15:10.974)> Une erreur a eu lieu car la variable '_name' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de 'coucou' est une variable privée innaccessible.
-[Error] (15:15:10.974)> Une erreur a eu lieu car la variable '_holding' qu'a essayé de modifier la fourmi 'name' de l'équipe 'team' pour la nouvelle valeur de 'Bread #-1' est une variable privée innaccessible.

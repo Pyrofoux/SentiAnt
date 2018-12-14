@@ -8,15 +8,17 @@ class Point:
     def __add__(self, mate):
         return Point(self.x + mate.x, self.y + mate.y)
 
-    def __len__(self):
+    def __len__(self, dest=None):
         """Usage: len(a - b) = distance from a to b"""
-        return (self.x**2 + self.y**2)**.5
+        if dest:
+            return abs(self.x - dest.x) + abs(self.y - dest.y)
+        return abs(self.x) + abs(self.y)
 
     def StepDistance(self, dest=None):
         """Returns distance in number of steps to take"""
         if dest:
-            return abs(self.x - dest.x) + abs(self.y - dest.y)
-        return abs(self.x) + abs(self.y)
+            return ( (self.x-dest.x)**2 + (self.y-dest.y)**2 )**.5
+        return (self.x**2 + self.y**2)**.5
 
     def __str__(self):
         return str(self.x) + "; " + str(self.y)
