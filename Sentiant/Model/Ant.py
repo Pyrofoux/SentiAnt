@@ -90,10 +90,10 @@ class Ant(SolidEntity):
         self._nextAction = Cfg.SLEEP
         self._nextActionArg = Cfg.NULL
 
-    def Phero(self):
+    def Phero(self, scent):
         """Set Action of to Phero"""
         self._nextAction = Cfg.PHERO
-        self._nextActionArg = Cfg.NULL
+        self._nextActionArg = scent
         #TO DO : gérer les phéromones invalides et rajouter un argument
 
 # Please avoid cyclic imports.
