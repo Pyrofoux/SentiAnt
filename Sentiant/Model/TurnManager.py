@@ -53,7 +53,6 @@ class TurnManager:
         pass
 
     def ExecMove(self, ants):
-
         for ant in ants:
             self.layerSolid.MoveEntity(ant, ant._nextActionArg)
 

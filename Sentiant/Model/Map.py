@@ -12,9 +12,9 @@ class Map:
         self.layerFloor = LayerFloor(w = self.width, h = self.height, map=self) # cookies & bread
 
     def SetView(self, view):
-        self.layerFloor.setView(view)
-        self.LayerPheromone.setView(view)
-        self.LayerSolid.setView(view)
+        self.layerFloor.SetView(view)
+        self.layerPheromone.SetView(view)
+        self.layerSolid.SetView(view)
 
     def GetFOV(self, ref):
         """Renvoie deux arrays, le premier concerne les floor entities le second les solid"""

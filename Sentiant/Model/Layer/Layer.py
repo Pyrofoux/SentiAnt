@@ -18,11 +18,11 @@ class Layer():
         return self.grid[item[0]][item[1]]
 
     def __setitem__(self, key, value):
+        self.grid[key[0]][key[1]] = value
         if self.viewGrid is not None:
             self.viewGrid.Update(key[0], key[1])
-        self.grid[key[0]][key[1]] = value
 
-    def SetViewGrid(self, viewGrid):
+    def SetView(self, viewGrid):
         """Add viewGrid reference"""
         self.viewGrid = viewGrid
 
@@ -73,8 +73,9 @@ class Layer():
     def MoveEntity(self, ref, direction):
         """Move an entity ref to direction"""
         coord=self.GetXYByRef(ref)
+        self[Point(coord.x + direction.x, coord.y + direction.y)] = ref
         self.Remove(ref)
-        self.Append(ref, Point(coord.x + direction.x, coord.y + direction.y))
+
 
     def Count(self):
         """Get the number of entity on layer"""
