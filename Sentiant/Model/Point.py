@@ -26,3 +26,9 @@ class Point:
     def __getitem__(self, k):
         """So that point[0] = point.x and point[1] = point.y"""
         return self.y if k else self.x
+
+    def InRange(self, xMin, xMax, yMin, yMax):
+        return self.x in range(xMin, xMax) and self.y in range(yMin, yMax)
+
+    def __eq__(self, mate):
+        return self.x == mate.x and self.y == mate.y
