@@ -1,7 +1,7 @@
 from Sentiant.Model import MapManager, QueenTile, Point
 from Sentiant.View import MainView
 from Sentiant.Model import TurnManager
-from Sentiant.bot.FourmiRouge.FourmiRouge import FourmiRouge
+from Sentiant.Bot.FourmiRouge.FourmiRouge import FourmiRouge
 import os
 
 
