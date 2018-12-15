@@ -47,10 +47,10 @@ class QueensManager:
             if self.queens[i]._order == Cfg.QUEEN_SPAWN_ANT:
                 queensWhoWantSpawn[i] = self.queens[i]
 
-        self.SpawnAnt(queensWhoWantSpawn)
+        self.SpawnAnt(queensWhoWantSpawn, map)
         print("Turn end")
 
-    def SpawnAnt(self, queens):
+    def SpawnAnt(self, queens, map):
         for q in queens.keys():
             point = Point.StringToPoint(q) + queens[q]._positionOrder
             if map.layerSolid.IsNone(point) and isinstance(map.layerFloor[point], Bread):
