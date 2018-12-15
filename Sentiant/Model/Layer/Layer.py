@@ -12,15 +12,29 @@ class Layer():
         self.viewGrid = None
         self.Map = map
 
-        self.grid = [[None for j in range(w)] for i in range(h)]
+        self.grid = [[None for j in range(h)] for i in range(w)]
 
-    def __getitem__(self, item):
-        return self.grid[item[0]][item[1]]
+    def __getitem__(self, key):
+        if not isinstance(key, Point):
+            key = Point(key[0], key[1])
+
+        if key.InRange(len(self.grid), len(self.grid[0])):
+            return self.grid[key.x][key.y]
+
+        LogsManager.Warning("Out of range exception caugth: " + str(key))
+        return None
 
     def __setitem__(self, key, value):
-        self.grid[key[0]][key[1]] = value
-        if self.viewGrid is not None:
-            self.viewGrid.Update(key[0], key[1])
+        if not isinstance(key, Point):
+            key = Point(key[0], key[1])
+
+        if key.InRange(len(self.grid), len(self.grid[0])):
+            self.grid[key.x][key.y] = value
+            if self.viewGrid is not None:
+                self.viewGrid.Update(key.x, key.y)
+            return
+
+        LogsManager.Warning("Out of range exception caugth: " + str(key))
 
     def SetView(self, viewGrid):
         """Add viewGrid reference"""
@@ -105,6 +119,9 @@ class Layer():
 
     def IsNone(self, coord):
         return self[coord] is None
+
+
+from Sentiant.Model.LogsManager import LogsManager
 
 if __name__ == '__main__':
     from Sentiant.Model.Entity import Entity

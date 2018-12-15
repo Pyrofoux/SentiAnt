@@ -5,7 +5,6 @@ import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
-
         self.width = w
         self.height = h
 
@@ -40,7 +39,6 @@ class Map:
         return [FOVSolid, FOVFloor]
 
     def IsDestinationVisible(self, coordsDebut, coordsFin):  # TODO: Tester la fonction
-
         incrX = coordsDebut.x - coordsFin.x
 
         if incrX != 0:
@@ -48,10 +46,11 @@ class Map:
         incrY = coordsDebut.y - coordsFin.y
         if incrY != 0:
             incrY = int(incrY / abs(incrY))
-        print(incrX)
-        print(incrY)
-        print(self.layerSolid[coordsDebut.x + incrX, coordsDebut.y])
-        print(self.layerSolid[coordsDebut.x, coordsDebut.y + incrY])
+
+        LogsManager.Info(incrX)
+        LogsManager.Info(incrY)
+        LogsManager.Info(self.layerSolid[coordsDebut.x + incrX, coordsDebut.y])
+        LogsManager.Info(self.layerSolid[coordsDebut.x, coordsDebut.y + incrY])
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
         if coordsDebut.x == coordsFin.x and coordsDebut.y == coordsFin:
@@ -89,5 +88,3 @@ if __name__ == '__main__':
     print(map.IsDestinationVisible(Point(8, 3), Point(3, 4)))
     print(map.IsDestinationVisible(Point(8, 3), Point(2, 3)))
     print(map.IsDestinationVisible(Point(8, 3), Point(3, 2)))
-
-

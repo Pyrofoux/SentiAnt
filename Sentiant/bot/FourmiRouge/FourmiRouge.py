@@ -1,5 +1,5 @@
 from Sentiant.Model import *
-
+from random import randrange
 
 class FourmiRouge(Ant):
 
@@ -7,5 +7,6 @@ class FourmiRouge(Ant):
         super().__init__(id, name, team)
 
     def newTurn(self):
-        self.Move(Cfg.DOWN)
-        #self.Phero(2)
+        if randrange(10) < 3:
+            self.Phero(randrange(10))
+        self.Move(Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))])
