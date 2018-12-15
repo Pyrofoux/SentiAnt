@@ -13,7 +13,7 @@ class LogsManager :
     #scriptDir = os.path.split(scriptPath)[0]
     #scriptDirDir = os.path.dirname(scriptDir)
 
-    BASE = "Sentiant/Logs/"
+    BASE = getcwd()#"Sentiant/Logs/"
     EXT = ".log"
 
     generals = open(BASE + "generals" + EXT, "w")

@@ -5,7 +5,7 @@ class Cfg:
         pass
 
     HPMAX    = 2
-    FOV      = 7
+    FOV      = 3
     HPRADIUS = 5
     WIDTH    = 42
     HEIGHT   = 42
@@ -33,6 +33,8 @@ class Cfg:
     ROCK = "rock"
     BREAD = "bread"
     COOKIE = "cookie"
+    UNKNOWN = "X"
+    EMPTY = " "
 
     NEST_RADIUS = 3
 
@@ -92,7 +94,7 @@ class Cfg:
         if type(ref) is Cookie:
             return Cfg.COOKIE
 
-        return Cfg.NULL
+        return Cfg.EMPTY
 
 # Please avoid cyclic imports.
 from Sentiant.Model.Ant import Ant
