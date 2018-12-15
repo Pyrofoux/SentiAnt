@@ -3,6 +3,7 @@ from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Point import Point
 import numpy as np
 
+
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
 
@@ -39,25 +40,27 @@ class Map:
 
         return [FOVSolid, FOVFloor]
 
-    def IsDestinationVisible(self, coordsDebut, coordsFin):  # TODO: Tester la fonction
+    def IsDestinationVisible(self, coordsDebut, coordsFin):  # Fonction testée, elle fonctionne inchallah
 
-        incrX = coordsDebut.x - coordsFin.x
-
+        incrX = coordsFin.x - coordsDebut.x
         if incrX != 0:
             incrX = int(incrX / abs(incrX))
-        incrY = coordsDebut.y - coordsFin.y
+
+        incrY = coordsFin.y - coordsDebut.y
         if incrY != 0:
             incrY = int(incrY / abs(incrY))
+        print(coordsDebut.x, coordsDebut.y)
+
         print(incrX)
         print(incrY)
         print(self.layerSolid[coordsDebut.x + incrX, coordsDebut.y])
         print(self.layerSolid[coordsDebut.x, coordsDebut.y + incrY])
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
-        if coordsDebut.x == coordsFin.x and coordsDebut.y == coordsFin:
+        if coordsDebut == coordsFin :
             return True
 
-            # Sinon, si on est pas sur la même colonne, qu'il n'y a pas d'objet bloquant la vision sur la colonne d'à côté, on teste la fonction en se plaçant sur la colonne d'à côté
+        # Sinon, si on est pas sur la même colonne, qu'il n'y a pas d'objet bloquant la vision sur la colonne d'à côté, on teste la fonction en se plaçant sur la colonne d'à côté
         elif incrX != 0 and self.layerSolid[coordsDebut.x + incrX, coordsDebut.y] is None and self.IsDestinationVisible(Point(coordsDebut.x + incrX, coordsDebut.y), coordsFin):
             return True
         elif incrY != 0 and self.layerSolid[coordsDebut.x, coordsDebut.y + incrY] is None and self.IsDestinationVisible(Point(coordsDebut.x, coordsDebut.y + incrY), coordsFin):
@@ -74,20 +77,26 @@ if __name__ == '__main__':
     from Sentiant.Model.MapManager import MapManager
     from Sentiant.Model.LogsManager import LogsManager
     from Sentiant.View.MainView import MainView
-    from Sentiant.Model.TurnManager import TurnManager
+    from Sentiant.Model.QueenTile import QueenTile
+    import os
 
     ant = Ant(0, "name", "team")
 
+    os.chdir("..\\..\\")
+
     mapGen = MapManager(width=16, height=16)
+    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(1, 1))
     map = mapGen.Generate()
+
     map.layerSolid.Append(ant, Point(3, 3))
 
-    LogsManager.Info(ant)
+    antCoords = Point(3, 3)
 
-    print(map.layerSolid)
-    print(map.IsDestinationVisible(Point(8, 3), Point(4, 3)))
-    print(map.IsDestinationVisible(Point(8, 3), Point(3, 4)))
-    print(map.IsDestinationVisible(Point(8, 3), Point(2, 3)))
-    print(map.IsDestinationVisible(Point(8, 3), Point(3, 2)))
+    #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
+    #print(map.IsDestinationVisible(antCoords, Point(3, 4)))
+    #print(map.IsDestinationVisible(antCoords, Point(2, 3)))
+
+    view = MainView(map, size = (500, 500))
+    view.Run();
 
 
