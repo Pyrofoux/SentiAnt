@@ -26,4 +26,4 @@ if __name__ == '__main__':
     turnmanager = TurnManager(map)
 
     view = MainView(map, turnmanager, (500, 500))
-    view.Run();
+    view.Run()

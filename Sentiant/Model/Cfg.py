@@ -33,6 +33,10 @@ class Cfg:
     COOKIE = "cookie"
 
     NEST_RADIUS = 3
+    MIN_SPAWN_QUEEN_RADIUS = 5
+
+    QUEEN_SLEEP = "sleep"
+    QUEEN_SPAWN_ANT = "spawn"
 
 
 

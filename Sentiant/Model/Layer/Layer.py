@@ -43,6 +43,7 @@ class Layer():
         coord = self.GetXYByRef(ref)
         self[coord.x, coord.y] = None
         if self.viewGrid is not None:
+            print(1)
             self.viewGrid.Update(coord[0], coord[1])
 
     def Pop(self, ref):
