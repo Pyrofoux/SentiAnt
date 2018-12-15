@@ -5,7 +5,6 @@ import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
-
         self.width = w
         self.height = h
 
@@ -96,5 +95,3 @@ if __name__ == '__main__':
 
     view = MainView(map, size = (500, 500))
     view.Run();
-
-
