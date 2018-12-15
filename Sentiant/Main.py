@@ -1,12 +1,12 @@
 from Sentiant.Model import MapManager, QueenTile, Point
 from Sentiant.View import MainView
 from Sentiant.Model import TurnManager
-from Sentiant.Bot.FourmiRouge.FourmiRouge import FourmiRouge
+from Sentiant.bot.FourmiRouge.FourmiRouge import FourmiRouge
 import os
 
 
 if __name__ == '__main__':
-    os.chdir("..\\")
+    #os.chdir("..\\")
 
     mapGen = MapManager(width=10, height=10)
     mapGen.RegisterQueen(QueenTile(1, "team1"), Point(1, 1))

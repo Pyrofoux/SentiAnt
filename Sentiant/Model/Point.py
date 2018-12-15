@@ -3,10 +3,14 @@ class Point:
         self.x, self.y = x, y
 
     def __sub__(self, mate):
-        return Point(self.x - mate.x, self.y - mate.y)
+        if mate:
+            return Point(self.x - mate.x, self.y - mate.y)
+        return self
 
     def __add__(self, mate):
-        return Point(self.x + mate.x, self.y + mate.y)
+        if mate:
+            return Point(self.x + mate.x, self.y + mate.y)
+        return self
 
     def __len__(self, dest=None):
         """Usage: len(a - b) = distance from a to b"""

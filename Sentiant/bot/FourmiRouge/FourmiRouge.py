@@ -7,6 +7,6 @@ class FourmiRouge(Ant):
         super().__init__(id, name, team)
 
     def newTurn(self):
-        if randrange(10) < 3:
+        if randrange(2) == 0:
             self.Phero(randrange(10))
         self.Move(Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))])
