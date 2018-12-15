@@ -5,24 +5,26 @@ class Cfg:
         pass
 
     HPMAX    = 2
-    FOV      = 7
+    FOV      = 3
     HPRADIUS = 5
     WIDTH    = 42
     HEIGHT   = 42
 
-    UP    = Point(0, -1)
-    DOWN  = Point(0, 1)
-    RIGHT = Point(1, 0)
-    LEFT  = Point(-1, 0)
+    UP         = Point(0, -1)
+    DOWN       = Point(0, 1)
+    RIGHT      = Point(1, 0)
+    LEFT       = Point(-1, 0)
+    DIRECTIONS = (UP, DOWN, RIGHT, LEFT)
+
     NULL  = None
 
-    MOVE   = "move"
-    DIG    = "dig"
-    DROP   = "drop"
-    PICKUP = "pickup"
-    ATTACK = "attack"
-    SLEEP  = "sleep"
-    PHERO  = "phero" # Attention à ne pas faire phero sur un rocher mdr
+    MOVE    = "move"
+    DIG     = "dig"
+    DROP    = "drop"
+    PICKUP  = "pickup"
+    ATTACK  = "attack"
+    SLEEP   = "sleep"
+    PHERO   = "phero" # Attention à ne pas faire phero sur un rocher mdr
     ACTIONS = (MOVE, DIG, DROP, PICKUP, ATTACK, SLEEP, PHERO)
 
     ANT = "ant"
@@ -31,6 +33,8 @@ class Cfg:
     ROCK = "rock"
     BREAD = "bread"
     COOKIE = "cookie"
+    UNKNOWN = "X"
+    EMPTY = " "
 
     NEST_RADIUS = 3
     MIN_SPAWN_QUEEN_RADIUS = 5
@@ -94,7 +98,7 @@ class Cfg:
         if type(ref) is Cookie:
             return Cfg.COOKIE
 
-        return Cfg.NULL
+        return Cfg.EMPTY
 
 # Please avoid cyclic imports.
 from Sentiant.Model.Ant import Ant

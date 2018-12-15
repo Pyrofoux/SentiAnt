@@ -7,9 +7,7 @@ class TurnManager:
         self.layerPheromone = map.layerPheromone
 
     def NextTurn(self):
-
-
-        print("NextTurn()")
+        LogsManager.Info("NextTurn()")
 
         self.currentTurn += 1
 
@@ -24,13 +22,13 @@ class TurnManager:
         sorted[Cfg.PHERO] = []
         sorted[Cfg.MOVE] = []
 
-        print("All ants =  " + str(allAnts))
+        LogsManager.Info("All ants =  " + str(allAnts))
         for ant in allAnts :
-
-            print("Examining "+ant._name)
+            LogsManager.Info("Examining " + ant._name)
             ant.newTurn()
-            print(ant._name+" wants to "+ant._nextAction)
-            if ant._nextAction in Cfg.ACTIONS  :
+            LogsManager.Info(ant._name+" wants to " + ant._nextAction)
+
+            if ant._nextAction in Cfg.ACTIONS:
                 sorted[ant._nextAction].append(ant)
 
         #Checker l'ordre des actions depuis le doc
@@ -92,6 +90,7 @@ from Sentiant.Model.Bread import Bread
 from Sentiant.Model.Cookie import Cookie
 from Sentiant.Model.Pheromone import Pheromone
 from Sentiant.Model.Point import Point
+from Sentiant.Model.LogsManager import LogsManager
 
 if __name__ == '__main__':
     from Sentiant.Model.MapManager import MapManager
