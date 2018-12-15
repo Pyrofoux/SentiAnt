@@ -67,8 +67,6 @@ class Cfg:
 
         if direction in [Cfg.UP, Cfg.DOWN, Cfg.RIGHT, Cfg.LEFT]:
             nextPos = coords + direction
-
-            #TODO : Check coords valides!
             #if layerSolid.walkable(nextPos):
             return nextPos
 

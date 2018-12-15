@@ -32,7 +32,11 @@ class Map:
             for j in range(-fov, fov + 1):
 
                 distance = abs(i) + abs(j)
-                if distance <= fov and self.IsDestinationVisible(coords, Point(coords.x + i, coords.y + j)):
+                if coords[0] + i < 0 or coords[0] + i > self.layerSolid.GetWidth() or\
+                    coords[1] + j < 0 or coords[1] + j >self.layerSolid.GetHeight():
+                    FOVSolid[i + fov, j + fov] = Cfg.ROCK
+                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
+                elif distance <= fov and self.IsDestinationVisible(coords, Point(coords.x + i, coords.y + j)):
 
 
                     FOVSolid[i + fov, j + fov] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
@@ -41,8 +45,8 @@ class Map:
                     FOVFloor[i + fov, j + fov] = Cfg.EntityToType(self.layerFloor[coords[0] + i, coords[1] + j])
 
                 else:
-                    FOVSolid[i + fov, j + fov] = "X"
-                    FOVFloor[i + fov, j + fov] = "X"
+                    FOVSolid[i + fov, j + fov] = Cfg.UNKNOWN
+                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
 
         return [FOVSolid, FOVFloor]
 
@@ -60,7 +64,8 @@ class Map:
         print(incrY)
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
-
+        if coordsDebut == coordsFin:
+            return True
 
         # Sinon, si on est pas sur la même colonne, qu'il n'y a pas d'objet bloquant la vision sur la colonne d'à côté, on teste la fonction en se plaçant sur la colonne d'à côté
         # Don't touch this, c'est dégueu mais ça fonctionne
@@ -95,10 +100,9 @@ if __name__ == '__main__':
     mapGen = MapManager(width=16, height=16)
     mapGen.RegisterQueen(QueenTile(1, "team1"), Point(1, 1))
     map = mapGen.Generate()
-    print("Jusque là les erreurs sont normales")
-    map.layerSolid.Append(ant, Point(3, 3))
 
-    antCoords = Point(3, 3)
+    print("Jusque là les erreurs sont normales")
+    map.layerSolid.Append(ant, Point(13, 0))
 
     #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
     #print(map.IsDestinationVisible(antCoords, Point(7, 7)))
