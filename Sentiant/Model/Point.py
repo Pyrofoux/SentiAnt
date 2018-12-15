@@ -3,10 +3,14 @@ class Point:
         self.x, self.y = x, y
 
     def __sub__(self, mate):
-        return Point(self.x - mate.x, self.y - mate.y)
+        if mate:
+            return Point(self.x - mate.x, self.y - mate.y)
+        return self
 
     def __add__(self, mate):
-        return Point(self.x + mate.x, self.y + mate.y)
+        if mate:
+            return Point(self.x + mate.x, self.y + mate.y)
+        return self
 
     def __len__(self, dest=None):
         """Usage: len(a - b) = distance from a to b"""
@@ -27,8 +31,10 @@ class Point:
         """So that point[0] = point.x and point[1] = point.y"""
         return self.y if k else self.x
 
-    def InRange(self, xMin, xMax, yMin, yMax):
-        return self.x in range(xMin, xMax) and self.y in range(yMin, yMax)
+    def InRange(self, xMin, xMax, yMin=None, yMax=None):
+        if yMin and yMax:
+            return self.x in range(xMin, xMax) and self.y in range(yMin, yMax)
+        return self.x in range(xMin) and self.y in range(xMax)
 
     def __eq__(self, mate):
         if not isinstance(mate, Point):

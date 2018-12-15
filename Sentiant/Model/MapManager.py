@@ -36,9 +36,7 @@ class MapManager:
             # Hollow area out.
             for i in range(-Cfg.NEST_RADIUS, Cfg.NEST_RADIUS*2 +1):
                 for j in range(-Cfg.NEST_RADIUS, Cfg.NEST_RADIUS*2 +1):
-                    if abs(i - .5) + abs(j - .5) < 5 \
-                            and pos.x + i >= 0 and pos.x + i < self.map.layerSolid.GetWidth()\
-                            and pos.y + j >= 0 and pos.y ++ j < self.map.layerSolid.GetHeight():
+                    if abs(i - .5) + abs(j - .5) < 5:
                         self.map.layerSolid[pos.x + i, pos.y + j] = None
 
             # Place starter bread pieces.

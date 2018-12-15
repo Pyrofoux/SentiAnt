@@ -3,7 +3,6 @@ from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Point import Point
 import numpy as np
 
-
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
 
@@ -49,12 +48,11 @@ class Map:
         incrY = coordsFin.y - coordsDebut.y
         if incrY != 0:
             incrY = int(incrY / abs(incrY))
-        print(coordsDebut.x, coordsDebut.y)
 
-        print(incrX)
-        print(incrY)
-        print(self.layerSolid[coordsDebut.x + incrX, coordsDebut.y])
-        print(self.layerSolid[coordsDebut.x, coordsDebut.y + incrY])
+        LogsManager.Info(incrX)
+        LogsManager.Info(incrY)
+        LogsManager.Info(self.layerSolid[coordsDebut.x + incrX, coordsDebut.y])
+        LogsManager.Info(self.layerSolid[coordsDebut.x, coordsDebut.y + incrY])
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
         if coordsDebut == coordsFin :

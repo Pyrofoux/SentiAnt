@@ -6,8 +6,7 @@ import os
 
 
 if __name__ == '__main__':
-
-    os.chdir("..\\")
+    #os.chdir("..\\")
 
     mapGen = MapManager(width=10, height=10)
     mapGen.RegisterQueen(QueenTile(1, "team1"), Point(1, 1))
