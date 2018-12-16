@@ -39,6 +39,8 @@ class Grid(Frame):
         tilePheromone = self.map.layerPheromone[x, y]
         tileFloor = self.map.layerFloor[x, y]
 
+        img, bgc = None, None
+
         if isinstance(tileSolid, QueenTile):
             queensPos = self.map.layerSolid.GetQueenTiles(tileSolid.team)
             if x == queensPos[0][0] and y == queensPos[0][1]:
@@ -47,9 +49,9 @@ class Grid(Frame):
                 img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=1)
             elif x == queensPos[2][0] and y == queensPos[2][1]:
                 img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=2)
-            elif x == queensPos[3][0] and y == queensPos[3][1]:
+            else:
                 img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone, metadata=3)
-        else:
+        else :
             img, bgc = ImageManager.GetContent(tileSolid, tileFloor, tilePheromone)
 
         self.buttons[x][y].config(image=img, bg=bgc, padx = 0, pady = 0)

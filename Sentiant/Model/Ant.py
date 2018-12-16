@@ -35,6 +35,9 @@ class Ant(SolidEntity):
 
         super().__setattr__(name, value)
 
+    def newTurn(self):
+        pass
+
     def __str__(self):
         return "Name: {0}\nTeam: {1}\nHolding: {2}\nHp: {3}\nFov: {4}\nNextAction: {5}\nNextActionArg: {6}\n"\
             .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)

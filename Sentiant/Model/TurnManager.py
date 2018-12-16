@@ -1,10 +1,14 @@
 class TurnManager:
-    def __init__(self, map):
+    def __init__(self, map, queenManager=None):
         self.currentTurn = 0
+
+        self.map = map
 
         self.layerSolid = map.layerSolid
         self.layerFloor = map.layerFloor
         self.layerPheromone = map.layerPheromone
+
+        self.queenManager = queenManager
 
     def NextTurn(self):
         LogsManager.Info("NextTurn()")
@@ -39,6 +43,9 @@ class TurnManager:
         self.ExecDig   (sorted[Cfg.DIG])
         self.ExecPickup(sorted[Cfg.PICKUP])
         self.ExecDrop  (sorted[Cfg.DROP])
+
+        if self.queenManager is not None:
+            self.queenManager.NextTurn(self.currentTurn, self.map)
 
     def ExecSleep(self, ants):
         pass

@@ -25,7 +25,7 @@ class Point:
         return (self.x**2 + self.y**2)**.5
 
     def __str__(self):
-        return str(self.x) + "; " + str(self.y)
+        return str(self.x) + ";" + str(self.y)
 
     def __getitem__(self, k):
         """So that point[0] = point.x and point[1] = point.y"""
@@ -40,3 +40,11 @@ class Point:
         if not isinstance(mate, Point):
             return False
         return self.x == mate.x and self.y == mate.y
+
+    @staticmethod
+    def StringToPoint(ch):
+        list = ch.split(';')
+        return Point(int(list[0]), int(list[1]))
+
+if __name__ == '__main__':
+    print(Point.StringToPoint("1;1"))
