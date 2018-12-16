@@ -50,7 +50,6 @@ class Ant(SolidEntity):
         if direc != Cfg.NULL:
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
-            LogsManager.NotADirectionError(self._name, self._team, direc, "c'est un test")
         else :
             self.Sleep()
             LogsManager.NotADirectionError(self._name, self._team, direc, "déplacement")
