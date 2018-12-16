@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     os.chdir("..\\")
 
-    mapGen = MapManager(width=25, height=25)
+    mapGen = MapManager()
 
     qM = QueensManager(3, [1, 2, 3], [QueenRouge, QueenRouge, QueenRouge], mapGen)
     map = mapGen.Generate()

@@ -29,7 +29,7 @@ class QueensManager:
     def GenerateQueenPosition(self):
         partCircle = 2*math.pi/self.nbQueen
 
-        radius = random.randrange(Cfg.MIN_SPAWN_QUEEN_RADIUS, round(self.mapManager.map.width / 2 * (1 - 1 / 4)))
+        radius = random.randrange(Cfg.MIN_SPAWN_QUEEN_RADIUS,round(self.mapManager.map.width / 2 * (1 - 1 / 4)) )
         increment = random.random() * 2*math.pi / 10
 
         for i in range(self.nbQueen):
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     os.chdir("..\\..\\")
 
-    mapGen = MapManager(width=25, height=25)
+    mapGen = MapManager()
 
     qM = QueensManager(3, ["1", "2", "3"], [QueenTest, QueenTest, QueenTest] , mapGen)
 

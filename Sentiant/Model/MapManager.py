@@ -1,10 +1,11 @@
 from random import Random
+import random
 
 from Sentiant.Model.Cfg import Cfg
 
 class MapManager:
     def __init__(self, map=None, width=Cfg.WIDTH, height=Cfg.HEIGHT, \
-                 rockRatio=.06, breadAmount=42, seed=None):
+                 rockRatio=.06, breadAmount=int(Cfg.WIDTH+Cfg.HEIGHT), seed=None):
         self.rng = Random(seed) if seed else Random()
 
         self.map = map if map else Map(w=width, h=height)
@@ -13,6 +14,7 @@ class MapManager:
         self.breadAmount = breadAmount
 
         self.queens = []
+        print(breadAmount)
 
     def RegisterQueen(self, queenTile, queenPos):
         """Register a queen to account for in generation"""
@@ -42,10 +44,29 @@ class MapManager:
                         self.map.layerSolid[pos.x + i, pos.y + j] = None
 
             # Place starter bread pieces.
+            #Hotfix : on passe à 3 bouts de pain au départ
+            # a = (random.randrange(-1,3),random.randrange(-1,3))
+            # b = (random.randrange(-1, 3), random.randrange(-1, 3))
+            # c = (random.randrange(-1, 3), random.randrange(-1, 3))
+            # while b==a :
+            #     b = (random.randrange(-1, 3), random.randrange(-1, 3))
+            # while (c==a and c==b):
+            #     c = (random.randrange(-1, 3), random.randrange(-1, 3))
+
             around = [ (-1, +0), (-1, +1), (+0, -1), (+0, +2),
                         (+1, -1), (+1, +2), (+2, +0), (+2, +1) ]
-            for i, j in around:
+            a=around[random.randrange(0,8)]
+            b=around[random.randrange(0,8)]
+            while b==a:
+                b=around[random.randrange(0, 8)]
+            c=around[random.randrange(0,8)]
+            while c==a or c==b:
+                c=around[random.randrange(0,8)]
+            randomizedAround = [ a, b, c ]
+            for i, j in randomizedAround:
                 self.map.layerFloor[pos.x + i, pos.y + j] = Bread(-1)
+
+
 
             # Set-up queen tiles in a 2 by 2.
             for i in range(2):
