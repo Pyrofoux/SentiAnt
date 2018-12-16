@@ -95,7 +95,6 @@ if __name__ == '__main__':
     ant = Ant(0, "name", "team")
 
     os.chdir("..\\..\\")
-
     mapGen = MapManager(width=24, height=24)
     mapGen.RegisterQueen(QueenTile(1, "team1"), Point(6, 6))
     map = mapGen.Generate()

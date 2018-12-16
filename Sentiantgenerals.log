@@ -1,0 +1,90 @@
+[Info] (14:25:36.131)> NextTurn()
+[Info] (14:25:36.132)> All ants =  []
+[Info] (14:25:37.274)> NextTurn()
+[Info] (14:25:37.276)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:37.276)> Examining test
+[Info] (14:25:37.276)> test wants to move
+[Info] (14:25:37.276)> Examining test
+[Info] (14:25:37.276)> test wants to move
+[Info] (14:25:37.276)> Examining test
+[Info] (14:25:37.276)> test wants to move
+[Info] (14:25:37.674)> NextTurn()
+[Info] (14:25:37.675)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:37.675)> Examining test
+[Info] (14:25:37.675)> test wants to move
+[Info] (14:25:37.675)> Examining test
+[Info] (14:25:37.675)> test wants to move
+[Info] (14:25:37.676)> Examining test
+[Info] (14:25:37.676)> test wants to move
+[Info] (14:25:37.922)> NextTurn()
+[Info] (14:25:37.923)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:37.923)> Examining test
+[Info] (14:25:37.923)> test wants to move
+[Info] (14:25:37.923)> Examining test
+[Info] (14:25:37.923)> test wants to move
+[Info] (14:25:37.923)> Examining test
+[Info] (14:25:37.924)> test wants to move
+[Info] (14:25:38.194)> NextTurn()
+[Info] (14:25:38.195)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:38.195)> Examining test
+[Info] (14:25:38.196)> test wants to move
+[Info] (14:25:38.196)> Examining test
+[Info] (14:25:38.196)> test wants to move
+[Info] (14:25:38.196)> Examining test
+[Info] (14:25:38.196)> test wants to move
+[Info] (14:25:38.410)> NextTurn()
+[Info] (14:25:38.412)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:38.412)> Examining test
+[Info] (14:25:38.412)> test wants to move
+[Info] (14:25:38.412)> Examining test
+[Info] (14:25:38.412)> test wants to move
+[Info] (14:25:38.412)> Examining test
+[Info] (14:25:38.412)> test wants to move
+[Info] (14:25:38.650)> NextTurn()
+[Info] (14:25:38.651)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:38.651)> Examining test
+[Info] (14:25:38.651)> test wants to move
+[Info] (14:25:38.652)> Examining test
+[Info] (14:25:38.652)> test wants to move
+[Info] (14:25:38.652)> Examining test
+[Info] (14:25:38.652)> test wants to move
+[Info] (14:25:38.842)> NextTurn()
+[Info] (14:25:38.843)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:38.844)> Examining test
+[Info] (14:25:38.844)> test wants to move
+[Info] (14:25:38.844)> Examining test
+[Info] (14:25:38.844)> test wants to move
+[Info] (14:25:38.844)> Examining test
+[Info] (14:25:38.844)> test wants to move
+[Info] (14:25:39.042)> NextTurn()
+[Info] (14:25:39.043)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:39.043)> Examining test
+[Info] (14:25:39.044)> test wants to move
+[Info] (14:25:39.044)> Examining test
+[Info] (14:25:39.044)> test wants to move
+[Info] (14:25:39.044)> Examining test
+[Info] (14:25:39.044)> test wants to move
+[Info] (14:25:39.242)> NextTurn()
+[Info] (14:25:39.243)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:39.243)> Examining test
+[Info] (14:25:39.244)> test wants to move
+[Info] (14:25:39.244)> Examining test
+[Info] (14:25:39.244)> test wants to move
+[Info] (14:25:39.244)> Examining test
+[Info] (14:25:39.244)> test wants to move
+[Info] (14:25:39.418)> NextTurn()
+[Info] (14:25:39.419)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:39.419)> Examining test
+[Info] (14:25:39.420)> test wants to move
+[Info] (14:25:39.420)> Examining test
+[Info] (14:25:39.420)> test wants to move
+[Info] (14:25:39.420)> Examining test
+[Info] (14:25:39.420)> test wants to move
+[Info] (14:25:39.618)> NextTurn()
+[Info] (14:25:39.619)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC2C83C8>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468438>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000001A7BC468470>]
+[Info] (14:25:39.619)> Examining test
+[Info] (14:25:39.619)> test wants to move
+[Info] (14:25:39.619)> Examining test
+[Info] (14:25:39.619)> test wants to move
+[Info] (14:25:39.619)> Examining test
+[Info] (14:25:39.619)> test wants to move
