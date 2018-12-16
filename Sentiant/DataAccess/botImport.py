@@ -1,14 +1,14 @@
 import os
 
 def LoadAllFrom(rootDir, mainFile='queen.py'):
-    """ Load players alorithms from the specified directory `rootDir`.
+    """ Load players algorithms from the specified directory `rootDir`.
 
         For every sub-directories:
         * If it finds a 'queen.py' (default - use argument `mainFile` to
             change it), loads it and appends its reference ;
         * Else aborts.
 
-        Return a list of references `ref` to the loaded modules alongs with the
+        Return a list of references `ref` to the loaded modules along with the
         directory's `name` it was found in:
             ``` [(ref, name), (ref, name), ..] ```
     """
@@ -25,7 +25,7 @@ def LoadAllFrom(rootDir, mainFile='queen.py'):
                                    fromlist=[mainFile[:-3]])
                 r.append( (queen, dir.name) )
             except ImportError as e:
-                LogsManager.Error("\tcould'n gather module because:\n" + str(e))
+                LogsManager.Error("\tcould'nt gather module because:\n" + str(e))
             else:
                 LogsManager.Info("\tdone!")
         else:
