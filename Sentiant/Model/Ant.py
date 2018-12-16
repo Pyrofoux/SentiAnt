@@ -42,6 +42,15 @@ class Ant(SolidEntity):
         return "Name: {0}\nTeam: {1}\nHolding: {2}\nHp: {3}\nFov: {4}\nNextAction: {5}\nNextActionArg: {6}\n"\
             .format(self._name, self._team, self._holding, self._HP, self._FoV, self._nextAction, self._nextActionArg)
 
+    def getHP(self):
+        return self._HP
+
+    def getHolding(self):
+        return self._holding
+
+    def getFOV(self):
+        return self._FOV
+
     def Move(self, direction):
         """Set Action of ant to move
         direction : 'up', 'left', ..."""

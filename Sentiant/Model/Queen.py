@@ -31,7 +31,7 @@ class Queen:
         self._spawnType = type
         self._nameSpawn = name
 
-    def newTurn(self):
+    def newTurn(self, FOV):
         pass
 
 
