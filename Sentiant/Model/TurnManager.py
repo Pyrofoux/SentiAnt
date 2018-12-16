@@ -84,24 +84,24 @@ class TurnManager:
             posCible = posAnt + dir
             cible = self.layerSolid[posCible]
 
-            if isinstance(cible, None) or isinstance(cible, Ant): #Check les Ants qui rentrent pas dans un mur
+            if cible is None or isinstance(cible, Ant): #Check les Ants qui rentrent pas dans un mur
                 movingAnts.append(ant)
                 initialPositions.append(posAnt)
                 desiredDestinations.append(posCible)
 
         if len(movingAnts) > 0:
             punished = MoveManager.calculatePunished(initialPositions, desiredDestinations)
-            toMove = []
+            indexToMove = []
             for i in range(0,len(movingAnts)):
 
                 if i in punished: #
                     self.Remove1HP(movingAnts[i])
                 else:
-                    toMove.append(ant)
+                    indexToMove.append(i)
 
-            for i in range(0, len(toMove)):
-                self.layerSolid.Remove(toMove[i])
-                self.layerSolid.Append(ant, desiredDestinations[i])
+            for i in range(0, len(indexToMove)):
+                self.layerSolid.Remove(movingAnts[indexToMove[i]])
+                self.layerSolid.Append(movingAnts[indexToMove[i]], desiredDestinations[indexToMove[i]])
 
 
 
