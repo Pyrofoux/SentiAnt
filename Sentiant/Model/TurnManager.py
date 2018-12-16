@@ -66,17 +66,48 @@ class TurnManager:
             cible = self.layerSolid[posCible]
 
             if isinstance(cible, Ant):
-                toPunish.append(cible)
+                self.Remove1HP(toPunish)
 
-        self.Remove1HP(toPunish)
+
 
     def ExecMove(self, ants):
 
+        movingAnts = []
         initialPositions = []
-
+        desiredDestinations = []
 
         for ant in ants:
-            self.layerSolid.MoveEntity(ant, ant._nextActionArg)
+            #self.layerSolid.MoveEntity(ant, ant._nextActionArg)
+
+            posAnt = self.layerSolid.GetXYByRef(ant)
+            dir = ant._nextActionArg
+            posCible = posAnt + dir
+            cible = self.layerSolid[posCible]
+
+            if isinstance(cible, None) or isinstance(cible, Ant): #Check les Ants qui rentrent pas dans un mur
+                movingAnts.append(ant)
+                initialPositions.append(posAnt)
+                desiredDestinations.append(posCible)
+
+        if len(movingAnts) > 0:
+            punished = MoveManager.calculatePunished(initialPositions, desiredDestinations)
+            toMove = []
+            for i in range(0,len(movingAnts)):
+
+                if i in punished: #
+                    self.Remove1HP(movingAnts[i])
+                else:
+                    toMove.append(ant)
+
+            for i in range(0, len(toMove)):
+                self.layerSolid.Remove(toMove[i])
+                self.layerSolid.Append(ant, desiredDestinations[i])
+
+
+
+
+
+
 
     def ExecDig(self, ants):
         for ant in ants:
@@ -108,9 +139,8 @@ class TurnManager:
                 pass
                 # TODO : cancel ant action
 
-    def Remove1HP(self, ants):
+    def Remove1HP(self, cible):
 
-        for cible in ants:
             # cible dead
             if cible._HP == 1:
                 self.layerSolid.Remove(cible)
@@ -127,6 +157,7 @@ from Sentiant.Model.Cookie import Cookie
 from Sentiant.Model.Pheromone import Pheromone
 from Sentiant.Model.Point import Point
 from Sentiant.Model.LogsManager import LogsManager
+from Sentiant.Model.MoveManager import MoveManager
 
 if __name__ == '__main__':
     from Sentiant.Model.MapManager import MapManager
