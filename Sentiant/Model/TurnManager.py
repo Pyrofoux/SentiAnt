@@ -56,6 +56,9 @@ class TurnManager:
             self.layerPheromone.Place(ant, ant._nextActionArg)
 
     def ExecAttack(self, ants):
+
+        toPunish = []
+
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
             dir = ant._nextActionArg
@@ -63,14 +66,15 @@ class TurnManager:
             cible = self.layerSolid[posCible]
 
             if isinstance(cible, Ant):
-                # cible dead
-                if cible._HP == 1:
-                    self.layerSolid.Remove(cible)
-                # cible still alive
-                else :
-                    cible._HP -= 1
+                toPunish.append(cible)
+
+        self.Remove1HP(toPunish)
 
     def ExecMove(self, ants):
+
+        initialPositions = []
+
+
         for ant in ants:
             self.layerSolid.MoveEntity(ant, ant._nextActionArg)
 
@@ -104,6 +108,15 @@ class TurnManager:
                 pass
                 # TODO : cancel ant action
 
+    def Remove1HP(self, ants):
+
+        for cible in ants:
+            # cible dead
+            if cible._HP == 1:
+                self.layerSolid.Remove(cible)
+            # cible still alive
+            else:
+                cible._HP -= 1
 
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Ant import Ant
