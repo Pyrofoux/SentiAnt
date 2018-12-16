@@ -1,6 +1,5 @@
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Point import Point
-import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
@@ -24,8 +23,8 @@ class Map:
         size = fov * 2 + 1
         print(size)
 
-        FOVSolid = np.zeros((size, size), dtype =  str)
-        FOVFloor = np.zeros((size, size), dtype = str)
+        FOVSolid = [[0 for i in range(size)] for i in range(size)]
+        FOVFloor = [[0 for i in range(size)] for i in range(size)]
 
         for i in range(-fov, fov + 1) :
             for j in range(-fov, fov + 1):
@@ -33,19 +32,19 @@ class Map:
                 distance = abs(i) + abs(j)
                 if coords[0] + i < 0 or coords[0] + i >= self.layerSolid.GetWidth() or\
                     coords[1] + j < 0 or coords[1] + j >= self.layerSolid.GetHeight():
-                    FOVSolid[i + fov, j + fov] = Cfg.ROCK
-                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
+                    FOVSolid[i + fov][j + fov] = Cfg.ROCK
+                    FOVFloor[i + fov][j + fov] = Cfg.UNKNOWN
                 elif distance <= fov and self.IsDestinationVisible(coords, Point(coords.x + i, coords.y + j)):
 
 
-                    FOVSolid[i + fov, j + fov] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
+                    FOVSolid[i + fov][ j + fov] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
 
 
-                    FOVFloor[i + fov, j + fov] = Cfg.EntityToType(self.layerFloor[coords[0] + i, coords[1] + j])
+                    FOVFloor[i + fov][ j + fov] = Cfg.EntityToType(self.layerFloor[coords[0] + i, coords[1] + j])
 
                 else:
-                    FOVSolid[i + fov, j + fov] = Cfg.UNKNOWN
-                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
+                    FOVSolid[i + fov][ j + fov] = Cfg.UNKNOWN
+                    FOVFloor[i + fov][ j + fov] = Cfg.UNKNOWN
 
         return [FOVSolid, FOVFloor]
 
@@ -108,4 +107,4 @@ if __name__ == '__main__':
     print(map.GetFOV(ant))
 
     view = MainView(map, size = (500, 500))
-    view.Run();
+    view.Run()

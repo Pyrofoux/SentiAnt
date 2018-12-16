@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SentiAnt.iml" afterPath="$PROJECT_DIR$/.idea/SentiAnt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="LogsManager path fix">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/Cfg.py" afterPath="$PROJECT_DIR$/Sentiant/Model/Cfg.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" afterPath="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/Map.py" afterPath="$PROJECT_DIR$/Sentiant/Model/Map.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" afterPath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Modelgenerals.log" afterPath="$PROJECT_DIR$/Sentiant/Modelgenerals.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiantgenerals.log" afterPath="$PROJECT_DIR$/Sentiantgenerals.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,30 +18,10 @@
       <file leaf-file-name="Map.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sentiant/Model/Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/View/ImageManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogsManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/LogsManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+            <state relative-caret-position="295">
+              <caret line="108" column="43" lean-forward="true" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +38,8 @@
         <option value="$PROJECT_DIR$/Sentiant/Model/Layer/Layer.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/Cfg.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
-        <option value="$PROJECT_DIR$/Sentiant/Model/Map.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" />
+        <option value="$PROJECT_DIR$/Sentiant/Model/Map.py" />
       </list>
     </option>
   </component>
@@ -399,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544957087260</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LogsManager path fix">
+      <created>1544970224056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544970224056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -434,7 +414,8 @@
     <MESSAGE value="Je comprends plus rien" />
     <MESSAGE value="Ok donc ce qui contrôle Git était apparemment bugué, si on le change pas ça fonctionne pas, si on le change on peut plus utiliser Git. Vive PyCharm." />
     <MESSAGE value="Un jour, Git fonctionnera, mais ce jour n'est pas encore arrivé" />
-    <option name="LAST_COMMIT_MESSAGE" value="Un jour, Git fonctionnera, mais ce jour n'est pas encore arrivé" />
+    <MESSAGE value="LogsManager path fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="LogsManager path fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -559,9 +540,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Model/Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="295">
+          <caret line="108" column="43" lean-forward="true" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
