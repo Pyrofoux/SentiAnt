@@ -1,4 +1,4 @@
-from os import getcwd,path
+from os import path, getcwd
 from datetime import datetime
 
 class LogsManager :
@@ -13,11 +13,8 @@ class LogsManager :
     #scriptDir = path.split(scriptPath)[0]
     #scriptDirDir = path.dirname(scriptDir)
 
-    BASE = "Sentiant/Logs/"
+    BASE = "\\Sentiant\\Logs\\"
     EXT = ".log"
-
-    generals = open(BASE + "generals" + EXT, "w")
-    users    = open(BASE + "users"    + EXT, "w")
 
     @staticmethod
     def StdOut(type, msg, isUser=False, end="\n"):
@@ -25,9 +22,11 @@ class LogsManager :
         out = pre + str(msg).replace("\n", "\n" + " " * len(pre)) + end # .replace(a,b) remplace toutes les occurrences de a par b
         print(out)
 
-        LogsManager.generals.write(out)
+        with open(LogsManager.BASE + "generals" + LogsManager.EXT, "w") as generals :
+            generals.write(out)
         if isUser:
-            LogsManager.users.write(out)
+            with open(LogsManager.BASE + "users"    + LogsManager.EXT, "w") as users:
+                users.write(out)
 
     @staticmethod
     def Error(details, userFailure=False):
@@ -71,8 +70,8 @@ class LogsManager :
 
     @staticmethod
     def PrivateVariableError(antId, antTeam, varName, tryValue):
-        """Writes in generals and users log files
-           when a private variable is accessed or modified by an Ant.
+        """Writes in generals and users text files
+           when a non-valid pheromone is given to an Ant
         """
         details = ("Une erreur a eu lieu car la variable '{varName}' " \
                 + "qu'a essaye de modifier la fourmi '{antId}' de l'equipe " \
