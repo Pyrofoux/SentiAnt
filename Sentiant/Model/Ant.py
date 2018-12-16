@@ -50,6 +50,7 @@ class Ant(SolidEntity):
         if direc != Cfg.NULL:
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
+            LogsManager.NotADirectionError(self._name, self._team, direc, "c'est un test")
         else :
             self.Sleep()
             LogsManager.NotADirectionError(self._name, self._team, direc, "déplacement")
@@ -104,6 +105,9 @@ from Sentiant.Model.LogsManager import LogsManager
 from Sentiant.Model.Cfg import Cfg
 
 if __name__ == '__main__':
+    import os
+
+    os.chdir("../../")
 
     ant = Ant(0, "name", "team")
     LogsManager.Info(ant)

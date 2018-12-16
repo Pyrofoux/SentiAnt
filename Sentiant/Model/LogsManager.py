@@ -13,7 +13,7 @@ class LogsManager :
     #scriptDir = path.split(scriptPath)[0]
     #scriptDirDir = path.dirname(scriptDir)
 
-    BASE = "\\Sentiant\\Logs\\"
+    BASE = "Sentiant\\Logs\\" #mais ça marche peut-être pas sur Linux
     EXT = ".log"
 
     @staticmethod
@@ -25,7 +25,7 @@ class LogsManager :
         with open(LogsManager.BASE + "generals" + LogsManager.EXT, "w") as generals :
             generals.write(out)
         if isUser:
-            with open(LogsManager.BASE + "users"    + LogsManager.EXT, "w") as users:
+            with open(LogsManager.BASE + "users" + LogsManager.EXT, "w") as users:
                 users.write(out)
 
     @staticmethod
