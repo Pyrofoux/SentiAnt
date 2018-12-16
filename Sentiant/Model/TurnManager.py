@@ -16,6 +16,7 @@ class TurnManager:
         self.currentTurn += 1
 
         allAnts = self.layerSolid.ToList(Ant)
+
         sorted = {}
 
         sorted[Cfg.SLEEP] = []
@@ -29,7 +30,7 @@ class TurnManager:
         LogsManager.Info("All ants =  " + str(allAnts))
         for ant in allAnts :
             LogsManager.Info("Examining " + ant._name)
-            ant.newTurn()
+            ant.newTurn(map.GetFOV(ant))
             LogsManager.Info(ant._name+" wants to " + ant._nextAction)
 
             if ant._nextAction in Cfg.ACTIONS:
