@@ -1,0 +1,139 @@
+[Info] (15:01:01.849)> NextTurn()
+[Info] (15:01:01.851)> All ants =  []
+[Info] (15:01:03.850)> NextTurn()
+[Info] (15:01:03.852)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:03.852)> Examining test
+[Info] (15:01:03.853)> test wants to move
+[Info] (15:01:03.853)> Examining test
+[Info] (15:01:03.853)> test wants to move
+[Info] (15:01:03.853)> Examining test
+[Info] (15:01:03.853)> test wants to move
+[Info] (15:01:10.144)> NextTurn()
+[Info] (15:01:10.146)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:10.146)> Examining test
+[Info] (15:01:10.146)> test wants to move
+[Info] (15:01:10.146)> Examining test
+[Info] (15:01:10.147)> test wants to move
+[Info] (15:01:10.147)> Examining test
+[Info] (15:01:10.147)> test wants to move
+[Info] (15:01:22.519)> NextTurn()
+[Info] (15:01:22.521)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:22.521)> Examining test
+[Info] (15:01:22.521)> test wants to move
+[Info] (15:01:22.521)> Examining test
+[Info] (15:01:22.521)> test wants to move
+[Info] (15:01:22.521)> Examining test
+[Info] (15:01:22.521)> test wants to move
+[Info] (15:01:26.949)> NextTurn()
+[Info] (15:01:26.951)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:26.951)> Examining test
+[Info] (15:01:26.951)> test wants to move
+[Info] (15:01:26.951)> Examining test
+[Info] (15:01:26.951)> test wants to move
+[Info] (15:01:26.951)> Examining test
+[Info] (15:01:26.951)> test wants to move
+[Info] (15:01:30.962)> NextTurn()
+[Info] (15:01:30.963)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:30.963)> Examining test
+[Info] (15:01:30.963)> test wants to move
+[Info] (15:01:30.963)> Examining test
+[Info] (15:01:30.963)> test wants to move
+[Info] (15:01:30.963)> Examining test
+[Info] (15:01:30.964)> test wants to move
+[Info] (15:01:36.648)> NextTurn()
+[Info] (15:01:36.650)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:36.650)> Examining test
+[Info] (15:01:36.650)> test wants to move
+[Info] (15:01:36.650)> Examining test
+[Info] (15:01:36.650)> test wants to move
+[Info] (15:01:36.650)> Examining test
+[Info] (15:01:36.650)> test wants to move
+[Info] (15:01:44.514)> NextTurn()
+[Info] (15:01:44.516)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:44.516)> Examining test
+[Info] (15:01:44.516)> test wants to move
+[Info] (15:01:44.516)> Examining test
+[Info] (15:01:44.516)> test wants to move
+[Info] (15:01:44.516)> Examining test
+[Info] (15:01:44.516)> test wants to move
+[Info] (15:01:46.477)> NextTurn()
+[Info] (15:01:46.479)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:46.479)> Examining test
+[Info] (15:01:46.479)> test wants to move
+[Info] (15:01:46.479)> Examining test
+[Info] (15:01:46.479)> test wants to move
+[Info] (15:01:46.479)> Examining test
+[Info] (15:01:46.479)> test wants to move
+[Info] (15:01:49.184)> NextTurn()
+[Info] (15:01:49.186)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:49.186)> Examining test
+[Info] (15:01:49.186)> test wants to move
+[Info] (15:01:49.186)> Examining test
+[Info] (15:01:49.186)> test wants to move
+[Info] (15:01:49.186)> Examining test
+[Info] (15:01:49.186)> test wants to move
+[Info] (15:01:51.585)> NextTurn()
+[Info] (15:01:51.586)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:51.586)> Examining test
+[Info] (15:01:51.586)> test wants to move
+[Info] (15:01:51.586)> Examining test
+[Info] (15:01:51.587)> test wants to move
+[Info] (15:01:51.587)> Examining test
+[Info] (15:01:51.587)> test wants to move
+[Info] (15:01:53.960)> NextTurn()
+[Info] (15:01:53.962)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:53.962)> Examining test
+[Info] (15:01:53.962)> test wants to move
+[Info] (15:01:53.962)> Examining test
+[Info] (15:01:53.962)> test wants to move
+[Info] (15:01:53.962)> Examining test
+[Info] (15:01:53.962)> test wants to move
+[Info] (15:01:56.123)> NextTurn()
+[Info] (15:01:56.125)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:56.125)> Examining test
+[Info] (15:01:56.125)> test wants to move
+[Info] (15:01:56.125)> Examining test
+[Info] (15:01:56.125)> test wants to move
+[Info] (15:01:56.125)> Examining test
+[Info] (15:01:56.125)> test wants to move
+[Info] (15:01:58.281)> NextTurn()
+[Info] (15:01:58.282)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:01:58.282)> Examining test
+[Info] (15:01:58.283)> test wants to move
+[Info] (15:01:58.283)> Examining test
+[Info] (15:01:58.283)> test wants to move
+[Info] (15:01:58.283)> Examining test
+[Info] (15:01:58.283)> test wants to move
+[Info] (15:02:01.406)> NextTurn()
+[Info] (15:02:01.407)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0C345090>]
+[Info] (15:02:01.407)> Examining test
+[Info] (15:02:01.407)> test wants to move
+[Info] (15:02:01.407)> Examining test
+[Info] (15:02:01.407)> test wants to move
+[Info] (15:02:01.407)> Examining test
+[Info] (15:02:01.408)> test wants to move
+[Warning] (15:02:01.417)> Out of range exception caugth: 25;15
+[Info] (15:02:07.874)> NextTurn()
+[Info] (15:02:07.876)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>]
+[Info] (15:02:07.876)> Examining test
+[Info] (15:02:07.876)> test wants to move
+[Info] (15:02:07.876)> Examining test
+[Info] (15:02:07.876)> test wants to move
+[Info] (15:02:10.099)> NextTurn()
+[Info] (15:02:10.101)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>]
+[Info] (15:02:10.102)> Examining test
+[Info] (15:02:10.102)> test wants to move
+[Info] (15:02:10.102)> Examining test
+[Info] (15:02:10.102)> test wants to move
+[Info] (15:02:11.917)> NextTurn()
+[Info] (15:02:11.918)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>]
+[Info] (15:02:11.919)> Examining test
+[Info] (15:02:11.919)> test wants to move
+[Info] (15:02:11.919)> Examining test
+[Info] (15:02:11.919)> test wants to move
+[Info] (15:02:15.981)> NextTurn()
+[Info] (15:02:15.983)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0A811B90>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x0AF610F0>]
+[Info] (15:02:15.983)> Examining test
+[Info] (15:02:15.983)> test wants to move
+[Info] (15:02:15.983)> Examining test
+[Info] (15:02:15.983)> test wants to move
