@@ -1,6 +1,6 @@
-
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Point import Point
+import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
@@ -31,8 +31,8 @@ class Map:
             for j in range(-fov, fov + 1):
 
                 distance = abs(i) + abs(j)
-                if coords[0] + i < 0 or coords[0] + i > self.layerSolid.GetWidth() or\
-                    coords[1] + j < 0 or coords[1] + j >self.layerSolid.GetHeight():
+                if coords[0] + i < 0 or coords[0] + i >= self.layerSolid.GetWidth() or\
+                    coords[1] + j < 0 or coords[1] + j >= self.layerSolid.GetHeight():
                     FOVSolid[i + fov, j + fov] = Cfg.ROCK
                     FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
                 elif distance <= fov and self.IsDestinationVisible(coords, Point(coords.x + i, coords.y + j)):
@@ -96,12 +96,12 @@ if __name__ == '__main__':
 
     os.chdir("..\\..\\")
 
-    mapGen = MapManager(width=16, height=16)
-    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(1, 1))
+    mapGen = MapManager(width=24, height=24)
+    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(6, 6))
     map = mapGen.Generate()
 
     print("Jusque là les erreurs sont normales")
-    map.layerSolid.Append(ant, Point(13, 0))
+    map.layerSolid.Append(ant, Point(8, 6))
 
     #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
     #print(map.IsDestinationVisible(antCoords, Point(7, 7)))
