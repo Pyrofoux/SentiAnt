@@ -24,13 +24,7 @@ class Queen:
         self._nameSpawn = ""
 
     def SpawnAnt(self, name, type, position):
-        """
-        position : SPAWN + nb
-        1 2 3 4
-        5     6
-        7     8
-        9 101112
-        """
+
 
         self._order = Cfg.QUEEN_SPAWN_ANT
         self._positionOrder = position

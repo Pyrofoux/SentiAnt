@@ -9,25 +9,24 @@ class LogsManager :
     def timeString():
         return datetime.now().strftime("%H:%M:%S.%f")[:-3]
 
-    #scriptPath = os.path.abspath(__file__)
-    #scriptDir = os.path.split(scriptPath)[0]
-    #scriptDirDir = os.path.dirname(scriptDir)
+    #scriptPath = path.abspath(__file__)
+    #scriptDir = path.split(scriptPath)[0]
+    #scriptDirDir = path.dirname(scriptDir)
 
-    BASE = getcwd()#"Sentiant/Logs/"
+    BASE = "Sentiant\\Logs\\" #mais ça marche peut-être pas sur Linux
     EXT = ".log"
-
-    generals = open(BASE + "generals" + EXT, "w")
-    users    = open(BASE + "users"    + EXT, "w")
 
     @staticmethod
     def StdOut(type, msg, isUser=False, end="\n"):
         pre = "["+type+"] ("+LogsManager.timeString()+")> "
-        out = pre + str(msg).replace("\n", "\n" + " " * len(pre)) + end
+        out = pre + str(msg).replace("\n", "\n" + " " * len(pre)) + end # .replace(a,b) remplace toutes les occurrences de a par b
         print(out)
 
-        LogsManager.generals.write(out)
+        with open(LogsManager.BASE + "generals" + LogsManager.EXT, "w") as generals :
+            generals.write(out)
         if isUser:
-            LogsManager.users.write(out)
+            with open(LogsManager.BASE + "users" + LogsManager.EXT, "w") as users:
+                users.write(out)
 
     @staticmethod
     def Error(details, userFailure=False):
@@ -44,28 +43,28 @@ class LogsManager :
 
     @staticmethod
     def Debug(msg, isUser=True):
-        """Recomended for user usage"""
+        """Recommended for user usage"""
         LogsManager.StdOut("Debug", msg, isUser)
 
     @staticmethod
     def NotADirectionError(antId, antTeam, direction, action):
-        """Writes in generals and users text files
-           when a non-valid direction is given to an Ant
+        """Writes in generals and users log files
+           when a non-valid direction is given to an Ant.
         """
         details = ("Une erreur a eu lieu car la direction '{direction}' " \
-                + "donnée à la fourmi '{antId}' 'de l'équipe '{antTeam}' " \
+                + "donnee à la fourmi '{antId}' 'de l'équipe '{antTeam}' " \
                 + "pour l'action '{action}' n'est pas une direction valide.") \
                 .format(antId=antId, antTeam=antTeam, direction=direction, action=action)
         LogsManager.Error(details, True)
 
     @staticmethod
     def NotAPheromoneError(antId, antTeam, pheromone):
-        """Writes in generals and users text files
-           when a non-valid pheromone is given to an Ant
+        """Writes in generals and users log files
+           when a non-valid pheromone is given to an Ant.
         """
-        details = ("Une erreur a eu lieu car la phéromone '{pheromone}' " \
-                + "qu'a essayé de poser la fourmi '{antId}' de l'équipe " \
-                + "'{antTeam}' n'est pas une valeur de phéromone valide.") \
+        details = ("Une erreur a eu lieu car la pheromone '{pheromone}' " \
+                + "qu'a essaye de poser la fourmi '{antId}' de l'équipe " \
+                + "'{antTeam}' n'est pas une valeur de pheromone valide.") \
                 .format(antId=antId, antTeam=antTeam, pheromone=pheromone)
         LogsManager.Error(details, True)
 
@@ -75,8 +74,8 @@ class LogsManager :
            when a non-valid pheromone is given to an Ant
         """
         details = ("Une erreur a eu lieu car la variable '{varName}' " \
-                + "qu'a essayé de modifier la fourmi '{antId}' de l'équipe " \
+                + "qu'a essaye de modifier la fourmi '{antId}' de l'equipe " \
                 + "'{antTeam}' pour la nouvelle valeur de '{tryValue}' " \
-                + "est une variable privée innaccessible.") \
+                + "est une variable privee inaccessible.") \
                 .format(antId=antId, antTeam=antTeam, varName=varName, tryValue=tryValue)
         LogsManager.Error(details, True)

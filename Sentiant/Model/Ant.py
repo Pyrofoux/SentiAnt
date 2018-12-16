@@ -35,7 +35,7 @@ class Ant(SolidEntity):
 
         super().__setattr__(name, value)
 
-    def newTurn(self):
+    def newTurn(self, FOV, pheromones):
         pass
 
     def __str__(self):
@@ -47,9 +47,10 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if(direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
+            LogsManager.NotADirectionError(self._name, self._team, direc, "c'est un test")
         else :
             self.Sleep()
             LogsManager.NotADirectionError(self._name, self._team, direc, "déplacement")
@@ -59,7 +60,7 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if (direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
@@ -71,7 +72,7 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if (direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.DIG
             self._nextActionArg = direc
         else :
@@ -95,15 +96,22 @@ class Ant(SolidEntity):
 
     def Phero(self, scent):
         """Set Action of to Phero"""
-        self._nextAction = Cfg.PHERO
-        self._nextActionArg = scent
-        #TO DO : gérer les phéromones invalides et rajouter un argument
+        if (scent<0) and (scent >31):
+            self._nextAction = Cfg.PHERO
+            self._nextActionArg = scent
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            Cfg.NotAPheromoneError(self._name,self._team,scent)
 
 # Please avoid cyclic imports.
 from Sentiant.Model.LogsManager import LogsManager
 from Sentiant.Model.Cfg import Cfg
 
 if __name__ == '__main__':
+    import os
+
+    os.chdir("../../")
 
     ant = Ant(0, "name", "team")
     LogsManager.Info(ant)
