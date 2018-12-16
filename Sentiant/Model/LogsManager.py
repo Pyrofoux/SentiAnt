@@ -13,7 +13,7 @@ class LogsManager :
     #scriptDir = path.split(scriptPath)[0]
     #scriptDirDir = path.dirname(scriptDir)
 
-    BASE = "\\Sentiant\\Logs\\"
+    BASE = "Sentiant\\Logs\\"
     EXT = ".log"
 
     @staticmethod
