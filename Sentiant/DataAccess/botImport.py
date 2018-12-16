@@ -1,38 +1,79 @@
 import os
+from tkinter import Frame, Checkbutton, Button, IntVar, Tk
 
-def LoadAllFrom(rootDir, mainFile='queen.py'):
-    """ Load players alorithms from the specified directory `rootDir`.
+class BotImport(Frame):
+    def __init__(self, root, directory, onOk, mainFileName='Queen.py'):
+        super().__init__(root)
 
-        For every sub-directories:
-        * If it finds a 'queen.py' (default - use argument `mainFile` to
-            change it), loads it and appends its reference ;
-        * Else aborts.
+        self.rootDir = directory
+        self.mainFile = mainFileName
+        self.onOk = onOk
 
-        Return a list of references `ref` to the loaded modules alongs with the
-        directory's `name` it was found in:
-            ``` [(ref, name), (ref, name), ..] ```
-    """
-    r = []
-    prev = os.getcwd()
-    os.chdir(rootDir)
+        self.isSelected = []
+        self.queens = []
+        self.names = []
 
-    for dir in os.scandir():
-        if dir.is_dir() and os.path.exists(dir.path + "/" + mainFile):
-            LogsManager.Info("Importing algorithm from '" + dir.name +  "'... ")
+    def Done(self):
+        self.onOk([(self.queens[k], self.names[k]) \
+                   for k in range(len(self.names)) if self.isSelected[k].get()])
 
-            try:
-                queen = __import__(dir.name + "." + mainFile[:-3],
-                                   fromlist=[mainFile[:-3]])
-                r.append( (queen, dir.name) )
-            except ImportError as e:
-                LogsManager.Error("\tcould'n gather module because:\n" + str(e))
+    def pack(self):
+        for k in range(len(self.names)):
+            self.isSelected.append(IntVar())
+            c = Checkbutton(self, text=self.names[k], variable=self.isSelected[k])
+            c.grid(row=k)
+
+        Button(self, text="OK!", command=self.Done).grid(row=len(self.names))
+
+        super().pack()
+
+    def LoadAll(self):
+        """ OUT OF DATE!
+
+            Load players alorithms from the specified directory `rootDir`.
+
+            For every sub-directories:
+            * If it finds a 'Queen.py' (default - use argument `mainFile` to
+                change it), loads it and appends its reference ;
+                ``` from directory.Queen import Queen ```
+            * Else aborts.
+
+            Return a list of references `ref` to the loaded modules alongs with the
+            directory's `name` it was found in:
+                ``` [(ref, name), (ref, name), ..] ```
+        """
+        r = []
+        prev = os.getcwd()
+        os.chdir(self.rootDir)
+
+        for directory in os.scandir():
+            if directory.is_dir() and os.path.exists(directory.path + "/" + self.mainFile):
+                LogsManager.Info("Importing algorithm from '" + directory.name +  "'... ")
+
+                try:
+                    q = __import__(directory.name + "." + self.mainFile[:-3], \
+                                   fromlist=[self.mainFile[:-3]]).Queen
+                    self.queens.append(q)
+                    self.names.append(directory.name)
+                except ImportError as e:
+                    LogsManager.Error("    could'n gather module because:\n" + str(e))
+                else:
+                    LogsManager.Info("    done!")
             else:
-                LogsManager.Info("\tdone!")
-        else:
-            LogsManager.Warning("No main file in '{}', abort loading.".format(dir.name))
+                LogsManager.Warning("No main file in '{}', abort loading.".format(directory.name))
 
-    os.chdir(prev)
-    return r
+        os.chdir(prev)
+        return r
 
 
 from Sentiant.Model.LogsManager import LogsManager
+
+if __name__ == '__main__':
+    root = Tk()
+
+    e = BotImport( root, "Sentiant/Player", \
+                   lambda p: print("\n".join([n + " - " + str(q()) for q, n in p])) )
+    e.LoadAll()
+    e.pack()
+
+    root.mainloop()
