@@ -96,13 +96,13 @@ class Ant(SolidEntity):
 
     def Phero(self, scent):
         """Set Action of to Phero"""
-        if (scent<0) and (scent >31):
+        if (scent>=0) and (scent <=31):
             self._nextAction = Cfg.PHERO
             self._nextActionArg = scent
         else :
             self._nextAction = Cfg.SLEEP
             self._nextActionArg = Cfg.NULL
-            Cfg.NotAPheromoneError(self._name,self._team,scent)
+            LogsManager.NotAPheromoneError(self._name,self._team,scent)
 
 # Please avoid cyclic imports.
 from Sentiant.Model.LogsManager import LogsManager
