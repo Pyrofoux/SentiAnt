@@ -1,0 +1,24 @@
+[Info] (14:55:31.177)> NextTurn()
+[Info] (14:55:31.181)> All ants =  []
+[Info] (14:55:32.425)> NextTurn()
+[Info] (14:55:32.427)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B60A30CF60>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B609587E80>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B60A30CF98>]
+[Info] (14:55:32.427)> Examining test
+[Error] (14:55:32.427)> Une erreur a eu lieu car la direction '-1;0' donnee à la fourmi 'test' 'de l'équipe '2' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:55:32.427)> test wants to move
+[Info] (14:55:32.427)> Examining test
+[Error] (14:55:32.428)> Une erreur a eu lieu car la direction '-1;0' donnee à la fourmi 'test' 'de l'équipe '3' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:55:32.428)> test wants to move
+[Info] (14:55:32.428)> Examining test
+[Error] (14:55:32.428)> Une erreur a eu lieu car la direction '0;-1' donnee à la fourmi 'test' 'de l'équipe '1' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:55:32.428)> test wants to move
+[Info] (14:58:29.360)> NextTurn()
+[Info] (14:58:29.362)> All ants =  [<Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B60A30CF60>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B609587E80>, <Sentiant.bot.FourmiRouge.FourmiRouge.FourmiRouge object at 0x000002B60A30CF98>]
+[Info] (14:58:29.362)> Examining test
+[Error] (14:58:29.362)> Une erreur a eu lieu car la direction '0;1' donnee à la fourmi 'test' 'de l'équipe '2' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:58:29.362)> test wants to move
+[Info] (14:58:29.362)> Examining test
+[Error] (14:58:29.362)> Une erreur a eu lieu car la direction '-1;0' donnee à la fourmi 'test' 'de l'équipe '3' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:58:29.362)> test wants to move
+[Info] (14:58:29.362)> Examining test
+[Error] (14:58:29.362)> Une erreur a eu lieu car la direction '1;0' donnee à la fourmi 'test' 'de l'équipe '1' pour l'action 'ceci est un test' n'est pas une direction valide.
+[Info] (14:58:29.363)> test wants to move

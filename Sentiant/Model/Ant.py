@@ -47,7 +47,7 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if(direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.MOVE
             self._nextActionArg = direc
         else :
@@ -59,7 +59,7 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if (direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.ATTACK
             self._nextActionArg = direc
         else :
@@ -71,7 +71,7 @@ class Ant(SolidEntity):
         direction : 'up', 'left', ..."""
         direc = Cfg.ParseDirection(direction)
 
-        if (direc != Cfg.NULL):
+        if direc != Cfg.NULL:
             self._nextAction = Cfg.DIG
             self._nextActionArg = direc
         else :
