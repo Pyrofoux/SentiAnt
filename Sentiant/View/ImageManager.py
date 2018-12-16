@@ -31,22 +31,22 @@ class ImageManager:
             , QUEEN_PART_2, QUEEN_PART_3, QUEEN_PART_4
         r = 300 // imgSize[0]
 
-        EMPTY           = PhotoImage(file=dr+"empty.png").subsample(r)
+        EMPTY           = PhotoImage(file=dr+"empty.png").subsample(r, r)
 
-        ANT             = PhotoImage(file=dr+"ant.png").subsample(r)
-        BREAD           = PhotoImage(file=dr+"bread.png").subsample(r)
-        COOKIE          = PhotoImage(file=dr+"cookie.png").subsample(r)
-        PHEROMONE       = PhotoImage(file=dr+"pheromone.png").subsample(r)
-        ROCK            = PhotoImage(file=dr+"rock.png").subsample(r)
+        ANT             = PhotoImage(file=dr+"ant.png").subsample(r, r)
+        BREAD           = PhotoImage(file=dr+"bread.png").subsample(r, r)
+        COOKIE          = PhotoImage(file=dr+"cookie.png").subsample(r, r)
+        PHEROMONE       = PhotoImage(file=dr+"pheromone.png").subsample(r, r)
+        ROCK            = PhotoImage(file=dr+"rock.png").subsample(r, r)
 
-        ANT_N_BREAD     = PhotoImage(file=dr+"ant_n_bread.png").subsample(r)
-        ANT_N_COOKIE    = PhotoImage(file=dr+"ant_n_cookie.png").subsample(r)
-        ANT_N_PHEROMONE = PhotoImage(file=dr+"ant_n_pheromone.png").subsample(r)
+        ANT_N_BREAD     = PhotoImage(file=dr+"ant_n_bread.png").subsample(r, r)
+        ANT_N_COOKIE    = PhotoImage(file=dr+"ant_n_cookie.png").subsample(r, r)
+        ANT_N_PHEROMONE = PhotoImage(file=dr+"ant_n_pheromone.png").subsample(r, r)
 
-        QUEEN_PART_1 = PhotoImage(file=dr+"queen_part_001.png").subsample(r)
-        QUEEN_PART_2 = PhotoImage(file=dr + "queen_part_002.png").subsample(r)
-        QUEEN_PART_3 = PhotoImage(file=dr + "queen_part_003.png").subsample(r)
-        QUEEN_PART_4 = PhotoImage(file=dr + "queen_part_004.png").subsample(r)
+        QUEEN_PART_1 = PhotoImage(file=dr+"queen_part_001.png").subsample(r, r)
+        QUEEN_PART_2 = PhotoImage(file=dr + "queen_part_002.png").subsample(r, r)
+        QUEEN_PART_3 = PhotoImage(file=dr + "queen_part_003.png").subsample(r, r)
+        QUEEN_PART_4 = PhotoImage(file=dr + "queen_part_004.png").subsample(r, r)
 
     @staticmethod
     def GetContent(tileSolid, tileFloor, tilePheromone, metadata = 0):
