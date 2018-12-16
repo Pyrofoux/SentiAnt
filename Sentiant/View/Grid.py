@@ -30,7 +30,7 @@ class Grid(Frame):
                 b = Label(self, width=w, height=h, image=ImageManager.EMPTY)
                 b.grid(row=i, column=j, padx=0, pady=0)
                 self.buttons[-1].append(b)
-        
+
         self.UpdateAll()
 
 
@@ -85,7 +85,6 @@ if __name__ == "__main__":
     map.layerSolid.Append(Ant(1, "name", "team"), Point(5, 3))
 
     grid = Grid(boss=root, map=map, size=(480, 480))
-        #imgPath="assets\\")  # Executs your unit tests from the root directory.
     grid.pack()
 
     root.mainloop()

@@ -11,7 +11,7 @@ class DiggerBee(Ant):
     def newTurn(self, FOV):
         FOVface = FOV[0, Cfg.FOV + self.direction[0], Cfg.FOV + self.direction[1]]
         WhatIsHere = FOV[1, Cfg.FOV, Cfg.FOV]
-        
+
         if WhatIsHere == Cfg.BREAD:
             self.Phero(30)
         elif WhatIsHere == Cfg.COOKIE:

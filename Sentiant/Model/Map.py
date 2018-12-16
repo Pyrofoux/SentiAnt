@@ -1,6 +1,5 @@
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Point import Point
-import numpy as np
 
 class Map:
     def __init__(self, w = Cfg.WIDTH, h = Cfg.HEIGHT):
@@ -24,8 +23,8 @@ class Map:
         size = fov * 2 + 1
         print(size)
 
-        FOVSolid = np.zeros((size, size), dtype =  str)
-        FOVFloor = np.zeros((size, size), dtype = str)
+        FOVSolid = [[0 for i in range(size)] for i in range(size)]
+        FOVFloor = [[0 for i in range(size)] for i in range(size)]
 
         for i in range(-fov, fov + 1) :
             for j in range(-fov, fov + 1):
@@ -33,19 +32,19 @@ class Map:
                 distance = abs(i) + abs(j)
                 if coords[0] + i < 0 or coords[0] + i >= self.layerSolid.GetWidth() or\
                     coords[1] + j < 0 or coords[1] + j >= self.layerSolid.GetHeight():
-                    FOVSolid[i + fov, j + fov] = Cfg.ROCK
-                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
+                    FOVSolid[i + fov][j + fov] = Cfg.ROCK
+                    FOVFloor[i + fov][j + fov] = Cfg.UNKNOWN
                 elif distance <= fov and self.IsDestinationVisible(coords, Point(coords.x + i, coords.y + j)):
 
 
-                    FOVSolid[i + fov, j + fov] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
+                    FOVSolid[i + fov][ j + fov] = Cfg.EntityToType(self.layerSolid[coords[0] + i, coords[1] + j])
 
 
-                    FOVFloor[i + fov, j + fov] = Cfg.EntityToType(self.layerFloor[coords[0] + i, coords[1] + j])
+                    FOVFloor[i + fov][ j + fov] = Cfg.EntityToType(self.layerFloor[coords[0] + i, coords[1] + j])
 
                 else:
-                    FOVSolid[i + fov, j + fov] = Cfg.UNKNOWN
-                    FOVFloor[i + fov, j + fov] = Cfg.UNKNOWN
+                    FOVSolid[i + fov][ j + fov] = Cfg.UNKNOWN
+                    FOVFloor[i + fov][ j + fov] = Cfg.UNKNOWN
 
         return [FOVSolid, FOVFloor]
 
@@ -91,21 +90,24 @@ if __name__ == '__main__':
     from Sentiant.View.MainView import MainView
     from Sentiant.Model.QueenTile import QueenTile
     import os
+    from Sentiant.Model import Cfg
 
     ant = Ant(0, "name", "team")
 
+    Cfg.NEST_RADIUS = 20
+    Cfg.FOV = 2
+
     os.chdir("..\\..\\")
-    mapGen = MapManager(width=24, height=24)
-    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(6, 6))
+    mapGen = MapManager(width=10, height=10)
+    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(5, 5))
     map = mapGen.Generate()
 
-    print("Jusque là les erreurs sont normales")
-    map.layerSolid.Append(ant, Point(8, 6))
+    map.layerSolid.Append(ant, Point(3, 3))
 
     #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
     #print(map.IsDestinationVisible(antCoords, Point(7, 7)))
-    #print(map.IsDestinationVisible(antCoords, Point(2, 5)))
+    #print(map.IsDestinationVisibe(antCoords, Point(2, 5)))
     print(map.GetFOV(ant))
 
     view = MainView(map, size = (500, 500))
-    view.Run();
+    view.Run()

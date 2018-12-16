@@ -30,7 +30,7 @@ class TurnManager:
         LogsManager.Info("All ants =  " + str(allAnts))
         for ant in allAnts :
             LogsManager.Info("Examining " + ant._name)
-            ant.newTurn(map.GetFOV(ant))
+            ant.newTurn(self.map.GetFOV(ant), self.map.layerPheromone.DetectFromPos(ant))
             LogsManager.Info(ant._name+" wants to " + ant._nextAction)
 
             if ant._nextAction in Cfg.ACTIONS:
@@ -56,6 +56,9 @@ class TurnManager:
             self.layerPheromone.Place(ant, ant._nextActionArg)
 
     def ExecAttack(self, ants):
+
+        toPunish = []
+
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
             dir = ant._nextActionArg
@@ -63,16 +66,48 @@ class TurnManager:
             cible = self.layerSolid[posCible]
 
             if isinstance(cible, Ant):
-                # cible dead
-                if cible._HP == 1:
-                    self.layerSolid.Remove(cible)
-                # cible still alive
-                else :
-                    cible._HP -= 1
+                self.Remove1HP(toPunish)
+
+
 
     def ExecMove(self, ants):
+
+        movingAnts = []
+        initialPositions = []
+        desiredDestinations = []
+
         for ant in ants:
-            self.layerSolid.MoveEntity(ant, ant._nextActionArg)
+            #self.layerSolid.MoveEntity(ant, ant._nextActionArg)
+
+            posAnt = self.layerSolid.GetXYByRef(ant)
+            dir = ant._nextActionArg
+            posCible = posAnt + dir
+            cible = self.layerSolid[posCible]
+
+            if cible is None or isinstance(cible, Ant): #Check les Ants qui rentrent pas dans un mur
+                movingAnts.append(ant)
+                initialPositions.append(posAnt)
+                desiredDestinations.append(posCible)
+
+        if len(movingAnts) > 0:
+            punished = MoveManager.calculatePunished(initialPositions, desiredDestinations)
+            indexToMove = []
+            for i in range(0,len(movingAnts)):
+
+                if i in punished: #
+                    self.Remove1HP(movingAnts[i])
+                else:
+                    indexToMove.append(i)
+
+            for i in range(0, len(indexToMove)):
+                self.layerSolid.Remove(movingAnts[indexToMove[i]])
+                self.layerSolid.Append(movingAnts[indexToMove[i]], desiredDestinations[indexToMove[i]])
+
+
+
+
+
+
 
     def ExecDig(self, ants):
         for ant in ants:
@@ -104,6 +139,14 @@ class TurnManager:
                 pass
                 # TODO : cancel ant action
 
+    def Remove1HP(self, cible):
+
+            # cible dead
+            if cible._HP == 1:
+                self.layerSolid.Remove(cible)
+            # cible still alive
+            else:
+                cible._HP -= 1
 
 from Sentiant.Model.Cfg import Cfg
 from Sentiant.Model.Ant import Ant
@@ -114,6 +157,7 @@ from Sentiant.Model.Cookie import Cookie
 from Sentiant.Model.Pheromone import Pheromone
 from Sentiant.Model.Point import Point
 from Sentiant.Model.LogsManager import LogsManager
+from Sentiant.Model.MoveManager import MoveManager
 
 if __name__ == '__main__':
     from Sentiant.Model.MapManager import MapManager
@@ -128,6 +172,10 @@ if __name__ == '__main__':
         a2.Attack(Cfg.RIGHT)
         tm.NextTurn()
         print(a1)
+
+    def DoMove():
+        a1.Move(Cfg.LEFT)
+        a2.Move(Cfg.RIGHT)
 
 
     os.chdir("..\\..\\")
@@ -147,4 +195,5 @@ if __name__ == '__main__':
 
     view = MainView(map, tm, (500, 500))
     Button(view, text="Attaque", command=lambda : DoAttack()).pack()
+    Button(view, text="Move", command=lambda: DoMove()).pack()
     view.Run()
