@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
     #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
     #print(map.IsDestinationVisible(antCoords, Point(7, 7)))
-    #print(map.IsDestinationVisible(antCoords, Point(2, 5)))
+    #print(map.IsDestinationVisibe(antCoords, Point(2, 5)))
     print(map.GetFOV(ant))
 
     view = MainView(map, size = (500, 500))
