@@ -36,8 +36,8 @@ class Cfg:
     UNKNOWN = "X"
     EMPTY = " "
 
-    NEST_RADIUS = 3
-    MIN_SPAWN_QUEEN_RADIUS = 5
+    NEST_RADIUS = 3 #rayon du cercle libéré (pas de terre) autour de la reine
+    MIN_SPAWN_QUEEN_RADIUS = 5 #distance minimale éloignée du cookie par rapport à laquelle la reine peut spawn
 
     QUEEN_SLEEP = "sleep"
     QUEEN_SPAWN_ANT = "spawn"
@@ -51,7 +51,7 @@ class Cfg:
 
         direction = direction.lower()
 
-        if(direction == "up"):
+        if direction == "up":
             return Cfg.UP
         elif direction == "down":
             return Cfg.DOWN
@@ -59,8 +59,6 @@ class Cfg:
             return Cfg.RIGHT
         elif direction == "left":
             return Cfg.LEFT
-
-        #TODO : Log Error
 
         return Cfg.NULL
 
@@ -71,29 +69,28 @@ class Cfg:
 
         if direction in [Cfg.UP, Cfg.DOWN, Cfg.RIGHT, Cfg.LEFT]:
             nextPos = coords + direction
-            #if layerSolid.walkable(nextPos):
+
             return nextPos
 
-        #TODO : Log Error de direction
         return Cfg.NULL
 
     @staticmethod
     def EntityToType(ref):
 
-        if type(ref) is Ant:
+        if isinstance(ref,Ant):
             return Cfg.ANT
-        if type(ref) is QueenTile:
+        if isinstance(ref,QueenTile):
             return Cfg.QUEEN
 
-        if type(ref) is Dirt:
+        if isinstance(ref,Dirt):
             return Cfg.DIRT
-        if type(ref) is Rock:
+        if isinstance(ref,Rock):
             return Cfg.ROCK
 
 
-        if type(ref) is Bread:
+        if isinstance(ref,Bread):
             return Cfg.BREAD
-        if type(ref) is Cookie:
+        if isinstance(ref,Cookie):
             return Cfg.COOKIE
 
         return Cfg.EMPTY
