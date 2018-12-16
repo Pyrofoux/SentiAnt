@@ -13,11 +13,8 @@ class LogsManager :
     #scriptDir = os.path.split(scriptPath)[0]
     #scriptDirDir = os.path.dirname(scriptDir)
 
-    BASE = getcwd()#"Sentiant/Logs/"
+    BASE = "\\Sentiant\\Logs\\"
     EXT = ".log"
-
-    generals = open(BASE + "generals" + EXT, "w")
-    users    = open(BASE + "users"    + EXT, "w")
 
     @staticmethod
     def StdOut(type, msg, isUser=False, end="\n"):
@@ -25,9 +22,11 @@ class LogsManager :
         out = pre + str(msg).replace("\n", "\n" + " " * len(pre)) + end
         print(out)
 
-        LogsManager.generals.write(out)
+        with open(LogsManager.BASE + "generals" + LogsManager.EXT, "w") as generals :
+            generals.write(out)
         if isUser:
-            LogsManager.users.write(out)
+            with open(LogsManager.BASE + "users"    + LogsManager.EXT, "w") as users:
+                users.write(out)
 
     @staticmethod
     def Error(details, userFailure=False):
@@ -80,3 +79,5 @@ class LogsManager :
                 + "est une variable privée innaccessible.") \
                 .format(antId=antId, antTeam=antTeam, varName=varName, tryValue=tryValue)
         LogsManager.Error(details, True)
+
+

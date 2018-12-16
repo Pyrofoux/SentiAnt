@@ -1,4 +1,12 @@
-[Info] (14:59:15.575)> NextTurn()
-[Info] (14:59:15.576)> All ants =  [<Sentiant.Model.Ant.Ant object at 0x0AD4B150>]
-[Info] (14:59:15.576)> Examining name
-[Info] (14:59:15.576)> name wants to pickup
+[Info] (15:03:48.515)> NextTurn()
+[Info] (15:03:48.515)> All ants =  [<Sentiant.Model.Ant.Ant object at 0x000001BB02194F98>, <Sentiant.Model.Ant.Ant object at 0x000001BB11009C18>]
+[Info] (15:03:48.515)> Examining name
+[Info] (15:03:48.515)> name wants to attack
+[Info] (15:03:48.515)> Examining name
+[Info] (15:03:48.515)> name wants to sleep
+[Info] (15:03:49.994)> NextTurn()
+[Info] (15:03:49.995)> All ants =  [<Sentiant.Model.Ant.Ant object at 0x000001BB02194F98>, <Sentiant.Model.Ant.Ant object at 0x000001BB11009C18>]
+[Info] (15:03:49.995)> Examining name
+[Info] (15:03:49.995)> name wants to attack
+[Info] (15:03:49.995)> Examining name
+[Info] (15:03:49.995)> name wants to sleep

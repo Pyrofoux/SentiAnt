@@ -10,10 +10,10 @@ class Cfg:
     WIDTH    = 42
     HEIGHT   = 42
 
-    UP         = Point(0, -1)
-    DOWN       = Point(0, 1)
-    RIGHT      = Point(1, 0)
-    LEFT       = Point(-1, 0)
+    UP         = Point(-1, 0)
+    DOWN       = Point(1, 0)
+    RIGHT      = Point(0, 1)
+    LEFT       = Point(0, -1)
     DIRECTIONS = (UP, DOWN, RIGHT, LEFT)
 
     NULL  = None
