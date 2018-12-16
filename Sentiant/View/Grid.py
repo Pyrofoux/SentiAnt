@@ -5,8 +5,10 @@ from Sentiant.View.ImageManager import ImageManager
 
 class Grid(Frame):
 
-    def __init__(self, map, boss, size):
+    def __init__(self, map, boss, size, master):
         self.buttons = []
+
+        self.currentSelect = None
 
         # init Frame
         Frame.__init__(self, boss)
@@ -14,6 +16,7 @@ class Grid(Frame):
 
         # property
         self.map = map
+        self.boss = master
 
         self.map.SetView(self)
 
@@ -29,10 +32,19 @@ class Grid(Frame):
             for j in range(map.layerFloor.GetHeight()):
                 b = Label(self, width=w, height=h, image=ImageManager.EMPTY)
                 b.grid(row=i, column=j, padx=0, pady=0)
+                b.bind("<Button-1>", lambda event, ix = i, jx = j : self.Select(event, pos = (ix, jx)))
                 self.buttons[-1].append(b)
 
         self.UpdateAll()
 
+    def Select(self, event, pos):
+        self.buttons[pos[0]][pos[1]].config(relief="groove")
+
+        if self.currentSelect is not None:
+            self.buttons[self.currentSelect[0]][self.currentSelect[1]].config(relief="flat")
+        self.currentSelect = pos
+        self.boss.Update()
+        self.update_idletasks()
 
     def Update(self, x, y):
         tileSolid = self.map.layerSolid[x, y]
