@@ -22,7 +22,7 @@ class Layer():
             return self.grid[key.x][key.y]
 
         LogsManager.Warning("Out of range exception caugth: " + str(key))
-        return None
+        return Rock(42 * "mabit")
 
     def __setitem__(self, key, value):
         if not isinstance(key, Point):
