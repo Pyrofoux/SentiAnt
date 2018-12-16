@@ -52,7 +52,7 @@ class LogsManager :
            when a non-valid direction is given to an Ant.
         """
         details = ("Une erreur a eu lieu car la direction '{direction}' " \
-                + "donnee à la fourmi '{antId}' 'de l'équipe '{antTeam}' " \
+                + "donnee a la fourmi '{antId}' 'de l'equipe '{antTeam}' " \
                 + "pour l'action '{action}' n'est pas une direction valide.") \
                 .format(antId=antId, antTeam=antTeam, direction=direction, action=action)
         LogsManager.Error(details, True)
