@@ -35,7 +35,7 @@ class Ant(SolidEntity):
 
         super().__setattr__(name, value)
 
-    def newTurn(self, FOV):
+    def newTurn(self, FOV, pheromones):
         pass
 
     def __str__(self):

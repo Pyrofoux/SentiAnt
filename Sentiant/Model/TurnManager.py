@@ -30,7 +30,7 @@ class TurnManager:
         LogsManager.Info("All ants =  " + str(allAnts))
         for ant in allAnts :
             LogsManager.Info("Examining " + ant._name)
-            ant.newTurn(map.GetFOV(ant))
+            ant.newTurn(self.map.GetFOV(ant), self.map.layerPheromone.DetectFromPos(ant))
             LogsManager.Info(ant._name+" wants to " + ant._nextAction)
 
             if ant._nextAction in Cfg.ACTIONS:
@@ -129,6 +129,10 @@ if __name__ == '__main__':
         tm.NextTurn()
         print(a1)
 
+    def DoMove():
+        a1.Move(Cfg.LEFT)
+        a2.Move(Cfg.RIGHT)
+
 
     os.chdir("..\\..\\")
 
@@ -147,4 +151,5 @@ if __name__ == '__main__':
 
     view = MainView(map, tm, (500, 500))
     Button(view, text="Attaque", command=lambda : DoAttack()).pack()
+    Button(view, text="Move", command=lambda: DoMove()).pack()
     view.Run()
