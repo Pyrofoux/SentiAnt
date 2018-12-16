@@ -90,16 +90,19 @@ if __name__ == '__main__':
     from Sentiant.View.MainView import MainView
     from Sentiant.Model.QueenTile import QueenTile
     import os
+    from Sentiant.Model import Cfg
 
     ant = Ant(0, "name", "team")
 
+    Cfg.NEST_RADIUS = 20
+    Cfg.FOV = 2
+
     os.chdir("..\\..\\")
-    mapGen = MapManager(width=24, height=24)
-    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(6, 6))
+    mapGen = MapManager(width=10, height=10)
+    mapGen.RegisterQueen(QueenTile(1, "team1"), Point(5, 5))
     map = mapGen.Generate()
 
-    print("Jusque là les erreurs sont normales")
-    map.layerSolid.Append(ant, Point(8, 6))
+    map.layerSolid.Append(ant, Point(3, 3))
 
     #print(map.IsDestinationVisible(antCoords, Point(4, 3)))
     #print(map.IsDestinationVisible(antCoords, Point(7, 7)))
