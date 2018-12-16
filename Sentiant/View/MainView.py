@@ -2,7 +2,7 @@ from tkinter import Tk, Button
 from .Grid import Grid
 
 class MainView(Tk):
-    def __init__(self, map, turnmanager = None, size= (500, 500)):
+    def __init__(self, map, turnmanager = None, size= 500):
         # Init Window
         Tk.__init__(self)
 
@@ -10,7 +10,7 @@ class MainView(Tk):
         self.Map = map
         self.TurnManager = turnmanager
 
-        self.grid = Grid(self.Map, self, size=size)
+        self.grid = Grid(self.Map, self, size=(size, size))
         self.grid.pack()
 
         if turnmanager is not None:

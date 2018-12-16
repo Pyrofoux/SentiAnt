@@ -35,7 +35,7 @@ class Ant(SolidEntity):
 
         super().__setattr__(name, value)
 
-    def newTurn(self, FOV):
+    def newTurn(self, FOV, pheromones):
         pass
 
     def __str__(self):
@@ -96,9 +96,13 @@ class Ant(SolidEntity):
 
     def Phero(self, scent):
         """Set Action of to Phero"""
-        self._nextAction = Cfg.PHERO
-        self._nextActionArg = scent
-        #TO DO : gérer les phéromones invalides et rajouter un argument
+        if (scent<0) and (scent >31):
+            self._nextAction = Cfg.PHERO
+            self._nextActionArg = scent
+        else :
+            self._nextAction = Cfg.SLEEP
+            self._nextActionArg = Cfg.NULL
+            Cfg.NotAPheromoneError(self._name,self._team,scent)
 
 # Please avoid cyclic imports.
 from Sentiant.Model.LogsManager import LogsManager
