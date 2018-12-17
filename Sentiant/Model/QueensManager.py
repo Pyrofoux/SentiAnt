@@ -43,7 +43,8 @@ class QueensManager:
         queensWhoWantSpawn = {}
 
         for i in self.queens.keys():
-            self.queens[i].newTurn()
+            fov = self.FOVQueen(self.queens[i]._team, map)
+            self.queens[i].newTurn(fov)
             if self.queens[i]._order == Cfg.QUEEN_SPAWN_ANT:
                 queensWhoWantSpawn[i] = self.queens[i]
 
@@ -63,12 +64,29 @@ class QueensManager:
             queens[q]._spawnType = None
             queens[q]._nameSpawn = ""
 
-    def GetQueenPosition(self):
-        result = []
+    def GetQueenPosition(self, team):
+        result = None
+        print(self.queens)
         for k in self.queens.keys():
-            result.append(k)
+            if self.queens[k]._team == team:
+                result = k
         return result
 
+    def FOVQueen(self, team, map):
+        pos = Point.StringToPoint(self.GetQueenPosition(team))
+        FOVSolid = []
+        FOVFloor = []
+
+        for spawn in Queen.SPAWNS:
+            if not(map.layerSolid[pos.x + spawn.x, pos.y + spawn.y] is None):
+                FOVSolid.append(spawn)
+            else:
+                FOVSolid.append(None)
+            if not (map.layerFloor[pos.x + spawn.x, pos.y + spawn.y] is None):
+                    FOVFloor.append(spawn)
+            else:
+                FOVFloor.append(None)
+        return (FOVSolid, FOVFloor)
 
 
 
