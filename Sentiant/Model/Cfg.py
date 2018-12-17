@@ -7,8 +7,8 @@ class Cfg:
     HPMAX    = 2
     FOV      = 3
     HPRADIUS = 5
-    WIDTH    = 42
-    HEIGHT   = 42
+    WIDTH    = 25
+    HEIGHT   = 25 #pas en dessous de 15
 
     UP         = Point(-1, 0)
     DOWN       = Point(1, 0)

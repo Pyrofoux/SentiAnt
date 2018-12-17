@@ -52,14 +52,11 @@ class Map:
 
         incrX = coordsFin.x - coordsDebut.x
         if incrX != 0:
-            incrX = int(incrX / abs(incrX))
+            incrX = int(incrX / abs(incrX)) #sens du déplacement en X : 1 ou -1
 
         incrY = coordsFin.y - coordsDebut.y
         if incrY != 0:
-            incrY = int(incrY / abs(incrY))
-        print(coordsDebut)
-        print(incrX)
-        print(incrY)
+            incrY = int(incrY / abs(incrY)) #sens du déplacement en Y : 1 ou -1z
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
         if coordsDebut == coordsFin:
@@ -67,6 +64,7 @@ class Map:
 
         # Sinon, si on est pas sur la même colonne, qu'il n'y a pas d'objet bloquant la vision sur la colonne d'à côté, on teste la fonction en se plaçant sur la colonne d'à côté
         # Don't touch this, c'est dégueu mais ça fonctionne
+        #j'adore le récursif
         if incrX != 0 and \
                 ((Point(coordsDebut.x + incrX, coordsDebut.y) == coordsFin ) or \
                 (self.layerSolid[coordsDebut.x + incrX, coordsDebut.y] is None and \

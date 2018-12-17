@@ -1,5 +1,9 @@
 from Sentiant.Model import *
-from Sentiant.bot.Bees import DiggerBee, NurseBee, ResourceBee, SoldierBee, WarehouseBee
+from Sentiant.bot.Bees.DiggerBee import DiggerBee
+from Sentiant.bot.Bees.NurseBee import NurseBee
+from Sentiant.bot.Bees.ResourceBee import ResourceBee
+from Sentiant.bot.Bees.SoldierBee import SoldierBee
+from Sentiant.bot.Bees.WarehouseBee import WarehouseBee
 
 # Goal : spawn bees when possible
 
@@ -16,7 +20,7 @@ class QueenBee(Queen):
 
 
         if self.NbWarehouseBees == 0:
-            self.SpawnAnt("Warehouse" + str(self.NbWarehouseBees), WarehouseBee, self.SPAWN4)
+            self.SpawnAnt("Warehouse" + str(self.NbWarehouseBees), DiggerBee, self.SPAWN4)
             self.NbWarehouseBees += 1
         elif self.NbNurseBees == 0:
             self.SpawnAnt("Nurse" + str(self.NbNurseBees), NurseBee, self.SPAWN4)
