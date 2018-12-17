@@ -33,7 +33,7 @@ class BotImport(Frame):
             Load players alorithms from the specified directory `rootDir`.
 
             For every sub-directories:
-            * If it finds a 'Queen.py' (default - use argument `mainFile` to
+            * If it finds a 'QueenBee.py' (default - use argument `mainFile` to
                 change it), loads it and appends its reference ;
                 ``` from directory.Queen import Queen ```
             * Else aborts.
@@ -45,13 +45,14 @@ class BotImport(Frame):
         r = []
 
         for directory in os.scandir(path=self.dir):
-            if directory.is_dir() and os.path.exists(directory.path + "/" + self.mainFile):
+            if directory.is_dir() and os.path.exists(directory.path + "/" + directory.name + ".py"):
 
                 LogsManager.Info("Importing algorithm from '" + directory.name +  "'... ")
 
                 try:
-                    q = __import__("Sentiant.Player."+directory.name + "." + self.mainFile[:-3], \
-                                   fromlist=[self.mainFile[:-3]]).Queen
+                    q = __import__("Sentiant.Player."+directory.name + "." + directory.name, \
+                                   fromlist=[directory.name])
+                    q = eval("q." + directory.name)
                     self.queens.append(q)
                     self.names.append(directory.name)
                 except ImportError as e:
