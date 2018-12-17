@@ -30,7 +30,7 @@ class QueensManager:
         partCircle = 2*math.pi/self.nbQueen
 
         radius = random.randrange(Cfg.MIN_SPAWN_QUEEN_RADIUS,round(self.mapManager.map.width / 2 * (1 - 1 / 4)) )
-        increment = random.random() * 2*math.pi / 10
+        increment = random.random() * 2*math.pi #Si bug : diviser par 10
 
         for i in range(self.nbQueen):
             yield Point(round(self.mapManager.map.width//2 + radius*math.cos(i*partCircle + increment)),
