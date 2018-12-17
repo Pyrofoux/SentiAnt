@@ -21,8 +21,8 @@ class Layer():
         if key.InRange(len(self.grid), len(self.grid[0])):
             return self.grid[key.x][key.y]
 
-        LogsManager.Warning("Out of range exception caugth: " + str(key))
-        return Rock(42 * "mabit")
+        LogsManager.Warning("Out of range exception caught: " + str(key))
+        return ("Sel stopped kidding us")
 
     def __setitem__(self, key, value):
         if not isinstance(key, Point):

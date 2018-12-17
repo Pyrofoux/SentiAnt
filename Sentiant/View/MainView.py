@@ -47,13 +47,20 @@ class MainView(Toplevel):
     def Update(self):
         pos = self.grid.currentSelect
         ant = self.Map.layerSolid[pos[0], pos[1]]
-        self.UpdateLabel(ant)
+        floor=self.Map.layerFloor[pos[0],pos[1]]
+        pheromone=self.Map.layerPheromone[pos[0],pos[1]]
+        self.UpdateLabel(ant,floor,pheromone)
 
-    def UpdateLabel(self, ant):
+    def UpdateLabel(self, ant,floor,pheromone):
         if isinstance(ant, Ant):
-            self.lbl1.set(str(ant))
+            self.lbl1.set(str(ant) + str(self.grid.currentSelect)) #displays attributes and position of the clicked ant
+        #if it isn't an ant, displays what is on the cell
         else:
-            self.lbl1.set("")
+            self.lbl1.set("cellPosition :" + str(self.grid.currentSelect)+"\n"+\
+                          "floor :" + str(floor)+"\n"+\
+                          "solid :" + str(ant)+"\n"+\
+                          "pheromone :" + str(pheromone))
+
 
         self.update_idletasks()
 

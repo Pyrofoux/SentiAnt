@@ -29,26 +29,44 @@ class ImageManager:
 
     @staticmethod
     def LoadImages(imgSize, dr="Sentiant/View/assets/"):
-        global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, \
-               ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE, QUEEN_PART_1\
-            , QUEEN_PART_2, QUEEN_PART_3, QUEEN_PART_4, ANT_N_BREAD_N_PHEROMONE \
-        ,  BREAD_N_PHEROMONE
+        global EMPTY, ANT, ANT_W_BREAD,ANT_W_COOKIE,\
+            BREAD, COOKIE, PHEROMONE, ROCK, \
+            ANT_N_BREAD, ANT_N_BREAD_W_COOKIE,ANT_N_BREAD_W_BREAD,\
+            ANT_N_COOKIE, ANT_N_COOKIE_W_COOKIE, ANT_N_COOKIE_W_BREAD,\
+            ANT_N_PHEROMONE,ANT_N_PHEROMONE_W_COOKIE,ANT_N_PHEROMONE_W_BREAD,\
+            QUEEN_PART_1\
+            , QUEEN_PART_2, QUEEN_PART_3, QUEEN_PART_4,\
+            ANT_N_BREAD_N_PHEROMONE, ANT_N_BREAD_N_PHEROMONE_W_COOKIE,ANT_N_BREAD_N_PHEROMONE_W_BREAD \
+        ,  BREAD_N_PHEROMONE, COOKIE_N_PHEROMONE
+        #déso pour vos yeux, c'est un sacrifice au nom de l'usabilité de notre jeu
         r = 300 // imgSize[0]
 
         EMPTY           = PhotoImage(file=dr+"empty.png").subsample(r, r)
 
         ANT             = PhotoImage(file=dr+"ant.png").subsample(r, r)
+        ANT_W_BREAD     = PhotoImage(file=dr+"ant_w_bread.png").subsample(r,r)
+        ANT_W_COOKIE    = PhotoImage(file=dr+"ant_w_cookie.png").subsample(r,r)
         BREAD           = PhotoImage(file=dr+"bread.png").subsample(r, r)
         COOKIE          = PhotoImage(file=dr+"cookie.png").subsample(r, r)
         PHEROMONE       = PhotoImage(file=dr+"pheromone.png").subsample(r, r)
         ROCK            = PhotoImage(file=dr+"rock.png").subsample(r, r)
+        BREAD_N_PHEROMONE = PhotoImage(file=dr+"bread_n_pheromone.png").subsample(r,r)
+        COOKIE_N_PHEROMONE = PhotoImage(file=dr+"cookie_n_pheromone.png").subsample(r,r)
 
         ANT_N_BREAD     = PhotoImage(file=dr+"ant_n_bread.png").subsample(r, r)
         ANT_N_COOKIE    = PhotoImage(file=dr+"ant_n_cookie.png").subsample(r, r)
         ANT_N_PHEROMONE = PhotoImage(file=dr+"ant_n_pheromone.png").subsample(r, r)
-
         ANT_N_BREAD_N_PHEROMONE = PhotoImage(file=dr+"ant_n_bread_n_pheromone.png").subsample(r,r)
-        BREAD_N_PHEROMONE = PhotoImage(file=dr+"bread_n_pheromone.png").subsample(r,r)
+
+        ANT_N_BREAD_W_BREAD = PhotoImage(file=dr+"ant_n_bread_w_bread.png").subsample(r, r)
+        ANT_N_COOKIE_W_BREAD = PhotoImage(file=dr+"ant_n_cookie_w_bread.png").subsample(r, r)
+        ANT_N_PHEROMONE_W_BREAD = PhotoImage(file=dr+"ant_n_pheromone_w_bread.png").subsample(r, r)
+        ANT_N_BREAD_N_PHEROMONE_W_BREAD = PhotoImage(file=dr+"ant_n_bread_n_pheromone_w_bread.png").subsample(r,r)
+
+        ANT_N_BREAD_W_COOKIE = PhotoImage(file=dr+"ant_n_bread_w_cookie.png").subsample(r, r)
+        ANT_N_COOKIE_W_COOKIE = PhotoImage(file=dr+"ant_n_cookie_w_cookie.png").subsample(r, r)
+        ANT_N_PHEROMONE_W_COOKIE = PhotoImage(file=dr+"ant_n_pheromone_w_cookie.png").subsample(r, r)
+        ANT_N_BREAD_N_PHEROMONE_W_COOKIE = PhotoImage(file=dr+"ant_n_bread_n_pheromone_w_cookie.png").subsample(r,r)
 
         QUEEN_PART_1 = PhotoImage(file=dr+"queen_part_001.png").subsample(r, r)
         QUEEN_PART_2 = PhotoImage(file=dr + "queen_part_002.png").subsample(r, r)
@@ -61,18 +79,54 @@ class ImageManager:
         bgc = ImageManager.COLOR_WALL if isinstance(tileSolid, (Dirt, Rock)) \
               else ImageManager.COLOR_EMPTY
 
-        if isinstance(tileSolid, Ant):
+        if (isinstance(tileSolid, Ant)):
+
+            holdsCookie=False
+            holdsBread=False
+
+            if tileSolid._holding != None: #for usability concerns, ressources holded by an ant are reduced in size and displayed over the ant
+                if (tileSolid.getHolding()=="bread"):
+                    holdsBread=True
+                elif (tileSolid.getHolding()=="cookie") :
+                    holdsCookie=True
+
             if isinstance(tilePheromone, Pheromone):
                 if isinstance(tileFloor, Bread):
-                    img = ANT_N_BREAD_N_PHEROMONE
+                    if holdsBread:
+                        img=ANT_N_BREAD_N_PHEROMONE_W_BREAD#
+                    elif holdsCookie:
+                        img=ANT_N_BREAD_N_PHEROMONE_W_COOKIE#
+                    else:
+                        img = ANT_N_BREAD_N_PHEROMONE
                 else:
-                    img = ANT_N_PHEROMONE
+                    if holdsBread:
+                        img = ANT_N_PHEROMONE_W_BREAD#
+                    elif holdsCookie:
+                        img=ANT_N_PHEROMONE_W_COOKIE#
+                    else:
+                        img = ANT_N_PHEROMONE
             elif isinstance(tileFloor, Bread):
-                img = ANT_N_BREAD
+                if holdsBread:
+                    img=ANT_N_BREAD_W_BREAD#
+                elif holdsCookie:
+                    img=ANT_N_BREAD_W_COOKIE#
+                else:
+                    img = ANT_N_BREAD
             elif isinstance(tileFloor, Cookie):
-                img = ANT_N_COOKIE
+                if holdsBread:
+                    img = ANT_N_COOKIE_W_BREAD #
+                elif holdsCookie:
+                    img = ANT_N_COOKIE_W_COOKIE #
+                else:
+                    img = ANT_N_COOKIE
             else:
-                img = ANT
+                if holdsBread:
+                    img=ANT_W_BREAD
+                elif holdsCookie:
+                    img=ANT_W_COOKIE
+                else:
+                    img = ANT
+
 
         elif isinstance(tileSolid, Rock):
             img = ROCK
@@ -92,6 +146,8 @@ class ImageManager:
             if isinstance(tilePheromone, Pheromone):
                 if isinstance(tileFloor,Bread):
                     img=BREAD_N_PHEROMONE
+                elif isinstance(tileFloor,Cookie):
+                    img=COOKIE_N_PHEROMONE
                 else:
                     img = PHEROMONE
             elif isinstance(tileFloor, Bread):

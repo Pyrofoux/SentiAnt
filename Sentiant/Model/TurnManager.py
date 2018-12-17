@@ -126,14 +126,14 @@ class TurnManager:
 
             if ant._holding is None and isinstance(cible, (Bread, Cookie)):
                     self.layerFloor.Remove(cible)
-                    ant.__setattr__('_holding', type(cible)(cible.id), "legit")
+                    ant.__setattr__('_holding', cible, "legit")
 
     def ExecDrop(self, ants):
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
 
             if isinstance(ant._holding, (Bread, Cookie)) and self.layerFloor.IsNone(posAnt):
-                self.layerFloor.Append(type(ant._holding)(ant._holding.id), map.layerSolid.GetXYByRef(ant))
+                self.layerFloor.Append(type(ant._holding)(ant._holding.id), self.map.layerSolid.GetXYByRef(ant))
                 ant._holding = None
             else :
                 pass

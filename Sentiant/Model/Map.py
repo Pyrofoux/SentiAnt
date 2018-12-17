@@ -21,7 +21,6 @@ class Map:
 
         fov = Cfg.FOV
         size = fov * 2 + 1
-        print(size)
 
         FOVSolid = [[0 for i in range(size)] for i in range(size)]
         FOVFloor = [[0 for i in range(size)] for i in range(size)]

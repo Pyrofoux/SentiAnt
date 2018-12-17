@@ -20,7 +20,6 @@ class WorkerBee(Ant):
                 if  i * j == 0 and (IsQueenAround or FOV[1][Cfg.FOV + i][Cfg.FOV + j] == Cfg.QUEEN):
                     IsQueenAround = True
 
-
         if FOVFloorFace == Cfg.COOKIE:
             if not(self._holding is None):
                 self.Drop()
