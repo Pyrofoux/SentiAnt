@@ -17,7 +17,7 @@ class QueenBee(Queen):
     NbWarehouseBees = 0
     NbSoldierBees = 0
 
-    def newTurn(self, fov): # Peut-être checker un jour si une ressource est dispo, ce serait intelligent x)
+    def newTurn(self, fov):
 
         spawn = None
         for i in range(len(fov[1])):
