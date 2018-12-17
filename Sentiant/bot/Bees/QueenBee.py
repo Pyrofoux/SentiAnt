@@ -1,5 +1,5 @@
 from Sentiant.Model import *
-from Sentiant.bot.Bees.DiggerBee import DiggerBee
+from Sentiant.bot.Bees.WorkerBee import WorkerBee
 from Sentiant.bot.Bees.NurseBee import NurseBee
 from Sentiant.bot.Bees.ResourceBee import ResourceBee
 from Sentiant.bot.Bees.SoldierBee import SoldierBee
@@ -12,7 +12,7 @@ class QueenBee(Queen):
 
 
     NbResourceBees = 0
-    NbDiggerBees = 0
+    NbWorkerBees = 0
     NbNurseBees = 0
     NbWarehouseBees = 0
     NbSoldierBees = 0
@@ -25,7 +25,9 @@ class QueenBee(Queen):
                 spawn = fov[1][i]
 
         if not(spawn is None):
-
+            self.SpawnAnt("Worker" + str(self.NbWorkerBees), WorkerBee, spawn)
+            self.NbWorkerBees += 1
+"""
             if self.NbWarehouseBees == 0:
                 self.SpawnAnt("Warehouse" + str(self.NbWarehouseBees), DiggerBee, spawn)
                 self.NbWarehouseBees += 1
@@ -40,6 +42,6 @@ class QueenBee(Queen):
                 self.NbResourceBees += 1
             else:
                 self.SpawnAnt("Soldier" + str(self.NbSoldierBees), SoldierBee, spawn)
-                self.NbSoldierBees += 1
+                self.NbSoldierBees += 1"""
 
 
