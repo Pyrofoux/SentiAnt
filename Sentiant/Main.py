@@ -14,7 +14,7 @@ if __name__ == '__main__':
     mapGen = MapManager()
     #bi=BotImpoir
 
-    qM = QueensManager(3, [1, 2, 3], [QueenRouge, QueenBee, SourisReine], mapGen)
+    qM = QueensManager(3, [1, 2, 3], [QueenBee, QueenBee, QueenBee], mapGen)
     map = mapGen.Generate()
 
     turnmanager = TurnManager(map, qM)

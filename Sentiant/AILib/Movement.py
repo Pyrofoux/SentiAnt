@@ -1,3 +1,7 @@
+from pathfinding.core.diagonal_movement import DiagonalMovement
+from pathfinding.core.grid import Grid
+from pathfinding.finder.a_star import AStarFinder
+
 from Sentiant.Model.Point import Point
 from Sentiant.Model.Rock import Rock
 from Sentiant.Model.Dirt import Dirt
@@ -7,36 +11,23 @@ class Pathfind:
     def __init__(self, FOV, relativeDest, relativeStart=Point(0, 0)):
         self.start = relativeStart
         self.dest = relativeDest
-        self.map = FOV # `[FOVSolid, FOVFloor]` from `Map.GetFOV`
+        self.maps = FOV # = `[FOVSolid, FOVFloor]` from `Map.GetFOV`
 
-    def Steps(self, obstacleClass=(Rock, Dirt, Ant), steps=[]):
-        if not steps:
-            steps = [self.start]
+	def Steps(self, obstacleClass=(Rock, Dirt, Ant)):
+		for i in range(len(self.maps[0])):
+			matrix.append([])
+			for j in range(len(self.maps[0][0])):
+				matrix.append(0 if any([isinstance(m[i][j], obstacleClass) for m in maps) else 1)
 
-        if steps[-1] == self.dest:
-            return steps
+		grid = Grid(matrix=matrix)
 
-        for next in sorted( [steps[-1] + Point( 0,  1), \
-                             steps[-1] + Point( 0, -1), \
-                             steps[-1] + Point( 1,  0), \
-                             steps[-1] + Point(-1,  0)], \
-                            key=lambda e: len(self.dest - e) ):
-            if any([isinstance(t[next], obstacleClass) for t in self.maps]) \
-                    or next == steps[-1]:
-                continue
+		start = grid.node(self.start.x, self.start.y)
+		end = grid.node(self.dest.x, self.dest.y)
 
-            #print(next)
-            steps.append(next)
+		finder = AStarFinder(diagonal_movement=DiagonalMovement.never)
+		path, runs = finder.find_path(start, end, grid)
 
-            nextSteps = self.Steps(obstacleClass, steps)
-            if len(nextSteps) == len(steps):
-                if steps[-1] == self.dest:
-                    return steps
-                steps.pop(-1)
-            else:
-                break
-
-        return steps
+		return [Point(n.x, n.y) for n in path]
 
     def __len__(self):
         return len(self.Steps())

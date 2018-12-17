@@ -8,9 +8,10 @@ class DiggerBee(Ant):
         super().__init__(id, name, team)
         self.direction = Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))]
 
-    def newTurn(self, FOV):
-        FOVface = FOV[0, Cfg.FOV + self.direction[0], Cfg.FOV + self.direction[1]]
-        WhatIsHere = FOV[1, Cfg.FOV, Cfg.FOV]
+    def newTurn(self, FOV, Pheros):
+        print(Cfg.FOV, self.direction.x, self.direction.y)
+        FOVface = FOV[0][Cfg.FOV + self.direction.x][Cfg.FOV + self.direction.y]
+        WhatIsHere = FOV[1][Cfg.FOV][Cfg.FOV]
 
         if WhatIsHere == Cfg.BREAD:
             self.Phero(30)
@@ -23,7 +24,6 @@ class DiggerBee(Ant):
             self.Dig(self.direction)
 
         # Ajouter une condition si fourmi ennemie
-
         else:
             self.direction = Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))]
             self.Move(self.direction)
