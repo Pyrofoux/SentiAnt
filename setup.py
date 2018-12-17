@@ -16,7 +16,7 @@ setup(
     license="oups",
     author="Andreas Bresser",
     packages=find_packages(),
-    tests_require=["numpy", "pathfinding"],
+    tests_require=["pathfinding"],
     include_package_data=True,
-    install_requires=["numpy", "pathfinding"],
+    install_requires=["pathfinding"],
 )
