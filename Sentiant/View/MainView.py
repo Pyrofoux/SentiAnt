@@ -1,12 +1,12 @@
-from tkinter import Tk, Button, VERTICAL, HORIZONTAL, N, S, E, W, Scrollbar, Canvas
-from tkinter import Tk, Button, StringVar, Label
+from tkinter import  VERTICAL, HORIZONTAL, N, S, E, W, Scrollbar, Canvas
+from tkinter import Toplevel, Button, StringVar, Label
 from Sentiant.Model import Ant
 from .Grid import Grid
 
-class MainView(Tk):
+class MainView(Toplevel):
     def __init__(self, map, turnmanager = None, size= 500):
         # Init Window
-        Tk.__init__(self)
+        Toplevel.__init__(self)
 
         # property
         self.Map = map

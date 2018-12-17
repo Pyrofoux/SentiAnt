@@ -19,3 +19,4 @@ from Sentiant.Model.Layer import Layer, LayerFloor, LayerPheromone, LayerSolid
 from Sentiant.Model.MapManager import MapManager
 from Sentiant.Model.Queen import Queen
 from Sentiant.Model.QueensManager import QueensManager
+from Sentiant.Model.LogsManager import LogsManager

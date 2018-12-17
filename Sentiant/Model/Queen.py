@@ -11,6 +11,7 @@ class Queen:
     SPAWN6 = Point(2, 1)
     SPAWN7 = Point(0, 2)
     SPAWN8 = Point(1, 2)
+
     SPAWNS = (SPAWN1, SPAWN2, SPAWN3, SPAWN4, SPAWN5, SPAWN6, SPAWN7, SPAWN8)
 
 
