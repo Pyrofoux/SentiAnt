@@ -14,16 +14,23 @@ class WorkerBee(Ant):
         FOVFloorFace = FOV[1][Cfg.FOV + self.direction.x][Cfg.FOV + self.direction.y]
         FOVFloorHere = FOV[1][Cfg.FOV][Cfg.FOV]
 
+        IsQueenAround = False
+        for i in range(-1, 2):
+            for j in range(-1, 2):
+                if  i * j == 0 and (IsQueenAround or FOV[1][Cfg.FOV + i][Cfg.FOV + j] == Cfg.QUEEN):
+                    IsQueenAround = True
+
+
         if FOVFloorFace == Cfg.COOKIE:
             if not(self._holding is None):
                 self.Drop()
             else:
                 self.Move(self.direction)
 
-        elif not(FOVFloorHere is None) and self._holding is None and FOVSolidFace != Cfg.QUEEN:
+        elif not(FOVFloorHere  == Cfg.EMPTY) and self._holding is None and not(IsQueenAround):
             self.Pickup()
 
-        elif FOVSolidFace == Cfg.QUEEN and not(self._holding is None) :
+        elif IsQueenAround and not(self._holding is None) :
             self.Drop()
 
         elif FOVSolidFace == Cfg.EMPTY:
