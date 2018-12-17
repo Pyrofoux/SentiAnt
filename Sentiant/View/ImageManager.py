@@ -16,6 +16,9 @@ class ImageManager:
     ANT_N_COOKIE    = None
     ANT_N_PHEROMONE = None
 
+    ANT_N_BREAD_N_PHEROMONE = None
+    BREAD_N_PHEROMONE = None
+
     QUEEN_PART_1 = None
     QUEEN_PART_2 = None
     QUEEN_PART_3 = None
@@ -28,7 +31,8 @@ class ImageManager:
     def LoadImages(imgSize, dr="Sentiant/View/assets/"):
         global EMPTY, ANT, BREAD, COOKIE, PHEROMONE, ROCK, \
                ANT_N_BREAD, ANT_N_COOKIE, ANT_N_PHEROMONE, QUEEN_PART_1\
-            , QUEEN_PART_2, QUEEN_PART_3, QUEEN_PART_4
+            , QUEEN_PART_2, QUEEN_PART_3, QUEEN_PART_4, ANT_N_BREAD_N_PHEROMONE \
+        ,  BREAD_N_PHEROMONE
         r = 300 // imgSize[0]
 
         EMPTY           = PhotoImage(file=dr+"empty.png").subsample(r, r)
@@ -43,6 +47,9 @@ class ImageManager:
         ANT_N_COOKIE    = PhotoImage(file=dr+"ant_n_cookie.png").subsample(r, r)
         ANT_N_PHEROMONE = PhotoImage(file=dr+"ant_n_pheromone.png").subsample(r, r)
 
+        ANT_N_BREAD_N_PHEROMONE = PhotoImage(file=dr+"ant_n_bread_n_pheromone.png").subsample(r,r)
+        BREAD_N_PHEROMONE = PhotoImage(file=dr+"bread_n_pheromone.png").subsample(r,r)
+
         QUEEN_PART_1 = PhotoImage(file=dr+"queen_part_001.png").subsample(r, r)
         QUEEN_PART_2 = PhotoImage(file=dr + "queen_part_002.png").subsample(r, r)
         QUEEN_PART_3 = PhotoImage(file=dr + "queen_part_003.png").subsample(r, r)
@@ -56,7 +63,10 @@ class ImageManager:
 
         if isinstance(tileSolid, Ant):
             if isinstance(tilePheromone, Pheromone):
-                img = ANT_N_PHEROMONE
+                if isinstance(tileFloor, Bread):
+                    img = ANT_N_BREAD_N_PHEROMONE
+                else:
+                    img = ANT_N_PHEROMONE
             elif isinstance(tileFloor, Bread):
                 img = ANT_N_BREAD
             elif isinstance(tileFloor, Cookie):
@@ -80,7 +90,10 @@ class ImageManager:
 
         else:
             if isinstance(tilePheromone, Pheromone):
-                img = PHEROMONE
+                if isinstance(tileFloor,Bread):
+                    img=BREAD_N_PHEROMONE
+                else:
+                    img = PHEROMONE
             elif isinstance(tileFloor, Bread):
                 img = BREAD
             elif isinstance(tileFloor, Cookie):
