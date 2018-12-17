@@ -133,7 +133,7 @@ class TurnManager:
             posAnt = self.layerSolid.GetXYByRef(ant)
 
             if isinstance(ant._holding, (Bread, Cookie)) and self.layerFloor.IsNone(posAnt):
-                self.layerFloor.Append(type(ant._holding)(ant._holding.id))
+                self.layerFloor.Append(type(ant._holding)(ant._holding.id), map.layerSolid.GetXYByRef(ant))
                 ant._holding = None
             else :
                 pass

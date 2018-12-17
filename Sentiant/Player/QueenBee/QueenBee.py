@@ -1,9 +1,9 @@
 from Sentiant.Model import *
-from Sentiant.bot.Bees.WorkerBee import WorkerBee
-from Sentiant.bot.Bees.NurseBee import NurseBee
-from Sentiant.bot.Bees.ResourceBee import ResourceBee
-from Sentiant.bot.Bees.SoldierBee import SoldierBee
-from Sentiant.bot.Bees.WarehouseBee import WarehouseBee
+from Sentiant.Player.QueenBee.WorkerBee import WorkerBee
+from Sentiant.Player.QueenBee.NurseBee import NurseBee
+from Sentiant.Player.QueenBee.ResourceBee import ResourceBee
+from Sentiant.Player.QueenBee.SoldierBee import SoldierBee
+from Sentiant.Player.QueenBee.WarehouseBee import WarehouseBee
 
 # Goal : spawn bees when possible
 
@@ -17,7 +17,7 @@ class QueenBee(Queen):
     NbWarehouseBees = 0
     NbSoldierBees = 0
 
-    def newTurn(self, fov):
+    def newTurn(self, fov): # Peut-être checker un jour si une ressource est dispo, ce serait intelligent x)
 
         spawn = None
         for i in range(len(fov[1])):

@@ -1,6 +1,6 @@
 from Sentiant.Model import *
-from Sentiant.bot.FourmiRouge.FourmiRouge import FourmiRouge
+from Sentiant.Player.QueenRouge.FourmiRouge import FourmiRouge
 
 class QueenRouge(Queen):
-    def newTurn(self):
+    def newTurn(self, fov):
         self.SpawnAnt("test", FourmiRouge, self.SPAWN4)
