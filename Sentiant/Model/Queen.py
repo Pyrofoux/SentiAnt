@@ -12,8 +12,6 @@ class Queen:
     SPAWN7 = Point(0, 2)
     SPAWN8 = Point(1, 2)
 
-
-
     def __init__(self, team):
 
         #property

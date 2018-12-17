@@ -56,10 +56,7 @@ class Map:
 
         incrY = coordsFin.y - coordsDebut.y
         if incrY != 0:
-            incrY = int(incrY / abs(incrY)) #sens du déplacement en Y : 1 ou -1z
-        print(coordsDebut)
-        print(incrX)
-        print(incrY)
+            incrY = int(incrY / abs(incrY)) #sens du déplacement en Y : 1 ou -1
 
         # Si on arrive à la case voulue, il existe un moyen de voir cette case à partir de caseDebut : on retourne True
         if coordsDebut == coordsFin:

@@ -3,4 +3,5 @@ from Sentiant.bot.FourmiRouge.FourmiRouge import FourmiRouge
 
 class QueenRouge(Queen):
     def newTurn(self):
-        self.SpawnAnt("test", FourmiRouge, self.SPAWN4)
+        self.SpawnAnt("fourmiRouge1", FourmiRouge, self.SPAWN4)
+
