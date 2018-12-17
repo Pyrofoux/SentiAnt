@@ -9,4 +9,5 @@ class FourmiRouge(Ant):
     def newTurn(self, FOV, pheromones):
         if randrange(2) == 0:
             self.Phero(randrange(10))
-        self.Move(Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))])
+        else :
+            self.Move(Cfg.DIRECTIONS[randrange(len(Cfg.DIRECTIONS))])
