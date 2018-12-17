@@ -13,21 +13,23 @@ class Pathfind:
         self.dest = relativeDest
         self.maps = FOV # = `[FOVSolid, FOVFloor]` from `Map.GetFOV`
 
-	def Steps(self, obstacleClass=(Rock, Dirt, Ant)):
-		for i in range(len(self.maps[0])):
-			matrix.append([])
-			for j in range(len(self.maps[0][0])):
-				matrix.append(0 if any([isinstance(m[i][j], obstacleClass) for m in maps) else 1)
+    def Steps(self, obstacleClass=(Rock, Dirt, Ant)):
+        matrix = []
 
-		grid = Grid(matrix=matrix)
+        for i in range(len(self.maps[0])):
+            matrix.append([])
+            for j in range(len(self.maps[0][0])):
+                matrix.append(0 if any([isinstance(m[i][j], obstacleClass) for m in self.maps]) else 1)
 
-		start = grid.node(self.start.x, self.start.y)
-		end = grid.node(self.dest.x, self.dest.y)
+        grid = Grid(matrix=matrix)
 
-		finder = AStarFinder(diagonal_movement=DiagonalMovement.never)
-		path, runs = finder.find_path(start, end, grid)
+        start = grid.node(self.start.x, self.start.y)
+        end = grid.node(self.dest.x, self.dest.y)
 
-		return [Point(n.x, n.y) for n in path]
+        finder = AStarFinder(diagonal_movement=DiagonalMovement.never)
+        path, runs = finder.find_path(start, end, grid)
+
+        return [Point(n.x, n.y) for n in path]
 
     def __len__(self):
         return len(self.Steps())
