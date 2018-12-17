@@ -1,9 +1,8 @@
 from Sentiant.Model import MapManager, QueenTile, Point, QueensManager, Queen
-from Sentiant.View import MainView
-from Sentiant.Model import TurnManager
-from Sentiant.bot.Bees.QueenBee import QueenBee
+from Sentiant.View import MainView, ImportView
+from Sentiant.Model import TurnManager, LogsManager
+from Sentiant.bot.FourmiRouge.FourmiRouge import FourmiRouge
 from Sentiant.bot.FourmiRouge.QueenRouge import QueenRouge
-from Sentiant.bot.Souris.SourisReine import SourisReine
 import os
 
 
@@ -11,11 +10,20 @@ if __name__ == '__main__':
 
     os.chdir("..\\")
 
-    mapGen = MapManager()
-    #bi=BotImpoir
+    importBot = ImportView()
+    importBot.Run()
 
-    qM = QueensManager(3, [1, 2, 3], [QueenBee, QueenBee, QueenBee], mapGen)
-    map = mapGen.Generate()
+    LogsManager.Info("Queens imported :\nnbqueens : {0}\nqueens :{1}"
+                     .format(len(importBot.queens),
+                             "\n".join(["{0} : {1}".format(i[1], i[0]) for i in importBot.queens])))
+
+    mapgen = MapManager()
+
+    qM = QueensManager(len(importBot.queens)
+                       , [i[1] for i in importBot.queens]
+                       , [i[0] for i in importBot.queens]
+                       , mapgen)
+    map = mapgen.Generate()
 
     turnmanager = TurnManager(map, qM)
 

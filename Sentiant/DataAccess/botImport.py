@@ -5,7 +5,7 @@ class BotImport(Frame):
     def __init__(self, root, directory, onOk, mainFileName='Queen.py'):
         super().__init__(root)
 
-        self.rootDir = directory
+        self.dir = directory
         self.mainFile = mainFileName
         self.onOk = onOk
 
@@ -43,15 +43,14 @@ class BotImport(Frame):
                 ``` [(ref, name), (ref, name), ..] ```
         """
         r = []
-        prev = os.getcwd()
-        os.chdir(self.rootDir)
 
-        for directory in os.scandir():
+        for directory in os.scandir(path=self.dir):
             if directory.is_dir() and os.path.exists(directory.path + "/" + self.mainFile):
+
                 LogsManager.Info("Importing algorithm from '" + directory.name +  "'... ")
 
                 try:
-                    q = __import__(directory.name + "." + self.mainFile[:-3], \
+                    q = __import__("Sentiant.Player."+directory.name + "." + self.mainFile[:-3], \
                                    fromlist=[self.mainFile[:-3]]).Queen
                     self.queens.append(q)
                     self.names.append(directory.name)
@@ -61,8 +60,6 @@ class BotImport(Frame):
                     LogsManager.Info("    done!")
             else:
                 LogsManager.Warning("No main file in '{}', abort loading.".format(directory.name))
-
-        os.chdir(prev)
         return r
 
 
