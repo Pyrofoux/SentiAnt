@@ -52,7 +52,7 @@ class MoveManager:
                 if not (i in punished):
                     punished.append(i)
 
-            #Nouvelle tentative, en annulant le déplacement de celles qui se cognent
+            #Nouvelle tentative, en annulant le déplacement de celles  qui se cognent
 
             nextTry = []
 
