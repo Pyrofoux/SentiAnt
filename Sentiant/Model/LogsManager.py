@@ -1,5 +1,7 @@
-from os import path, getcwd
 from datetime import datetime
+from os import path
+#from Sentiant.Model.LogsManager import LogsManager
+
 
 class LogsManager :
     def __init__(self):
@@ -9,12 +11,15 @@ class LogsManager :
     def timeString():
         return datetime.now().strftime("%H:%M:%S.%f")[:-3]
 
-    #scriptPath = path.abspath(__file__)
-    #scriptDir = path.split(scriptPath)[0]
-    #scriptDirDir = path.dirname(scriptDir)
+    scriptPath = path.abspath(__file__)
+    scriptDir = path.split(scriptPath)[0]
+    scriptDirDir = path.dirname(scriptDir) #Sentiant
 
-    BASE = "Sentiant\\Logs\\" #mais ça marche peut-être pas sur Linux
-    EXT = ".log"
+    finalPathGen=path.join(scriptDirDir,'Logs\\generals.log')
+    finalPathUse=path.join(scriptDirDir,'Logs\\users.log')
+
+    #BASE = "Sentiant\\Logs\\" #mais ça marche peut-être pas sur Linux
+    #EXT = ".log"
 
     @staticmethod
     def StdOut(type, msg, isUser=False, end="\n"):
@@ -22,10 +27,11 @@ class LogsManager :
         out = pre + str(msg).replace("\n", "\n" + " " * len(pre)) + end # .replace(a,b) remplace toutes les occurrences de a par b
         print(out)
 
-        with open(LogsManager.BASE + "generals" + LogsManager.EXT, "w") as generals :
+        with open(LogsManager.finalPathGen, "a") as generals:
+            # logs are opened in "a"ppend mode in order not to erase the previous lines each time it is opened (if it used "w" mode)
             generals.write(out)
         if isUser:
-            with open(LogsManager.BASE + "users" + LogsManager.EXT, "w") as users:
+            with open(LogsManager.finalPathUse, "a") as users:
                 users.write(out)
 
     @staticmethod

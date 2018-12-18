@@ -1,5 +1,5 @@
 from Sentiant.Model import Ant
-from random import *
+from random import randrange
 
 class AntRandom(Ant):
 
@@ -24,7 +24,7 @@ class AntRandom(Ant):
         if a<3:
             self.possibleActions[a](self.directions[r])
         elif a==3:
-            self.possiblesActions[a](s)
+            self.possibleActions[a](s)
         else:
             self.possibleActions[a]()
 

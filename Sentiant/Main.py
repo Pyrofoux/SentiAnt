@@ -10,6 +10,12 @@ if __name__ == '__main__':
 
     os.chdir("..\\")
 
+    gen=open(LogsManager.finalPathGen,"w")
+    use=open(LogsManager.finalPathUse,"w")
+    gen.close()
+    use.close() #automatically cleans the existing logs from a previous execution
+
+
     importBot = ImportView()
     importBot.Run()
 
@@ -29,3 +35,5 @@ if __name__ == '__main__':
 
     view = MainView(map, turnmanager, 500)
     view.Run()
+
+

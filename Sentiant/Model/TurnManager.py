@@ -57,7 +57,7 @@ class TurnManager:
 
     def ExecAttack(self, ants):
 
-        toPunish = []
+        #toPunish = []
 
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
@@ -66,9 +66,7 @@ class TurnManager:
             cible = self.layerSolid[posCible]
 
             if isinstance(cible, Ant):
-                self.Remove1HP(toPunish)
-
-
+                self.Remove1HP(cible)
 
     def ExecMove(self, ants):
 
@@ -95,6 +93,7 @@ class TurnManager:
             for i in range(0,len(movingAnts)):
 
                 if i in punished: #
+                    print("\n"+ "PUNITIONNN!!!!!!")
                     self.Remove1HP(movingAnts[i])
                 else:
                     indexToMove.append(i)
@@ -102,11 +101,6 @@ class TurnManager:
             for i in range(0, len(indexToMove)):
                 self.layerSolid.Remove(movingAnts[indexToMove[i]])
                 self.layerSolid.Append(movingAnts[indexToMove[i]], desiredDestinations[indexToMove[i]])
-
-
-
-
-
 
 
     def ExecDig(self, ants):

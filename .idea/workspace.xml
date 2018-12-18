@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sentiant/Logs/generals.log" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Logs/generals.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sentiant/Model/Queen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Model/Queen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Logs/users.log" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Logs/users.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Modelgenerals.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Modelusers.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +22,27 @@
     <session id="-807324646">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="47" />
+          <entry key="log" value="2" />
+          <entry key="py" value="50" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="47" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4545" />
-          <entry key="txt" value="1203" />
+          <entry key="py" value="5743" />
+          <entry key="txt" value="1316" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1203" />
-          <entry key="Python" value="4545" />
+          <entry key="PLAIN_TEXT" value="1316" />
+          <entry key="Python" value="5743" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -50,27 +57,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/Queen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/View/ImageManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1240">
-              <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -83,21 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="51">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -106,43 +81,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/Cfg.py">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/Cookie.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="142">
+              <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenBee/QueenBee.py">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Model/LogsManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="1" column="56" lean-forward="true" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+            <state relative-caret-position="197">
+              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/View/MainView.py">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Logs/users.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Logs/generals.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="58" column="80" lean-forward="true" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -150,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sentiant/Model/Ant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="1139">
               <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
             </state>
           </provider>
@@ -175,6 +155,9 @@
       <find>fourmi</find>
       <find>fourmi lac</find>
       <find>out of</find>
+      <find>Remove</find>
+      <find>HP</find>
+      <find>topunish</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,13 +166,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/Cfg.py" />
         <option value="$PROJECT_DIR$/Sentiant/DataAccess/botImport.py" />
         <option value="$PROJECT_DIR$/Sentiant/bot/Bees/DiggerBee.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/QueensManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/bot/Bees/QueenBee.py" />
-        <option value="$PROJECT_DIR$/Sentiant/Main.py" />
         <option value="$PROJECT_DIR$/Sentiant/bot/FourmiRouge/QueenRouge.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenRouge/FourmiRouge.py" />
         <option value="$PROJECT_DIR$/Sentiant/View/Grid.py" />
@@ -200,19 +181,21 @@
         <option value="$PROJECT_DIR$/Sentiant/Model/Cookie.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/Dirt.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/Layer/Layer.py" />
-        <option value="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenBee/WorkerBee.py" />
         <option value="$PROJECT_DIR$/Sentiant/View/ImageManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/Queen.py" />
         <option value="$PROJECT_DIR$/Sentiant/View/MainView.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py" />
+        <option value="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" />
+        <option value="$PROJECT_DIR$/Sentiant/Main.py" />
+        <option value="$PROJECT_DIR$/Sentiant/Model/LogsManager.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -250,41 +233,19 @@
               <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
               <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
               <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
               <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
               <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Layer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
               <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
               <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
               <item name="Player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
-              <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-              <item name="QueenBee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
-              <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-              <item name="QueenRandom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SentiAnt 12" type="462c0819:PsiDirectoryNode" />
-              <item name="Sentiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-              <item name="QueenRouge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SentiAnt 12" type="b2602c69:ProjectViewProjectNode" />
@@ -572,26 +533,33 @@
       <option name="project" value="LOCAL" />
       <updated>1545083824726</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Queen.SPAWNS est maintenant une liste utilisable par les joueurs&#10;+ botRandom fonctionnel">
+      <created>1545087004305</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545087004307</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1386" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24480712" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7818991" visible="true" weight="0.30122325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.78199404" visible="true" weight="0.3229508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49894625" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.21810089" side_tool="true" visible="true" weight="0.30122325" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.21800596" side_tool="true" visible="true" weight="0.3229508" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -612,15 +580,10 @@
     <MESSAGE value="Update BEES" />
     <MESSAGE value="effacé ROCK*mabite (j'ai pas pris le temps de comprendre faudra surement un autre fix)&#10;+ correction de la ant.__str__&#10;+ refonte des str des objets de la map (et suppression des ID) pour qu'ils soient lisibles par les joueurs sans tricher&#10;+ correction sur le drop&#10;+ amélioration de la fonction d'info quand on clique sur une case&#10;+ correction sur la fourmi rouge&#10;+ ajouts de tous les assets manquants, ABSOLUMENT TOUS et modif de certains pour améliorer le contraste" />
     <MESSAGE value="sans oublier les nouveaux assets bien sûr, il s'agirait pas d'oublier les &quot;unversioned files&quot; hein" />
-    <option name="LAST_COMMIT_MESSAGE" value="sans oublier les nouveaux assets bien sûr, il s'agirait pas d'oublier les &quot;unversioned files&quot; hein" />
+    <MESSAGE value="Queen.SPAWNS est maintenant une liste utilisable par les joueurs&#10;+ botRandom fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queen.SPAWNS est maintenant une liste utilisable par les joueurs&#10;+ botRandom fonctionnel" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/users.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/generals.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Logsgenerals.log" />
     <entry file="file://$PROJECT_DIR$/Sentiant/Logsusers.log" />
     <entry file="file://$PROJECT_DIR$/Sentiant/Modelusers.log">
@@ -631,13 +594,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/bot/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Model/LogsManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-677">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/bot/Bees/DiggerBee.py" />
     <entry file="file://$PROJECT_DIR$/Sentiant/AILib/Movement.py">
@@ -723,16 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Model/SolidEntity.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -799,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="128" column="63" selection-start-line="128" selection-start-column="63" selection-end-line="128" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenBee/WorkerBee.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -840,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Model/Ant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -862,16 +794,6 @@
           <caret line="58" column="80" lean-forward="true" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
           <folding>
             <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -893,12 +815,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Model/Ant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/generals.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Model/LogsManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/generals.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Logs/users.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
           </folding>
         </state>
       </provider>

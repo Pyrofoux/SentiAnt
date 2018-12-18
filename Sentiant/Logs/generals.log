@@ -1,1 +1,9 @@
-[Info] (23:49:06.997)> Worker0 wants to move
+[Info] (01:05:53.982)> Importing algorithm from 'QueenBee'... 
+[Info] (01:05:53.996)>     done!
+[Info] (01:05:54.002)> Importing algorithm from 'QueenRandom'... 
+[Info] (01:05:54.018)>     done!
+[Info] (01:05:54.024)> Importing algorithm from 'QueenRouge'... 
+[Info] (01:05:54.031)>     done!
+[Info] (01:06:04.764)> Queens imported :
+                       nbqueens : 0
+                       queens :
