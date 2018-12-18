@@ -164,7 +164,6 @@ class TurnManager:
 
             # cible dead
             if cible._HP == 1:
-                self.layerFloor.Drop(cible)
                 self.layerSolid.Remove(cible)
             # cible still alive
             else:
