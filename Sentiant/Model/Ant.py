@@ -1,4 +1,6 @@
 from Sentiant.Model.SolidEntity import SolidEntity
+from Sentiant.Model.Cookie import Cookie
+from Sentiant.Model.Bread import Bread
 
 class Ant(SolidEntity):
 
@@ -46,8 +48,12 @@ class Ant(SolidEntity):
         return self._HP
 
     def getHolding(self):
-        return str(self._holding)
-
+        if isinstance(self._holding, Bread):
+            return Cfg.BREAD
+        elif isinstance(self._holding, Cookie):
+            return Cfg.COOKIE
+        else:
+            return Cfg.EMPTY
     def getFOV(self):
         return self._FOV
 
