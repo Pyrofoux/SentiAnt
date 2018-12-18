@@ -1423,3 +1423,19 @@
 [Info] (21:01:53.229)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00D85D70>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0509A9D0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0509A690>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x050A3230>]
 [Info] (21:01:53.394)> NextTurn()
 [Info] (21:01:53.397)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0509A9D0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00D85D70>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0509A690>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x050A3230>]
+[Info] (22:49:23.863)> Importing algorithm from 'QueenBee'... 
+[Info] (22:49:23.888)>     done!
+[Info] (22:49:23.889)> Importing algorithm from 'QueenMoth'... 
+[Info] (22:49:23.916)>     done!
+[Info] (22:49:23.917)> Importing algorithm from 'QueenRandom'... 
+[Info] (22:49:23.920)>     done!
+[Info] (22:49:23.921)> Importing algorithm from 'QueenRouge'... 
+[Info] (22:49:23.923)>     done!
+[Info] (22:49:27.398)> Queens imported :
+                       nbqueens : 4
+                       queens :QueenBee: <class 'Sentiant.Player.QueenBee.QueenBee.QueenBee'>
+                       QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
+                       QueenRandom: <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
+                       QueenRouge: <class 'Sentiant.Player.QueenRouge.QueenRouge.QueenRouge'>
+[Info] (22:49:36.367)> NextTurn()
+[Info] (22:49:36.369)> All ants =  []
