@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="Ca marche !!!!!!!!!!!!!!!!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SentiAnt.iml" afterPath="$PROJECT_DIR$/.idea/SentiAnt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Logs/generals.log" afterPath="$PROJECT_DIR$/Sentiant/Logs/generals.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Main.py" afterPath="$PROJECT_DIR$/Sentiant/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/MoveManager.py" afterPath="$PROJECT_DIR$/Sentiant/Model/MoveManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" afterPath="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" afterPath="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/View/ImportView.py" afterPath="$PROJECT_DIR$/Sentiant/View/ImportView.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/View/MainView.py" afterPath="$PROJECT_DIR$/Sentiant/View/MainView.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,9 +51,18 @@
       <file leaf-file-name="TurnManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="-55">
               <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-              <folding />
+              <folding>
+                <marker date="1545156628257" expanded="true" signature="18:5599" ph="..." />
+                <marker date="1545156628257" expanded="true" signature="2191:2280" ph="..." />
+                <marker date="1545156628257" expanded="true" signature="5472:5518" ph="..." />
+                <marker date="1545156628257" expanded="true" signature="5472:5599" ph="..." />
+                <marker date="1545156628257" expanded="false" signature="5601:6022" ph="import ..." />
+                <marker date="1545156628257" expanded="true" signature="6050:6982" ph="..." />
+                <marker date="1545156628257" expanded="true" signature="6244:6331" ph="..." />
+                <marker date="1545156628257" expanded="true" signature="6350:6403" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,8 +70,8 @@
       <file leaf-file-name="MoveManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sentiant/Model/MoveManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
+            <state relative-caret-position="97">
+              <caret line="54" column="70" lean-forward="false" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -752,7 +752,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545068070879</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas">
+      <created>1545156585907</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545156585907</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas">
+      <created>1545156660813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545156660813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +807,8 @@
     <MESSAGE value="Add Player" />
     <MESSAGE value="Integration v1" />
     <MESSAGE value="Ca marche !!!!!!!!!!!!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ca marche !!!!!!!!!!!!!!!!" />
+    <MESSAGE value="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,7 +817,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/botImport.py">
+    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1037,7 +1052,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/botImport.py">
+    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
@@ -1051,9 +1066,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +1093,7 @@
         <state relative-caret-position="150">
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1095,16 +1108,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="-55">
           <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-          <folding />
+          <folding>
+            <marker date="1545156628257" expanded="true" signature="18:5599" ph="..." />
+            <marker date="1545156628257" expanded="true" signature="2191:2280" ph="..." />
+            <marker date="1545156628257" expanded="true" signature="5472:5518" ph="..." />
+            <marker date="1545156628257" expanded="true" signature="5472:5599" ph="..." />
+            <marker date="1545156628257" expanded="false" signature="5601:6022" ph="import ..." />
+            <marker date="1545156628257" expanded="true" signature="6050:6982" ph="..." />
+            <marker date="1545156628257" expanded="true" signature="6244:6331" ph="..." />
+            <marker date="1545156628257" expanded="true" signature="6350:6403" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/Model/MoveManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
+        <state relative-caret-position="97">
+          <caret line="54" column="70" lean-forward="false" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
           <folding />
         </state>
       </provider>
