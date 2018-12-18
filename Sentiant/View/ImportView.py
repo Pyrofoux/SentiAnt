@@ -1,13 +1,14 @@
-from tkinter import Toplevel
-from Sentiant.DataAccess.botImport import BotImport
+from tkinter import Tk
+from Sentiant.DataAccess.BotImport import BotImport
 
-class ImportView(Toplevel):
+class ImportView(Tk):
 
     queens = []
 
-    def __init__(self):
-        Toplevel.__init__(self)
+    def __init__(self, Prout):
+        Tk.__init__(self)
 
+        self.Prout = Prout
 
         self.bot = BotImport(self, "Sentiant\\Player", self.BotImportHandler)
         self.bot.LoadAll()
@@ -18,4 +19,4 @@ class ImportView(Toplevel):
 
     def BotImportHandler(self, p):
         self.queens = p
-        self.quit()
+        self.Prout(p)

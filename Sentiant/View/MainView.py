@@ -99,4 +99,3 @@ class MainView(Toplevel):
 
     def Run(self):
         self.mainloop()
-

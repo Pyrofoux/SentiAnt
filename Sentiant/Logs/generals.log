@@ -1,167 +1,21 @@
-[Info] (02:09:18.577)> Importing algorithm from 'QueenBee'... 
-[Info] (02:09:18.599)>     done!
-[Info] (02:09:18.604)> Importing algorithm from 'QueenRandom'... 
-[Info] (02:09:18.616)>     done!
-[Info] (02:09:18.622)> Importing algorithm from 'QueenRouge'... 
-[Info] (02:09:18.629)>     done!
-[Info] (02:09:24.334)> Queens imported :
-                       nbqueens : 3
-                       queens :QueenBee : <class 'Sentiant.Player.QueenBee.QueenBee.QueenBee'>
-                       QueenRandom : <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
-                       QueenRouge : <class 'Sentiant.Player.QueenRouge.QueenRouge.QueenRouge'>
-[Info] (02:09:26.406)> NextTurn()
-[Info] (02:09:26.413)> All ants =  []
-[Info] (02:09:27.150)> NextTurn()
-[Info] (02:09:27.157)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:27.163)> Examining Worker0
-[Info] (02:09:27.173)> Worker0 wants to move
-[Info] (02:09:27.178)> Examining test
-[Info] (02:09:27.189)> test wants to move
-[Info] (02:09:27.942)> NextTurn()
-[Info] (02:09:27.951)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDF60>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:27.957)> Examining Worker1
-[Info] (02:09:27.966)> Worker1 wants to move
-[Info] (02:09:27.971)> Examining Worker0
-[Info] (02:09:27.980)> Worker0 wants to move
-[Info] (02:09:27.987)> Examining test
-[Info] (02:09:27.998)> test wants to move
-[Info] (02:09:28.558)> NextTurn()
-[Info] (02:09:28.569)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDF60>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.575)> Examining Worker1
-[Info] (02:09:28.584)> Worker1 wants to move
-[Info] (02:09:28.589)> Examining Worker2
-[Info] (02:09:28.598)> Worker2 wants to move
-[Info] (02:09:28.604)> Examining Worker0
-[Info] (02:09:28.613)> Worker0 wants to move
-[Info] (02:09:28.618)> Examining test
-[Info] (02:09:28.630)> test wants to phero
-[Info] (02:09:28.726)> NextTurn()
-[Info] (02:09:28.734)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.739)> Examining Worker2
-[Info] (02:09:28.749)> Worker2 wants to move
-[Info] (02:09:28.754)> Examining 33223
-[Info] (02:09:28.764)> 33223 wants to attack
-[Info] (02:09:28.769)> Examining test
-[Info] (02:09:28.781)> test wants to move
-[Info] (02:09:28.902)> NextTurn()
-[Info] (02:09:28.909)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.916)> Examining Worker2
-[Info] (02:09:28.925)> Worker2 wants to dig
-[Info] (02:09:28.931)> Examining 33223
-[Info] (02:09:28.941)> 33223 wants to dig
-[Info] (02:09:28.947)> Examining test
-[Info] (02:09:28.959)> test wants to phero
-[Info] (02:09:29.086)> NextTurn()
-[Info] (02:09:29.093)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.100)> Examining Worker2
-[Info] (02:09:29.110)> Worker2 wants to move
-[Info] (02:09:29.116)> Examining 33223
-[Info] (02:09:29.128)> 33223 wants to dig
-[Info] (02:09:29.134)> Examining test
-[Info] (02:09:29.145)> test wants to move
-[Info] (02:09:29.262)> NextTurn()
-[Info] (02:09:29.273)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.279)> Examining Worker2
-[Info] (02:09:29.290)> Worker2 wants to dig
-[Info] (02:09:29.295)> Examining 33223
-[Info] (02:09:29.306)> 33223 wants to pickup
-[Info] (02:09:29.312)> Examining test
-[Info] (02:09:29.324)> test wants to move
-[Info] (02:09:29.438)> NextTurn()
-[Info] (02:09:29.446)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.452)> Examining Worker2
-[Info] (02:09:29.462)> Worker2 wants to move
-[Info] (02:09:29.467)> Examining 33223
-[Info] (02:09:29.477)> 33223 wants to phero
-[Info] (02:09:29.484)> Examining test
-[Info] (02:09:29.495)> test wants to phero
-[Info] (02:09:29.614)> NextTurn()
-[Info] (02:09:29.622)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.628)> Examining 33223
-[Info] (02:09:29.639)> 33223 wants to move
-[Info] (02:09:29.644)> Examining 66778
-[Info] (02:09:29.655)> 66778 wants to move
-[Info] (02:09:29.661)> Examining Worker2
-[Info] (02:09:29.671)> Worker2 wants to dig
-[Info] (02:09:29.677)> Examining test
-[Info] (02:09:29.688)> test wants to phero
-[Info] (02:09:29.790)> NextTurn()
-[Info] (02:09:29.800)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.806)> Examining 33223
-[Info] (02:09:29.817)> 33223 wants to phero
-[Info] (02:09:29.823)> Examining Worker2
-[Info] (02:09:29.833)> Worker2 wants to move
-[Info] (02:09:29.839)> Examining 66778
-[Info] (02:09:29.849)> 66778 wants to drop
-[Info] (02:09:29.855)> Examining test
-[Info] (02:09:29.866)> test wants to phero
-[Info] (02:09:29.966)> NextTurn()
-[Info] (02:09:29.974)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.984)> Examining 33223
-[Info] (02:09:30.000)> 33223 wants to drop
-[Info] (02:09:30.006)> Examining 66778
-[Info] (02:09:30.018)> 66778 wants to pickup
-[Info] (02:09:30.024)> Examining Worker2
-[Info] (02:09:30.034)> Worker2 wants to dig
-[Info] (02:09:30.040)> Examining test
-[Info] (02:09:30.052)> test wants to move
-[Info] (02:09:30.134)> NextTurn()
-[Info] (02:09:30.142)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.148)> Examining 33223
-[Info] (02:09:30.158)> 33223 wants to attack
-[Info] (02:09:30.164)> Examining 66778
-[Info] (02:09:30.174)> 66778 wants to pickup
-[Info] (02:09:30.179)> Examining Worker2
-[Info] (02:09:30.190)> Worker2 wants to move
-[Info] (02:09:30.197)> Examining test
-[Info] (02:09:30.209)> test wants to move
-[Info] (02:09:30.302)> NextTurn()
-[Info] (02:09:30.310)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.316)> Examining 33223
-[Info] (02:09:30.327)> 33223 wants to dig
-[Info] (02:09:30.333)> Examining 66778
-[Info] (02:09:30.343)> 66778 wants to attack
-[Info] (02:09:30.349)> Examining Worker2
-[Info] (02:09:30.359)> Worker2 wants to dig
-[Info] (02:09:30.365)> Examining test
-[Info] (02:09:30.376)> test wants to phero
-[Info] (02:09:30.462)> NextTurn()
-[Info] (02:09:30.470)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.477)> Examining 33223
-[Info] (02:09:30.488)> 33223 wants to dig
-[Info] (02:09:30.497)> Examining 66778
-[Info] (02:09:30.509)> 66778 wants to drop
-[Info] (02:09:30.515)> Examining Worker2
-[Info] (02:09:30.527)> Worker2 wants to move
-[Info] (02:09:30.532)> Examining test
-[Info] (02:09:30.544)> test wants to phero
-[Info] (02:09:30.638)> NextTurn()
-[Info] (02:09:30.646)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.652)> Examining 33223
-[Info] (02:09:30.662)> 33223 wants to attack
-[Info] (02:09:30.668)> Examining 66778
-[Info] (02:09:30.679)> 66778 wants to dig
-[Info] (02:09:30.685)> Examining Worker2
-[Info] (02:09:30.697)> Worker2 wants to dig
-[Info] (02:09:30.703)> Examining test
-[Info] (02:09:30.716)> test wants to phero
-[Info] (02:09:30.806)> NextTurn()
-[Info] (02:09:30.815)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.821)> Examining 33223
-[Info] (02:09:30.831)> 33223 wants to move
-[Info] (02:09:30.837)> Examining 66778
-[Info] (02:09:30.848)> 66778 wants to phero
-[Info] (02:09:30.854)> Examining Worker2
-[Info] (02:09:30.864)> Worker2 wants to move
-[Info] (02:09:30.870)> Examining test
-[Info] (02:09:30.883)> test wants to phero
-[Info] (02:09:30.966)> NextTurn()
-[Info] (02:09:30.974)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.980)> Examining 33223
-[Info] (02:09:30.991)> 33223 wants to pickup
-[Info] (02:09:30.997)> Examining 66778
-[Info] (02:09:31.008)> 66778 wants to move
-[Info] (02:09:31.014)> Examining Worker2
-[Info] (02:09:31.025)> Worker2 wants to move
-[Info] (02:09:31.032)> Examining test
-[Info] (02:09:31.044)> test wants to phero
+[Warning] (19:07:37.267)> No main file in 'jean-seuryin', abort loading.
+[Warning] (19:07:37.283)> No main file in 'jean-bonbeuhr', abort loading.
+[Info] (19:07:37.299)> Importing algorithm from 'QueenBee'... 
+[Info] (19:07:37.346)>     done!
+[Info] (19:07:37.361)> Importing algorithm from 'QueenMoth'... 
+[Info] (19:07:37.377)>     done!
+[Info] (19:07:37.408)> Importing algorithm from 'QueenRandom'... 
+[Info] (19:07:37.424)>     done!
+[Info] (19:07:37.439)> Importing algorithm from 'QueenRouge'... 
+[Info] (19:07:37.471)>     done!
+[Info] (19:07:40.252)> Queens imported :
+                       nbqueens : 1
+                       queens :QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
+[Info] (19:07:46.943)> Queens imported :
+                       nbqueens : 2
+                       queens :QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
+                       QueenRandom: <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
+[Info] (19:07:57.596)> Queens imported :
+                       nbqueens : 2
+                       queens :QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
+                       QueenRandom: <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
