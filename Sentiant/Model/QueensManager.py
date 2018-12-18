@@ -49,7 +49,7 @@ class QueensManager:
                 queensWhoWantSpawn[i] = self.queens[i]
 
         self.SpawnAnt(queensWhoWantSpawn, map)
-        print("Turn end")
+        #print("Turn end")
 
     def SpawnAnt(self, queens, map):
         for q in queens.keys():
@@ -66,7 +66,7 @@ class QueensManager:
 
     def GetQueenPosition(self, team):
         result = None
-        print(self.queens)
+        #print(self.queens)
         for k in self.queens.keys():
             if self.queens[k]._team == team:
                 result = k

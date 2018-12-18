@@ -33,9 +33,9 @@ class TurnManager:
 
         LogsManager.Info("All ants =  " + str(allAnts))
         for ant in allAnts :
-            LogsManager.Info("Examining " + ant._name)
+            #LogsManager.Info("Examining " + ant._name)
             ant.newTurn(self.map.GetFOV(ant), self.map.layerPheromone.DetectFromPos(ant))
-            LogsManager.Info(ant._name+" wants to " + ant._nextAction)
+            #LogsManager.Info(ant._name+" wants to " + ant._nextAction)
 
             if ant._nextAction in Cfg.ACTIONS:
                 sorted[ant._nextAction].append(ant)
@@ -97,8 +97,8 @@ class TurnManager:
             else:
                 positionsAnt.append(self.layerSolid.GetXYByRef(ant))
 
-        print("".join([str(i) for i in positionsAnt]))
-        print("".join([str(i) for i in initialPositions]))
+        #print("".join([str(i) for i in positionsAnt]))
+        #print("".join([str(i) for i in initialPositions]))
 
 
         if len(movingAnts) > 0:
@@ -189,10 +189,10 @@ if __name__ == '__main__':
 
 
     def DoAttack():
-        print(a1)
+        #print(a1)
         a2.Attack(Cfg.RIGHT)
         tm.NextTurn()
-        print(a1)
+        #print(a1)
 
     def DoMove():
         a1.Move(Cfg.LEFT)

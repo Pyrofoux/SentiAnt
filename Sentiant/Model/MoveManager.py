@@ -73,4 +73,4 @@ if __name__ == '__main__':
 
     _pos =  [Point(0,0), Point(0,1), Point(1,1)]
     _dest = [Point(0,1), Point(0,0), Point(1,0)]
-    print(MoveManager.calculateAntsMove(_pos,_dest))
+    #(MoveManager.calculateAntsMove(_pos,_dest))print
