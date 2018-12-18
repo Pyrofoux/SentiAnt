@@ -1,5 +1,5 @@
-from tkinter import Toplevel
-from Sentiant.DataAccess.botImport import BotImport
+from tkinter import Tk
+from Sentiant.DataAccess.BotImport import BotImport
 
 class ImportView(Tk):
 

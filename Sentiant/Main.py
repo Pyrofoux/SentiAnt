@@ -28,7 +28,7 @@ def Prout(bla):
 
 if __name__ == '__main__':
 
-    #os.chdir("..\\")
+    os.chdir("..\\")
 
     gen = open(LogsManager.finalPathGen, "w")
     use = open(LogsManager.finalPathUse, "w")

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3130912a-5292-4189-9275-b1be4ac121b0" name="Default Changelist" comment="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Logs/generals.log" afterPath="$PROJECT_DIR$/Sentiant/Logs/generals.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/Main.py" afterPath="$PROJECT_DIR$/Sentiant/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sentiant/View/ImportView.py" afterPath="$PROJECT_DIR$/Sentiant/View/ImportView.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,30 +51,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="TurnManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/TurnManager.py">
+      <file leaf-file-name="BotImport.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+            <state relative-caret-position="1125">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <marker date="1545156628257" expanded="true" signature="18:5599" ph="..." />
-                <marker date="1545156628257" expanded="true" signature="2191:2280" ph="..." />
-                <marker date="1545156628257" expanded="true" signature="5472:5518" ph="..." />
-                <marker date="1545156628257" expanded="true" signature="5472:5599" ph="..." />
-                <marker date="1545156628257" expanded="false" signature="5601:6022" ph="import ..." />
-                <marker date="1545156628257" expanded="true" signature="6050:6982" ph="..." />
-                <marker date="1545156628257" expanded="true" signature="6244:6331" ph="..." />
-                <marker date="1545156628257" expanded="true" signature="6350:6403" ph="..." />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoveManager.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sentiant/Model/MoveManager.py">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="54" column="70" lean-forward="false" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+            <state relative-caret-position="583">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,12 +121,12 @@
         <option value="$PROJECT_DIR$/Sentiant/Player/Bees/QueenBee.py" />
         <option value="$PROJECT_DIR$/Sentiant/DataAccess/botImport.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenRouge/QueenRouge.py" />
-        <option value="$PROJECT_DIR$/Sentiant/View/ImportView.py" />
-        <option value="$PROJECT_DIR$/Sentiant/Main.py" />
         <option value="$PROJECT_DIR$/Sentiant/View/MainView.py" />
         <option value="$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/TurnManager.py" />
         <option value="$PROJECT_DIR$/Sentiant/Model/MoveManager.py" />
+        <option value="$PROJECT_DIR$/Sentiant/View/ImportView.py" />
+        <option value="$PROJECT_DIR$/Sentiant/Main.py" />
       </list>
     </option>
   </component>
@@ -145,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,161 +375,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/SentiAnt.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Logs/generals.log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Logs/users.log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Main.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Ant.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Bread.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Cookie.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Dirt.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Layer/Layer.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/LogsManager.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Map.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Queen.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/QueensManager.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/Rock.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Model/TurnManager.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenBee/WorkerBee.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenRouge/FourmiRouge.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/ImageManager.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/MainView.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/bot/Bees/QueenBee.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenMoth/Moth.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenMoth/QueenMoth.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenRandom/AntRandom.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Player/QueenRandom/QueenRandom.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_bread_n_pheromone.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_bread_n_pheromone_w_bread.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_bread_n_pheromone_w_cookie.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_bread_w_bread.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_bread_w_cookie.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_cookie_w_bread.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_cookie_w_cookie.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_pheromone_w_bread.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_n_pheromone_w_cookie.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_w_bread.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/ant_w_cookie.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/bread_n_pheromone.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/View/assets/cookie_n_pheromone.png</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Modelgenerals.log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Sentiant/Modelusers.log</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -766,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545156660813</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ca marche mieux mdr, mais ca marche pas enfin peut etre, je sais pas">
+      <created>1545156766398</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545156766398</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -776,7 +639,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -819,11 +682,35 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,9 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#77#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1550">
           <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,9 +761,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#77#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
           <caret line="1475" column="0" lean-forward="false" selection-start-line="1475" selection-start-column="0" selection-end-line="1475" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,39 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#77#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sentiant/View/MainView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,9 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,7 +947,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/Model/MoveManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1110,23 +961,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
           <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/DataAccess/BotImport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiant/View/ImportView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1545156628257" expanded="true" signature="18:5599" ph="..." />
-            <marker date="1545156628257" expanded="true" signature="2191:2280" ph="..." />
-            <marker date="1545156628257" expanded="true" signature="5472:5518" ph="..." />
-            <marker date="1545156628257" expanded="true" signature="5472:5599" ph="..." />
-            <marker date="1545156628257" expanded="false" signature="5601:6022" ph="import ..." />
-            <marker date="1545156628257" expanded="true" signature="6050:6982" ph="..." />
-            <marker date="1545156628257" expanded="true" signature="6244:6331" ph="..." />
-            <marker date="1545156628257" expanded="true" signature="6350:6403" ph="..." />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiant/Model/MoveManager.py">
+    <entry file="file://$PROJECT_DIR$/Sentiant/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="54" column="70" lean-forward="false" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+        <state relative-caret-position="583">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
