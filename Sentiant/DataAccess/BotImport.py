@@ -1,5 +1,5 @@
 import os
-from tkinter import Frame, Checkbutton, Button, IntVar, Tk
+from tkinter import Frame, Checkbutton, Button, IntVar
 
 class BotImport(Frame):
     def __init__(self, root, directory, onOk, mainFileName='Queen.py'):
