@@ -10,7 +10,11 @@ class TurnManager:
 
         self.queenManager = queenManager
 
+        self.winAchieved=False #is used to stop the game when won by a team + travail non fini
+        self.winningTeam=None
+
     def NextTurn(self):
+
         LogsManager.Info("NextTurn()")
 
         self.currentTurn += 1
@@ -93,7 +97,6 @@ class TurnManager:
             for i in range(0,len(movingAnts)):
 
                 if i in punished: #
-                    print("\n"+ "PUNITIONNN!!!!!!")
                     self.Remove1HP(movingAnts[i])
                 else:
                     indexToMove.append(i)
@@ -129,6 +132,13 @@ class TurnManager:
             if isinstance(ant._holding, (Bread, Cookie)) and self.layerFloor.IsNone(posAnt):
                 self.layerFloor.Append(type(ant._holding)(ant._holding.id), self.map.layerSolid.GetXYByRef(ant))
                 ant._holding = None
+                #every time an ant drops a Cookie, it checks if there is a QueenTile next to the ant, because it means a win
+                if (isinstance(ant._holding,Cookie) and (isinstance(posAnt+Cfg.UP,QueenTile) \
+                                                        or isinstance(posAnt+Cfg.DOWN,QueenTile) \
+                                                            or isinstance(posAnt + Cfg.LEFT, QueenTile) \
+                                                                or isinstance(posAnt + Cfg.RIGHT, QueenTile))) :
+                    self.winAchieved = True
+                    self.winningTeam=ant._team
             else :
                 pass
                 # TODO : cancel ant action

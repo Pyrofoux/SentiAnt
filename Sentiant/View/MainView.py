@@ -19,30 +19,31 @@ class MainView(Toplevel):
         hsb = Scrollbar(self, orient=HORIZONTAL)
         hsb.grid(row=11, column=1, sticky=E+W)
 
-        canvas = Canvas(self, yscrollcommand=vsb.set, xscrollcommand=hsb.set)
-        canvas.config(width=size + 100)
-        canvas.grid(row=0, column=1, rowspan = 10, sticky="news")
+        self.canvas = Canvas(self, yscrollcommand=vsb.set, xscrollcommand=hsb.set)
+        self.canvas.config(width=size + 100)
+        self.canvas.grid(row=0, column=1, rowspan = 10, sticky="news")
 
-        vsb.config(command=canvas.yview)
-        hsb.config(command=canvas.xview)
+        vsb.config(command=self.canvas.yview)
+        hsb.config(command=self.canvas.xview)
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
-        self.grid = Grid(self.Map, canvas, size=(size, size), master=self)
+        self.grid = Grid(self.Map, self.canvas, size=(size, size), master=self)
         self.grid.pack()
 
         if turnmanager is not None:
-            self.bNextTurn = Button(self, text = "Next Turn", command=self.TurnManager.NextTurn)
+            self.bNextTurn = Button(self, text = "Next Turn", command=self.NextTurn) #uses a method here so it can easily checks a possible win
             self.bNextTurn.grid(column = 3, row = 0)
+            #self.bNextTurn.configure(command=self.Win)
 
         self.lbl1 = StringVar()
         Label(self, textvariable=self.lbl1).grid(column = 0, row =0)
 
-        canvas.create_window(0, 0, window=self.grid)
+        self.canvas.create_window(0, 0, window=self.grid)
         self.grid.update_idletasks()
-        canvas.config(scrollregion=canvas.bbox("all"))
-        self.bind_all("<MouseWheel>", lambda e: self.Scroll(canvas, e))
+        self.canvas.config(scrollregion=self.canvas.bbox("all"))
+        self.bind_all("<MouseWheel>", lambda e: self.Scroll(self.canvas, e))
 
     def Update(self):
         pos = self.grid.currentSelect
@@ -82,5 +83,20 @@ class MainView(Toplevel):
         else:
             canvas.yview_scroll(-event.delta // 120, "units")
 
+    def Win(self):
+        self.canvas.delete("all")
+        self.bNextTurn.destroy()
+        self.canvas.configure(bg='forest green')
+        self.canvas.create_text(0,0,fill = 'orange',font='systemfixed 14 bold', text="Game's over !\
+         Congratulations to the winning" + self.TurnManager.winningTeam + " player !")
+
+    def NextTurn(self):
+        #each time the NextTurn button is pressed, it checks wether the game is ended or not
+        if self.TurnManager.winAchieved==True:
+            self.Win()
+        else :
+            self.TurnManager.NextTurn()
+
     def Run(self):
         self.mainloop()
+
