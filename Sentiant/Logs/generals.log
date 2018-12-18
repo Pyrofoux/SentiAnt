@@ -1,167 +1,1654 @@
-[Info] (02:09:18.577)> Importing algorithm from 'QueenBee'... 
-[Info] (02:09:18.599)>     done!
-[Info] (02:09:18.604)> Importing algorithm from 'QueenRandom'... 
-[Info] (02:09:18.616)>     done!
-[Info] (02:09:18.622)> Importing algorithm from 'QueenRouge'... 
-[Info] (02:09:18.629)>     done!
-[Info] (02:09:24.334)> Queens imported :
-                       nbqueens : 3
+[Info] (19:08:39.577)> Importing algorithm from 'QueenBee'... 
+[Info] (19:08:39.582)>     done!
+[Info] (19:08:39.583)> Importing algorithm from 'QueenMoth'... 
+[Info] (19:08:39.586)>     done!
+[Info] (19:08:39.587)> Importing algorithm from 'QueenRandom'... 
+[Info] (19:08:39.590)>     done!
+[Info] (19:08:39.591)> Importing algorithm from 'QueenRouge'... 
+[Info] (19:08:39.593)>     done!
+[Info] (19:08:44.198)> Queens imported :
+                       nbqueens : 4
                        queens :QueenBee : <class 'Sentiant.Player.QueenBee.QueenBee.QueenBee'>
+                       QueenMoth : <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
                        QueenRandom : <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
                        QueenRouge : <class 'Sentiant.Player.QueenRouge.QueenRouge.QueenRouge'>
-[Info] (02:09:26.406)> NextTurn()
-[Info] (02:09:26.413)> All ants =  []
-[Info] (02:09:27.150)> NextTurn()
-[Info] (02:09:27.157)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:27.163)> Examining Worker0
-[Info] (02:09:27.173)> Worker0 wants to move
-[Info] (02:09:27.178)> Examining test
-[Info] (02:09:27.189)> test wants to move
-[Info] (02:09:27.942)> NextTurn()
-[Info] (02:09:27.951)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDF60>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:27.957)> Examining Worker1
-[Info] (02:09:27.966)> Worker1 wants to move
-[Info] (02:09:27.971)> Examining Worker0
-[Info] (02:09:27.980)> Worker0 wants to move
-[Info] (02:09:27.987)> Examining test
-[Info] (02:09:27.998)> test wants to move
-[Info] (02:09:28.558)> NextTurn()
-[Info] (02:09:28.569)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDF60>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDE80>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.575)> Examining Worker1
-[Info] (02:09:28.584)> Worker1 wants to move
-[Info] (02:09:28.589)> Examining Worker2
-[Info] (02:09:28.598)> Worker2 wants to move
-[Info] (02:09:28.604)> Examining Worker0
-[Info] (02:09:28.613)> Worker0 wants to move
-[Info] (02:09:28.618)> Examining test
-[Info] (02:09:28.630)> test wants to phero
-[Info] (02:09:28.726)> NextTurn()
-[Info] (02:09:28.734)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.739)> Examining Worker2
-[Info] (02:09:28.749)> Worker2 wants to move
-[Info] (02:09:28.754)> Examining 33223
-[Info] (02:09:28.764)> 33223 wants to attack
-[Info] (02:09:28.769)> Examining test
-[Info] (02:09:28.781)> test wants to move
-[Info] (02:09:28.902)> NextTurn()
-[Info] (02:09:28.909)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:28.916)> Examining Worker2
-[Info] (02:09:28.925)> Worker2 wants to dig
-[Info] (02:09:28.931)> Examining 33223
-[Info] (02:09:28.941)> 33223 wants to dig
-[Info] (02:09:28.947)> Examining test
-[Info] (02:09:28.959)> test wants to phero
-[Info] (02:09:29.086)> NextTurn()
-[Info] (02:09:29.093)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.100)> Examining Worker2
-[Info] (02:09:29.110)> Worker2 wants to move
-[Info] (02:09:29.116)> Examining 33223
-[Info] (02:09:29.128)> 33223 wants to dig
-[Info] (02:09:29.134)> Examining test
-[Info] (02:09:29.145)> test wants to move
-[Info] (02:09:29.262)> NextTurn()
-[Info] (02:09:29.273)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.279)> Examining Worker2
-[Info] (02:09:29.290)> Worker2 wants to dig
-[Info] (02:09:29.295)> Examining 33223
-[Info] (02:09:29.306)> 33223 wants to pickup
-[Info] (02:09:29.312)> Examining test
-[Info] (02:09:29.324)> test wants to move
-[Info] (02:09:29.438)> NextTurn()
-[Info] (02:09:29.446)> All ants =  [<Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.452)> Examining Worker2
-[Info] (02:09:29.462)> Worker2 wants to move
-[Info] (02:09:29.467)> Examining 33223
-[Info] (02:09:29.477)> 33223 wants to phero
-[Info] (02:09:29.484)> Examining test
-[Info] (02:09:29.495)> test wants to phero
-[Info] (02:09:29.614)> NextTurn()
-[Info] (02:09:29.622)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.628)> Examining 33223
-[Info] (02:09:29.639)> 33223 wants to move
-[Info] (02:09:29.644)> Examining 66778
-[Info] (02:09:29.655)> 66778 wants to move
-[Info] (02:09:29.661)> Examining Worker2
-[Info] (02:09:29.671)> Worker2 wants to dig
-[Info] (02:09:29.677)> Examining test
-[Info] (02:09:29.688)> test wants to phero
-[Info] (02:09:29.790)> NextTurn()
-[Info] (02:09:29.800)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.806)> Examining 33223
-[Info] (02:09:29.817)> 33223 wants to phero
-[Info] (02:09:29.823)> Examining Worker2
-[Info] (02:09:29.833)> Worker2 wants to move
-[Info] (02:09:29.839)> Examining 66778
-[Info] (02:09:29.849)> 66778 wants to drop
-[Info] (02:09:29.855)> Examining test
-[Info] (02:09:29.866)> test wants to phero
-[Info] (02:09:29.966)> NextTurn()
-[Info] (02:09:29.974)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:29.984)> Examining 33223
-[Info] (02:09:30.000)> 33223 wants to drop
-[Info] (02:09:30.006)> Examining 66778
-[Info] (02:09:30.018)> 66778 wants to pickup
-[Info] (02:09:30.024)> Examining Worker2
-[Info] (02:09:30.034)> Worker2 wants to dig
-[Info] (02:09:30.040)> Examining test
-[Info] (02:09:30.052)> test wants to move
-[Info] (02:09:30.134)> NextTurn()
-[Info] (02:09:30.142)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.148)> Examining 33223
-[Info] (02:09:30.158)> 33223 wants to attack
-[Info] (02:09:30.164)> Examining 66778
-[Info] (02:09:30.174)> 66778 wants to pickup
-[Info] (02:09:30.179)> Examining Worker2
-[Info] (02:09:30.190)> Worker2 wants to move
-[Info] (02:09:30.197)> Examining test
-[Info] (02:09:30.209)> test wants to move
-[Info] (02:09:30.302)> NextTurn()
-[Info] (02:09:30.310)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.316)> Examining 33223
-[Info] (02:09:30.327)> 33223 wants to dig
-[Info] (02:09:30.333)> Examining 66778
-[Info] (02:09:30.343)> 66778 wants to attack
-[Info] (02:09:30.349)> Examining Worker2
-[Info] (02:09:30.359)> Worker2 wants to dig
-[Info] (02:09:30.365)> Examining test
-[Info] (02:09:30.376)> test wants to phero
-[Info] (02:09:30.462)> NextTurn()
-[Info] (02:09:30.470)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.477)> Examining 33223
-[Info] (02:09:30.488)> 33223 wants to dig
-[Info] (02:09:30.497)> Examining 66778
-[Info] (02:09:30.509)> 66778 wants to drop
-[Info] (02:09:30.515)> Examining Worker2
-[Info] (02:09:30.527)> Worker2 wants to move
-[Info] (02:09:30.532)> Examining test
-[Info] (02:09:30.544)> test wants to phero
-[Info] (02:09:30.638)> NextTurn()
-[Info] (02:09:30.646)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.652)> Examining 33223
-[Info] (02:09:30.662)> 33223 wants to attack
-[Info] (02:09:30.668)> Examining 66778
-[Info] (02:09:30.679)> 66778 wants to dig
-[Info] (02:09:30.685)> Examining Worker2
-[Info] (02:09:30.697)> Worker2 wants to dig
-[Info] (02:09:30.703)> Examining test
-[Info] (02:09:30.716)> test wants to phero
-[Info] (02:09:30.806)> NextTurn()
-[Info] (02:09:30.815)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.821)> Examining 33223
-[Info] (02:09:30.831)> 33223 wants to move
-[Info] (02:09:30.837)> Examining 66778
-[Info] (02:09:30.848)> 66778 wants to phero
-[Info] (02:09:30.854)> Examining Worker2
-[Info] (02:09:30.864)> Worker2 wants to move
-[Info] (02:09:30.870)> Examining test
-[Info] (02:09:30.883)> test wants to phero
-[Info] (02:09:30.966)> NextTurn()
-[Info] (02:09:30.974)> All ants =  [<Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE809080>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x000001B9FE8090F0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x000001B9FE7EDEF0>, <Sentiant.Player.QueenRouge.FourmiRouge.FourmiRouge object at 0x000001B9FBF7B080>]
-[Info] (02:09:30.980)> Examining 33223
-[Info] (02:09:30.991)> 33223 wants to pickup
-[Info] (02:09:30.997)> Examining 66778
-[Info] (02:09:31.008)> 66778 wants to move
-[Info] (02:09:31.014)> Examining Worker2
-[Info] (02:09:31.025)> Worker2 wants to move
-[Info] (02:09:31.032)> Examining test
-[Info] (02:09:31.044)> test wants to phero
+[Info] (19:08:48.013)> NextTurn()
+[Info] (19:08:48.016)> All ants =  []
+[Info] (19:08:48.121)> NextTurn()
+[Info] (19:08:48.124)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.125)> Examining Moth0
+[Info] (19:08:48.128)> Moth0 wants to move
+[Info] (19:08:48.129)> Examining Worker0
+[Info] (19:08:48.132)> Worker0 wants to move
+[Info] (19:08:48.241)> NextTurn()
+[Info] (19:08:48.243)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.244)> Examining Moth1
+[Info] (19:08:48.247)> Moth1 wants to move
+[Info] (19:08:48.248)> Examining Moth0
+[Info] (19:08:48.251)> Moth0 wants to move
+[Info] (19:08:48.252)> Examining Worker1
+[Info] (19:08:48.255)> Worker1 wants to move
+[Info] (19:08:48.256)> Examining 52046
+[Info] (19:08:48.260)> 52046 wants to move
+[Info] (19:08:48.261)> Examining Worker0
+[Info] (19:08:48.265)> Worker0 wants to dig
+[Info] (19:08:48.378)> NextTurn()
+[Info] (19:08:48.380)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.381)> Examining Moth1
+[Info] (19:08:48.384)> Moth1 wants to move
+[Info] (19:08:48.385)> Examining Moth0
+[Info] (19:08:48.388)> Moth0 wants to dig
+[Info] (19:08:48.388)> Examining Moth2
+[Info] (19:08:48.391)> Moth2 wants to move
+[Info] (19:08:48.392)> Examining Worker1
+[Info] (19:08:48.396)> Worker1 wants to move
+[Info] (19:08:48.397)> Examining Worker2
+[Info] (19:08:48.400)> Worker2 wants to move
+[Info] (19:08:48.401)> Examining 52046
+[Info] (19:08:48.405)> 52046 wants to move
+[Info] (19:08:48.406)> Examining Worker0
+[Info] (19:08:48.409)> Worker0 wants to move
+[Info] (19:08:48.523)> NextTurn()
+[Info] (19:08:48.525)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.526)> Examining Moth1
+[Info] (19:08:48.529)> Moth1 wants to dig
+[Info] (19:08:48.530)> Examining Moth0
+[Info] (19:08:48.533)> Moth0 wants to move
+[Info] (19:08:48.534)> Examining Moth2
+[Info] (19:08:48.537)> Moth2 wants to dig
+[Info] (19:08:48.538)> Examining Worker1
+[Info] (19:08:48.541)> Worker1 wants to dig
+[Info] (19:08:48.542)> Examining Worker2
+[Info] (19:08:48.546)> Worker2 wants to dig
+[Info] (19:08:48.547)> Examining 52046
+[Info] (19:08:48.550)> 52046 wants to move
+[Info] (19:08:48.551)> Examining Worker0
+[Info] (19:08:48.555)> Worker0 wants to dig
+[Info] (19:08:48.666)> NextTurn()
+[Info] (19:08:48.669)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.669)> Examining Moth1
+[Info] (19:08:48.672)> Moth1 wants to move
+[Info] (19:08:48.673)> Examining Moth0
+[Info] (19:08:48.676)> Moth0 wants to dig
+[Info] (19:08:48.677)> Examining Moth2
+[Info] (19:08:48.680)> Moth2 wants to move
+[Info] (19:08:48.681)> Examining Worker1
+[Info] (19:08:48.684)> Worker1 wants to move
+[Info] (19:08:48.685)> Examining Worker2
+[Info] (19:08:48.688)> Worker2 wants to move
+[Info] (19:08:48.689)> Examining 52046
+[Info] (19:08:48.692)> 52046 wants to move
+[Info] (19:08:48.693)> Examining Worker0
+[Info] (19:08:48.698)> Worker0 wants to move
+[Info] (19:08:48.812)> NextTurn()
+[Info] (19:08:48.814)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.815)> Examining Moth1
+[Info] (19:08:48.818)> Moth1 wants to dig
+[Info] (19:08:48.819)> Examining Moth2
+[Info] (19:08:48.822)> Moth2 wants to dig
+[Info] (19:08:48.823)> Examining Moth0
+[Info] (19:08:48.825)> Moth0 wants to move
+[Info] (19:08:48.826)> Examining Worker1
+[Info] (19:08:48.830)> Worker1 wants to move
+[Info] (19:08:48.831)> Examining Worker2
+[Info] (19:08:48.834)> Worker2 wants to dig
+[Info] (19:08:48.835)> Examining 52046
+[Info] (19:08:48.839)> 52046 wants to move
+[Info] (19:08:48.839)> Examining Worker0
+[Info] (19:08:48.843)> Worker0 wants to dig
+[Info] (19:08:48.956)> NextTurn()
+[Info] (19:08:48.959)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:48.960)> Examining Moth1
+[Info] (19:08:48.962)> Moth1 wants to move
+[Info] (19:08:48.963)> Examining Moth2
+[Info] (19:08:48.966)> Moth2 wants to move
+[Info] (19:08:48.967)> Examining Moth0
+[Info] (19:08:48.970)> Moth0 wants to dig
+[Info] (19:08:48.971)> Examining Worker1
+[Info] (19:08:48.974)> Worker1 wants to move
+[Info] (19:08:48.975)> Examining Worker2
+[Info] (19:08:48.978)> Worker2 wants to move
+[Info] (19:08:48.979)> Examining 52046
+[Info] (19:08:48.982)> 52046 wants to move
+[Info] (19:08:48.983)> Examining 80648
+[Info] (19:08:48.987)> 80648 wants to move
+[Info] (19:08:48.988)> Examining Worker0
+[Info] (19:08:48.992)> Worker0 wants to move
+[Info] (19:08:49.103)> NextTurn()
+[Info] (19:08:49.105)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754A8>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A100754E0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.106)> Examining Moth1
+[Info] (19:08:49.109)> Moth1 wants to move
+[Info] (19:08:49.110)> Examining Moth2
+[Info] (19:08:49.113)> Moth2 wants to dig
+[Info] (19:08:49.114)> Examining Moth0
+[Info] (19:08:49.117)> Moth0 wants to move
+[Info] (19:08:49.118)> Examining Worker1
+[Info] (19:08:49.121)> Worker1 wants to move
+[Info] (19:08:49.122)> Examining Worker2
+[Info] (19:08:49.125)> Worker2 wants to move
+[Info] (19:08:49.126)> Examining 52046
+[Info] (19:08:49.130)> 52046 wants to move
+[Info] (19:08:49.130)> Examining 80648
+[Info] (19:08:49.134)> 80648 wants to move
+[Info] (19:08:49.135)> Examining Worker0
+[Info] (19:08:49.139)> Worker0 wants to dig
+[Info] (19:08:49.252)> NextTurn()
+[Info] (19:08:49.254)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.255)> Examining Moth1
+[Info] (19:08:49.258)> Moth1 wants to dig
+[Info] (19:08:49.259)> Examining Moth2
+[Info] (19:08:49.262)> Moth2 wants to move
+[Info] (19:08:49.263)> Examining Moth0
+[Info] (19:08:49.266)> Moth0 wants to move
+[Info] (19:08:49.267)> Examining 52046
+[Info] (19:08:49.270)> 52046 wants to move
+[Info] (19:08:49.271)> Examining 80648
+[Info] (19:08:49.274)> 80648 wants to move
+[Info] (19:08:49.275)> Examining Worker0
+[Info] (19:08:49.279)> Worker0 wants to move
+[Info] (19:08:49.390)> NextTurn()
+[Info] (19:08:49.393)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC18>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.394)> Examining Moth1
+[Info] (19:08:49.397)> Moth1 wants to move
+[Info] (19:08:49.398)> Examining Moth2
+[Info] (19:08:49.400)> Moth2 wants to dig
+[Info] (19:08:49.401)> Examining Moth0
+[Info] (19:08:49.404)> Moth0 wants to dig
+[Info] (19:08:49.405)> Examining 52046
+[Info] (19:08:49.409)> 52046 wants to move
+[Info] (19:08:49.410)> Examining 80648
+[Info] (19:08:49.413)> 80648 wants to move
+[Info] (19:08:49.414)> Examining 81673
+[Info] (19:08:49.418)> 81673 wants to move
+[Info] (19:08:49.419)> Examining Worker0
+[Info] (19:08:49.423)> Worker0 wants to dig
+[Info] (19:08:49.535)> NextTurn()
+[Info] (19:08:49.538)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC18>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.539)> Examining Moth1
+[Info] (19:08:49.541)> Moth1 wants to dig
+[Info] (19:08:49.542)> Examining Moth2
+[Info] (19:08:49.545)> Moth2 wants to move
+[Info] (19:08:49.546)> Examining Moth0
+[Info] (19:08:49.549)> Moth0 wants to move
+[Info] (19:08:49.550)> Examining 52046
+[Info] (19:08:49.553)> 52046 wants to move
+[Info] (19:08:49.554)> Examining 80648
+[Info] (19:08:49.558)> 80648 wants to move
+[Info] (19:08:49.559)> Examining 81673
+[Info] (19:08:49.563)> 81673 wants to move
+[Info] (19:08:49.564)> Examining Worker0
+[Info] (19:08:49.568)> Worker0 wants to move
+[Info] (19:08:49.682)> NextTurn()
+[Info] (19:08:49.684)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC18>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.685)> Examining Moth1
+[Info] (19:08:49.687)> Moth1 wants to move
+[Info] (19:08:49.688)> Examining Moth2
+[Info] (19:08:49.691)> Moth2 wants to dig
+[Info] (19:08:49.692)> Examining Moth0
+[Info] (19:08:49.695)> Moth0 wants to dig
+[Info] (19:08:49.696)> Examining 80648
+[Info] (19:08:49.700)> 80648 wants to move
+[Info] (19:08:49.701)> Examining 52046
+[Info] (19:08:49.704)> 52046 wants to move
+[Info] (19:08:49.705)> Examining 81673
+[Info] (19:08:49.709)> 81673 wants to move
+[Info] (19:08:49.710)> Examining Worker0
+[Info] (19:08:49.714)> Worker0 wants to dig
+[Info] (19:08:49.827)> NextTurn()
+[Info] (19:08:49.829)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC18>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.830)> Examining Moth1
+[Info] (19:08:49.833)> Moth1 wants to dig
+[Info] (19:08:49.834)> Examining Moth2
+[Info] (19:08:49.837)> Moth2 wants to move
+[Info] (19:08:49.838)> Examining Moth0
+[Info] (19:08:49.841)> Moth0 wants to move
+[Info] (19:08:49.842)> Examining 52046
+[Info] (19:08:49.845)> 52046 wants to move
+[Info] (19:08:49.846)> Examining 80648
+[Info] (19:08:49.850)> 80648 wants to move
+[Info] (19:08:49.851)> Examining 81673
+[Info] (19:08:49.854)> 81673 wants to move
+[Info] (19:08:49.855)> Examining Worker0
+[Info] (19:08:49.859)> Worker0 wants to move
+[Info] (19:08:49.969)> NextTurn()
+[Info] (19:08:49.972)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC50>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E14CC18>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:49.973)> Examining Moth1
+[Info] (19:08:49.975)> Moth1 wants to move
+[Info] (19:08:49.976)> Examining Moth2
+[Info] (19:08:49.979)> Moth2 wants to dig
+[Info] (19:08:49.980)> Examining Moth0
+[Info] (19:08:49.983)> Moth0 wants to dig
+[Info] (19:08:49.984)> Examining 52046
+[Info] (19:08:49.988)> 52046 wants to move
+[Info] (19:08:49.989)> Examining 80648
+[Info] (19:08:49.992)> 80648 wants to move
+[Info] (19:08:49.993)> Examining 81673
+[Info] (19:08:49.997)> 81673 wants to move
+[Info] (19:08:49.998)> Examining Worker0
+[Info] (19:08:50.002)> Worker0 wants to dig
+[Info] (19:08:50.115)> NextTurn()
+[Info] (19:08:50.117)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.118)> Examining Moth1
+[Info] (19:08:50.120)> Moth1 wants to dig
+[Info] (19:08:50.121)> Examining Moth2
+[Info] (19:08:50.124)> Moth2 wants to move
+[Info] (19:08:50.125)> Examining Moth0
+[Info] (19:08:50.128)> Moth0 wants to move
+[Info] (19:08:50.129)> Examining 52046
+[Info] (19:08:50.132)> 52046 wants to move
+[Info] (19:08:50.133)> Examining Worker0
+[Info] (19:08:50.137)> Worker0 wants to move
+[Info] (19:08:50.247)> NextTurn()
+[Info] (19:08:50.250)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.251)> Examining Moth1
+[Info] (19:08:50.253)> Moth1 wants to move
+[Info] (19:08:50.254)> Examining Moth2
+[Info] (19:08:50.257)> Moth2 wants to move
+[Info] (19:08:50.258)> Examining Moth0
+[Info] (19:08:50.261)> Moth0 wants to dig
+[Info] (19:08:50.262)> Examining 52046
+[Info] (19:08:50.266)> 52046 wants to move
+[Info] (19:08:50.267)> Examining Worker0
+[Info] (19:08:50.271)> Worker0 wants to dig
+[Info] (19:08:50.382)> NextTurn()
+[Info] (19:08:50.385)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.385)> Examining Moth1
+[Info] (19:08:50.388)> Moth1 wants to move
+[Info] (19:08:50.389)> Examining Moth2
+[Info] (19:08:50.392)> Moth2 wants to move
+[Info] (19:08:50.393)> Examining Moth0
+[Info] (19:08:50.396)> Moth0 wants to move
+[Info] (19:08:50.397)> Examining 52046
+[Info] (19:08:50.400)> 52046 wants to move
+[Info] (19:08:50.401)> Examining Worker0
+[Info] (19:08:50.405)> Worker0 wants to move
+[Info] (19:08:50.518)> NextTurn()
+[Info] (19:08:50.520)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.521)> Examining Moth1
+[Info] (19:08:50.524)> Moth1 wants to dig
+[Info] (19:08:50.524)> Examining Moth0
+[Info] (19:08:50.528)> Moth0 wants to move
+[Info] (19:08:50.529)> Examining Moth2
+[Info] (19:08:50.532)> Moth2 wants to dig
+[Info] (19:08:50.533)> Examining 52046
+[Info] (19:08:50.536)> 52046 wants to move
+[Info] (19:08:50.537)> Examining Worker0
+[Info] (19:08:50.542)> Worker0 wants to dig
+[Info] (19:08:50.650)> NextTurn()
+[Info] (19:08:50.652)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.653)> Examining Moth1
+[Info] (19:08:50.656)> Moth1 wants to move
+[Info] (19:08:50.657)> Examining Moth0
+[Info] (19:08:50.660)> Moth0 wants to dig
+[Info] (19:08:50.661)> Examining Moth2
+[Info] (19:08:50.664)> Moth2 wants to move
+[Info] (19:08:50.664)> Examining 52046
+[Info] (19:08:50.668)> 52046 wants to move
+[Info] (19:08:50.669)> Examining Worker0
+[Info] (19:08:50.673)> Worker0 wants to move
+[Info] (19:08:50.784)> NextTurn()
+[Info] (19:08:50.786)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.787)> Examining Moth1
+[Info] (19:08:50.790)> Moth1 wants to dig
+[Info] (19:08:50.791)> Examining Moth0
+[Info] (19:08:50.794)> Moth0 wants to move
+[Info] (19:08:50.795)> Examining Moth2
+[Info] (19:08:50.798)> Moth2 wants to dig
+[Info] (19:08:50.799)> Examining 52046
+[Info] (19:08:50.803)> 52046 wants to move
+[Info] (19:08:50.804)> Examining Worker0
+[Info] (19:08:50.808)> Worker0 wants to dig
+[Info] (19:08:50.920)> NextTurn()
+[Info] (19:08:50.922)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:50.923)> Examining Moth1
+[Info] (19:08:50.926)> Moth1 wants to move
+[Info] (19:08:50.926)> Examining Moth0
+[Info] (19:08:50.929)> Moth0 wants to dig
+[Info] (19:08:50.930)> Examining Moth2
+[Info] (19:08:50.933)> Moth2 wants to move
+[Info] (19:08:50.934)> Examining 52046
+[Info] (19:08:50.938)> 52046 wants to move
+[Info] (19:08:50.939)> Examining Worker0
+[Info] (19:08:50.943)> Worker0 wants to move
+[Info] (19:08:51.054)> NextTurn()
+[Info] (19:08:51.056)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.057)> Examining Moth1
+[Info] (19:08:51.059)> Moth1 wants to dig
+[Info] (19:08:51.060)> Examining Moth0
+[Info] (19:08:51.063)> Moth0 wants to move
+[Info] (19:08:51.064)> Examining Moth2
+[Info] (19:08:51.067)> Moth2 wants to move
+[Info] (19:08:51.068)> Examining 52046
+[Info] (19:08:51.072)> 52046 wants to move
+[Info] (19:08:51.073)> Examining Worker0
+[Info] (19:08:51.078)> Worker0 wants to pickup
+[Info] (19:08:51.188)> NextTurn()
+[Info] (19:08:51.190)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.191)> Examining Moth1
+[Info] (19:08:51.194)> Moth1 wants to move
+[Info] (19:08:51.194)> Examining Moth0
+[Info] (19:08:51.197)> Moth0 wants to move
+[Info] (19:08:51.198)> Examining Moth2
+[Info] (19:08:51.201)> Moth2 wants to move
+[Info] (19:08:51.202)> Examining 52046
+[Info] (19:08:51.206)> 52046 wants to move
+[Info] (19:08:51.207)> Examining Worker0
+[Info] (19:08:51.211)> Worker0 wants to dig
+[Info] (19:08:51.321)> NextTurn()
+[Info] (19:08:51.324)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.324)> Examining Moth1
+[Info] (19:08:51.327)> Moth1 wants to dig
+[Info] (19:08:51.328)> Examining Moth0
+[Info] (19:08:51.331)> Moth0 wants to dig
+[Info] (19:08:51.332)> Examining Moth2
+[Info] (19:08:51.335)> Moth2 wants to dig
+[Info] (19:08:51.336)> Examining 52046
+[Info] (19:08:51.340)> 52046 wants to move
+[Info] (19:08:51.341)> Examining Worker0
+[Info] (19:08:51.346)> Worker0 wants to move
+[Info] (19:08:51.457)> NextTurn()
+[Info] (19:08:51.459)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.460)> Examining Moth1
+[Info] (19:08:51.462)> Moth1 wants to move
+[Info] (19:08:51.463)> Examining Moth0
+[Info] (19:08:51.466)> Moth0 wants to move
+[Info] (19:08:51.467)> Examining Moth2
+[Info] (19:08:51.470)> Moth2 wants to move
+[Info] (19:08:51.471)> Examining 52046
+[Info] (19:08:51.475)> 52046 wants to move
+[Info] (19:08:51.476)> Examining Worker0
+[Info] (19:08:51.480)> Worker0 wants to move
+[Warning] (19:08:51.484)> Out of range exception caught: 25;21
+[Info] (19:08:51.592)> NextTurn()
+[Info] (19:08:51.594)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.595)> Examining Moth1
+[Info] (19:08:51.598)> Moth1 wants to move
+[Info] (19:08:51.599)> Examining Moth0
+[Info] (19:08:51.602)> Moth0 wants to dig
+[Info] (19:08:51.603)> Examining Moth2
+[Info] (19:08:51.606)> Moth2 wants to move
+[Info] (19:08:51.607)> Examining 52046
+[Info] (19:08:51.610)> 52046 wants to move
+[Info] (19:08:51.611)> Examining Worker0
+[Info] (19:08:51.616)> Worker0 wants to move
+[Info] (19:08:51.730)> NextTurn()
+[Info] (19:08:51.732)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.733)> Examining Moth1
+[Info] (19:08:51.736)> Moth1 wants to move
+[Info] (19:08:51.737)> Examining Moth0
+[Info] (19:08:51.739)> Moth0 wants to move
+[Info] (19:08:51.740)> Examining Moth2
+[Info] (19:08:51.743)> Moth2 wants to move
+[Info] (19:08:51.744)> Examining 52046
+[Info] (19:08:51.748)> 52046 wants to move
+[Info] (19:08:51.749)> Examining Worker0
+[Info] (19:08:51.753)> Worker0 wants to dig
+[Info] (19:08:51.864)> NextTurn()
+[Info] (19:08:51.867)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:51.868)> Examining Moth1
+[Info] (19:08:51.870)> Moth1 wants to move
+[Info] (19:08:51.871)> Examining Moth0
+[Info] (19:08:51.874)> Moth0 wants to dig
+[Info] (19:08:51.875)> Examining Moth2
+[Info] (19:08:51.878)> Moth2 wants to move
+[Info] (19:08:51.879)> Examining 52046
+[Info] (19:08:51.883)> 52046 wants to move
+[Info] (19:08:51.884)> Examining Worker0
+[Info] (19:08:51.889)> Worker0 wants to move
+[Info] (19:08:52.002)> NextTurn()
+[Info] (19:08:52.004)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.005)> Examining Moth1
+[Info] (19:08:52.007)> Moth1 wants to move
+[Info] (19:08:52.008)> Examining Moth0
+[Info] (19:08:52.011)> Moth0 wants to move
+[Info] (19:08:52.012)> Examining Moth2
+[Info] (19:08:52.015)> Moth2 wants to dig
+[Info] (19:08:52.016)> Examining 52046
+[Info] (19:08:52.020)> 52046 wants to move
+[Info] (19:08:52.021)> Examining Worker0
+[Info] (19:08:52.025)> Worker0 wants to dig
+[Info] (19:08:52.136)> NextTurn()
+[Info] (19:08:52.138)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.139)> Examining Moth1
+[Info] (19:08:52.142)> Moth1 wants to move
+[Info] (19:08:52.142)> Examining Moth0
+[Info] (19:08:52.146)> Moth0 wants to dig
+[Info] (19:08:52.147)> Examining Moth2
+[Info] (19:08:52.150)> Moth2 wants to move
+[Info] (19:08:52.151)> Examining 52046
+[Info] (19:08:52.155)> 52046 wants to move
+[Info] (19:08:52.155)> Examining Worker0
+[Info] (19:08:52.160)> Worker0 wants to move
+[Info] (19:08:52.272)> NextTurn()
+[Info] (19:08:52.274)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.275)> Examining Moth1
+[Info] (19:08:52.278)> Moth1 wants to move
+[Info] (19:08:52.278)> Examining Moth0
+[Info] (19:08:52.281)> Moth0 wants to move
+[Info] (19:08:52.282)> Examining Moth2
+[Info] (19:08:52.285)> Moth2 wants to move
+[Info] (19:08:52.286)> Examining 52046
+[Info] (19:08:52.290)> 52046 wants to move
+[Info] (19:08:52.291)> Examining Worker0
+[Info] (19:08:52.295)> Worker0 wants to dig
+[Info] (19:08:52.408)> NextTurn()
+[Info] (19:08:52.410)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.411)> Examining Moth1
+[Info] (19:08:52.414)> Moth1 wants to move
+[Info] (19:08:52.415)> Examining Moth0
+[Info] (19:08:52.418)> Moth0 wants to move
+[Info] (19:08:52.419)> Examining Moth2
+[Info] (19:08:52.422)> Moth2 wants to move
+[Info] (19:08:52.423)> Examining 52046
+[Info] (19:08:52.426)> 52046 wants to move
+[Info] (19:08:52.427)> Examining Worker0
+[Info] (19:08:52.432)> Worker0 wants to move
+[Info] (19:08:52.544)> NextTurn()
+[Info] (19:08:52.546)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.547)> Examining Moth1
+[Info] (19:08:52.550)> Moth1 wants to move
+[Info] (19:08:52.551)> Examining Moth0
+[Info] (19:08:52.554)> Moth0 wants to dig
+[Info] (19:08:52.555)> Examining Moth2
+[Info] (19:08:52.557)> Moth2 wants to move
+[Info] (19:08:52.558)> Examining 52046
+[Info] (19:08:52.562)> 52046 wants to move
+[Info] (19:08:52.563)> Examining Worker0
+[Info] (19:08:52.567)> Worker0 wants to move
+[Warning] (19:08:52.571)> Out of range exception caught: 25;24
+[Info] (19:08:52.678)> NextTurn()
+[Info] (19:08:52.681)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.682)> Examining Moth1
+[Info] (19:08:52.684)> Moth1 wants to move
+[Info] (19:08:52.685)> Examining Moth0
+[Info] (19:08:52.688)> Moth0 wants to move
+[Info] (19:08:52.689)> Examining Moth2
+[Info] (19:08:52.692)> Moth2 wants to move
+[Info] (19:08:52.693)> Examining 52046
+[Info] (19:08:52.697)> 52046 wants to move
+[Info] (19:08:52.698)> Examining Worker0
+[Info] (19:08:52.702)> Worker0 wants to move
+[Info] (19:08:52.813)> NextTurn()
+[Info] (19:08:52.815)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.816)> Examining Moth1
+[Info] (19:08:52.819)> Moth1 wants to move
+[Info] (19:08:52.820)> Examining Moth0
+[Info] (19:08:52.823)> Moth0 wants to move
+[Info] (19:08:52.824)> Examining Moth2
+[Info] (19:08:52.827)> Moth2 wants to move
+[Info] (19:08:52.828)> Examining 52046
+[Info] (19:08:52.831)> 52046 wants to move
+[Info] (19:08:52.832)> Examining Worker0
+[Info] (19:08:52.837)> Worker0 wants to move
+[Info] (19:08:52.948)> NextTurn()
+[Info] (19:08:52.950)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:52.951)> Examining Moth1
+[Info] (19:08:52.954)> Moth1 wants to move
+[Info] (19:08:52.955)> Examining Moth2
+[Info] (19:08:52.958)> Moth2 wants to move
+[Info] (19:08:52.959)> Examining Moth0
+[Info] (19:08:52.962)> Moth0 wants to move
+[Info] (19:08:52.991)> Examining 52046
+[Info] (19:08:52.995)> 52046 wants to move
+[Info] (19:08:52.996)> Examining Worker0
+[Info] (19:08:53.001)> Worker0 wants to move
+[Info] (19:08:53.112)> NextTurn()
+[Info] (19:08:53.114)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.115)> Examining Moth1
+[Info] (19:08:53.118)> Moth1 wants to move
+[Info] (19:08:53.119)> Examining Moth0
+[Info] (19:08:53.122)> Moth0 wants to move
+[Info] (19:08:53.123)> Examining Moth2
+[Info] (19:08:53.126)> Moth2 wants to move
+[Info] (19:08:53.126)> Examining 52046
+[Info] (19:08:53.130)> 52046 wants to move
+[Info] (19:08:53.131)> Examining Worker0
+[Info] (19:08:53.136)> Worker0 wants to dig
+[Info] (19:08:53.247)> NextTurn()
+[Info] (19:08:53.250)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.250)> Examining Moth1
+[Info] (19:08:53.253)> Moth1 wants to move
+[Info] (19:08:53.254)> Examining Moth2
+[Info] (19:08:53.257)> Moth2 wants to move
+[Info] (19:08:53.258)> Examining Moth0
+[Info] (19:08:53.261)> Moth0 wants to move
+[Info] (19:08:53.262)> Examining 52046
+[Info] (19:08:53.266)> 52046 wants to move
+[Info] (19:08:53.267)> Examining Worker0
+[Info] (19:08:53.271)> Worker0 wants to move
+[Info] (19:08:53.384)> NextTurn()
+[Info] (19:08:53.386)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.387)> Examining Moth1
+[Info] (19:08:53.390)> Moth1 wants to move
+[Info] (19:08:53.390)> Examining Moth2
+[Info] (19:08:53.393)> Moth2 wants to move
+[Info] (19:08:53.394)> Examining Moth0
+[Info] (19:08:53.397)> Moth0 wants to move
+[Info] (19:08:53.398)> Examining 52046
+[Info] (19:08:53.402)> 52046 wants to move
+[Info] (19:08:53.403)> Examining Worker0
+[Info] (19:08:53.407)> Worker0 wants to dig
+[Info] (19:08:53.518)> NextTurn()
+[Info] (19:08:53.520)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.521)> Examining Moth1
+[Info] (19:08:53.524)> Moth1 wants to move
+[Info] (19:08:53.525)> Examining Moth2
+[Info] (19:08:53.527)> Moth2 wants to move
+[Info] (19:08:53.528)> Examining Moth0
+[Info] (19:08:53.531)> Moth0 wants to move
+[Info] (19:08:53.532)> Examining 52046
+[Info] (19:08:53.536)> 52046 wants to move
+[Info] (19:08:53.537)> Examining Worker0
+[Info] (19:08:53.540)> Worker0 wants to move
+[Info] (19:08:53.652)> NextTurn()
+[Info] (19:08:53.655)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.655)> Examining Moth2
+[Info] (19:08:53.658)> Moth2 wants to dig
+[Info] (19:08:53.659)> Examining Moth1
+[Info] (19:08:53.662)> Moth1 wants to move
+[Info] (19:08:53.663)> Examining Moth0
+[Info] (19:08:53.666)> Moth0 wants to move
+[Info] (19:08:53.666)> Examining 52046
+[Info] (19:08:53.670)> 52046 wants to move
+[Info] (19:08:53.671)> Examining Worker0
+[Info] (19:08:53.675)> Worker0 wants to dig
+[Info] (19:08:53.787)> NextTurn()
+[Info] (19:08:53.789)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.790)> Examining Moth2
+[Info] (19:08:53.792)> Moth2 wants to move
+[Info] (19:08:53.793)> Examining Moth1
+[Info] (19:08:53.797)> Moth1 wants to move
+[Info] (19:08:53.798)> Examining Moth0
+[Info] (19:08:53.801)> Moth0 wants to move
+[Info] (19:08:53.802)> Examining 52046
+[Info] (19:08:53.805)> 52046 wants to move
+[Info] (19:08:53.806)> Examining Worker0
+[Info] (19:08:53.811)> Worker0 wants to move
+[Info] (19:08:53.923)> NextTurn()
+[Info] (19:08:53.925)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:53.926)> Examining Moth2
+[Info] (19:08:53.929)> Moth2 wants to dig
+[Info] (19:08:53.930)> Examining Moth1
+[Info] (19:08:53.932)> Moth1 wants to move
+[Info] (19:08:53.933)> Examining Moth0
+[Info] (19:08:53.936)> Moth0 wants to move
+[Info] (19:08:53.937)> Examining 52046
+[Info] (19:08:53.941)> 52046 wants to move
+[Info] (19:08:53.942)> Examining Worker0
+[Info] (19:08:53.946)> Worker0 wants to dig
+[Info] (19:08:54.057)> NextTurn()
+[Info] (19:08:54.059)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.060)> Examining Moth2
+[Info] (19:08:54.063)> Moth2 wants to move
+[Info] (19:08:54.063)> Examining Moth1
+[Info] (19:08:54.066)> Moth1 wants to move
+[Info] (19:08:54.067)> Examining Moth0
+[Info] (19:08:54.070)> Moth0 wants to dig
+[Info] (19:08:54.071)> Examining 52046
+[Info] (19:08:54.075)> 52046 wants to move
+[Info] (19:08:54.076)> Examining Worker0
+[Info] (19:08:54.080)> Worker0 wants to move
+[Info] (19:08:54.191)> NextTurn()
+[Info] (19:08:54.193)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.194)> Examining Moth2
+[Info] (19:08:54.196)> Moth2 wants to move
+[Info] (19:08:54.197)> Examining Moth1
+[Info] (19:08:54.200)> Moth1 wants to move
+[Info] (19:08:54.201)> Examining Moth0
+[Info] (19:08:54.204)> Moth0 wants to move
+[Info] (19:08:54.205)> Examining 52046
+[Info] (19:08:54.209)> 52046 wants to move
+[Info] (19:08:54.209)> Examining Worker0
+[Info] (19:08:54.214)> Worker0 wants to move
+[Info] (19:08:54.325)> NextTurn()
+[Info] (19:08:54.327)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.328)> Examining Moth2
+[Info] (19:08:54.331)> Moth2 wants to dig
+[Info] (19:08:54.332)> Examining Moth1
+[Info] (19:08:54.335)> Moth1 wants to move
+[Info] (19:08:54.336)> Examining Moth0
+[Info] (19:08:54.339)> Moth0 wants to dig
+[Info] (19:08:54.340)> Examining 52046
+[Info] (19:08:54.343)> 52046 wants to move
+[Info] (19:08:54.345)> Examining Worker0
+[Info] (19:08:54.349)> Worker0 wants to move
+[Info] (19:08:54.459)> NextTurn()
+[Info] (19:08:54.462)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.462)> Examining Moth2
+[Info] (19:08:54.465)> Moth2 wants to move
+[Info] (19:08:54.466)> Examining Moth1
+[Info] (19:08:54.469)> Moth1 wants to move
+[Info] (19:08:54.470)> Examining Moth0
+[Info] (19:08:54.472)> Moth0 wants to move
+[Info] (19:08:54.473)> Examining 52046
+[Info] (19:08:54.477)> 52046 wants to move
+[Info] (19:08:54.478)> Examining Worker0
+[Info] (19:08:54.482)> Worker0 wants to move
+[Warning] (19:08:54.487)> Out of range exception caught: 25;17
+[Info] (19:08:54.593)> NextTurn()
+[Info] (19:08:54.595)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.596)> Examining Moth1
+[Info] (19:08:54.599)> Moth1 wants to move
+[Info] (19:08:54.600)> Examining Moth2
+[Info] (19:08:54.602)> Moth2 wants to move
+[Info] (19:08:54.603)> Examining Moth0
+[Info] (19:08:54.606)> Moth0 wants to dig
+[Info] (19:08:54.607)> Examining 52046
+[Info] (19:08:54.610)> 52046 wants to move
+[Info] (19:08:54.612)> Examining Worker0
+[Info] (19:08:54.616)> Worker0 wants to move
+[Info] (19:08:54.724)> NextTurn()
+[Info] (19:08:54.727)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.728)> Examining Moth2
+[Info] (19:08:54.730)> Moth2 wants to dig
+[Info] (19:08:54.731)> Examining Moth1
+[Info] (19:08:54.734)> Moth1 wants to move
+[Info] (19:08:54.735)> Examining Moth0
+[Info] (19:08:54.737)> Moth0 wants to move
+[Info] (19:08:54.738)> Examining 52046
+[Info] (19:08:54.742)> 52046 wants to move
+[Info] (19:08:54.743)> Examining Worker0
+[Info] (19:08:54.747)> Worker0 wants to move
+[Warning] (19:08:54.752)> Out of range exception caught: 25;17
+[Info] (19:08:54.858)> NextTurn()
+[Info] (19:08:54.861)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.862)> Examining Moth2
+[Info] (19:08:54.864)> Moth2 wants to move
+[Info] (19:08:54.865)> Examining Moth1
+[Info] (19:08:54.868)> Moth1 wants to move
+[Info] (19:08:54.869)> Examining Moth0
+[Info] (19:08:54.872)> Moth0 wants to move
+[Info] (19:08:54.873)> Examining 52046
+[Info] (19:08:54.876)> 52046 wants to move
+[Info] (19:08:54.877)> Examining Worker0
+[Info] (19:08:54.882)> Worker0 wants to move
+[Info] (19:08:54.993)> NextTurn()
+[Info] (19:08:54.995)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:54.996)> Examining Moth2
+[Info] (19:08:54.999)> Moth2 wants to move
+[Info] (19:08:54.999)> Examining Moth1
+[Info] (19:08:55.002)> Moth1 wants to move
+[Info] (19:08:55.003)> Examining Moth0
+[Info] (19:08:55.006)> Moth0 wants to move
+[Info] (19:08:55.007)> Examining 52046
+[Info] (19:08:55.011)> 52046 wants to move
+[Info] (19:08:55.011)> Examining Worker0
+[Info] (19:08:55.016)> Worker0 wants to move
+[Warning] (19:08:55.020)> Out of range exception caught: 25;17
+[Info] (19:08:55.128)> NextTurn()
+[Info] (19:08:55.130)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.131)> Examining Moth2
+[Info] (19:08:55.134)> Moth2 wants to dig
+[Info] (19:08:55.135)> Examining Moth1
+[Info] (19:08:55.138)> Moth1 wants to move
+[Info] (19:08:55.138)> Examining Moth0
+[Info] (19:08:55.141)> Moth0 wants to move
+[Info] (19:08:55.142)> Examining 52046
+[Info] (19:08:55.146)> 52046 wants to move
+[Info] (19:08:55.147)> Examining Worker0
+[Info] (19:08:55.152)> Worker0 wants to move
+[Warning] (19:08:55.156)> Out of range exception caught: 25;17
+[Info] (19:08:55.263)> NextTurn()
+[Info] (19:08:55.265)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.266)> Examining Moth2
+[Info] (19:08:55.268)> Moth2 wants to move
+[Info] (19:08:55.269)> Examining Moth1
+[Info] (19:08:55.272)> Moth1 wants to move
+[Info] (19:08:55.273)> Examining Moth0
+[Info] (19:08:55.276)> Moth0 wants to move
+[Info] (19:08:55.278)> Examining 52046
+[Info] (19:08:55.282)> 52046 wants to move
+[Info] (19:08:55.282)> Examining Worker0
+[Info] (19:08:55.287)> Worker0 wants to move
+[Info] (19:08:55.399)> NextTurn()
+[Info] (19:08:55.401)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.402)> Examining Moth2
+[Info] (19:08:55.405)> Moth2 wants to move
+[Info] (19:08:55.406)> Examining Moth1
+[Info] (19:08:55.409)> Moth1 wants to pickup
+[Info] (19:08:55.409)> Examining Moth0
+[Info] (19:08:55.413)> Moth0 wants to move
+[Info] (19:08:55.414)> Examining 52046
+[Info] (19:08:55.417)> 52046 wants to move
+[Info] (19:08:55.418)> Examining Worker0
+[Info] (19:08:55.422)> Worker0 wants to move
+[Info] (19:08:55.535)> NextTurn()
+[Info] (19:08:55.537)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.538)> Examining Moth2
+[Info] (19:08:55.541)> Moth2 wants to move
+[Info] (19:08:55.542)> Examining Moth1
+[Info] (19:08:55.544)> Moth1 wants to move
+[Info] (19:08:55.545)> Examining Moth0
+[Info] (19:08:55.548)> Moth0 wants to move
+[Info] (19:08:55.549)> Examining 52046
+[Info] (19:08:55.553)> 52046 wants to move
+[Info] (19:08:55.554)> Examining Worker0
+[Info] (19:08:55.558)> Worker0 wants to move
+[Info] (19:08:55.668)> NextTurn()
+[Info] (19:08:55.670)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.671)> Examining Moth2
+[Info] (19:08:55.674)> Moth2 wants to dig
+[Info] (19:08:55.675)> Examining Moth1
+[Info] (19:08:55.678)> Moth1 wants to move
+[Info] (19:08:55.679)> Examining Moth0
+[Info] (19:08:55.681)> Moth0 wants to move
+[Info] (19:08:55.682)> Examining 52046
+[Info] (19:08:55.686)> 52046 wants to move
+[Info] (19:08:55.687)> Examining Worker0
+[Info] (19:08:55.691)> Worker0 wants to move
+[Info] (19:08:55.803)> NextTurn()
+[Info] (19:08:55.805)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.806)> Examining Moth2
+[Info] (19:08:55.809)> Moth2 wants to move
+[Info] (19:08:55.810)> Examining Moth1
+[Info] (19:08:55.812)> Moth1 wants to move
+[Info] (19:08:55.813)> Examining Moth0
+[Info] (19:08:55.816)> Moth0 wants to move
+[Info] (19:08:55.817)> Examining 52046
+[Info] (19:08:55.820)> 52046 wants to move
+[Info] (19:08:55.821)> Examining Worker0
+[Info] (19:08:55.826)> Worker0 wants to move
+[Info] (19:08:55.937)> NextTurn()
+[Info] (19:08:55.939)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:55.940)> Examining Moth2
+[Info] (19:08:55.943)> Moth2 wants to move
+[Info] (19:08:55.944)> Examining Moth1
+[Info] (19:08:55.947)> Moth1 wants to move
+[Info] (19:08:55.948)> Examining Moth0
+[Info] (19:08:55.951)> Moth0 wants to move
+[Info] (19:08:55.952)> Examining 52046
+[Info] (19:08:55.955)> 52046 wants to move
+[Info] (19:08:55.956)> Examining Worker0
+[Info] (19:08:55.961)> Worker0 wants to move
+[Info] (19:08:56.070)> NextTurn()
+[Info] (19:08:56.072)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.073)> Examining Moth2
+[Info] (19:08:56.076)> Moth2 wants to move
+[Info] (19:08:56.077)> Examining Moth1
+[Info] (19:08:56.080)> Moth1 wants to move
+[Info] (19:08:56.080)> Examining Moth0
+[Info] (19:08:56.083)> Moth0 wants to dig
+[Info] (19:08:56.084)> Examining 52046
+[Info] (19:08:56.087)> 52046 wants to move
+[Info] (19:08:56.088)> Examining Worker0
+[Info] (19:08:56.092)> Worker0 wants to move
+[Info] (19:08:56.203)> NextTurn()
+[Info] (19:08:56.206)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.207)> Examining Moth1
+[Info] (19:08:56.209)> Moth1 wants to move
+[Info] (19:08:56.210)> Examining Moth0
+[Info] (19:08:56.213)> Moth0 wants to move
+[Info] (19:08:56.214)> Examining Moth2
+[Info] (19:08:56.217)> Moth2 wants to move
+[Info] (19:08:56.218)> Examining 52046
+[Info] (19:08:56.221)> 52046 wants to move
+[Info] (19:08:56.222)> Examining Worker0
+[Info] (19:08:56.227)> Worker0 wants to move
+[Info] (19:08:56.336)> NextTurn()
+[Info] (19:08:56.338)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.339)> Examining Moth1
+[Info] (19:08:56.342)> Moth1 wants to move
+[Info] (19:08:56.343)> Examining Moth0
+[Info] (19:08:56.345)> Moth0 wants to move
+[Info] (19:08:56.346)> Examining Moth2
+[Info] (19:08:56.349)> Moth2 wants to dig
+[Info] (19:08:56.350)> Examining 52046
+[Info] (19:08:56.354)> 52046 wants to move
+[Info] (19:08:56.354)> Examining Worker0
+[Info] (19:08:56.359)> Worker0 wants to dig
+[Info] (19:08:56.468)> NextTurn()
+[Info] (19:08:56.470)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.471)> Examining Moth2
+[Info] (19:08:56.474)> Moth2 wants to move
+[Info] (19:08:56.475)> Examining Moth1
+[Info] (19:08:56.478)> Moth1 wants to move
+[Info] (19:08:56.479)> Examining Moth0
+[Info] (19:08:56.481)> Moth0 wants to move
+[Info] (19:08:56.482)> Examining 52046
+[Info] (19:08:56.486)> 52046 wants to move
+[Info] (19:08:56.487)> Examining Worker0
+[Info] (19:08:56.491)> Worker0 wants to move
+[Info] (19:08:56.604)> NextTurn()
+[Info] (19:08:56.606)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.607)> Examining Moth2
+[Info] (19:08:56.610)> Moth2 wants to move
+[Info] (19:08:56.611)> Examining Moth1
+[Info] (19:08:56.614)> Moth1 wants to move
+[Info] (19:08:56.614)> Examining Moth0
+[Info] (19:08:56.617)> Moth0 wants to move
+[Info] (19:08:56.618)> Examining 52046
+[Info] (19:08:56.621)> 52046 wants to move
+[Info] (19:08:56.622)> Examining Worker0
+[Info] (19:08:56.627)> Worker0 wants to dig
+[Info] (19:08:56.737)> NextTurn()
+[Info] (19:08:56.739)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.740)> Examining Moth2
+[Info] (19:08:56.743)> Moth2 wants to dig
+[Info] (19:08:56.744)> Examining Moth1
+[Info] (19:08:56.747)> Moth1 wants to move
+[Info] (19:08:56.748)> Examining Moth0
+[Info] (19:08:56.750)> Moth0 wants to move
+[Info] (19:08:56.751)> Examining 52046
+[Info] (19:08:56.755)> 52046 wants to move
+[Info] (19:08:56.756)> Examining Worker0
+[Info] (19:08:56.760)> Worker0 wants to move
+[Info] (19:08:56.871)> NextTurn()
+[Info] (19:08:56.873)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:56.874)> Examining Moth2
+[Info] (19:08:56.876)> Moth2 wants to move
+[Info] (19:08:56.877)> Examining Moth1
+[Info] (19:08:56.880)> Moth1 wants to move
+[Info] (19:08:56.881)> Examining Moth0
+[Info] (19:08:56.884)> Moth0 wants to move
+[Info] (19:08:56.885)> Examining 52046
+[Info] (19:08:56.888)> 52046 wants to move
+[Info] (19:08:56.889)> Examining Worker0
+[Info] (19:08:56.893)> Worker0 wants to dig
+[Info] (19:08:57.004)> NextTurn()
+[Info] (19:08:57.006)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.007)> Examining Moth2
+[Info] (19:08:57.010)> Moth2 wants to dig
+[Info] (19:08:57.011)> Examining Moth1
+[Info] (19:08:57.014)> Moth1 wants to move
+[Info] (19:08:57.015)> Examining Moth0
+[Info] (19:08:57.018)> Moth0 wants to move
+[Info] (19:08:57.019)> Examining 52046
+[Info] (19:08:57.022)> 52046 wants to move
+[Info] (19:08:57.023)> Examining Worker0
+[Info] (19:08:57.028)> Worker0 wants to move
+[Info] (19:08:57.140)> NextTurn()
+[Info] (19:08:57.142)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.143)> Examining Moth2
+[Info] (19:08:57.145)> Moth2 wants to move
+[Info] (19:08:57.146)> Examining Moth1
+[Info] (19:08:57.149)> Moth1 wants to move
+[Info] (19:08:57.150)> Examining Moth0
+[Info] (19:08:57.153)> Moth0 wants to move
+[Info] (19:08:57.153)> Examining 52046
+[Info] (19:08:57.156)> 52046 wants to move
+[Info] (19:08:57.157)> Examining Worker0
+[Info] (19:08:57.161)> Worker0 wants to dig
+[Info] (19:08:57.270)> NextTurn()
+[Info] (19:08:57.272)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.273)> Examining Moth2
+[Info] (19:08:57.275)> Moth2 wants to move
+[Info] (19:08:57.276)> Examining Moth1
+[Info] (19:08:57.280)> Moth1 wants to move
+[Info] (19:08:57.280)> Examining Moth0
+[Info] (19:08:57.283)> Moth0 wants to move
+[Info] (19:08:57.284)> Examining 52046
+[Info] (19:08:57.288)> 52046 wants to move
+[Info] (19:08:57.289)> Examining Worker0
+[Info] (19:08:57.293)> Worker0 wants to move
+[Warning] (19:08:57.295)> Out of range exception caught: -1;8
+[Info] (19:08:57.406)> NextTurn()
+[Info] (19:08:57.410)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.411)> Examining Moth2
+[Info] (19:08:57.413)> Moth2 wants to move
+[Info] (19:08:57.414)> Examining Moth1
+[Info] (19:08:57.417)> Moth1 wants to move
+[Info] (19:08:57.418)> Examining Moth0
+[Info] (19:08:57.421)> Moth0 wants to move
+[Info] (19:08:57.422)> Examining 52046
+[Info] (19:08:57.425)> 52046 wants to move
+[Info] (19:08:57.426)> Examining Worker0
+[Info] (19:08:57.430)> Worker0 wants to dig
+[Warning] (19:08:57.432)> Out of range exception caught: -1;8
+[Info] (19:08:57.540)> NextTurn()
+[Info] (19:08:57.542)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.543)> Examining Moth2
+[Info] (19:08:57.546)> Moth2 wants to move
+[Info] (19:08:57.547)> Examining Moth1
+[Info] (19:08:57.549)> Moth1 wants to move
+[Info] (19:08:57.550)> Examining Moth0
+[Info] (19:08:57.553)> Moth0 wants to move
+[Info] (19:08:57.554)> Examining 52046
+[Info] (19:08:57.558)> 52046 wants to move
+[Info] (19:08:57.559)> Examining Worker0
+[Info] (19:08:57.563)> Worker0 wants to move
+[Info] (19:08:57.673)> NextTurn()
+[Info] (19:08:57.676)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.676)> Examining Moth2
+[Info] (19:08:57.679)> Moth2 wants to dig
+[Info] (19:08:57.680)> Examining Moth1
+[Info] (19:08:57.682)> Moth1 wants to move
+[Info] (19:08:57.683)> Examining Moth0
+[Info] (19:08:57.686)> Moth0 wants to move
+[Info] (19:08:57.687)> Examining 52046
+[Info] (19:08:57.691)> 52046 wants to move
+[Info] (19:08:57.692)> Examining Worker0
+[Info] (19:08:57.695)> Worker0 wants to dig
+[Info] (19:08:57.806)> NextTurn()
+[Info] (19:08:57.808)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.809)> Examining Moth2
+[Info] (19:08:57.811)> Moth2 wants to move
+[Info] (19:08:57.812)> Examining Moth1
+[Info] (19:08:57.815)> Moth1 wants to move
+[Info] (19:08:57.816)> Examining Moth0
+[Info] (19:08:57.819)> Moth0 wants to move
+[Info] (19:08:57.820)> Examining 52046
+[Info] (19:08:57.823)> 52046 wants to move
+[Info] (19:08:57.824)> Examining Worker0
+[Info] (19:08:57.828)> Worker0 wants to move
+[Warning] (19:08:57.830)> Out of range exception caught: -1;8
+[Info] (19:08:57.939)> NextTurn()
+[Info] (19:08:57.941)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:57.942)> Examining Moth2
+[Info] (19:08:57.944)> Moth2 wants to move
+[Info] (19:08:57.945)> Examining Moth1
+[Info] (19:08:57.948)> Moth1 wants to move
+[Info] (19:08:57.949)> Examining Moth0
+[Info] (19:08:57.951)> Moth0 wants to dig
+[Info] (19:08:57.952)> Examining 52046
+[Info] (19:08:57.956)> 52046 wants to move
+[Info] (19:08:57.957)> Examining Worker0
+[Info] (19:08:57.960)> Worker0 wants to dig
+[Info] (19:08:58.069)> NextTurn()
+[Info] (19:08:58.072)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.073)> Examining Moth2
+[Info] (19:08:58.075)> Moth2 wants to dig
+[Info] (19:08:58.076)> Examining Moth1
+[Info] (19:08:58.078)> Moth1 wants to dig
+[Info] (19:08:58.079)> Examining Moth0
+[Info] (19:08:58.082)> Moth0 wants to move
+[Info] (19:08:58.083)> Examining 52046
+[Info] (19:08:58.087)> 52046 wants to move
+[Info] (19:08:58.087)> Examining Worker0
+[Info] (19:08:58.091)> Worker0 wants to move
+[Info] (19:08:58.201)> NextTurn()
+[Info] (19:08:58.204)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.205)> Examining Moth2
+[Info] (19:08:58.207)> Moth2 wants to move
+[Info] (19:08:58.208)> Examining Moth1
+[Info] (19:08:58.210)> Moth1 wants to move
+[Info] (19:08:58.211)> Examining Moth0
+[Info] (19:08:58.214)> Moth0 wants to dig
+[Info] (19:08:58.215)> Examining 52046
+[Info] (19:08:58.218)> 52046 wants to move
+[Info] (19:08:58.219)> Examining Worker0
+[Info] (19:08:58.223)> Worker0 wants to dig
+[Info] (19:08:58.332)> NextTurn()
+[Info] (19:08:58.334)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.335)> Examining Moth2
+[Info] (19:08:58.337)> Moth2 wants to move
+[Info] (19:08:58.338)> Examining Moth1
+[Info] (19:08:58.341)> Moth1 wants to move
+[Info] (19:08:58.342)> Examining Moth0
+[Info] (19:08:58.345)> Moth0 wants to move
+[Info] (19:08:58.346)> Examining 52046
+[Info] (19:08:58.349)> 52046 wants to move
+[Info] (19:08:58.350)> Examining Worker0
+[Info] (19:08:58.354)> Worker0 wants to move
+[Info] (19:08:58.463)> NextTurn()
+[Info] (19:08:58.465)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.466)> Examining Moth2
+[Info] (19:08:58.468)> Moth2 wants to dig
+[Info] (19:08:58.469)> Examining Moth1
+[Info] (19:08:58.472)> Moth1 wants to move
+[Info] (19:08:58.473)> Examining Moth0
+[Info] (19:08:58.476)> Moth0 wants to dig
+[Info] (19:08:58.476)> Examining 52046
+[Info] (19:08:58.480)> 52046 wants to move
+[Info] (19:08:58.481)> Examining Worker0
+[Info] (19:08:58.484)> Worker0 wants to dig
+[Info] (19:08:58.592)> NextTurn()
+[Info] (19:08:58.595)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.596)> Examining Moth2
+[Info] (19:08:58.599)> Moth2 wants to move
+[Info] (19:08:58.599)> Examining Moth1
+[Info] (19:08:58.602)> Moth1 wants to dig
+[Info] (19:08:58.603)> Examining Moth0
+[Info] (19:08:58.606)> Moth0 wants to move
+[Info] (19:08:58.607)> Examining 52046
+[Info] (19:08:58.610)> 52046 wants to move
+[Info] (19:08:58.611)> Examining Worker0
+[Info] (19:08:58.615)> Worker0 wants to move
+[Info] (19:08:58.725)> NextTurn()
+[Info] (19:08:58.727)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.728)> Examining Moth2
+[Info] (19:08:58.730)> Moth2 wants to move
+[Info] (19:08:58.731)> Examining Moth1
+[Info] (19:08:58.733)> Moth1 wants to move
+[Info] (19:08:58.734)> Examining Moth0
+[Info] (19:08:58.737)> Moth0 wants to dig
+[Info] (19:08:58.738)> Examining 52046
+[Info] (19:08:58.741)> 52046 wants to move
+[Info] (19:08:58.742)> Examining Worker0
+[Info] (19:08:58.746)> Worker0 wants to move
+[Warning] (19:08:58.748)> Out of range exception caught: -1;8
+[Warning] (19:08:58.751)> Out of range exception caught: 15;25
+[Info] (19:08:58.855)> NextTurn()
+[Info] (19:08:58.857)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.858)> Examining Moth2
+[Info] (19:08:58.860)> Moth2 wants to move
+[Info] (19:08:58.861)> Examining Moth1
+[Info] (19:08:58.863)> Moth1 wants to move
+[Info] (19:08:58.864)> Examining Moth0
+[Info] (19:08:58.867)> Moth0 wants to move
+[Info] (19:08:58.868)> Examining 52046
+[Info] (19:08:58.872)> 52046 wants to move
+[Info] (19:08:58.872)> Examining Worker0
+[Info] (19:08:58.876)> Worker0 wants to move
+[Warning] (19:08:58.878)> Out of range exception caught: -1;8
+[Warning] (19:08:58.882)> Out of range exception caught: 15;25
+[Info] (19:08:58.986)> NextTurn()
+[Info] (19:08:58.988)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100756A0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A100755F8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:58.988)> Examining Moth2
+[Info] (19:08:58.991)> Moth2 wants to move
+[Info] (19:08:58.992)> Examining Moth1
+[Info] (19:08:58.994)> Moth1 wants to move
+[Info] (19:08:58.995)> Examining Moth0
+[Info] (19:08:58.998)> Moth0 wants to move
+[Info] (19:08:58.999)> Examining 52046
+[Info] (19:08:59.002)> 52046 wants to move
+[Info] (19:08:59.003)> Examining Worker0
+[Info] (19:08:59.007)> Worker0 wants to move
+[Info] (19:08:59.115)> NextTurn()
+[Info] (19:08:59.117)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.118)> Examining Moth0
+[Info] (19:08:59.120)> Moth0 wants to dig
+[Info] (19:08:59.121)> Examining 52046
+[Info] (19:08:59.125)> 52046 wants to move
+[Info] (19:08:59.126)> Examining Worker0
+[Info] (19:08:59.130)> Worker0 wants to dig
+[Info] (19:08:59.238)> NextTurn()
+[Info] (19:08:59.240)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.241)> Examining Moth0
+[Info] (19:08:59.244)> Moth0 wants to move
+[Info] (19:08:59.245)> Examining 52046
+[Info] (19:08:59.248)> 52046 wants to move
+[Info] (19:08:59.249)> Examining Worker0
+[Info] (19:08:59.253)> Worker0 wants to move
+[Info] (19:08:59.360)> NextTurn()
+[Info] (19:08:59.364)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.365)> Examining Moth0
+[Info] (19:08:59.368)> Moth0 wants to dig
+[Info] (19:08:59.369)> Examining 52046
+[Info] (19:08:59.372)> 52046 wants to move
+[Info] (19:08:59.373)> Examining Worker0
+[Info] (19:08:59.377)> Worker0 wants to dig
+[Info] (19:08:59.484)> NextTurn()
+[Info] (19:08:59.486)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.487)> Examining Moth0
+[Info] (19:08:59.490)> Moth0 wants to move
+[Info] (19:08:59.491)> Examining 52046
+[Info] (19:08:59.494)> 52046 wants to move
+[Info] (19:08:59.495)> Examining Worker0
+[Info] (19:08:59.499)> Worker0 wants to move
+[Info] (19:08:59.608)> NextTurn()
+[Info] (19:08:59.611)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.612)> Examining Moth0
+[Info] (19:08:59.615)> Moth0 wants to move
+[Info] (19:08:59.616)> Examining 52046
+[Info] (19:08:59.619)> 52046 wants to move
+[Info] (19:08:59.620)> Examining Worker0
+[Info] (19:08:59.624)> Worker0 wants to move
+[Info] (19:08:59.734)> NextTurn()
+[Info] (19:08:59.736)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.737)> Examining Moth0
+[Info] (19:08:59.740)> Moth0 wants to move
+[Info] (19:08:59.740)> Examining 52046
+[Info] (19:08:59.744)> 52046 wants to move
+[Info] (19:08:59.745)> Examining Worker0
+[Info] (19:08:59.749)> Worker0 wants to dig
+[Info] (19:08:59.856)> NextTurn()
+[Info] (19:08:59.858)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.859)> Examining Moth0
+[Info] (19:08:59.862)> Moth0 wants to move
+[Info] (19:08:59.863)> Examining 52046
+[Info] (19:08:59.866)> 52046 wants to move
+[Info] (19:08:59.867)> Examining Worker0
+[Info] (19:08:59.871)> Worker0 wants to move
+[Info] (19:08:59.980)> NextTurn()
+[Info] (19:08:59.983)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:08:59.983)> Examining Moth0
+[Info] (19:08:59.986)> Moth0 wants to move
+[Info] (19:08:59.987)> Examining 52046
+[Info] (19:08:59.991)> 52046 wants to move
+[Info] (19:08:59.992)> Examining Worker0
+[Info] (19:08:59.996)> Worker0 wants to dig
+[Info] (19:09:00.109)> NextTurn()
+[Info] (19:09:00.111)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.112)> Examining Moth0
+[Info] (19:09:00.115)> Moth0 wants to dig
+[Info] (19:09:00.116)> Examining 52046
+[Info] (19:09:00.119)> 52046 wants to move
+[Info] (19:09:00.120)> Examining Worker0
+[Info] (19:09:00.125)> Worker0 wants to move
+[Info] (19:09:00.233)> NextTurn()
+[Info] (19:09:00.235)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.236)> Examining Moth0
+[Info] (19:09:00.239)> Moth0 wants to move
+[Info] (19:09:00.240)> Examining 52046
+[Info] (19:09:00.243)> 52046 wants to move
+[Info] (19:09:00.244)> Examining Worker0
+[Info] (19:09:00.248)> Worker0 wants to dig
+[Info] (19:09:00.357)> NextTurn()
+[Info] (19:09:00.359)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.360)> Examining Moth0
+[Info] (19:09:00.363)> Moth0 wants to pickup
+[Info] (19:09:00.364)> Examining 52046
+[Info] (19:09:00.367)> 52046 wants to move
+[Info] (19:09:00.368)> Examining Worker0
+[Info] (19:09:00.372)> Worker0 wants to move
+[Info] (19:09:00.482)> NextTurn()
+[Info] (19:09:00.484)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.485)> Examining Moth0
+[Info] (19:09:00.488)> Moth0 wants to move
+[Info] (19:09:00.489)> Examining 52046
+[Info] (19:09:00.492)> 52046 wants to move
+[Info] (19:09:00.493)> Examining Worker0
+[Info] (19:09:00.497)> Worker0 wants to dig
+[Info] (19:09:00.604)> NextTurn()
+[Info] (19:09:00.607)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.608)> Examining Moth0
+[Info] (19:09:00.611)> Moth0 wants to move
+[Info] (19:09:00.611)> Examining 52046
+[Info] (19:09:00.615)> 52046 wants to move
+[Info] (19:09:00.616)> Examining Worker0
+[Info] (19:09:00.620)> Worker0 wants to move
+[Info] (19:09:00.730)> NextTurn()
+[Info] (19:09:00.732)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.733)> Examining Moth0
+[Info] (19:09:00.736)> Moth0 wants to dig
+[Info] (19:09:00.737)> Examining 52046
+[Info] (19:09:00.740)> 52046 wants to move
+[Info] (19:09:00.741)> Examining Worker0
+[Info] (19:09:00.745)> Worker0 wants to dig
+[Info] (19:09:00.853)> NextTurn()
+[Info] (19:09:00.855)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.856)> Examining Moth0
+[Info] (19:09:00.859)> Moth0 wants to move
+[Info] (19:09:00.860)> Examining 52046
+[Info] (19:09:00.864)> 52046 wants to move
+[Info] (19:09:00.865)> Examining Worker0
+[Info] (19:09:00.868)> Worker0 wants to move
+[Info] (19:09:00.977)> NextTurn()
+[Info] (19:09:00.979)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:00.980)> Examining Moth0
+[Info] (19:09:00.983)> Moth0 wants to dig
+[Info] (19:09:00.984)> Examining 52046
+[Info] (19:09:00.987)> 52046 wants to move
+[Info] (19:09:00.988)> Examining Worker0
+[Info] (19:09:00.992)> Worker0 wants to dig
+[Info] (19:09:01.100)> NextTurn()
+[Info] (19:09:01.102)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.103)> Examining Moth0
+[Info] (19:09:01.106)> Moth0 wants to move
+[Info] (19:09:01.107)> Examining 52046
+[Info] (19:09:01.111)> 52046 wants to move
+[Info] (19:09:01.112)> Examining Worker0
+[Info] (19:09:01.116)> Worker0 wants to move
+[Info] (19:09:01.225)> NextTurn()
+[Info] (19:09:01.227)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.228)> Examining Moth0
+[Info] (19:09:01.231)> Moth0 wants to move
+[Info] (19:09:01.232)> Examining 52046
+[Info] (19:09:01.235)> 52046 wants to move
+[Info] (19:09:01.236)> Examining Worker0
+[Info] (19:09:01.240)> Worker0 wants to dig
+[Info] (19:09:01.349)> NextTurn()
+[Info] (19:09:01.351)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.352)> Examining Moth0
+[Info] (19:09:01.354)> Moth0 wants to move
+[Info] (19:09:01.355)> Examining 52046
+[Info] (19:09:01.359)> 52046 wants to move
+[Info] (19:09:01.360)> Examining Worker0
+[Info] (19:09:01.364)> Worker0 wants to move
+[Info] (19:09:01.473)> NextTurn()
+[Info] (19:09:01.475)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.476)> Examining Moth0
+[Info] (19:09:01.479)> Moth0 wants to move
+[Info] (19:09:01.480)> Examining 52046
+[Info] (19:09:01.484)> 52046 wants to move
+[Info] (19:09:01.485)> Examining Worker0
+[Info] (19:09:01.488)> Worker0 wants to dig
+[Info] (19:09:01.596)> NextTurn()
+[Info] (19:09:01.600)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.601)> Examining Moth0
+[Info] (19:09:01.605)> Moth0 wants to move
+[Info] (19:09:01.606)> Examining 52046
+[Info] (19:09:01.609)> 52046 wants to move
+[Info] (19:09:01.610)> Examining Worker0
+[Info] (19:09:01.614)> Worker0 wants to move
+[Info] (19:09:01.722)> NextTurn()
+[Info] (19:09:01.724)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.725)> Examining Moth0
+[Info] (19:09:01.728)> Moth0 wants to move
+[Info] (19:09:01.729)> Examining 52046
+[Info] (19:09:01.732)> 52046 wants to move
+[Info] (19:09:01.733)> Examining Worker0
+[Info] (19:09:01.737)> Worker0 wants to dig
+[Info] (19:09:01.844)> NextTurn()
+[Info] (19:09:01.846)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.847)> Examining Moth0
+[Info] (19:09:01.850)> Moth0 wants to dig
+[Info] (19:09:01.851)> Examining 52046
+[Info] (19:09:01.854)> 52046 wants to move
+[Info] (19:09:01.855)> Examining Worker0
+[Info] (19:09:01.859)> Worker0 wants to move
+[Info] (19:09:01.967)> NextTurn()
+[Info] (19:09:01.969)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:01.970)> Examining Moth0
+[Info] (19:09:01.973)> Moth0 wants to move
+[Info] (19:09:01.974)> Examining 52046
+[Info] (19:09:01.978)> 52046 wants to move
+[Info] (19:09:01.978)> Examining Worker0
+[Info] (19:09:01.982)> Worker0 wants to dig
+[Info] (19:09:02.091)> NextTurn()
+[Info] (19:09:02.093)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.094)> Examining Moth0
+[Info] (19:09:02.096)> Moth0 wants to dig
+[Info] (19:09:02.097)> Examining 52046
+[Info] (19:09:02.101)> 52046 wants to move
+[Info] (19:09:02.102)> Examining Worker0
+[Info] (19:09:02.106)> Worker0 wants to move
+[Info] (19:09:02.213)> NextTurn()
+[Info] (19:09:02.214)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.215)> Examining Moth0
+[Info] (19:09:02.218)> Moth0 wants to move
+[Info] (19:09:02.219)> Examining 52046
+[Info] (19:09:02.222)> 52046 wants to move
+[Info] (19:09:02.223)> Examining Worker0
+[Info] (19:09:02.227)> Worker0 wants to dig
+[Info] (19:09:02.333)> NextTurn()
+[Info] (19:09:02.336)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.337)> Examining Moth0
+[Info] (19:09:02.339)> Moth0 wants to move
+[Info] (19:09:02.340)> Examining 52046
+[Info] (19:09:02.344)> 52046 wants to move
+[Info] (19:09:02.345)> Examining Worker0
+[Info] (19:09:02.349)> Worker0 wants to move
+[Info] (19:09:02.456)> NextTurn()
+[Info] (19:09:02.458)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.459)> Examining Moth0
+[Info] (19:09:02.462)> Moth0 wants to move
+[Info] (19:09:02.463)> Examining 52046
+[Info] (19:09:02.466)> 52046 wants to move
+[Info] (19:09:02.467)> Examining Worker0
+[Info] (19:09:02.471)> Worker0 wants to move
+[Info] (19:09:02.578)> NextTurn()
+[Info] (19:09:02.580)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.581)> Examining Moth0
+[Info] (19:09:02.584)> Moth0 wants to move
+[Info] (19:09:02.585)> Examining 52046
+[Info] (19:09:02.589)> 52046 wants to move
+[Info] (19:09:02.589)> Examining Worker0
+[Info] (19:09:02.593)> Worker0 wants to move
+[Info] (19:09:02.700)> NextTurn()
+[Info] (19:09:02.702)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.703)> Examining Moth0
+[Info] (19:09:02.706)> Moth0 wants to move
+[Info] (19:09:02.707)> Examining 52046
+[Info] (19:09:02.710)> 52046 wants to move
+[Info] (19:09:02.711)> Examining Worker0
+[Info] (19:09:02.715)> Worker0 wants to move
+[Info] (19:09:02.822)> NextTurn()
+[Info] (19:09:02.824)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.825)> Examining Moth0
+[Info] (19:09:02.828)> Moth0 wants to move
+[Info] (19:09:02.829)> Examining 52046
+[Info] (19:09:02.833)> 52046 wants to move
+[Info] (19:09:02.834)> Examining Worker0
+[Info] (19:09:02.837)> Worker0 wants to move
+[Info] (19:09:02.947)> NextTurn()
+[Info] (19:09:02.949)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:02.950)> Examining Moth0
+[Info] (19:09:02.953)> Moth0 wants to move
+[Info] (19:09:02.954)> Examining 52046
+[Info] (19:09:02.957)> 52046 wants to move
+[Info] (19:09:02.958)> Examining Worker0
+[Info] (19:09:02.962)> Worker0 wants to move
+[Info] (19:09:03.071)> NextTurn()
+[Info] (19:09:03.073)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.074)> Examining Moth0
+[Info] (19:09:03.077)> Moth0 wants to move
+[Info] (19:09:03.078)> Examining 52046
+[Info] (19:09:03.082)> 52046 wants to move
+[Info] (19:09:03.083)> Examining Worker0
+[Info] (19:09:03.086)> Worker0 wants to move
+[Info] (19:09:03.195)> NextTurn()
+[Info] (19:09:03.197)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.198)> Examining Moth0
+[Info] (19:09:03.201)> Moth0 wants to move
+[Info] (19:09:03.202)> Examining 52046
+[Info] (19:09:03.205)> 52046 wants to move
+[Info] (19:09:03.206)> Examining Worker0
+[Info] (19:09:03.210)> Worker0 wants to move
+[Info] (19:09:03.317)> NextTurn()
+[Info] (19:09:03.319)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.320)> Examining Moth0
+[Info] (19:09:03.323)> Moth0 wants to dig
+[Info] (19:09:03.324)> Examining 52046
+[Info] (19:09:03.327)> 52046 wants to move
+[Info] (19:09:03.328)> Examining Worker0
+[Info] (19:09:03.332)> Worker0 wants to move
+[Info] (19:09:03.441)> NextTurn()
+[Info] (19:09:03.443)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.444)> Examining Moth0
+[Info] (19:09:03.447)> Moth0 wants to move
+[Info] (19:09:03.448)> Examining 52046
+[Info] (19:09:03.451)> 52046 wants to move
+[Info] (19:09:03.452)> Examining Worker0
+[Info] (19:09:03.456)> Worker0 wants to move
+[Info] (19:09:03.563)> NextTurn()
+[Info] (19:09:03.566)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.567)> Examining Moth0
+[Info] (19:09:03.570)> Moth0 wants to move
+[Info] (19:09:03.570)> Examining 52046
+[Info] (19:09:03.574)> 52046 wants to move
+[Info] (19:09:03.575)> Examining Worker0
+[Info] (19:09:03.579)> Worker0 wants to move
+[Info] (19:09:03.689)> NextTurn()
+[Info] (19:09:03.691)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.692)> Examining Moth0
+[Info] (19:09:03.695)> Moth0 wants to move
+[Info] (19:09:03.696)> Examining 52046
+[Info] (19:09:03.699)> 52046 wants to move
+[Info] (19:09:03.700)> Examining Worker0
+[Info] (19:09:03.704)> Worker0 wants to move
+[Info] (19:09:03.811)> NextTurn()
+[Info] (19:09:03.813)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.814)> Examining Moth0
+[Info] (19:09:03.817)> Moth0 wants to move
+[Info] (19:09:03.818)> Examining 52046
+[Info] (19:09:03.822)> 52046 wants to move
+[Info] (19:09:03.822)> Examining Worker0
+[Info] (19:09:03.826)> Worker0 wants to move
+[Info] (19:09:03.934)> NextTurn()
+[Info] (19:09:03.936)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:03.937)> Examining Moth0
+[Info] (19:09:03.940)> Moth0 wants to dig
+[Info] (19:09:03.941)> Examining 52046
+[Info] (19:09:03.944)> 52046 wants to move
+[Info] (19:09:03.945)> Examining Worker0
+[Info] (19:09:03.949)> Worker0 wants to move
+[Info] (19:09:04.056)> NextTurn()
+[Info] (19:09:04.057)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.059)> Examining Moth0
+[Info] (19:09:04.061)> Moth0 wants to move
+[Info] (19:09:04.063)> Examining 52046
+[Info] (19:09:04.067)> 52046 wants to move
+[Info] (19:09:04.068)> Examining Worker0
+[Info] (19:09:04.072)> Worker0 wants to move
+[Info] (19:09:04.180)> NextTurn()
+[Info] (19:09:04.182)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.183)> Examining Moth0
+[Info] (19:09:04.186)> Moth0 wants to move
+[Info] (19:09:04.187)> Examining 52046
+[Info] (19:09:04.190)> 52046 wants to move
+[Info] (19:09:04.191)> Examining Worker0
+[Info] (19:09:04.195)> Worker0 wants to move
+[Info] (19:09:04.304)> NextTurn()
+[Info] (19:09:04.306)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.307)> Examining Moth0
+[Info] (19:09:04.310)> Moth0 wants to move
+[Info] (19:09:04.311)> Examining 52046
+[Info] (19:09:04.315)> 52046 wants to move
+[Info] (19:09:04.316)> Examining Worker0
+[Info] (19:09:04.319)> Worker0 wants to move
+[Info] (19:09:04.428)> NextTurn()
+[Info] (19:09:04.430)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.431)> Examining Moth0
+[Info] (19:09:04.434)> Moth0 wants to dig
+[Info] (19:09:04.434)> Examining 52046
+[Info] (19:09:04.438)> 52046 wants to move
+[Info] (19:09:04.439)> Examining Worker0
+[Info] (19:09:04.443)> Worker0 wants to move
+[Info] (19:09:04.551)> NextTurn()
+[Info] (19:09:04.553)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.554)> Examining Moth0
+[Info] (19:09:04.557)> Moth0 wants to move
+[Info] (19:09:04.557)> Examining 52046
+[Info] (19:09:04.561)> 52046 wants to move
+[Info] (19:09:04.562)> Examining Worker0
+[Info] (19:09:04.566)> Worker0 wants to move
+[Info] (19:09:04.678)> NextTurn()
+[Info] (19:09:04.680)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.681)> Examining Moth0
+[Info] (19:09:04.684)> Moth0 wants to move
+[Info] (19:09:04.684)> Examining 52046
+[Info] (19:09:04.688)> 52046 wants to move
+[Info] (19:09:04.689)> Examining Worker0
+[Info] (19:09:04.693)> Worker0 wants to move
+[Info] (19:09:04.801)> NextTurn()
+[Info] (19:09:04.803)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.804)> Examining Moth0
+[Info] (19:09:04.807)> Moth0 wants to move
+[Info] (19:09:04.808)> Examining 52046
+[Info] (19:09:04.812)> 52046 wants to move
+[Info] (19:09:04.813)> Examining Worker0
+[Info] (19:09:04.817)> Worker0 wants to move
+[Info] (19:09:04.925)> NextTurn()
+[Info] (19:09:04.928)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:04.929)> Examining Moth0
+[Info] (19:09:04.932)> Moth0 wants to dig
+[Info] (19:09:04.933)> Examining 52046
+[Info] (19:09:04.936)> 52046 wants to move
+[Info] (19:09:04.937)> Examining Worker0
+[Info] (19:09:04.941)> Worker0 wants to move
+[Info] (19:09:05.049)> NextTurn()
+[Info] (19:09:05.051)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.052)> Examining Moth0
+[Info] (19:09:05.055)> Moth0 wants to move
+[Info] (19:09:05.056)> Examining 52046
+[Info] (19:09:05.059)> 52046 wants to move
+[Info] (19:09:05.060)> Examining Worker0
+[Info] (19:09:05.065)> Worker0 wants to move
+[Info] (19:09:05.175)> NextTurn()
+[Info] (19:09:05.177)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.178)> Examining Moth0
+[Info] (19:09:05.181)> Moth0 wants to move
+[Info] (19:09:05.182)> Examining 52046
+[Info] (19:09:05.185)> 52046 wants to move
+[Info] (19:09:05.186)> Examining Worker0
+[Info] (19:09:05.190)> Worker0 wants to move
+[Info] (19:09:05.301)> NextTurn()
+[Info] (19:09:05.303)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.304)> Examining Moth0
+[Info] (19:09:05.307)> Moth0 wants to move
+[Info] (19:09:05.308)> Examining 52046
+[Info] (19:09:05.313)> 52046 wants to move
+[Info] (19:09:05.313)> Examining Worker0
+[Info] (19:09:05.318)> Worker0 wants to move
+[Info] (19:09:05.427)> NextTurn()
+[Info] (19:09:05.429)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.430)> Examining Moth0
+[Info] (19:09:05.433)> Moth0 wants to move
+[Info] (19:09:05.434)> Examining 52046
+[Info] (19:09:05.438)> 52046 wants to move
+[Info] (19:09:05.438)> Examining Worker0
+[Info] (19:09:05.443)> Worker0 wants to move
+[Info] (19:09:05.551)> NextTurn()
+[Info] (19:09:05.554)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.554)> Examining Moth0
+[Info] (19:09:05.557)> Moth0 wants to dig
+[Info] (19:09:05.558)> Examining 52046
+[Info] (19:09:05.562)> 52046 wants to move
+[Info] (19:09:05.563)> Examining Worker0
+[Info] (19:09:05.567)> Worker0 wants to move
+[Info] (19:09:05.676)> NextTurn()
+[Info] (19:09:05.678)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.679)> Examining Moth0
+[Info] (19:09:05.682)> Moth0 wants to move
+[Info] (19:09:05.683)> Examining 52046
+[Info] (19:09:05.687)> 52046 wants to move
+[Info] (19:09:05.687)> Examining Worker0
+[Info] (19:09:05.692)> Worker0 wants to move
+[Info] (19:09:05.800)> NextTurn()
+[Info] (19:09:05.802)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.803)> Examining Moth0
+[Info] (19:09:05.806)> Moth0 wants to move
+[Info] (19:09:05.807)> Examining 52046
+[Info] (19:09:05.811)> 52046 wants to move
+[Info] (19:09:05.812)> Examining Worker0
+[Info] (19:09:05.816)> Worker0 wants to move
+[Info] (19:09:05.925)> NextTurn()
+[Info] (19:09:05.927)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:05.928)> Examining Moth0
+[Info] (19:09:05.931)> Moth0 wants to dig
+[Info] (19:09:05.932)> Examining 52046
+[Info] (19:09:05.935)> 52046 wants to move
+[Info] (19:09:05.936)> Examining Worker0
+[Info] (19:09:05.940)> Worker0 wants to move
+[Info] (19:09:06.048)> NextTurn()
+[Info] (19:09:06.050)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.051)> Examining Moth0
+[Info] (19:09:06.054)> Moth0 wants to move
+[Info] (19:09:06.055)> Examining 52046
+[Info] (19:09:06.058)> 52046 wants to move
+[Info] (19:09:06.059)> Examining Worker0
+[Info] (19:09:06.063)> Worker0 wants to move
+[Info] (19:09:06.172)> NextTurn()
+[Info] (19:09:06.175)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.175)> Examining Moth0
+[Info] (19:09:06.179)> Moth0 wants to dig
+[Info] (19:09:06.179)> Examining 52046
+[Info] (19:09:06.183)> 52046 wants to move
+[Info] (19:09:06.184)> Examining Worker0
+[Info] (19:09:06.187)> Worker0 wants to move
+[Info] (19:09:06.294)> NextTurn()
+[Info] (19:09:06.297)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.298)> Examining Moth0
+[Info] (19:09:06.301)> Moth0 wants to move
+[Info] (19:09:06.301)> Examining 52046
+[Info] (19:09:06.305)> 52046 wants to move
+[Info] (19:09:06.306)> Examining Worker0
+[Info] (19:09:06.310)> Worker0 wants to move
+[Info] (19:09:06.420)> NextTurn()
+[Info] (19:09:06.422)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.423)> Examining Moth0
+[Info] (19:09:06.426)> Moth0 wants to move
+[Info] (19:09:06.427)> Examining 52046
+[Info] (19:09:06.430)> 52046 wants to move
+[Info] (19:09:06.431)> Examining Worker0
+[Info] (19:09:06.435)> Worker0 wants to move
+[Warning] (19:09:06.439)> Out of range exception caught: 15;25
+[Info] (19:09:06.543)> NextTurn()
+[Info] (19:09:06.545)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.546)> Examining Moth0
+[Info] (19:09:06.549)> Moth0 wants to dig
+[Info] (19:09:06.550)> Examining 52046
+[Info] (19:09:06.553)> 52046 wants to move
+[Info] (19:09:06.554)> Examining Worker0
+[Info] (19:09:06.558)> Worker0 wants to move
+[Info] (19:09:06.667)> NextTurn()
+[Info] (19:09:06.669)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.670)> Examining Moth0
+[Info] (19:09:06.673)> Moth0 wants to move
+[Info] (19:09:06.674)> Examining 52046
+[Info] (19:09:06.677)> 52046 wants to move
+[Info] (19:09:06.678)> Examining Worker0
+[Info] (19:09:06.682)> Worker0 wants to move
+[Info] (19:09:06.790)> NextTurn()
+[Info] (19:09:06.793)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.793)> Examining Moth0
+[Info] (19:09:06.797)> Moth0 wants to dig
+[Info] (19:09:06.797)> Examining 52046
+[Info] (19:09:06.801)> 52046 wants to move
+[Info] (19:09:06.802)> Examining Worker0
+[Info] (19:09:06.806)> Worker0 wants to move
+[Info] (19:09:06.915)> NextTurn()
+[Info] (19:09:06.917)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:06.918)> Examining Moth0
+[Info] (19:09:06.920)> Moth0 wants to move
+[Info] (19:09:06.921)> Examining 52046
+[Info] (19:09:06.925)> 52046 wants to move
+[Info] (19:09:06.925)> Examining Worker0
+[Info] (19:09:06.929)> Worker0 wants to move
+[Info] (19:09:07.037)> NextTurn()
+[Info] (19:09:07.039)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.040)> Examining Moth0
+[Info] (19:09:07.043)> Moth0 wants to move
+[Info] (19:09:07.044)> Examining 52046
+[Info] (19:09:07.047)> 52046 wants to move
+[Info] (19:09:07.048)> Examining Worker0
+[Info] (19:09:07.052)> Worker0 wants to move
+[Info] (19:09:07.160)> NextTurn()
+[Info] (19:09:07.162)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.163)> Examining Moth0
+[Info] (19:09:07.166)> Moth0 wants to dig
+[Info] (19:09:07.167)> Examining 52046
+[Info] (19:09:07.170)> 52046 wants to move
+[Info] (19:09:07.171)> Examining Worker0
+[Info] (19:09:07.175)> Worker0 wants to move
+[Info] (19:09:07.284)> NextTurn()
+[Info] (19:09:07.286)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.287)> Examining Moth0
+[Info] (19:09:07.290)> Moth0 wants to move
+[Info] (19:09:07.291)> Examining 52046
+[Info] (19:09:07.295)> 52046 wants to move
+[Info] (19:09:07.296)> Examining Worker0
+[Info] (19:09:07.300)> Worker0 wants to move
+[Info] (19:09:07.406)> NextTurn()
+[Info] (19:09:07.408)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.409)> Examining Moth0
+[Info] (19:09:07.412)> Moth0 wants to dig
+[Info] (19:09:07.413)> Examining 52046
+[Info] (19:09:07.417)> 52046 wants to move
+[Info] (19:09:07.418)> Examining Worker0
+[Info] (19:09:07.421)> Worker0 wants to move
+[Info] (19:09:07.529)> NextTurn()
+[Info] (19:09:07.531)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.532)> Examining Moth0
+[Info] (19:09:07.535)> Moth0 wants to move
+[Info] (19:09:07.536)> Examining 52046
+[Info] (19:09:07.540)> 52046 wants to move
+[Info] (19:09:07.540)> Examining Worker0
+[Info] (19:09:07.544)> Worker0 wants to move
+[Info] (19:09:07.653)> NextTurn()
+[Info] (19:09:07.655)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.656)> Examining Moth0
+[Info] (19:09:07.659)> Moth0 wants to dig
+[Info] (19:09:07.660)> Examining 52046
+[Info] (19:09:07.664)> 52046 wants to move
+[Info] (19:09:07.664)> Examining Worker0
+[Info] (19:09:07.668)> Worker0 wants to move
+[Info] (19:09:07.776)> NextTurn()
+[Info] (19:09:07.778)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.779)> Examining Moth0
+[Info] (19:09:07.782)> Moth0 wants to move
+[Info] (19:09:07.783)> Examining 52046
+[Info] (19:09:07.787)> 52046 wants to move
+[Info] (19:09:07.788)> Examining Worker0
+[Info] (19:09:07.792)> Worker0 wants to move
+[Info] (19:09:07.898)> NextTurn()
+[Info] (19:09:07.900)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:07.901)> Examining Moth0
+[Info] (19:09:07.904)> Moth0 wants to dig
+[Info] (19:09:07.905)> Examining 52046
+[Info] (19:09:07.908)> 52046 wants to move
+[Info] (19:09:07.909)> Examining Worker0
+[Info] (19:09:07.913)> Worker0 wants to move
+[Info] (19:09:08.020)> NextTurn()
+[Info] (19:09:08.022)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:08.023)> Examining Moth0
+[Info] (19:09:08.026)> Moth0 wants to move
+[Info] (19:09:08.027)> Examining 52046
+[Info] (19:09:08.031)> 52046 wants to move
+[Info] (19:09:08.032)> Examining Worker0
+[Info] (19:09:08.036)> Worker0 wants to move
+[Info] (19:09:08.145)> NextTurn()
+[Info] (19:09:08.147)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:08.148)> Examining Moth0
+[Info] (19:09:08.151)> Moth0 wants to move
+[Info] (19:09:08.152)> Examining 52046
+[Info] (19:09:08.155)> 52046 wants to move
+[Info] (19:09:08.156)> Examining Worker0
+[Info] (19:09:08.160)> Worker0 wants to move
+[Info] (19:09:08.267)> NextTurn()
+[Info] (19:09:08.269)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:08.270)> Examining Moth0
+[Info] (19:09:08.273)> Moth0 wants to dig
+[Info] (19:09:08.274)> Examining 52046
+[Info] (19:09:08.277)> 52046 wants to move
+[Info] (19:09:08.278)> Examining Worker0
+[Info] (19:09:08.282)> Worker0 wants to move
+[Info] (19:09:08.388)> NextTurn()
+[Info] (19:09:08.390)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x0000022A10075518>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x0000022A0E152DA0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x0000022A10075400>]
+[Info] (19:09:08.391)> Examining Moth0
+[Info] (19:09:08.394)> Moth0 wants to move
+[Info] (19:09:08.394)> Examining 52046
+[Info] (19:09:08.398)> 52046 wants to move
+[Info] (19:09:08.399)> Examining Worker0
+[Info] (19:09:08.402)> Worker0 wants to move

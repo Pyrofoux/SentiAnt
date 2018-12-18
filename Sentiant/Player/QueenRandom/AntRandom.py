@@ -18,7 +18,7 @@ class AntRandom(Ant):
         }
 
         r=randrange(4)
-        a=randrange(7)
+        a=0#randrange(7)
         s=randrange(31)
 
         if a<3:

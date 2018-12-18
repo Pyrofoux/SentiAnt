@@ -77,6 +77,9 @@ class TurnManager:
         movingAnts = []
         initialPositions = []
         desiredDestinations = []
+        positionsAnt = []
+
+        allAnts = self.layerSolid.ToList(Ant)
 
         for ant in ants:
             #self.layerSolid.MoveEntity(ant, ant._nextActionArg)
@@ -91,19 +94,33 @@ class TurnManager:
                 initialPositions.append(posAnt)
                 desiredDestinations.append(posCible)
 
+            else:
+                positionsAnt.append(self.layerSolid.GetXYByRef(ant))
+
+        print("".join([str(i) for i in positionsAnt]))
+        print("".join([str(i) for i in initialPositions]))
+
+
         if len(movingAnts) > 0:
-            punished = MoveManager.calculatePunished(initialPositions, desiredDestinations)
-            indexToMove = []
-            for i in range(0,len(movingAnts)):
+            punished = MoveManager.calculatePunished(initialPositions, desiredDestinations, positionsAnt)
 
-                if i in punished: #
-                    self.Remove1HP(movingAnts[i])
+            antTemp = []
+            posTemp = []
+
+            for i, ant in enumerate(movingAnts):
+                if not(i in punished):
+                    antTemp.append(ant)
+                    posTemp.append(desiredDestinations[i])
+                    self.layerSolid.Remove(ant)
                 else:
-                    indexToMove.append(i)
+                    self.Remove1HP(ant)
 
-            for i in range(0, len(indexToMove)):
-                self.layerSolid.Remove(movingAnts[indexToMove[i]])
-                self.layerSolid.Append(movingAnts[indexToMove[i]], desiredDestinations[indexToMove[i]])
+
+            for i, ant in enumerate(antTemp):
+                self.layerSolid.Append(ant, posTemp[i])
+
+
+
 
 
     def ExecDig(self, ants):
@@ -147,6 +164,7 @@ class TurnManager:
 
             # cible dead
             if cible._HP == 1:
+                self.layerFloor.Drop(cible)
                 self.layerSolid.Remove(cible)
             # cible still alive
             else:

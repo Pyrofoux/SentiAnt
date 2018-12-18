@@ -7,34 +7,42 @@ class MoveManager:
 
 
     @staticmethod
-    def checkPauli(positions): #Vérifie si les fourmis respectent le principe d'exclusion de Pauli, et renvoient l'index de celles qui ne le font pas
+    def checkPauli(positions, other): #Vérifie si les fourmis respectent le principe d'exclusion de Pauli, et renvoient l'index de celles qui ne le font pas
         checkedPoints = []
         checkedIndex = []
         collidingIndex = []
 
         for index in range(0,len(positions)) :
-            if not (positions[index] in checkedPoints) : #S'il n'y a personne sur la case cible
-                checkedPoints.append(positions[index])
-                checkedIndex.append(index)
+            if not(positions[index] in other):
+                if not (positions[index] in checkedPoints): #S'il n'y a personne sur la case cible
+                    checkedPoints.append(positions[index])
+                    checkedIndex.append(index)
 
-            else : #S'il y a quelqu'un dans la case cible
-                collidingIndex.append(index) #Rajoute l'index des fourmis/positions actuelemment considérés
+                else : #S'il y a quelqu'un dans la case cible
 
-                #Rajoute l'index de la première fourmi à être sur cette case, si pas déjà rajouté
-                i = checkedPoints.index(positions[index])
-                firstIndex = checkedIndex[i]
+                    collidingIndex.append(index) #Rajoute l'index des fourmis/positions actuelemment considérés
 
-                if not (firstIndex in collidingIndex):
-                    collidingIndex.append(firstIndex)
+                    #Rajoute l'index de la première fourmi à être sur cette case, si pas déjà rajouté
+                    i = checkedPoints.index(positions[index])
+                    firstIndex = checkedIndex[i]
+
+
+
+                    if not (firstIndex in collidingIndex):
+                        collidingIndex.append(firstIndex)
+
+            else :
+                collidingIndex.append(index)
 
         return collidingIndex
 
 
     @staticmethod
-    def calculatePunished(pos,dest): #Renvoie les fourmis autorisées à effectuer leur déplacement
+    def calculatePunished(pos,dest, other): #Renvoie les fourmis autorisées à effectuer leur déplacement
 
         nextTry = dest
-        colliding = MoveManager.checkPauli(nextTry)
+        colliding = MoveManager.checkPauli(nextTry, other)
+
         punished = []
         while len(colliding) > 0: #Peut-être faire un nombre d'itération max pour éviter que des petits bugs deviennt gros
 
@@ -53,7 +61,7 @@ class MoveManager:
                     nextTry.append(pos[index])
                 else:
                     nextTry.append(dest[index])
-            colliding = MoveManager.checkPauli(nextTry)
+            colliding = MoveManager.checkPauli(nextTry, other)
 
 
         return punished

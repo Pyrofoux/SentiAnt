@@ -33,6 +33,8 @@ if __name__ == '__main__':
 
     turnmanager = TurnManager(map, qM)
 
+    importBot.destroy()
+
     view = MainView(map, turnmanager, 500)
     view.Run()
 

@@ -11,6 +11,7 @@ class MainView(Toplevel):
         # property
         self.Map = map
         self.TurnManager = turnmanager
+        self.startFlag = False
 
         # scrollbars
         vsb = Scrollbar(self, orient=VERTICAL)
@@ -33,9 +34,15 @@ class MainView(Toplevel):
         self.grid.pack()
 
         if turnmanager is not None:
-            self.bNextTurn = Button(self, text = "Next Turn", command=self.NextTurn) #uses a method here so it can easily checks a possible win
+            self.bNextTurn = Button(self, text = "Next Turn", command=self.NextTurnBind) #uses a method here so it can easily checks a possible win
             self.bNextTurn.grid(column = 3, row = 0)
-            #self.bNextTurn.configure(command=self.Win)
+
+            self.bStart = Button(self, text="Start", command=self.Start)
+            self.bStart.grid(column = 3, row = 1)
+            self.bStop = Button(self, text="Stop", command=self.Stop)
+            self.bStop.grid(column = 3, row = 2)
+
+            self.bind("<space>", lambda e : self.NextTurnBind())
 
         self.lbl1 = StringVar()
         Label(self, textvariable=self.lbl1).grid(column = 0, row =0)
@@ -90,7 +97,12 @@ class MainView(Toplevel):
         self.canvas.create_text(0,0,fill = 'orange',font='systemfixed 14 bold', text="Game's over !\
          Congratulations to the winning" + self.TurnManager.winningTeam + " player !")
 
+    def NextTurnBind(self):
+        if not self.startFlag:
+            self.NextTurn()
+
     def NextTurn(self):
+
         #each time the NextTurn button is pressed, it checks wether the game is ended or not
         if self.TurnManager.winAchieved==True:
             self.Win()
@@ -99,4 +111,17 @@ class MainView(Toplevel):
 
     def Run(self):
         self.mainloop()
+
+    def Start(self):
+        self.startFlag = True
+        self.LoopTurn()
+
+    def Stop(self):
+        self.startFlag = False
+
+    def LoopTurn(self):
+        if self.startFlag:
+            self.NextTurn()
+            self.after(100, self.LoopTurn)
+
 
