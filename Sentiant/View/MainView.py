@@ -88,7 +88,7 @@ class MainView(Toplevel):
         self.bNextTurn.destroy()
         self.canvas.configure(bg='forest green')
         self.canvas.create_text(0,0,fill = 'orange',font='systemfixed 14 bold', text="Game's over !\
-         Congratulations to the winning" + self.TurnManager.winningTeam + " player !")
+         Congratulations to the winning" + str(self.TurnManager.winningTeam) + " player !")
 
     def NextTurn(self):
         #each time the NextTurn button is pressed, it checks wether the game is ended or not

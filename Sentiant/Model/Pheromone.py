@@ -13,5 +13,8 @@ class Pheromone(Entity):
     def __repr__(self):
         return self.__str__()
 
+    def DegradePhero(self):
+        self.hpRadius = self.hpRadius-1
+
     def __str__(self):
-        return "Phero ["+str(self.scent) +"] ("+str(self.baseLocation)+")"
+        return "Phero ["+str(self.scent) +"] ("+str(self.baseLocation)+")" + "HP :" + str(self.hpRadius)
