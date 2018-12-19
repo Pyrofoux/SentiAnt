@@ -6,6 +6,7 @@ from Sentiant.bot.FourmiRouge.QueenRouge import QueenRouge
 import os
 
 def Main(bla):
+
     LogsManager.Info("Queens imported :\nnbqueens : {0}\nqueens :{1}" \
                      .format(len(bla), \
                              "\n".join(["{0}: {1}".format(i[1], i[0]) for i in bla])))
@@ -33,7 +34,7 @@ if __name__ == '__main__':
     gen = open(LogsManager.finalPathGen, "w")
     use = open(LogsManager.finalPathUse, "w")
     gen.close()
-    use.close() #automatically cleans the existing logs from a previous execution
+    use.close()  # automatically cleans the existing logs from a previous execution
 
 
     importBot = ImportView(Main)

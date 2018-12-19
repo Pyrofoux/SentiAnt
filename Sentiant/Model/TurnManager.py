@@ -94,6 +94,13 @@ class TurnManager:
                 initialPositions.append(posAnt)
                 desiredDestinations.append(posCible)
 
+            # ça gère pas le cas des collisions mais au moins les phéromones seront plus éternelles
+            phero = self.layerPheromone[posCible]
+            if (isinstance(phero, Pheromone)):
+                phero.DegradePhero()
+                if phero.hpRadius == 0:
+                    self.layerPheromone.Remove(phero)
+
             else:
                 positionsAnt.append(self.layerSolid.GetXYByRef(ant))
 
