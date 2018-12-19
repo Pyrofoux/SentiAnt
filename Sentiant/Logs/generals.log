@@ -1,47 +1,144 @@
-[Info] (08:38:00.101)> Queens imported :
-                       nbqueens : 3
-                       queens :QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
-                       QueenRandom: <class 'Sentiant.Player.QueenRandom.QueenRandom.QueenRandom'>
-                       QueenRouge: <class 'Sentiant.Player.QueenRouge.QueenRouge.QueenRouge'>
-[Info] (08:38:03.650)> NextTurn()
-[Info] (08:38:03.658)> All ants =  []
-[Info] (08:38:03.812)> NextTurn()
-[Info] (08:38:03.819)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>]
-[Info] (08:38:03.981)> NextTurn()
-[Info] (08:38:03.992)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>]
-[Info] (08:38:04.148)> NextTurn()
-[Info] (08:38:04.156)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>]
-[Info] (08:38:04.303)> NextTurn()
-[Info] (08:38:04.311)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>]
-[Info] (08:38:04.463)> NextTurn()
-[Info] (08:38:04.472)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:04.630)> NextTurn()
-[Info] (08:38:04.638)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:04.792)> NextTurn()
-[Info] (08:38:04.801)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:04.974)> NextTurn()
-[Info] (08:38:04.988)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:05.146)> NextTurn()
-[Info] (08:38:05.156)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:05.314)> NextTurn()
-[Info] (08:38:05.322)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:05.489)> NextTurn()
-[Info] (08:38:05.499)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:05.661)> NextTurn()
-[Info] (08:38:05.670)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:05.828)> NextTurn()
-[Info] (08:38:05.837)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.002)> NextTurn()
-[Info] (08:38:06.012)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.188)> NextTurn()
-[Info] (08:38:06.197)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.364)> NextTurn()
-[Info] (08:38:06.373)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.540)> NextTurn()
-[Info] (08:38:06.552)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.708)> NextTurn()
-[Info] (08:38:06.717)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:06.841)> NextTurn()
-[Info] (08:38:06.851)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
-[Info] (08:38:13.393)> NextTurn()
-[Info] (08:38:13.402)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BEB8>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF98>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x00000260DDE4BF60>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DDE4BFD0>, <Sentiant.Player.QueenRandom.AntRandom.AntRandom object at 0x00000260DCB6A940>]
+[Info] (09:39:18.346)> Importing algorithm from 'QueenBee'... 
+[Info] (09:39:18.349)>     done!
+[Info] (09:39:18.349)> Importing algorithm from 'QueenMoth'... 
+[Info] (09:39:18.357)>     done!
+[Info] (09:39:18.357)> Importing algorithm from 'QueenRandom'... 
+[Info] (09:39:18.358)>     done!
+[Info] (09:39:18.359)> Importing algorithm from 'QueenRouge'... 
+[Info] (09:39:18.360)>     done!
+[Info] (09:39:22.318)> Queens imported :
+                       nbqueens : 2
+                       queens :QueenBee: <class 'Sentiant.Player.QueenBee.QueenBee.QueenBee'>
+                       QueenMoth: <class 'Sentiant.Player.QueenMoth.QueenMoth.QueenMoth'>
+[Info] (09:39:24.358)> NextTurn()
+[Info] (09:39:24.360)> All ants =  []
+[Info] (09:39:24.471)> NextTurn()
+[Info] (09:39:24.478)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:24.606)> NextTurn()
+[Info] (09:39:24.626)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:24.804)> NextTurn()
+[Info] (09:39:24.805)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:25.004)> NextTurn()
+[Info] (09:39:25.012)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:25.222)> NextTurn()
+[Info] (09:39:25.226)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:25.451)> NextTurn()
+[Info] (09:39:25.457)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:25.671)> NextTurn()
+[Info] (09:39:25.675)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:25.880)> NextTurn()
+[Info] (09:39:25.889)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:26.091)> NextTurn()
+[Info] (09:39:26.095)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:26.312)> NextTurn()
+[Info] (09:39:26.314)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:26.526)> NextTurn()
+[Info] (09:39:26.526)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:26.719)> NextTurn()
+[Info] (09:39:26.723)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:26.905)> NextTurn()
+[Info] (09:39:26.907)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:27.104)> NextTurn()
+[Info] (09:39:27.113)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:27.288)> NextTurn()
+[Info] (09:39:27.292)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:27.488)> NextTurn()
+[Info] (09:39:27.491)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:27.704)> NextTurn()
+[Info] (09:39:27.706)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03464050>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:27.870)> NextTurn()
+[Info] (09:39:27.879)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:28.071)> NextTurn()
+[Info] (09:39:28.076)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:28.272)> NextTurn()
+[Info] (09:39:28.277)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:28.487)> NextTurn()
+[Info] (09:39:28.490)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:28.688)> NextTurn()
+[Info] (09:39:28.689)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:28.904)> NextTurn()
+[Info] (09:39:28.908)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:29.104)> NextTurn()
+[Info] (09:39:29.108)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:29.303)> NextTurn()
+[Info] (09:39:29.306)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:29.503)> NextTurn()
+[Info] (09:39:29.506)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:29.722)> NextTurn()
+[Info] (09:39:29.725)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5A30>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB5B10>]
+[Info] (09:39:29.922)> NextTurn()
+[Info] (09:39:29.925)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:30.127)> NextTurn()
+[Info] (09:39:30.134)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:30.323)> NextTurn()
+[Info] (09:39:30.327)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:30.520)> NextTurn()
+[Info] (09:39:30.525)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:30.720)> NextTurn()
+[Info] (09:39:30.726)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:30.899)> NextTurn()
+[Info] (09:39:30.902)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459D30>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:31.087)> NextTurn()
+[Info] (09:39:31.096)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:31.288)> NextTurn()
+[Info] (09:39:31.291)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:31.470)> NextTurn()
+[Info] (09:39:31.476)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:31.639)> NextTurn()
+[Info] (09:39:31.642)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:31.821)> NextTurn()
+[Info] (09:39:31.824)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.002)> NextTurn()
+[Info] (09:39:32.005)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.176)> NextTurn()
+[Info] (09:39:32.181)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.371)> NextTurn()
+[Info] (09:39:32.374)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.554)> NextTurn()
+[Info] (09:39:32.554)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.722)> NextTurn()
+[Info] (09:39:32.723)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:32.904)> NextTurn()
+[Info] (09:39:32.905)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.086)> NextTurn()
+[Info] (09:39:33.093)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.271)> NextTurn()
+[Info] (09:39:33.272)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.454)> NextTurn()
+[Info] (09:39:33.457)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.623)> NextTurn()
+[Info] (09:39:33.623)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.803)> NextTurn()
+[Info] (09:39:33.812)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:33.987)> NextTurn()
+[Info] (09:39:33.990)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:34.136)> NextTurn()
+[Info] (09:39:34.137)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:34.337)> NextTurn()
+[Info] (09:39:34.339)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:34.520)> NextTurn()
+[Info] (09:39:34.521)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:34.687)> NextTurn()
+[Info] (09:39:34.690)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:34.855)> NextTurn()
+[Info] (09:39:34.860)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.038)> NextTurn()
+[Info] (09:39:35.038)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.230)> NextTurn()
+[Info] (09:39:35.238)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.408)> NextTurn()
+[Info] (09:39:35.409)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.588)> NextTurn()
+[Info] (09:39:35.590)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.771)> NextTurn()
+[Info] (09:39:35.772)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:35.920)> NextTurn()
+[Info] (09:39:35.921)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:36.098)> NextTurn()
+[Info] (09:39:36.107)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:36.286)> NextTurn()
+[Info] (09:39:36.292)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:36.462)> NextTurn()
+[Info] (09:39:36.463)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]
+[Info] (09:39:36.619)> NextTurn()
+[Info] (09:39:36.620)> All ants =  [<Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5AD0>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x05DB5990>, <Sentiant.Player.QueenMoth.Moth.Moth object at 0x03459970>, <Sentiant.Player.QueenBee.WorkerBee.WorkerBee object at 0x05DB59D0>]

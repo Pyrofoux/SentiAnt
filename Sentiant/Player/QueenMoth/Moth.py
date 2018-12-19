@@ -65,6 +65,7 @@ class Moth(Ant):
         if self.getHolding() != Cfg.EMPTY:
             self.Drop()
             #Make a move in order to stupidly pick up the same bread over and over...
+            self.ignoreNextStep = False
             self.ignoreNextPick = True
 
 
