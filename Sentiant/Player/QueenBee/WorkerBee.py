@@ -17,7 +17,7 @@ class WorkerBee(Ant):
         IsQueenAround = False
         for i in range(-1, 2):
             for j in range(-1, 2):
-                if  i * j == 0 and (IsQueenAround or FOV[1][Cfg.FOV + i][Cfg.FOV + j] == Cfg.QUEEN):
+                if  i * j == 0 and (IsQueenAround or FOV[0][Cfg.FOV + i][Cfg.FOV + j] == Cfg.QUEEN):
                     IsQueenAround = True
 
         if FOVFloorFace == Cfg.COOKIE:
