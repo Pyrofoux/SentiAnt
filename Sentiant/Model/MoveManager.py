@@ -44,8 +44,9 @@ class MoveManager:
         colliding = MoveManager.checkPauli(nextTry, other)
 
         punished = []
-        while len(colliding) > 0: #Peut-être faire un nombre d'itération max pour éviter que des petits bugs deviennt gros
+        iter = 0
 
+        while len(colliding) > 0 and iter<100: #Peut-être faire un nombre d'itération max pour éviter que des petits bugs deviennt gros
 
             #Ajouter la liste des fourmis qui se cognent dans celles à PUNIR
             for i in colliding:
@@ -63,6 +64,7 @@ class MoveManager:
                     nextTry.append(dest[index])
             colliding = MoveManager.checkPauli(nextTry, other)
 
+            iter=iter+1
 
         return punished
 
