@@ -21,7 +21,7 @@ class MapManager:
         self.queens.append((queenTile, queenPos))
 
     def ShouldBeRockAt(self, i, j):
-        return self.rng.random() < self.rockRatio
+        return (self.rng.random() < self.rockRatio and (i,j)!=(self.map.width // 2, self.map.height // 2))
 
     def Generate(self):
         """Generate and returns maps according to settings"""
@@ -73,7 +73,7 @@ class MapManager:
                 for j in range(2):
                     self.map.layerSolid[pos.x + i, pos.y + j] = tile
 
-        # Place THA COOKIE!
+        # Place THA COOKIE at the center of the map!
         self.map.layerFloor[w // 2, h // 2] = Cookie(-1)
 
         # Drop every left-overs bread pieces (deducts starter ones).

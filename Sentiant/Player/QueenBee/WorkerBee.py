@@ -23,6 +23,8 @@ class WorkerBee(Ant):
         if FOVFloorFace == Cfg.COOKIE:
             if not(self._holding is None):
                 self.Drop()
+            elif FOVSolidFace==Cfg.DIRT:
+                self.Dig(self.direction)
             else:
                 self.Move(self.direction)
 

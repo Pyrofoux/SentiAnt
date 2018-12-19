@@ -172,6 +172,9 @@ class TurnManager:
             # cible dead
             if cible._HP == 1:
                 self.layerSolid.Remove(cible)
+                #let's not forget to put the ressource down on the floor when ant carrying it dies
+                if not cible._holding==None:
+                    self.layerFloor.Append(cible._holding,self.layerSolid.GetXYByRef(cible))
             # cible still alive
             else:
                 cible._HP -= 1
