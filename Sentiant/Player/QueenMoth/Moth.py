@@ -12,10 +12,12 @@ class Moth(Ant):
         self.forward = True
         self.step = -1
         self.ignoreNextPick = False
+        self.ignoreNextStep = False
         self.path2dir = {
             True:["up","right","down","left"],
             False:["down","left","up","right"]
         }
+        self.started = False
 
     def generatePath(self):
         return [randrange(4) for i in range(0,self.pathLength) ]
@@ -24,10 +26,17 @@ class Moth(Ant):
     def nextStep(self):
 
         endOfPath = False
-        if(self.forward):
-            self.step += 1
+
+        if not self.ignoreNextStep:
+            if(self.forward):
+                self.step += 1
+            else:
+                self.step -= 1
         else:
-            self.step -= 1
+            self.ignoreNextStep = False
+
+        if self.ignoreNextStep:
+            self.ignoreNextStep = False
 
         if self.step >= len(self.path):
             self.step = len(self.path)-1
@@ -51,6 +60,7 @@ class Moth(Ant):
         self.path = self.generatePath()
         self.step = 0
         self.forward = True
+        self.ignoreNextStep = True
 
         if self.getHolding() != Cfg.EMPTY:
             self.Drop()
@@ -60,9 +70,9 @@ class Moth(Ant):
 
     def newTurn(self, FOV, Pheros):
 
-        if (self.step == -1): #Booting...
-            self.nextStep()
-            return True
+        if not (self.started): #Booting...
+            self.started = True
+            self.newPath()
 
         direc =  self.path2dir[self.forward][self.path[self.step]]
         direction = Cfg.ParseDirection(direc)
@@ -84,7 +94,6 @@ class Moth(Ant):
         elif facing == Cfg.DIRT:
             self.Dig(direc)
         elif facing == Cfg.ANT:
-            #self.nextStep(True)
             if(randrange(0,6) == 0):
                 self.nextStep()
         else :
