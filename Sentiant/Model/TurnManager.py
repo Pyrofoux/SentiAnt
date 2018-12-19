@@ -85,7 +85,10 @@ class TurnManager:
             #self.layerSolid.MoveEntity(ant, ant._nextActionArg)
 
             posAnt = self.layerSolid.GetXYByRef(ant)
-            dir = ant._nextActionArg
+            if isinstance(ant._nextActionArg,Point):
+                dir = ant._nextActionArg
+            else :
+                dir=Cfg.STAY
             posCible = posAnt + dir
             cible = self.layerSolid[posCible]
 
@@ -152,17 +155,29 @@ class TurnManager:
     def ExecDrop(self, ants):
         for ant in ants:
             posAnt = self.layerSolid.GetXYByRef(ant)
+            # every time an ant drops a Cookie, it checks if there is a QueenTile next to the ant, because it means a win
+            if (isinstance(ant._holding, Cookie)) :
+                if isinstance(self.layerSolid[posAnt + Cfg.UP], QueenTile):
+                    self.winAchieved = True
+                    self.winningTeam = self.layerSolid[posAnt + Cfg.UP]._team
+
+                elif isinstance(self.layerSolid[posAnt + Cfg.DOWN], QueenTile):
+                    self.winAchieved = True
+                    self.winningTeam = self.layerSolid[posAnt + Cfg.DOWN]._team
+
+                elif isinstance(self.layerSolid[posAnt + Cfg.LEFT], QueenTile):
+                    self.winAchieved = True
+                    self.winningTeam = self.layerSolid[posAnt + Cfg.LEFT]._team
+                elif isinstance(self.layerSolid[posAnt + Cfg.RIGHT], QueenTile):
+                    self.winAchieved = True
+                    self.winningTeam = self.layerSolid[posAnt + Cfg.RIGHT]._team
+
 
             if isinstance(ant._holding, (Bread, Cookie)) and self.layerFloor.IsNone(posAnt):
                 self.layerFloor.Append(type(ant._holding)(ant._holding.id), self.map.layerSolid.GetXYByRef(ant))
                 ant._holding = None
-                #every time an ant drops a Cookie, it checks if there is a QueenTile next to the ant, because it means a win
-                if (isinstance(ant._holding,Cookie) and (isinstance(posAnt+Cfg.UP,QueenTile) \
-                                                        or isinstance(posAnt+Cfg.DOWN,QueenTile) \
-                                                            or isinstance(posAnt + Cfg.LEFT, QueenTile) \
-                                                                or isinstance(posAnt + Cfg.RIGHT, QueenTile))) :
-                    self.winAchieved = True
-                    self.winningTeam=ant._team
+
+
             else :
                 pass
                 # TODO : cancel ant action
@@ -171,10 +186,11 @@ class TurnManager:
 
             # cible dead
             if cible._HP == 1:
-                self.layerSolid.Remove(cible)
-                #let's not forget to put the ressource down on the floor when ant carrying it dies
                 if not cible._holding==None:
                     self.layerFloor.Append(cible._holding,self.layerSolid.GetXYByRef(cible))
+                self.layerSolid.Remove(cible)
+                #let's not forget to put the ressource down on the floor when ant carrying it dies
+
             # cible still alive
             else:
                 cible._HP -= 1

@@ -14,6 +14,7 @@ class Cfg:
     DOWN       = Point(1, 0)
     RIGHT      = Point(0, 1)
     LEFT       = Point(0, -1)
+    STAY       = Point(0,0)
     DIRECTIONS = (UP, DOWN, RIGHT, LEFT)
 
     NULL  = None
