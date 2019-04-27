@@ -7,7 +7,7 @@ Toutes les informations utiles se trouvent dans le wiki.
 
 🍪🐜  
 
-*Prototype réalisé dans le cadre du Projet Transpromotion 2018 - 2018 à l'ENSC*
+*Prototype réalisé dans le cadre du Projet Transpromotion 2018 - 2019 à l'ENSC*
 
 [Courte démo vidéo](https://drive.google.com/open?id=1NWILFgCgfgxpI9cuOiMBD_PPqgQM-PrB)
 
