@@ -15,3 +15,13 @@ Toutes les informations utiles se trouvent dans le wiki.
 
 
 ![SentiAnt Screenshot](https://raw.githubusercontent.com/Pyrofoux/SentiAnt/master/wiki/screenshot.PNG)
+
+
+
+Équipe : 
+- Guillaume Creusot (2A)
+- Justin Dillman (1A)
+- Hugo Fournier (1A)
+- Célestin Grenier (1A)
+- Louis Hache (2A)
+- Younès Rabii (2A, Chef de projet)
