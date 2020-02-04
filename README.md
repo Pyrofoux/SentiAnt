@@ -1,7 +1,7 @@
 # SentiAnt
 
 
-An introductory AI game where you program the behavior of an anthill. Bring the cookie to your queen before the others!
+An introduction to AI as a game where you program the behavior of an anthill. Bring the cookie to your queen before the others!
 
 All relevant information are in the wiki pages. (Warning: French)
 
